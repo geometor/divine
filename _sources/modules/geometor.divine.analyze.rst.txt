@@ -1,0 +1,9 @@
+geometor.divine.analyze
+=======================
+
+.. automodule:: geometor.divine.analyze
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
