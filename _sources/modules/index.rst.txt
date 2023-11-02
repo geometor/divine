@@ -10,7 +10,7 @@ geometor.divine
 .. toctree::
    :maxdepth: 2
 
-   geometor.divine.analyze
+   geometor.divine.golden
 
 
 

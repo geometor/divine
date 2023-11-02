@@ -9,7 +9,7 @@
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/rtd-dark.css" type="text/css" />
-    <link rel="canonical" href="https://geometor.github.io/divine/modules/geometor.divine.analyze.html" />
+    <link rel="canonical" href="https://geometor.github.io/divine/modules/geometor.divine.golden.html" />
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -82,7 +82,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../../usage/">usage</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../">geometor.divine</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../#divine">divine</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">geometor.divine.analyze</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">geometor.divine.analyze</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#geometor.divine.golden.find_golden_sections_in_model"><code class="docutils literal notranslate"><span class="pre">find_golden_sections_in_model()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geometor.divine.golden.find_golden_sections_in_points"><code class="docutils literal notranslate"><span class="pre">find_golden_sections_in_points()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geometor.divine.golden.is_section_golden"><code class="docutils literal notranslate"><span class="pre">is_section_golden()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../demos/">demos</a></li>
@@ -108,7 +113,7 @@
           <li class="breadcrumb-item"><a href="../">geometor.divine</a></li>
       <li class="breadcrumb-item active">geometor.divine.analyze</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/modules/geometor.divine.analyze.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/modules/geometor.divine.golden.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
         <a href="../" class="btn btn-neutral float-left" title="geometor.divine" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
@@ -118,8 +123,27 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-              <section id="geometor-divine-analyze">
-<h1>geometor.divine.analyze<a class="headerlink" href="#geometor-divine-analyze" title="Link to this heading"></a></h1>
+              <section id="module-geometor.divine.golden">
+<span id="geometor-divine-analyze"></span><h1>geometor.divine.analyze<a class="headerlink" href="#module-geometor.divine.golden" title="Link to this heading"></a></h1>
+<p>find and analyze golden sections</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="geometor.divine.golden.find_golden_sections_in_model">
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">find_golden_sections_in_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Model</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">Line</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.divine.golden.find_golden_sections_in_model" title="Link to this definition"></a></dt>
+<dd><p>analyze all lines in the model for golden sections</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="geometor.divine.golden.find_golden_sections_in_points">
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">find_golden_sections_in_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pts</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.divine.golden.find_golden_sections_in_points" title="Link to this definition"></a></dt>
+<dd><p>find golden sections in combinations of 3 points in list
+returns a list of golden section pairs</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="geometor.divine.golden.is_section_golden">
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">is_section_golden</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">section_points</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#geometor.divine.golden.is_section_golden" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
 </section>
 
 <div class="section">

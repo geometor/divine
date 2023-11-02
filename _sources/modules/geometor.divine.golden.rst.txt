@@ -1,7 +1,7 @@
 geometor.divine.analyze
 =======================
 
-.. automodule:: geometor.divine.analyze
+.. automodule:: geometor.divine.golden
    :members:
    :undoc-members:
    :show-inheritance:
