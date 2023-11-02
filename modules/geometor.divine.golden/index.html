@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>geometor.divine.analyze &mdash; GEOMETOR • divine</title>
+  <title>geometor.divine.golden &mdash; GEOMETOR • divine</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
@@ -82,10 +82,18 @@
 <li class="toctree-l1"><a class="reference internal" href="../../usage/">usage</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../">geometor.divine</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../#divine">divine</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">geometor.divine.analyze</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">geometor.divine.golden</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#geometor.divine.golden.find_golden_sections_in_model"><code class="docutils literal notranslate"><span class="pre">find_golden_sections_in_model()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#geometor.divine.golden.find_golden_sections_in_points"><code class="docutils literal notranslate"><span class="pre">find_golden_sections_in_points()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#geometor.divine.golden.is_section_golden"><code class="docutils literal notranslate"><span class="pre">is_section_golden()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geometor.divine.golden.chains.find_chains_in_sections"><code class="docutils literal notranslate"><span class="pre">find_chains_in_sections()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geometor.divine.golden.chains.unpack_chains"><code class="docutils literal notranslate"><span class="pre">unpack_chains()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geometor.divine.golden.groups.group_sections_by_points"><code class="docutils literal notranslate"><span class="pre">group_sections_by_points()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geometor.divine.golden.groups.group_sections_by_segments"><code class="docutils literal notranslate"><span class="pre">group_sections_by_segments()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geometor.divine.golden.groups.group_sections_by_size"><code class="docutils literal notranslate"><span class="pre">group_sections_by_size()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geometor.divine.golden.ranges.analyze_harmonics"><code class="docutils literal notranslate"><span class="pre">analyze_harmonics()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geometor.divine.golden.ranges.analyze_harmonics_by_segment"><code class="docutils literal notranslate"><span class="pre">analyze_harmonics_by_segment()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geometor.divine.golden.ranges.check_range"><code class="docutils literal notranslate"><span class="pre">check_range()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -111,7 +119,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../">geometor.divine</a></li>
-      <li class="breadcrumb-item active">geometor.divine.analyze</li>
+      <li class="breadcrumb-item active">geometor.divine.golden</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/modules/geometor.divine.golden.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -124,7 +132,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
               <section id="module-geometor.divine.golden">
-<span id="geometor-divine-analyze"></span><h1>geometor.divine.analyze<a class="headerlink" href="#module-geometor.divine.golden" title="Link to this heading"></a></h1>
+<span id="geometor-divine-golden"></span><h1>geometor.divine.golden<a class="headerlink" href="#module-geometor.divine.golden" title="Link to this heading"></a></h1>
 <p>find and analyze golden sections</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="geometor.divine.golden.find_golden_sections_in_model">
@@ -142,6 +150,94 @@ returns a list of golden section pairs</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="geometor.divine.golden.is_section_golden">
 <span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">is_section_golden</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">section_points</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#geometor.divine.golden.is_section_golden" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<p id="module-geometor.divine.golden.chains">Golden Chain Analyzer: Harmonic Range Identification in Golden Sections</p>
+<p>This module is designed to analyze and explore chains of connected golden 
+sections, unraveling the harmonic ranges within geometric structures. 
+Utilizing sophisticated mathematical analysis and geometric algorithms, 
+it aims to identify, categorize, and unpack chains, providing an intuitive 
+understanding of their intrinsic geometric harmonies.</p>
+<p>Features:</p>
+<ul class="simple">
+<li><p><cite>find_chains_in_sections</cite>: A function designed to meticulously identify 
+chains within a collection of sections, resulting in a hierarchical tree 
+structure representing connected sections.</p></li>
+<li><p><cite>unpack_chains</cite>: Unveils the chains hidden within the tree structure, 
+outputting a list of individual <cite>Chain</cite> objects ready for analysis.</p></li>
+</ul>
+<p>Each chain’s flow is characterized by the comparative lengths of consecutive
+segments, represented symbolically to understand the progression and 
+transitions in segment lengths. Furthermore, this module empowers users to 
+explore symmetry lines within chains, unveiling a subtle, profound aspect of 
+geometric harmony.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="geometor.divine.golden.chains.find_chains_in_sections">
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.chains.</span></span><span class="sig-name descname"><span class="pre">find_chains_in_sections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sections</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#geometor.divine.golden.chains.find_chains_in_sections" title="Link to this definition"></a></dt>
+<dd><p>Identify chains of connected golden sections to form harmonic ranges.</p>
+<dl>
+<dt>parameters:</dt><dd><dl>
+<dt><code class="docutils literal notranslate"><span class="pre">sections</span></code><span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">list[Section]</span></code></span></dt><dd><p>A list of Section objects representing golden sections to be analyzed.</p>
+</dd>
+</dl>
+</dd>
+<dt>returns:</dt><dd><dl class="simple">
+<dt><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></dt><dd><p>A dictionary representing a tree structure where each node is a
+Section and connected Sections are child nodes.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="geometor.divine.golden.chains.unpack_chains">
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.chains.</span></span><span class="sig-name descname"><span class="pre">unpack_chains</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tree</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Chain</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.divine.golden.chains.unpack_chains" title="Link to this definition"></a></dt>
+<dd><p>Unpack the chain tree into a list of individual Chain objects.</p>
+<dl>
+<dt>parameters:</dt><dd><dl>
+<dt><code class="docutils literal notranslate"><span class="pre">tree</span></code><span class="classifier"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></span></dt><dd><p>A dictionary representing a tree structure where each node is a
+Section and connected Sections are child nodes.</p>
+</dd>
+</dl>
+</dd>
+<dt>returns:</dt><dd><dl class="simple">
+<dt><code class="xref py py-class docutils literal notranslate"><span class="pre">list[Chain]</span></code></dt><dd><p>A list containing Chain objects, each representing a chain
+of connected golden sections.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function" id="module-geometor.divine.golden.groups">
+<dt class="sig sig-object py" id="geometor.divine.golden.groups.group_sections_by_points">
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.groups.</span></span><span class="sig-name descname"><span class="pre">group_sections_by_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sections</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.divine.golden.groups.group_sections_by_points" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="geometor.divine.golden.groups.group_sections_by_segments">
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.groups.</span></span><span class="sig-name descname"><span class="pre">group_sections_by_segments</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sections</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">Segment</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.divine.golden.groups.group_sections_by_segments" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="geometor.divine.golden.groups.group_sections_by_size">
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.groups.</span></span><span class="sig-name descname"><span class="pre">group_sections_by_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sections</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">Expr</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.divine.golden.groups.group_sections_by_size" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function" id="module-geometor.divine.golden.ranges">
+<dt class="sig sig-object py" id="geometor.divine.golden.ranges.analyze_harmonics">
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.ranges.</span></span><span class="sig-name descname"><span class="pre">analyze_harmonics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.divine.golden.ranges.analyze_harmonics" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="geometor.divine.golden.ranges.analyze_harmonics_by_segment">
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.ranges.</span></span><span class="sig-name descname"><span class="pre">analyze_harmonics_by_segment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sections_by_line</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.divine.golden.ranges.analyze_harmonics_by_segment" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="geometor.divine.golden.ranges.check_range">
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.ranges.</span></span><span class="sig-name descname"><span class="pre">check_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.divine.golden.ranges.check_range" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 </section>
