@@ -1,15 +1,11 @@
-geometor.divine
-===============
-
-.. automodule:: geometor.divine
-   :members:
-   :undoc-members:
-   :show-inheritance:
+modules
+=======
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
+   geometor.divine
    geometor.divine.golden
 
 
