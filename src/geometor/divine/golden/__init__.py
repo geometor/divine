@@ -1,5 +1,7 @@
 """
 find and analyze golden sections
+
+.. todo:: create a sections module
 """
 
 from rich import print
