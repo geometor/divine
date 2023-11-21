@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://geometor.github.io/divine</id>
   <title>GEOMETOR • divine</title>
-  <updated>2023-11-21T13:49:41.373842+00:00</updated>
+  <updated>2023-11-21T13:50:27.733237+00:00</updated>
   <link href="https://geometor.github.io/divine"/>
   <link href="https://geometor.github.io/divine/log/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="unknown.dev">ABlog</generator>
