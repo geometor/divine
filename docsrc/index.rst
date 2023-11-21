@@ -1,8 +1,7 @@
 GEOMETOR • divine
 =================
 
-.. include:: ../README.rst
-
+.. include:: overview/intro.rst
 
 recent logs
 -----------
@@ -11,24 +10,26 @@ recent logs
    :excerpts:
 
 
-
-contents
---------
-
 .. toctree::
-   :maxdepth: 1
+   :hidden:
+   :maxdepth: 2
 
    mission/index.rst
-   usage.rst
+   overview/index.rst
+   usage/index.rst
    modules/index.rst
    demos/index.rst
+   logs/index.rst
    refs/index.rst
-   log </log#https://>
    todos.rst
+   changelog.rst
+   glossary.rst
+   contribute.rst
+   discuss.rst
+   about.rst
 
-
-indices and tables
-------------------
+indices
+-------
 
 * :ref:`genindex`
 * :ref:`modindex`

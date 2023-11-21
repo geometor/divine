@@ -1,12 +1,7 @@
-Mission
+mission
 =======
 
-.. contents::
-   :local:
-   :backlinks: none
-
-
-Summary
+.. include:: statement.rst
 
 goals
 -----
