@@ -1,6 +1,0 @@
-usage
-=====
-
-Scripting a construction
-------------------------
-
