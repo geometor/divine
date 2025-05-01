@@ -10,6 +10,7 @@ from collections import defaultdict
 from geometor.model import *
 from geometor.model.utils import *
 from geometor.render import *
+from geometor.model.utils import *
 
 from multiprocessing import Pool, cpu_count
 
@@ -51,10 +52,14 @@ def find_golden_sections_in_points(pts) -> list[Section]:
 
     # this will walk the combinations of three points down the line
     sections = list(combinations(pts, 3))
+    print(f"sections in line: {len(sections)}")
+
 
     with Pool(cpu_count()) as pool:
         results = pool.map(is_section_golden, sections)
         goldens = [Section(section) for i, section in enumerate(sections) if results[i]]
+
+    print(f"goldens in line: {len(goldens)}")
 
     return goldens
 
