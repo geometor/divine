@@ -12,7 +12,7 @@ def rotate_list(lst, rotations=1):
     return rotated_list
 
 def run():
-    NAME = 'root3d'
+    NAME = 'root3b'
 
     model = Model(NAME)
     A = model.set_point(0, 0, classes=['given'])
@@ -42,9 +42,9 @@ def run():
     poly_labels = ['F', 'X', 'T', 'J', 'U', 'W', 'I', 'S', 'V']
     model.set_polygon_by_labels(poly_labels)
 
-    radial_pt_label = poly_labels[0]
-    for poly_label in poly_labels[1:]:
-        model.construct_line_by_labels(radial_pt_label, poly_label, classes=['red'])
+    #  radial_pt_label = poly_labels[0]
+    #  for poly_label in poly_labels[1:]:
+        #  model.construct_line_by_labels(radial_pt_label, poly_label, classes=['red'])
 
     #  poly_labels = rotate_list(poly_labels, rotations=3)
     #  radial_pt_label = poly_labels[0]
@@ -98,23 +98,23 @@ def run():
     #  sequencer.plot_sequence(model, extensions=['png'])
     sequencer.step_sequence(model)
 
-    #  plotter = Plotter(model.name)
-    #  plotter.plot_model(model)
-    #  plot_all_sections(plotter, model, sections)
+    plotter = Plotter(model.name)
+    plotter.plot_model(model)
+    plot_all_sections(plotter, model, sections)
 
-    #  plotter = Plotter(model.name)
-    #  plotter.plot_model(model)
-    #  plot_sections(plotter, model, sections)
+    plotter = Plotter(model.name)
+    plotter.plot_model(model)
+    plot_sections(plotter, model, sections)
 
-    #  plotter = Plotter(model.name)
-    #  plotter.plot_model(model)
-    #  plot_chains(plotter, model, chains)
+    plotter = Plotter(model.name)
+    plotter.plot_model(model)
+    plot_chains(plotter, model, chains)
 
-    #  groups = group_sections_by_points(sections)
-    #  plotter = Plotter(model.name)
-    #  plotter.plot_model(model)
-    #  title = "group sections by point"
-    #  plot_groups(plotter, model, groups, title)
+    groups = group_sections_by_points(sections)
+    plotter = Plotter(model.name)
+    plotter.plot_model(model)
+    title = "group sections by point"
+    plot_groups(plotter, model, groups, title)
 
     report_sequence(model)
 

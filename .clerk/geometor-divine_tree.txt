@@ -1,0 +1,72 @@
+/home/phiarchitect/PROJECTS/geometor/divine
+├── CHANGELOG.rst
+├── demos
+│   ├── model_report.rst
+│   ├── pentagons.py
+│   ├── root3b.py
+│   ├── root5.py
+│   ├── sexagesimal.py
+│   ├── star.py
+│   └── vesica.py
+├── docsrc
+│   ├── about.rst
+│   ├── changelog.rst
+│   ├── conf.py
+│   ├── contribute.rst
+│   ├── demos
+│   │   ├── index.rst
+│   │   └── vesica.rst
+│   ├── discuss.rst
+│   ├── glossary.rst
+│   ├── index.rst
+│   ├── log
+│   │   ├── 22.356-152519.rst
+│   │   └── 23.012-101550
+│   │       └── index.rst
+│   ├── logs
+│   │   └── index.rst
+│   ├── mission
+│   │   ├── index.rst
+│   │   └── statement.rst
+│   ├── modules
+│   │   ├── geometor.divine.golden.rst
+│   │   ├── geometor.divine.rst
+│   │   └── index.rst
+│   ├── overview
+│   │   ├── index.rst
+│   │   └── intro.rst
+│   ├── __pycache__
+│   ├── refs
+│   │   └── index.rst
+│   ├── _static
+│   │   ├── css
+│   │   │   ├── custom.css
+│   │   │   └── rtd-dark.css
+│   │   ├── logo.png
+│   │   ├── root3-harmonics.png
+│   │   └── splash.png
+│   ├── todos.rst
+│   └── usage
+│       └── index.rst
+├── LICENSE
+├── pacioli
+│   ├── gri-ark--13960-t2w39826z-1680995441.txt
+│   └── gri-ark--13960-t48p7rw0p-1680998311.txt
+├── pyproject.toml
+├── README.rst
+└── src
+    └── geometor
+        └── divine
+            ├── app.py
+            ├── divine.py
+            ├── golden
+            │   ├── chains.py
+            │   ├── groups.py
+            │   ├── __init__.py
+            │   ├── __pycache__
+            │   └── ranges.py
+            ├── __init__.py
+            ├── __main__.py
+            └── __pycache__
+
+21 directories, 48 files
