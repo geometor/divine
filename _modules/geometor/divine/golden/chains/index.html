@@ -1,23 +1,22 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../../../">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>geometor.divine.golden.chains &mdash; GEOMETOR • divine</title>
-      <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../../_static/graphviz.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../../https://geometor.github.io/model/_static/css/rtd-dark.css" type="text/css" />
-    <link rel="canonical" href="https://geometor.github.io/divine/_modules/geometor/divine/golden/chains.html" />
-  <!--[if lt IE 9]>
-    <script src="../../../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+
   
-        <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../../../_static/documentation_options.js?v=187304be"></script>
-        <script src="../../../../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="canonical" href="https://geometor.github.io/divine/_modules/geometor/divine/golden/chains/" />
+      <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../../_static/documentation_options.js?v=187304be"></script>
+      <script src="../../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../../../_static/js/theme.js"></script>
     <link rel="author" title="About these documents" href="../../../../../about/" />
     <link rel="index" title="Index" href="../../../../../genindex/" />
@@ -143,18 +142,18 @@
 
 <span class="sd">&quot;&quot;&quot;</span>
 
-<span class="kn">from</span> <span class="nn">rich</span> <span class="kn">import</span> <span class="nb">print</span>
-<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">rich</span><span class="w"> </span><span class="kn">import</span> <span class="nb">print</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span>
 
-<span class="kn">from</span> <span class="nn">geometor.model</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">geometor.model.utils</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">geometor.render</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model.utils</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.render</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 
 
 
 <div class="viewcode-block" id="find_chains_in_sections">
 <a class="viewcode-back" href="../../../../../modules/geometor.divine.golden/#geometor.divine.golden.chains.find_chains_in_sections">[docs]</a>
-<span class="k">def</span> <span class="nf">find_chains_in_sections</span><span class="p">(</span><span class="n">sections</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Section</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">find_chains_in_sections</span><span class="p">(</span><span class="n">sections</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Section</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Identify chains of connected golden sections to form harmonic ranges.</span>
 
@@ -168,7 +167,7 @@
 <span class="sd">            Section and connected Sections are child nodes.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="k">def</span> <span class="nf">add_to_chain_tree</span><span class="p">(</span><span class="n">section</span><span class="p">,</span> <span class="n">tree</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">add_to_chain_tree</span><span class="p">(</span><span class="n">section</span><span class="p">,</span> <span class="n">tree</span><span class="p">):</span>
         <span class="n">next_sections</span> <span class="o">=</span> <span class="n">find_connected_sections</span><span class="p">(</span><span class="n">section</span><span class="p">,</span> <span class="n">sections</span><span class="p">,</span> <span class="n">in_chain</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">next_section</span> <span class="ow">in</span> <span class="n">next_sections</span><span class="p">:</span>
             <span class="n">in_chain</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">next_section</span><span class="p">)</span>
@@ -176,7 +175,7 @@
             <span class="n">tree</span><span class="p">[</span><span class="n">next_section</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
             <span class="n">add_to_chain_tree</span><span class="p">(</span><span class="n">next_section</span><span class="p">,</span> <span class="n">tree</span><span class="p">[</span><span class="n">next_section</span><span class="p">])</span>
 
-    <span class="k">def</span> <span class="nf">find_connected_sections</span><span class="p">(</span><span class="n">current_section</span><span class="p">,</span> <span class="n">sections</span><span class="p">,</span> <span class="n">in_chain</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">find_connected_sections</span><span class="p">(</span><span class="n">current_section</span><span class="p">,</span> <span class="n">sections</span><span class="p">,</span> <span class="n">in_chain</span><span class="p">):</span>
         <span class="n">connected_sections</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="k">for</span> <span class="n">section</span> <span class="ow">in</span> <span class="n">sections</span><span class="p">:</span>
             <span class="k">if</span> <span class="p">(</span>
@@ -203,7 +202,7 @@
 
 <div class="viewcode-block" id="unpack_chains">
 <a class="viewcode-back" href="../../../../../modules/geometor.divine.golden/#geometor.divine.golden.chains.unpack_chains">[docs]</a>
-<span class="k">def</span> <span class="nf">unpack_chains</span><span class="p">(</span><span class="n">tree</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Chain</span><span class="p">]:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">unpack_chains</span><span class="p">(</span><span class="n">tree</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Chain</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Unpack the chain tree into a list of individual Chain objects.</span>
 
@@ -218,7 +217,7 @@
 <span class="sd">            of connected golden sections.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="k">def</span> <span class="nf">dfs</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">chains</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">dfs</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">path</span><span class="p">,</span> <span class="n">chains</span><span class="p">):</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">node</span><span class="p">:</span>
             <span class="n">chains</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Chain</span><span class="p">(</span><span class="n">path</span><span class="p">))</span>  <span class="c1"># Create a Chain object and add it to the chains</span>
             <span class="k">return</span>
@@ -244,7 +243,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, GEOMETOR.</p>
+    <p>&#169; Copyright 2025, GEOMETOR.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

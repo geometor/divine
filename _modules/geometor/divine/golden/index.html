@@ -1,23 +1,22 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../../">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>geometor.divine.golden &mdash; GEOMETOR • divine</title>
-      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
-      <link rel="stylesheet" href="../../../../https://geometor.github.io/model/_static/css/rtd-dark.css" type="text/css" />
-    <link rel="canonical" href="https://geometor.github.io/divine/_modules/geometor/divine/golden.html" />
-  <!--[if lt IE 9]>
-    <script src="../../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=ea5fcf70" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css?v=4ae1632d" />
+
   
-        <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../../../../_static/documentation_options.js?v=187304be"></script>
-        <script src="../../../../_static/doctools.js?v=888ff710"></script>
-        <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="canonical" href="https://geometor.github.io/divine/_modules/geometor/divine/golden/" />
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../_static/documentation_options.js?v=187304be"></script>
+      <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="author" title="About these documents" href="../../../../about/" />
     <link rel="index" title="Index" href="../../../../genindex/" />
@@ -122,18 +121,19 @@
 <span class="sd">.. todo:: create a sections module</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
-<span class="kn">from</span> <span class="nn">rich</span> <span class="kn">import</span> <span class="nb">print</span>
-<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">rich</span><span class="w"> </span><span class="kn">import</span> <span class="nb">print</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span>
 
-<span class="kn">from</span> <span class="nn">geometor.model</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">geometor.model.utils</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">geometor.render</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model.utils</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.render</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model.utils</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 
-<span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Pool</span><span class="p">,</span> <span class="n">cpu_count</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">multiprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pool</span><span class="p">,</span> <span class="n">cpu_count</span>
 
-<span class="kn">from</span> <span class="nn">.chains</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">.groups</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">.ranges</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.chains</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.groups</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.ranges</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 
 <span class="n">Φ</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">GoldenRatio</span>
 <span class="n">phi</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">Rational</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">sp</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
@@ -141,7 +141,7 @@
 
 <div class="viewcode-block" id="find_golden_sections_in_model">
 <a class="viewcode-back" href="../../../../modules/geometor.divine.golden/#geometor.divine.golden.find_golden_sections_in_model">[docs]</a>
-<span class="k">def</span> <span class="nf">find_golden_sections_in_model</span><span class="p">(</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">find_golden_sections_in_model</span><span class="p">(</span>
     <span class="n">model</span><span class="p">:</span> <span class="n">Model</span><span class="p">,</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">list</span><span class="p">[</span><span class="n">Section</span><span class="p">],</span> <span class="nb">dict</span><span class="p">[</span><span class="n">spg</span><span class="o">.</span><span class="n">Line</span><span class="p">,</span> <span class="nb">list</span><span class="p">[</span><span class="n">Section</span><span class="p">]]]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
@@ -164,7 +164,7 @@
 
 <div class="viewcode-block" id="find_golden_sections_in_points">
 <a class="viewcode-back" href="../../../../modules/geometor.divine.golden/#geometor.divine.golden.find_golden_sections_in_points">[docs]</a>
-<span class="k">def</span> <span class="nf">find_golden_sections_in_points</span><span class="p">(</span><span class="n">pts</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Section</span><span class="p">]:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">find_golden_sections_in_points</span><span class="p">(</span><span class="n">pts</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">Section</span><span class="p">]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    find golden sections in combinations of 3 points in list</span>
 <span class="sd">    returns a list of golden section pairs</span>
@@ -174,10 +174,14 @@
 
     <span class="c1"># this will walk the combinations of three points down the line</span>
     <span class="n">sections</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">combinations</span><span class="p">(</span><span class="n">pts</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;sections in line: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">sections</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
 
     <span class="k">with</span> <span class="n">Pool</span><span class="p">(</span><span class="n">cpu_count</span><span class="p">())</span> <span class="k">as</span> <span class="n">pool</span><span class="p">:</span>
         <span class="n">results</span> <span class="o">=</span> <span class="n">pool</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">is_section_golden</span><span class="p">,</span> <span class="n">sections</span><span class="p">)</span>
         <span class="n">goldens</span> <span class="o">=</span> <span class="p">[</span><span class="n">Section</span><span class="p">(</span><span class="n">section</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">section</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sections</span><span class="p">)</span> <span class="k">if</span> <span class="n">results</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;goldens in line: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">goldens</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">goldens</span></div>
 
@@ -185,7 +189,7 @@
 
 <div class="viewcode-block" id="is_section_golden">
 <a class="viewcode-back" href="../../../../modules/geometor.divine.golden/#geometor.divine.golden.is_section_golden">[docs]</a>
-<span class="k">def</span> <span class="nf">is_section_golden</span><span class="p">(</span><span class="n">section_points</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">is_section_golden</span><span class="p">(</span><span class="n">section_points</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
     <span class="n">section</span> <span class="o">=</span> <span class="n">Section</span><span class="p">(</span><span class="n">section_points</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">section</span><span class="o">.</span><span class="n">is_golden</span></div>
 
@@ -203,7 +207,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, GEOMETOR.</p>
+    <p>&#169; Copyright 2025, GEOMETOR.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

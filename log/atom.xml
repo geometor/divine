@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://geometor.github.io/divine</id>
   <title>GEOMETOR • divine</title>
-  <updated>2023-11-21T15:23:41.185977+00:00</updated>
+  <updated>2025-05-01T23:52:56.517567+00:00</updated>
   <link href="https://geometor.github.io/divine"/>
   <link href="https://geometor.github.io/divine/log/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="unknown.dev">ABlog</generator>
@@ -14,7 +14,7 @@
 &lt;p&gt;first log entry for the system&lt;/p&gt;
 &lt;/div&gt;
 </content>
-    <link href="https://geometor.github.io/divine/log/22.356-152519/" rel="alternate"/>
+    <link href="https://geometor.github.io/divine/log/22.356-152519/"/>
     <summary>first log entry for the system</summary>
     <published>2022-12-22T15:25:19+00:00</published>
   </entry>
@@ -26,7 +26,7 @@
 &lt;p&gt;It is known by many names.&lt;/p&gt;
 &lt;/div&gt;
 </content>
-    <link href="https://geometor.github.io/divine/log/23.012-101550/" rel="alternate"/>
+    <link href="https://geometor.github.io/divine/log/23.012-101550/"/>
     <summary>It is known by many names.</summary>
     <category term="divine" label="divine"/>
     <published>2023-01-12T10:15:50+00:00</published>
