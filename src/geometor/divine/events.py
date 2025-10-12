@@ -6,37 +6,46 @@ import sympy.geometry as spg
 from geometor.model import Model, Element 
 from geometor.model.sections import Section
 
+from geometor.model.utils import sort_points
+
 def point_added_listener(model: Model, pt: spg.Point):
     """
     Analyzes a new point to find all possible line sections.
     """
-    print(f"point_added_listener triggered for point: {pt}")
+    print(f"\n[DIVINE] Listener triggered for point: {model[pt].label} ({pt.x}, {pt.y})")
     
-    # 1. Get parent lines of the new point
     parent_lines = [p for p in model[pt].parents if isinstance(p, spg.Line)]
+    if not parent_lines:
+        print("[DIVINE] No parent lines found.")
+        return
+
+    print(f"[DIVINE] Found {len(parent_lines)} parent line(s): {[model[l].label for l in parent_lines]}")
 
     for line in parent_lines:
-        # 2. Get all points on the line
         points_on_line = [p for p in model.points if line.contains(p)]
         
-        # 3. Find combinations of 2 points from the other points
-        from itertools import combinations
-        
-        other_points = [p for p in points_on_line if p != pt]
-        if len(other_points) < 2:
+        if len(points_on_line) < 3:
+            print(f"  [DIVINE] Line {model[line].label} has fewer than 3 points. Skipping.")
             continue
 
-        for pt1, pt2 in combinations(other_points, 2):
-            # 4. Check for golden sections and add them to the model
-            section1 = Section([pt, pt1, pt2])
-            if section1.is_golden:
-                model.set_section(section1.points, classes=["golden"])
+        # Sort the points to ensure correct section ordering
+        sorted_pts = sort_points(points_on_line)
+        print(f"  [DIVINE] Sorted points on line {model[line].label}: {[model[p].label for p in sorted_pts]}")
 
-            section2 = Section([pt1, pt, pt2])
-            if section2.is_golden:
-                model.set_section(section2.points, classes=["golden"])
+        from itertools import combinations
+        
+        section_candidates = list(combinations(sorted_pts, 3))
+        print(f"  [DIVINE] Found {len(section_candidates)} total 3-point combinations.")
 
-            section3 = Section([pt1, pt2, pt])
-            if section3.is_golden:
-                model.set_section(section3.points, classes=["golden"])
+        # Filter for combinations that include the new point
+        relevant_sections = [s for s in section_candidates if pt in s]
+        print(f"  [DIVINE] Testing {len(relevant_sections)} section(s) containing point {model[pt].label}...")
+
+        for i, section_pts in enumerate(relevant_sections):
+            section = Section(section_pts)
+            s_labels = [model[p].label for p in section_pts]
+            print(f"    [TEST {i+1}] Section: {s_labels}, Ratio: {section.ratio.evalf():.4f}, Golden: {section.is_golden}")
+            if section.is_golden:
+                print(f"      [GOLDEN FOUND] Adding section {s_labels}")
+                model.set_section(section.points, classes=["golden"])
 
