@@ -155,10 +155,10 @@
     <span class="n">model</span><span class="o">.</span><span class="n">construct_circle</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
     <span class="n">model</span><span class="o">.</span><span class="n">construct_circle</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
 
-    <span class="n">C</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_element_by_label</span><span class="p">(</span><span class="s2">&quot;C&quot;</span><span class="p">)</span>
-    <span class="n">D</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_element_by_label</span><span class="p">(</span><span class="s2">&quot;D&quot;</span><span class="p">)</span>
-    <span class="n">E</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_element_by_label</span><span class="p">(</span><span class="s2">&quot;E&quot;</span><span class="p">)</span>
-    <span class="n">F</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_element_by_label</span><span class="p">(</span><span class="s2">&quot;F&quot;</span><span class="p">)</span>
+    <span class="n">C</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_element_by_ID</span><span class="p">(</span><span class="s2">&quot;C&quot;</span><span class="p">)</span>
+    <span class="n">D</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_element_by_ID</span><span class="p">(</span><span class="s2">&quot;D&quot;</span><span class="p">)</span>
+    <span class="n">E</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_element_by_ID</span><span class="p">(</span><span class="s2">&quot;E&quot;</span><span class="p">)</span>
+    <span class="n">F</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_element_by_ID</span><span class="p">(</span><span class="s2">&quot;F&quot;</span><span class="p">)</span>
 
     <span class="n">model</span><span class="o">.</span><span class="n">set_polygon</span><span class="p">([</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">E</span><span class="p">])</span>
     <span class="n">model</span><span class="o">.</span><span class="n">set_polygon</span><span class="p">([</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">F</span><span class="p">])</span>
@@ -185,25 +185,25 @@
         <span class="c1">#  print(section.ratio)</span>
         <span class="c1">#  print(section.min_length)</span>
         <span class="c1">#  #  print(section.points)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">section</span><span class="o">.</span><span class="n">get_labels</span><span class="p">(</span><span class="n">model</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">section</span><span class="o">.</span><span class="n">get_IDs</span><span class="p">(</span><span class="n">model</span><span class="p">))</span>
 
     <span class="n">chain_tree</span> <span class="o">=</span> <span class="n">find_chains_in_sections</span><span class="p">(</span><span class="n">sections</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;chains: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">chain_tree</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">chains</span> <span class="o">=</span> <span class="n">unpack_chains</span><span class="p">(</span><span class="n">chain_tree</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">chain</span> <span class="ow">in</span> <span class="n">chains</span><span class="p">:</span>
-        <span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">section</span><span class="o">.</span><span class="n">get_labels</span><span class="p">(</span><span class="n">model</span><span class="p">))</span> <span class="k">for</span> <span class="n">section</span> <span class="ow">in</span> <span class="n">chain</span><span class="o">.</span><span class="n">sections</span><span class="p">]</span>
+        <span class="n">IDs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">section</span><span class="o">.</span><span class="n">get_IDs</span><span class="p">(</span><span class="n">model</span><span class="p">))</span> <span class="k">for</span> <span class="n">section</span> <span class="ow">in</span> <span class="n">chain</span><span class="o">.</span><span class="n">sections</span><span class="p">]</span>
         <span class="nb">print</span><span class="p">()</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">IDs</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">chain</span><span class="o">.</span><span class="n">sections</span><span class="p">))</span>
 
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;points: &quot;</span><span class="p">,</span> <span class="n">chain</span><span class="o">.</span><span class="n">points</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;lengths: &quot;</span><span class="p">,</span> <span class="n">chain</span><span class="o">.</span><span class="n">lengths</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;floats: &quot;</span><span class="p">,</span> <span class="n">chain</span><span class="o">.</span><span class="n">numerical_lengths</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;fibs: &quot;</span><span class="p">,</span> <span class="n">chain</span><span class="o">.</span><span class="n">fibonacci_labels</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;fibs: &quot;</span><span class="p">,</span> <span class="n">chain</span><span class="o">.</span><span class="n">fibonacci_IDs</span><span class="p">)</span>
 
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;flow: &#39;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">chain</span> <span class="ow">in</span> <span class="n">chains</span><span class="p">:</span>
-        <span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">section</span><span class="o">.</span><span class="n">get_labels</span><span class="p">(</span><span class="n">model</span><span class="p">))</span> <span class="k">for</span> <span class="n">section</span> <span class="ow">in</span> <span class="n">chain</span><span class="o">.</span><span class="n">sections</span><span class="p">]</span>
+        <span class="n">IDs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">section</span><span class="o">.</span><span class="n">get_IDs</span><span class="p">(</span><span class="n">model</span><span class="p">))</span> <span class="k">for</span> <span class="n">section</span> <span class="ow">in</span> <span class="n">chain</span><span class="o">.</span><span class="n">sections</span><span class="p">]</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">chain</span><span class="o">.</span><span class="n">count_symmetry_lines</span><span class="p">(),</span> <span class="n">chain</span><span class="o">.</span><span class="n">flow</span><span class="p">)</span>
 
     <span class="c1">#  groups_by_size = group_sections_by_size(sections)</span>
