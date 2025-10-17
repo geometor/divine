@@ -18,10 +18,10 @@ def run():
     model.construct_circle(A, B)
     model.construct_circle(B, A)
 
-    C = model.get_element_by_label("C")
-    D = model.get_element_by_label("D")
-    E = model.get_element_by_label("E")
-    F = model.get_element_by_label("F")
+    C = model.get_element_by_ID("C")
+    D = model.get_element_by_ID("D")
+    E = model.get_element_by_ID("E")
+    F = model.get_element_by_ID("F")
 
     model.set_polygon([A, B, E])
     model.set_polygon([A, B, F])
@@ -48,25 +48,25 @@ def run():
         #  print(section.ratio)
         #  print(section.min_length)
         #  #  print(section.points)
-        print(section.get_labels(model))
+        print(section.get_IDs(model))
 
     chain_tree = find_chains_in_sections(sections)
     print(f"chains: {len(chain_tree)}")
     chains = unpack_chains(chain_tree)
     for chain in chains:
-        labels = ["_".join(section.get_labels(model)) for section in chain.sections]
+        IDs = ["_".join(section.get_IDs(model)) for section in chain.sections]
         print()
-        print(labels)
+        print(IDs)
         print(len(chain.sections))
 
         print("points: ", chain.points)
         print("lengths: ", chain.lengths)
         print("floats: ", chain.numerical_lengths)
-        print("fibs: ", chain.fibonacci_labels)
+        print("fibs: ", chain.fibonacci_IDs)
 
     print('flow: ')
     for chain in chains:
-        labels = ["_".join(section.get_labels(model)) for section in chain.sections]
+        IDs = ["_".join(section.get_IDs(model)) for section in chain.sections]
         print(chain.count_symmetry_lines(), chain.flow)
 
     #  groups_by_size = group_sections_by_size(sections)
