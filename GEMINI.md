@@ -1,14 +1,13 @@
 # GEOMETOR Divine
 
-A Python library for analyzing `geometor.model` constructions to identify golden sections, harmonic ranges, and other geometric relationships.
+A Python library for analyzing geometor.model constructions.
 
-## Key Modules (`src/geometor/divine/`)
+## Overview
 
--   **`divine.py`**: Main module for analysis functions.
--   **`golden/chains.py`**: Finds chains of connected golden sections.
--   **`golden/groups.py`**: Groups golden sections by various criteria (size, segments, points).
--   **`golden/ranges.py`**: Analyzes harmonic ranges within lines.
+The `divine` library provides tools to identify golden sections, harmonic ranges, and other geometric relationships within a `geometor.model` construction. It is used by the Explorer to provide real-time analysis.
 
-## Development Plan
+## Index
 
-See `ROADMAP.md`.
+-   `divine.py`: Main module containing the core analysis functions.
+-   `golden/`: A sub-package for finding and analyzing golden sections.
+-   `events.py`: Manages the event handling for analysis updates.
