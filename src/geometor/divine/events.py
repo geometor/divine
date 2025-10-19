@@ -44,7 +44,7 @@ def point_added_listener(model: Model, pt: spg.Point):
         for i, section_pts in enumerate(relevant_sections):
             section = Section(section_pts)
             s_IDs = [model[p].ID for p in section_pts]
-            print(f"    [TEST {i+1}] Section: {s_IDs}, Ratio: {section.ratio.evalf():.4f}, Golden: {section.is_golden}")
+            # print(f"    [TEST {i+1}] Section: {s_IDs}, Ratio: {section.ratio.evalf():.4f}, Golden: {section.is_golden}")
             if section.is_golden:
                 print(f"      [GOLDEN FOUND] Adding section {s_IDs}")
                 model.set_section(section.points, classes=["golden"])
