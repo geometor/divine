@@ -177,12 +177,13 @@
 
     <span class="k">def</span><span class="w"> </span><span class="nf">find_connected_sections</span><span class="p">(</span><span class="n">current_section</span><span class="p">,</span> <span class="n">sections</span><span class="p">,</span> <span class="n">in_chain</span><span class="p">):</span>
         <span class="n">connected_sections</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="c1"># The last two points of the current section must be the first two of the next</span>
+        <span class="n">current_end_points</span> <span class="o">=</span> <span class="n">current_section</span><span class="o">.</span><span class="n">points</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
         <span class="k">for</span> <span class="n">section</span> <span class="ow">in</span> <span class="n">sections</span><span class="p">:</span>
-            <span class="k">if</span> <span class="p">(</span>
-                <span class="n">section</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">in_chain</span>
-                <span class="ow">and</span> <span class="n">current_section</span><span class="o">.</span><span class="n">segments</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">section</span><span class="o">.</span><span class="n">segments</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-            <span class="p">):</span>
-                <span class="n">connected_sections</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">section</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">section</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">in_chain</span><span class="p">:</span>
+                <span class="n">next_start_points</span> <span class="o">=</span> <span class="n">section</span><span class="o">.</span><span class="n">points</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+                <span class="k">if</span> <span class="n">current_end_points</span> <span class="o">==</span> <span class="n">next_start_points</span><span class="p">:</span>
+                    <span class="n">connected_sections</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">section</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">connected_sections</span>
 
     <span class="n">chain_tree</span> <span class="o">=</span> <span class="p">{}</span>
@@ -227,7 +228,10 @@
 
     <span class="n">chains</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">subtree</span> <span class="ow">in</span> <span class="n">tree</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-        <span class="n">dfs</span><span class="p">(</span><span class="n">subtree</span><span class="p">,</span> <span class="p">[</span><span class="n">root</span><span class="p">],</span> <span class="n">chains</span><span class="p">)</span>  <span class="c1"># Starting the path with the root section</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">subtree</span><span class="p">:</span>  <span class="c1"># Handle chains with only one section</span>
+            <span class="n">chains</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Chain</span><span class="p">([</span><span class="n">root</span><span class="p">]))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">dfs</span><span class="p">(</span><span class="n">subtree</span><span class="p">,</span> <span class="p">[</span><span class="n">root</span><span class="p">],</span> <span class="n">chains</span><span class="p">)</span>  <span class="c1"># Starting the path with the root section</span>
 
     <span class="k">return</span> <span class="n">chains</span></div>
 
