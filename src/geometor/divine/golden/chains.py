@@ -57,12 +57,13 @@ def find_chains_in_sections(sections: list[Section]) -> dict:
 
     def find_connected_sections(current_section, sections, in_chain):
         connected_sections = []
+        # The last two points of the current section must be the first two of the next
+        current_end_points = current_section.points[1:]
         for section in sections:
-            if (
-                section not in in_chain
-                and current_section.segments[1] == section.segments[0]
-            ):
-                connected_sections.append(section)
+            if section not in in_chain:
+                next_start_points = section.points[:2]
+                if current_end_points == next_start_points:
+                    connected_sections.append(section)
         return connected_sections
 
     chain_tree = {}
@@ -104,6 +105,9 @@ def unpack_chains(tree: dict) -> list[Chain]:
 
     chains = []
     for root, subtree in tree.items():
-        dfs(subtree, [root], chains)  # Starting the path with the root section
+        if not subtree:  # Handle chains with only one section
+            chains.append(Chain([root]))
+        else:
+            dfs(subtree, [root], chains)  # Starting the path with the root section
 
     return chains
