@@ -4,10 +4,9 @@ divine
 from geometor.model import Model
 from .events import point_added_listener
 
-def analyze_model(model: Model):
+def register_divine_hook(model: Model, logger=None):
     """
-    Initializes the divine analysis by registering event listeners.
+    Initializes the divine analysis by registering the listener with the model's hook.
     """
-
-    model.add_event_listener("point_added", lambda pt: point_added_listener(model, pt))
+    model.set_analysis_hook(lambda model, pt: point_added_listener(model, pt, logger))
 

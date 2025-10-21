@@ -3,49 +3,53 @@ Event listeners for divine analysis.
 """
 import sympy as sp
 import sympy.geometry as spg
-from geometor.model import Model, Element 
+from geometor.model import Model, Element
 from geometor.model.sections import Section
 
 from geometor.model.utils import sort_points
 
-def point_added_listener(model: Model, pt: spg.Point):
+def point_added_listener(model: Model, pt: spg.Point, logger=None):
     """
-    Analyzes a new point to find all possible line sections.
+    Logs the creation of a point and then analyzes it to find all
+    possible line sections.
     """
-    print(f"\n[DIVINE] Listener triggered for point: {model[pt].ID} ({pt.x}, {pt.y})")
-    
-    parent_lines = [p for p in model[pt].parents if isinstance(p, spg.Line)]
-    if not parent_lines:
-        print("[DIVINE] No parent lines found.")
+    if not logger:
         return
 
-    print(f"[DIVINE] Found {len(parent_lines)} parent line(s): {[model[l].ID for l in parent_lines]}")
+    # Log the creation of the point first.
+    logger.info(f"    {model[pt].ID} : {{ {pt.x}, {pt.y} }}")
 
-    for line in parent_lines:
+    # Use a local log function for indented analysis messages.
+    def log_analysis(message):
+        logger.info(f"        {message}")
+
+    log_analysis(f"divine analysis")
+
+    parent_lines = [p for p in model[pt].parents if isinstance(p, spg.Line)]
+    if not parent_lines:
+        log_analysis("no parent lines found")
+        return
+
+    log_analysis(f"found {len(parent_lines)} parent line(s): {[model[l].ID for l in parent_lines]}")
+
+    for i, line in enumerate(parent_lines):
+        log_analysis(f"line {i+1} of {len(parent_lines)} : {model[line].ID}")
         points_on_line = [p for p in model.points if line.contains(p)]
-        
+
         if len(points_on_line) < 3:
-            print(f"  [DIVINE] Line {model[line].ID} has fewer than 3 points. Skipping.")
+            log_analysis(f"  line has fewer than 3 points")
             continue
 
-        # Sort the points to ensure correct section ordering
         sorted_pts = sort_points(points_on_line)
-        print(f"  [DIVINE] Sorted points on line {model[line].ID}: {[model[p].ID for p in sorted_pts]}")
-
         from itertools import combinations
-        
         section_candidates = list(combinations(sorted_pts, 3))
-        print(f"  [DIVINE] Found {len(section_candidates)} total 3-point combinations.")
 
-        # Filter for combinations that include the new point
         relevant_sections = [s for s in section_candidates if pt in s]
-        print(f"  [DIVINE] Testing {len(relevant_sections)} section(s) containing point {model[pt].ID}...")
+        log_analysis(f"  {len(relevant_sections)} sections with {model[pt].ID}")
 
-        for i, section_pts in enumerate(relevant_sections):
+        for section_pts in relevant_sections:
             section = Section(section_pts)
             s_IDs = [model[p].ID for p in section_pts]
-            # print(f"    [TEST {i+1}] Section: {s_IDs}, Ratio: {section.ratio.evalf():.4f}, Golden: {section.is_golden}")
             if section.is_golden:
-                print(f"      [GOLDEN FOUND] Adding section {s_IDs}")
+                log_analysis(f"    / {' '.join(s_IDs)} /")
                 model.set_section(section.points, classes=["golden"])
-
