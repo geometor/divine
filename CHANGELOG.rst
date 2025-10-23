@@ -1,6 +1,14 @@
 changelog
 =========
 
+0.2.3
+-----
+*2025-10-22*
+
+**changed**
+
+.. + Updated analysis to ignore points marked with the `guide` property.
+
 0.2.1
 -----
 *2025-10-20*
