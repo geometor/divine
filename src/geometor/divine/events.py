@@ -32,7 +32,7 @@ def point_added_listener(model: Model, pt: spg.Point):
 
     for i, line in enumerate(parent_lines):
         log_analysis(f"line {i+1} of {len(parent_lines)} : [bold]{model[line].ID}[/bold]")
-        points_on_line = [p for p in model.points if line.contains(p)]
+        points_on_line = [p for p in model.points if line.contains(p) and not model[p].guide]
 
         if len(points_on_line) < 3:
             log_analysis(f"  line has fewer than 3 points")
