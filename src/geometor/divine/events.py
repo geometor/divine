@@ -14,7 +14,7 @@ def point_added_listener(model: Model, pt: spg.Point):
     possible line sections.
     """
     # Log the creation of the point first.
-    model.log(f"    [bold]{model[pt].ID}[/bold] : {{ {pt.x}, {pt.y} }}")
+    # model.log(f"    [bold]{model[pt].ID}[/bold] : {{ {pt.x}, {pt.y} }}")
 
     # Use a local log function for indented analysis messages.
     def log_analysis(message):

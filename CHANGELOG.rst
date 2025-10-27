@@ -1,6 +1,14 @@
 changelog
 =========
 
+0.3.0
+-----
+*2025-10-27*
+
+**changed**
+
+.. + Point creation logging is now commented out to reduce noise.
+
 0.2.4
 -----
 *2025-10-24*
