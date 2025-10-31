@@ -25,6 +25,14 @@ changelog
 
 .. + Updated analysis to ignore points marked with the `guide` property.
 
+0.2.2
+-----
+*2025-10-22*
+
+**changed**
+
+.. + Refactored logging.
+
 0.2.1
 -----
 *2025-10-20*
@@ -33,6 +41,14 @@ changelog
 
 .. + Adapted the analysis functions to work with the new synchronous hook system in the `geometor-model` library.
 .. + Centralized all point-related logging within the `point_added_listener` to ensure correct output sequence.
+
+0.2.0
+-----
+*2025-10-20*
+
+**added**
+
+.. + Added section grouping analysis.
 
 0.1.0 
 -----
