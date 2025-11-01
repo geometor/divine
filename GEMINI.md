@@ -10,4 +10,4 @@ The `divine` library provides tools to identify golden sections, harmonic ranges
 
 -   `divine.py`: Main module containing the core analysis functions.
 -   `golden/`: A sub-package for finding and analyzing golden sections.
--   `events.py`: Manages the event handling for analysis updates.
+-   `events.py`: Manages the analysis hook for analysis updates.
