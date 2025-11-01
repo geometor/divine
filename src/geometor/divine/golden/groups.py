@@ -1,4 +1,3 @@
-from rich import print
 from collections import defaultdict
 
 from geometor.model import *

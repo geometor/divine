@@ -13,12 +13,8 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
+    "geometor-model",
     "sympy",
-    "matplotlib",
-    "mplcursors",
-    "textual",
-    "rich",
-    "jinja2",
 ]
 
 [project.scripts]
