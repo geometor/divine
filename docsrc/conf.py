@@ -1,4 +1,7 @@
-from ablog.conf import *
+from photon_platform.publish.global_conf import *
+import geometor.divine as module
+
+version = module.__version__
 
 org = 'geometor'
 org_name = 'GEOMETOR'
