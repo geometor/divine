@@ -1,6 +1,10 @@
+:navigation: header
+:order: 4
+
 logs
 ====
 
-.. postlist::
-   :excerpts:
-   :expand: more
+.. collection::
+   :type: log
+   :sort: date
+   :reverse:
