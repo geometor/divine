@@ -1,0 +1,25 @@
+divine.golden.ranges
+====================
+
+.. py:module:: divine.golden.ranges
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   divine.golden.ranges.check_range
+   divine.golden.ranges.analyze_harmonics
+   divine.golden.ranges.analyze_harmonics_by_segment
+
+
+Module Contents
+---------------
+
+.. py:function:: check_range(r)
+
+.. py:function:: analyze_harmonics(line)
+
+.. py:function:: analyze_harmonics_by_segment(sections_by_line)
+

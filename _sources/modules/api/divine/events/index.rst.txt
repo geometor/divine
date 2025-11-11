@@ -1,0 +1,28 @@
+divine.events
+=============
+
+.. py:module:: divine.events
+
+.. autoapi-nested-parse::
+
+   Event listeners for divine analysis.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   divine.events.point_added_listener
+
+
+Module Contents
+---------------
+
+.. py:function:: point_added_listener(model: geometor.model.Model, pt: sympy.geometry.Point)
+
+   Logs the creation of a point and then analyzes it to find all
+   possible line sections.
+
+

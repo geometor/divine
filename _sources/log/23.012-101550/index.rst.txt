@@ -1,9 +1,9 @@
+:type: log
+:date: 23.012-101550
+:author: phi
+
 Defining the Divine Proportion
 ==============================
-
-.. post::  23.012-101550
-   :tags: divine
-   :category: definition
 
 It is known by many names.
 

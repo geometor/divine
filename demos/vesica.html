@@ -1,0 +1,277 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vesica &mdash; Project name not set  documentation</title>
+  <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=d4fd7cae" />
+  <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="../index.html">
+        <img src="../_static/logo.png" class="logo" alt="Logo"/>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">divine</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../mission/index.html"  >mission</a>
+        </li>
+        <li>
+          <a href="../usage/index.html"  >usage</a>
+        </li>
+        <li>
+          <a href="../modules/index.html"  >modules</a>
+        </li>
+        <li>
+          <a href="../logs/index.html"  >logs</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main>
+
+    <article>
+      <nav class="context">
+        <div class="prev">
+           <a href="../overview/index.html" class="prev" title="overview" >Prev</a>
+        </div>
+        <div class="next">
+          <a href="index.html" class="next" title="demos" >Next</a>
+        </div>
+      </nav>
+      <nav class="breadcrumbs">
+        <span><a href="../index.html">Home</a></span>
+        <span>/</span>
+        <span>vesica</span>
+      </nav>
+      <div class="content">
+          <section id="vesica">
+<h1>vesica<a class="headerlink" href="#vesica" title="Link to this heading">¶</a></h1>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">constructs the classic &#39;vesica pisces&#39;</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model.helpers</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.render</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.divine</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">():</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="s2">&quot;vesica4a&quot;</span><span class="p">)</span>
+    <span class="n">A</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">set_point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;given&quot;</span><span class="p">])</span>
+    <span class="n">B</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">set_point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;given&quot;</span><span class="p">])</span>
+
+    <span class="n">model</span><span class="o">.</span><span class="n">construct_line</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+
+    <span class="n">model</span><span class="o">.</span><span class="n">construct_circle</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">construct_circle</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span>
+
+    <span class="n">C</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_element_by_ID</span><span class="p">(</span><span class="s2">&quot;C&quot;</span><span class="p">)</span>
+    <span class="n">D</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_element_by_ID</span><span class="p">(</span><span class="s2">&quot;D&quot;</span><span class="p">)</span>
+    <span class="n">E</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_element_by_ID</span><span class="p">(</span><span class="s2">&quot;E&quot;</span><span class="p">)</span>
+    <span class="n">F</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">get_element_by_ID</span><span class="p">(</span><span class="s2">&quot;F&quot;</span><span class="p">)</span>
+
+    <span class="n">model</span><span class="o">.</span><span class="n">set_polygon</span><span class="p">([</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">E</span><span class="p">])</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">set_polygon</span><span class="p">([</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">F</span><span class="p">])</span>
+
+    <span class="n">model</span><span class="o">.</span><span class="n">construct_line</span><span class="p">(</span><span class="n">E</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;red&quot;</span><span class="p">])</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">construct_circle</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">D</span><span class="p">)</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">construct_circle</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span>
+
+    <span class="n">model</span><span class="o">.</span><span class="n">set_wedge</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">F</span><span class="p">,</span> <span class="n">E</span><span class="p">)</span>
+
+    <span class="c1">#  report_summary(model)</span>
+    <span class="c1">#  report_group_by_type(model)</span>
+
+    <span class="n">sequencer</span> <span class="o">=</span> <span class="n">Sequencer</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+    <span class="c1">#  sequencer.plot_sequence(model, extensions=[&#39;png&#39;])</span>
+    <span class="n">sequencer</span><span class="o">.</span><span class="n">step_sequence</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">find golden sections in model: </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">sections</span><span class="p">,</span> <span class="n">sections_by_line</span> <span class="o">=</span> <span class="n">find_golden_sections_in_model</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;sections: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">sections</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">section</span> <span class="ow">in</span> <span class="n">sections</span><span class="p">:</span>
+        <span class="c1">#  print(section.lengths)</span>
+        <span class="c1">#  print(section.ratio)</span>
+        <span class="c1">#  print(section.min_length)</span>
+        <span class="c1">#  #  print(section.points)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">section</span><span class="o">.</span><span class="n">get_IDs</span><span class="p">(</span><span class="n">model</span><span class="p">))</span>
+
+    <span class="n">chain_tree</span> <span class="o">=</span> <span class="n">find_chains_in_sections</span><span class="p">(</span><span class="n">sections</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;chains: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">chain_tree</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">chains</span> <span class="o">=</span> <span class="n">unpack_chains</span><span class="p">(</span><span class="n">chain_tree</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">chain</span> <span class="ow">in</span> <span class="n">chains</span><span class="p">:</span>
+        <span class="n">IDs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">section</span><span class="o">.</span><span class="n">get_IDs</span><span class="p">(</span><span class="n">model</span><span class="p">))</span> <span class="k">for</span> <span class="n">section</span> <span class="ow">in</span> <span class="n">chain</span><span class="o">.</span><span class="n">sections</span><span class="p">]</span>
+        <span class="nb">print</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">IDs</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">chain</span><span class="o">.</span><span class="n">sections</span><span class="p">))</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;points: &quot;</span><span class="p">,</span> <span class="n">chain</span><span class="o">.</span><span class="n">points</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;lengths: &quot;</span><span class="p">,</span> <span class="n">chain</span><span class="o">.</span><span class="n">lengths</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;floats: &quot;</span><span class="p">,</span> <span class="n">chain</span><span class="o">.</span><span class="n">numerical_lengths</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;fibs: &quot;</span><span class="p">,</span> <span class="n">chain</span><span class="o">.</span><span class="n">fibonacci_IDs</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;flow: &#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">chain</span> <span class="ow">in</span> <span class="n">chains</span><span class="p">:</span>
+        <span class="n">IDs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">section</span><span class="o">.</span><span class="n">get_IDs</span><span class="p">(</span><span class="n">model</span><span class="p">))</span> <span class="k">for</span> <span class="n">section</span> <span class="ow">in</span> <span class="n">chain</span><span class="o">.</span><span class="n">sections</span><span class="p">]</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">chain</span><span class="o">.</span><span class="n">count_symmetry_lines</span><span class="p">(),</span> <span class="n">chain</span><span class="o">.</span><span class="n">flow</span><span class="p">)</span>
+
+    <span class="c1">#  groups_by_size = group_sections_by_size(sections)</span>
+    <span class="c1">#  print(groups_by_size)</span>
+
+    <span class="c1">#  plotter = Plotter(model.name)</span>
+    <span class="c1">#  plotter.plot_model(model)</span>
+    <span class="c1">#  plot_sections(plotter, model, sections)</span>
+    
+    <span class="c1">#  plotter = Plotter(model.name)</span>
+    <span class="c1">#  plotter.plot_model(model)</span>
+    <span class="c1">#  plot_chains(plotter, model, chains)</span>
+
+    <span class="c1">#  groups = group_sections_by_points(sections)</span>
+    <span class="c1">#  plotter = Plotter(model.name)</span>
+    <span class="c1">#  plotter.plot_model(model)</span>
+    <span class="c1">#  title = &quot;group sections by point&quot;</span>
+    <span class="c1">#  plot_groups(plotter, model, groups, title)</span>
+
+    <span class="c1">#  plt.show()</span>
+
+    <span class="n">report_sequence</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+    <span class="n">report_sequence_rst</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">report_sequence_rst</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s2">&quot;model_report.rst&quot;</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Generate a sequential RST report of the model.&quot;&quot;&quot;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+        <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;MODEL Report: </span><span class="si">{</span><span class="n">model</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;MODEL Report: </span><span class="si">{</span><span class="n">model</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;.. list-table:: Sequence</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;   :header-rows: 1</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;   * - Label</span><span class="se">\n</span><span class="s2">     - &lt;</span><span class="se">\n</span><span class="s2">     - &gt;</span><span class="se">\n</span><span class="s2">     - Classes</span><span class="se">\n</span><span class="s2">     - Parents</span><span class="se">\n</span><span class="s2">     - Equation</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">el</span><span class="p">,</span> <span class="n">details</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">el_classes</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">details</span><span class="o">.</span><span class="n">classes</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+            <span class="n">el_parents</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+                <span class="p">[</span><span class="sa">f</span><span class="s2">&quot;:math:`</span><span class="si">{</span><span class="n">model</span><span class="p">[</span><span class="n">parent</span><span class="p">]</span><span class="o">.</span><span class="n">label</span><span class="si">}</span><span class="s2">`&quot;</span> <span class="k">for</span> <span class="n">parent</span> <span class="ow">in</span> <span class="n">details</span><span class="o">.</span><span class="n">parents</span><span class="o">.</span><span class="n">keys</span><span class="p">()]</span>
+            <span class="p">)</span>
+
+            <span class="n">label</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;:math:`</span><span class="si">{</span><span class="n">details</span><span class="o">.</span><span class="n">label</span><span class="si">}</span><span class="s2">`&quot;</span>
+            <span class="n">row</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="n">label</span><span class="p">,</span>
+                <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="n">el_classes</span><span class="p">,</span>
+                <span class="n">el_parents</span><span class="p">,</span>
+                <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="p">]</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">el</span><span class="p">,</span> <span class="n">spg</span><span class="o">.</span><span class="n">Point</span><span class="p">):</span>
+                <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;:math:`</span><span class="si">{</span><span class="n">sp</span><span class="o">.</span><span class="n">latex</span><span class="p">(</span><span class="n">el</span><span class="o">.</span><span class="n">x</span><span class="p">)</span><span class="si">}</span><span class="s2">`&quot;</span>
+                <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;:math:`</span><span class="si">{</span><span class="n">sp</span><span class="o">.</span><span class="n">latex</span><span class="p">(</span><span class="n">el</span><span class="o">.</span><span class="n">y</span><span class="p">)</span><span class="si">}</span><span class="s2">`&quot;</span>
+
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">el</span><span class="p">,</span> <span class="n">spg</span><span class="o">.</span><span class="n">Line</span><span class="p">):</span>
+                <span class="n">pt_1</span><span class="p">,</span> <span class="n">pt_2</span> <span class="o">=</span> <span class="n">el</span><span class="o">.</span><span class="n">points</span>
+                <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;:math:`</span><span class="si">{</span><span class="n">model</span><span class="p">[</span><span class="n">pt_1</span><span class="p">]</span><span class="o">.</span><span class="n">label</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">pt_1</span><span class="si">}</span><span class="s2">`&quot;</span>
+                <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;:math:`</span><span class="si">{</span><span class="n">model</span><span class="p">[</span><span class="n">pt_2</span><span class="p">]</span><span class="o">.</span><span class="n">label</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">pt_2</span><span class="si">}</span><span class="s2">`&quot;</span>
+                <span class="n">row</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;:math:`</span><span class="si">{</span><span class="n">sp</span><span class="o">.</span><span class="n">latex</span><span class="p">(</span><span class="n">el</span><span class="o">.</span><span class="n">equation</span><span class="p">())</span><span class="si">}</span><span class="s2">`&quot;</span>
+
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">el</span><span class="p">,</span> <span class="n">spg</span><span class="o">.</span><span class="n">Circle</span><span class="p">):</span>
+                <span class="n">pt_center</span> <span class="o">=</span> <span class="n">el</span><span class="o">.</span><span class="n">center</span>
+                <span class="n">pt_radius</span> <span class="o">=</span> <span class="n">details</span><span class="o">.</span><span class="n">pt_radius</span>
+                <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;:math:`</span><span class="si">{</span><span class="n">model</span><span class="p">[</span><span class="n">pt_center</span><span class="p">]</span><span class="o">.</span><span class="n">label</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">pt_center</span><span class="si">}</span><span class="s2">`&quot;</span>
+                <span class="n">row</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;:math:`</span><span class="si">{</span><span class="n">model</span><span class="p">[</span><span class="n">pt_radius</span><span class="p">]</span><span class="o">.</span><span class="n">label</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">pt_radius</span><span class="si">}</span><span class="s2">`&quot;</span>
+                <span class="n">row</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;:math:`</span><span class="si">{</span><span class="n">sp</span><span class="o">.</span><span class="n">latex</span><span class="p">(</span><span class="n">el</span><span class="o">.</span><span class="n">equation</span><span class="p">())</span><span class="si">}</span><span class="s2">`&quot;</span>
+
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">el</span><span class="p">,</span> <span class="n">spg</span><span class="o">.</span><span class="n">Segment</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">el</span><span class="p">,</span> <span class="n">spg</span><span class="o">.</span><span class="n">Polygon</span><span class="p">):</span>
+                <span class="n">vertices</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="sa">f</span><span class="s2">&quot;:math:`</span><span class="si">{</span><span class="n">model</span><span class="p">[</span><span class="n">pt</span><span class="p">]</span><span class="o">.</span><span class="n">label</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">pt</span><span class="si">}</span><span class="s2">`&quot;</span> <span class="k">for</span> <span class="n">pt</span> <span class="ow">in</span> <span class="n">el</span><span class="o">.</span><span class="n">vertices</span><span class="p">])</span>
+                <span class="n">row</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">vertices</span>
+
+            <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;   * - &quot;</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">     - &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+
+      </div>
+      <footer></footer>
+    </article>
+
+  </main>
+
+<div class="asides">
+    <aside>
+        <h3>Search</h3>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </aside>
+    
+<aside>
+    <h3>Recent Logs</h3>
+    <ul>
+        
+            <li><a href="../log/23.012-101550/index.html">Defining the Divine Proportion</a></li>
+        
+            <li><a href="../log/22.356-152519.html">Welcome</a></li>
+        
+    </ul>
+</aside>
+
+</div>
+<footer>
+      <div class="rst-footer-buttons" role="navigation" aria-label="Footer Nav">
+          <a href="../overview/index.html" class="btn btn-neutral float-left" title="overview" accesskey="p" rel="prev"> Previous</a>
+          <a href="index.html" class="btn btn-neutral float-right" title="demos" accesskey="n" rel="next">Next </a>
+      </div>
+    <div class="footer-nav">
+    <ul>
+        <li><a href="../about.html">About GEOMETOR</a></li>
+        <li><a href="../contribute.html">contribute</a></li>
+        <li><a href="../discuss.html">discuss</a></li>
+        <li><a href="../glossary.html">glossary</a></li>
+        <li><a href="../todos.html">todos</a></li>
+        <li><a href="../changelog.html">changelog</a></li>
+    </ul>
+</div>
+    <hr/>
+    <div role="contentinfo">
+        <p>
+                &copy; Copyright .
+        </p>
+    </div>
+</footer>
+
+  <script src="../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../_static/doctools.js?v=9bcbadda"></script>
+  <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+
+
+</body>
+</html>

@@ -6,8 +6,11 @@ GEOMETOR • divine
 recent logs
 -----------
 
-.. postlist:: 5
-   :excerpts:
+.. collection::
+   :type: log
+   :sort: date
+   :reverse:
+   :limit: 5
 
 
 .. toctree::
