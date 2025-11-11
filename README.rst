@@ -1,6 +1,5 @@
-================
 GEOMETOR • divine
-================
+=================
 
 .. image:: https://img.shields.io/pypi/v/geometor-divine.svg
    :target: https://pypi.python.org/pypi/geometor-divine
