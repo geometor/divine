@@ -22,7 +22,7 @@ recent logs
    usage/index.rst
    modules/index.rst
    demos/index.rst
-   logs/index.rst
+   log/index.rst
    refs/index.rst
    todos.rst
    changelog.rst

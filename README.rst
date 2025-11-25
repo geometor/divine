@@ -6,38 +6,52 @@ GEOMETOR • divine
 .. image:: https://img.shields.io/github/license/geometor/divine.svg
    :target: https://github.com/geometor/divine/blob/main/LICENSE
 
-A Python library for analyzing geometor.model constructions.
+The analysis engine for GEOMETOR.
 
 Overview
 --------
 
-The `divine` library provides tools to identify golden sections, harmonic ranges, and other geometric relationships within a `geometor.model` construction. It is used by the Explorer to provide real-time analysis.
+**geometor.divine** provides tools to identify deep geometric relationships within a model. It specifically focuses on the "Divine Proportion" (Golden Ratio) and harmonic ranges, revealing the hidden structure in geometric constructions.
 
 Key Features
 ------------
 
-- **Golden Section Analysis:** Identifies points that divide segments into the golden ratio.
-- **Harmonic Range Analysis:** Analyzes harmonic ranges within lines.
-- **Chain and Group Analysis:** Finds chains of connected golden sections and groups them by various criteria.
-
-Key Files
----------
-
--   `divine.py`: Main module containing the core analysis functions.
--   `golden/`: A sub-package for finding and analyzing golden sections.
--   `events.py`: Manages the event handling for analysis updates.
+- **Golden Section Analysis**: Automatically detects points that divide segments in the golden ratio.
+- **Harmonic Ranges**: Identifies harmonic relationships between points on a line.
+- **Pattern Recognition**: Groups related elements into chains and families.
 
 Usage
 -----
 
-The `divine` library is typically used in conjunction with `geometor.model` and `geometor.explorer`. The `explorer` application automatically calls the `divine` analysis functions when a model is updated.
+**divine** is primarily designed to work with `geometor.model` and is integrated directly into `geometor.explorer`.
 
-Contributing
-------------
+You can also run the analysis script directly:
 
-Contributions are welcome! Please see our `GitHub issues <https://github.com/geometor/divine/issues>`_ for ways to contribute.
+.. code-block:: bash
 
-License
--------
+    divine
 
-**geometor-divine** is licensed under the MIT License. See the `LICENSE` file for more details.
+Or use it as a library:
+
+.. code-block:: python
+
+    from geometor.model import Model
+    from geometor.divine import analyze_model
+
+    model = Model("example")
+    # ... perform constructions ...
+    
+    analysis = analyze_model(model)
+    print(analysis.golden_sections)
+
+Resources
+---------
+
+- **Source Code**: https://github.com/geometor/divine
+- **Issues**: https://github.com/geometor/divine/issues
+
+Related Projects
+----------------
+
+- `GEOMETOR Model <https://github.com/geometor/model>`_: The core symbolic engine.
+- `GEOMETOR Explorer <https://github.com/geometor/explorer>`_: Interactive visualization.

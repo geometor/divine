@@ -1,8 +1,8 @@
 :navigation: header
 :order: 4
 
-logs
-====
+log
+===
 
 .. collection::
    :type: log
