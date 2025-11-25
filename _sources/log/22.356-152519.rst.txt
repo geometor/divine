@@ -1,8 +1,0 @@
-:type: log
-:date: 22.356-152519
-:author: phi
-
-Welcome
-=======
-
-first log entry for the system
