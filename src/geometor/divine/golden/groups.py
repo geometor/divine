@@ -1,3 +1,4 @@
+from __future__ import annotations
 from collections import defaultdict
 
 from geometor.model import *
@@ -6,6 +7,15 @@ from geometor.render import *
 
 
 def group_sections_by_size(sections: list[Section]) -> dict[sp.Expr, list[Section]]:
+    """
+    Group sections by their minimum length.
+
+    Args:
+        sections: List of sections to group.
+
+    Returns:
+        dict: Mapping of length expression to list of sections.
+    """
     groups = defaultdict(list)
     for section in sections:
         key = section.min_length
@@ -21,6 +31,15 @@ def group_sections_by_size(sections: list[Section]) -> dict[sp.Expr, list[Sectio
 def group_sections_by_segments(
     sections: list[Section],
 ) -> dict[spg.Segment, list[Section]]:
+    """
+    Group sections by the segments they contain.
+
+    Args:
+        sections: List of sections to group.
+
+    Returns:
+        dict: Mapping of segment to list of sections.
+    """
     groups = defaultdict(list)
     for section in sections:
         for segment in section.segments:
@@ -34,6 +53,15 @@ def group_sections_by_segments(
 
 
 def group_sections_by_points(sections: list[Section]) -> dict[spg.Point, list[Section]]:
+    """
+    Group sections by the points they contain.
+
+    Args:
+        sections: List of sections to group.
+
+    Returns:
+        dict: Mapping of point to list of sections.
+    """
     groups = defaultdict(list)
     for section in sections:
         for point in section.points:

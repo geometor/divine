@@ -1,6 +1,20 @@
 changelog
 =========
 
+0.3.2
+-----
+
+-   Refined docstrings and type hinting.
+-   Fixed `from __future__ import annotations` placement.
+
+0.3.1
+-----
+*2025-10-27*
+
+**changed**
+
+.. + Point creation logging is now commented out to reduce noise.
+
 0.3.0
 -----
 *2025-10-27*

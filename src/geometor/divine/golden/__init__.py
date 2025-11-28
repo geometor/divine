@@ -4,6 +4,8 @@ find and analyze golden sections
 .. todo:: create a sections module
 """
 
+
+from __future__ import annotations
 from collections import defaultdict
 
 from geometor.model import *
@@ -25,7 +27,14 @@ def find_golden_sections_in_model(
     model: Model,
 ) -> tuple[list[Section], dict[spg.Line, list[Section]]]:
     """
-    analyze all lines in the model for golden sections
+    Analyze all lines in the model for golden sections.
+
+    Args:
+        model: The model to analyze.
+
+    Returns:
+        tuple: A tuple containing a list of all golden sections and a dictionary
+        mapping lines to their golden sections.
     """
     sections = []
     sections_by_line = {}
@@ -43,8 +52,13 @@ def find_golden_sections_in_model(
 
 def find_golden_sections_in_points(pts) -> list[Section]:
     """
-    find golden sections in combinations of 3 points in list
-    returns a list of golden section pairs
+    Find golden sections in combinations of 3 points in list.
+
+    Args:
+        pts: A list of points to analyze.
+
+    Returns:
+        list[Section]: A list of golden section objects found.
     """
     goldens = []
     pts = sort_points(pts)

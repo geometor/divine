@@ -1,4 +1,5 @@
 
+from __future__ import annotations
 from collections import defaultdict
 
 from geometor.model import *
@@ -6,6 +7,15 @@ from geometor.model.utils import *
 from geometor.render import *
 
 def check_range(r):
+    """
+    Check if a range of 4 points forms a harmonic range.
+
+    Args:
+        r: A tuple of 4 points.
+
+    Returns:
+        sp.Expr: The cross ratio value (0 if harmonic).
+    """
     ad = spg.Segment(r[0], r[3]).length
     cd = spg.Segment(r[2], r[3]).length
     ac = spg.Segment(r[0], r[2]).length
@@ -14,6 +24,15 @@ def check_range(r):
 
 
 def analyze_harmonics(line):
+    """
+    Analyze a line for harmonic ranges.
+
+    Args:
+        line: The line to analyze.
+
+    Returns:
+        list: A list of harmonic ranges (tuples of 4 points).
+    """
     line_pts = sort_points(line.pts)
     #  for pt in line_pts:
     #  print(pt.x, pt.x.evalf(), pt.y, pt.y.evalf())
@@ -31,6 +50,15 @@ def analyze_harmonics(line):
 
 
 def analyze_harmonics_by_segment(sections_by_line):
+    """
+    Group harmonic ranges by segment.
+
+    Args:
+        sections_by_line: Dictionary of sections by line.
+
+    Returns:
+        dict: Nested dictionary mapping lines to segments to harmonic ranges.
+    """
     harmonics_by_segment = {}
     for line, line_sections in sections_by_line.items():
         #  print(line)

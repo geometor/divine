@@ -1,6 +1,7 @@
 """
 Event listeners for divine analysis.
 """
+from __future__ import annotations
 import sympy as sp
 import sympy.geometry as spg
 from geometor.model import Model, Element
@@ -12,6 +13,10 @@ def point_added_listener(model: Model, pt: spg.Point):
     """
     Logs the creation of a point and then analyzes it to find all
     possible line sections.
+
+    Args:
+        model: The model containing the point.
+        pt: The point that was added.
     """
     # Log the creation of the point first.
     # model.log(f"    [bold]{model[pt].ID}[/bold] : {{ {pt.x}, {pt.y} }}")

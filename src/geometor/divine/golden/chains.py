@@ -24,6 +24,7 @@ geometric harmony.
 
 """
 
+from __future__ import annotations
 from collections import defaultdict
 
 from geometor.model import *
@@ -36,14 +37,12 @@ def find_chains_in_sections(sections: list[Section]) -> dict:
     """
     Identify chains of connected golden sections to form harmonic ranges.
 
-    parameters:
-        ``sections`` : :class:`list[Section]`
-            A list of Section objects representing golden sections to be analyzed.
+    Args:
+        sections: A list of Section objects representing golden sections to be analyzed.
 
-    returns:
-        :class:`dict`
-            A dictionary representing a tree structure where each node is a
-            Section and connected Sections are child nodes.
+    Returns:
+        dict: A dictionary representing a tree structure where each node is a
+        Section and connected Sections are child nodes.
     """
 
     def add_to_chain_tree(section, tree):
@@ -83,15 +82,13 @@ def unpack_chains(tree: dict) -> list[Chain]:
     """
     Unpack the chain tree into a list of individual Chain objects.
 
-    parameters:
-        ``tree`` : :class:`dict`
-            A dictionary representing a tree structure where each node is a
-            Section and connected Sections are child nodes.
+    Args:
+        tree: A dictionary representing a tree structure where each node is a
+        Section and connected Sections are child nodes.
 
-    returns:
-        :class:`list[Chain]`
-            A list containing Chain objects, each representing a chain
-            of connected golden sections.
+    Returns:
+        list[Chain]: A list containing Chain objects, each representing a chain
+        of connected golden sections.
     """
 
     def dfs(node, path, chains):
