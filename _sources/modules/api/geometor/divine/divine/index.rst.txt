@@ -1,0 +1,29 @@
+geometor.divine.divine
+======================
+
+.. py:module:: geometor.divine.divine
+
+.. autoapi-nested-parse::
+
+   divine
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.divine.divine.register_divine_hook
+
+
+Module Contents
+---------------
+
+.. py:function:: register_divine_hook(model: geometor.model.Model)
+
+   Initializes the divine analysis by registering the listener with the model's hook.
+
+   :param model: The model to attach the analysis hook to.
+
+
