@@ -4,7 +4,8 @@ Event listeners for divine analysis.
 from __future__ import annotations
 import sympy as sp
 import sympy.geometry as spg
-from geometor.model import Model, Element
+from geometor.model import Model
+from geometor.model.element import Element
 from geometor.model.sections import Section
 
 from geometor.model.utils import sort_points

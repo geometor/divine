@@ -6,7 +6,7 @@ GEOMETOR • divine
 .. image:: https://img.shields.io/github/license/geometor/divine.svg
    :target: https://github.com/geometor/divine/blob/main/LICENSE
 
-The analysis engine for GEOMETOR.
+An analysis engine for identifying golden sections and harmonic ranges.
 
 Overview
 --------
