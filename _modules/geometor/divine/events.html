@@ -1,0 +1,207 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.divine.events &mdash; Project name not set  documentation</title>
+  <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/css/styles.css?v=bc127b54" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="../../../_static/css/print.css" type="text/css" media="print" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="../../../index.html">
+        <img src="../../../_static/logo.png" class="logo" alt="Logo"/>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">divine</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../mission/index.html"  >mission</a>
+        </li>
+        <li>
+          <a href="../../../usage/index.html"  >usage</a>
+        </li>
+        <li>
+          <a href="../../../modules/index.html"  >modules</a>
+        </li>
+        <li>
+          <a href="../../../log/index.html"  >log</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main>
+
+    <article>
+      <div class="content">
+      <nav class="breadcrumbs">
+        <span><a href="../../../index.html">Home</a></span>
+          <span>/</span>
+        <span><a href="../../index.html">Module code</a></span>
+        <span>/</span>
+        <span>geometor.divine.events</span>
+      </nav>
+        <nav class="context">
+          <div class="prev">
+          </div>
+          <div class="next">
+          </div>
+        </nav>
+          <h1>Source code for geometor.divine.events</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Event listeners for divine analysis.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sp</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sympy.geometry</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">spg</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model</span><span class="w"> </span><span class="kn">import</span> <span class="n">Model</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model.element</span><span class="w"> </span><span class="kn">import</span> <span class="n">Element</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model.sections</span><span class="w"> </span><span class="kn">import</span> <span class="n">Section</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">sort_points</span>
+
+<div class="viewcode-block" id="point_added_listener">
+<a class="viewcode-back" href="../../../modules/api/geometor/divine/events/index.html#geometor.divine.events.point_added_listener">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">point_added_listener</span><span class="p">(</span><span class="n">model</span><span class="p">:</span> <span class="n">Model</span><span class="p">,</span> <span class="n">pt</span><span class="p">:</span> <span class="n">spg</span><span class="o">.</span><span class="n">Point</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Logs the creation of a point and then analyzes it to find all</span>
+<span class="sd">    possible line sections.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        model: The model containing the point.</span>
+<span class="sd">        pt: The point that was added.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Log the creation of the point first.</span>
+    <span class="c1"># model.log(f&quot;    [bold]{model[pt].ID}[/bold] : {{ {pt.x}, {pt.y} }}&quot;)</span>
+
+    <span class="c1"># Use a local log function for indented analysis messages.</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">log_analysis</span><span class="p">(</span><span class="n">message</span><span class="p">):</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;        </span><span class="si">{</span><span class="n">message</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="n">log_analysis</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;divine analysis&quot;</span><span class="p">)</span>
+
+    <span class="n">parent_lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">p</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">model</span><span class="p">[</span><span class="n">pt</span><span class="p">]</span><span class="o">.</span><span class="n">parents</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">spg</span><span class="o">.</span><span class="n">Line</span><span class="p">)]</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">parent_lines</span><span class="p">:</span>
+        <span class="n">log_analysis</span><span class="p">(</span><span class="s2">&quot;no parent lines found&quot;</span><span class="p">)</span>
+        <span class="k">return</span>
+
+    <span class="n">line_IDs</span> <span class="o">=</span> <span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="sa">f</span><span class="s2">&quot;[bold]</span><span class="si">{</span><span class="n">model</span><span class="p">[</span><span class="n">l</span><span class="p">]</span><span class="o">.</span><span class="n">ID</span><span class="si">}</span><span class="s2">[/bold]&quot;</span> <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">parent_lines</span><span class="p">])</span>
+    <span class="c1"># log_analysis(f&quot;found {len(parent_lines)} parent line(s): {line_IDs}&quot;)</span>
+
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">parent_lines</span><span class="p">):</span>
+        <span class="n">log_analysis</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;line </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2"> of </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">parent_lines</span><span class="p">)</span><span class="si">}</span><span class="s2"> : [bold]</span><span class="si">{</span><span class="n">model</span><span class="p">[</span><span class="n">line</span><span class="p">]</span><span class="o">.</span><span class="n">ID</span><span class="si">}</span><span class="s2">[/bold]&quot;</span><span class="p">)</span>
+        <span class="n">points_on_line</span> <span class="o">=</span> <span class="p">[</span><span class="n">p</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">points</span> <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">model</span><span class="p">[</span><span class="n">p</span><span class="p">]</span><span class="o">.</span><span class="n">guide</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">points_on_line</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="n">log_analysis</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  line has fewer than 3 points&quot;</span><span class="p">)</span>
+            <span class="k">continue</span>
+
+        <span class="n">sorted_pts</span> <span class="o">=</span> <span class="n">sort_points</span><span class="p">(</span><span class="n">points_on_line</span><span class="p">)</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">itertools</span><span class="w"> </span><span class="kn">import</span> <span class="n">combinations</span>
+        <span class="n">section_candidates</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">combinations</span><span class="p">(</span><span class="n">sorted_pts</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+
+        <span class="n">relevant_sections</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">section_candidates</span> <span class="k">if</span> <span class="n">pt</span> <span class="ow">in</span> <span class="n">s</span><span class="p">]</span>
+        <span class="n">log_analysis</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">relevant_sections</span><span class="p">)</span><span class="si">}</span><span class="s2"> sections with [bold]</span><span class="si">{</span><span class="n">model</span><span class="p">[</span><span class="n">pt</span><span class="p">]</span><span class="o">.</span><span class="n">ID</span><span class="si">}</span><span class="s2">[/bold]&quot;</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">section_pts</span> <span class="ow">in</span> <span class="n">relevant_sections</span><span class="p">:</span>
+            <span class="n">section</span> <span class="o">=</span> <span class="n">Section</span><span class="p">(</span><span class="n">section_pts</span><span class="p">)</span>
+            <span class="n">s_IDs</span> <span class="o">=</span> <span class="p">[</span><span class="n">model</span><span class="p">[</span><span class="n">p</span><span class="p">]</span><span class="o">.</span><span class="n">ID</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">section_pts</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">section</span><span class="o">.</span><span class="n">is_golden</span><span class="p">:</span>
+                <span class="n">section_IDs_str</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="sa">f</span><span class="s2">&quot;[bold]</span><span class="si">{</span><span class="n">_id</span><span class="si">}</span><span class="s2">[/bold]&quot;</span> <span class="k">for</span> <span class="n">_id</span> <span class="ow">in</span> <span class="n">s_IDs</span><span class="p">])</span>
+                <span class="n">log_analysis</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;    / </span><span class="si">{</span><span class="n">section_IDs_str</span><span class="si">}</span><span class="s2"> /&quot;</span><span class="p">)</span>
+                <span class="n">model</span><span class="o">.</span><span class="n">set_section</span><span class="p">(</span><span class="n">section</span><span class="o">.</span><span class="n">points</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;golden&quot;</span><span class="p">])</span></div>
+
+</pre></div>
+      </div>
+      <footer>
+
+
+        <nav class="context">
+          <div class="prev">
+          </div>
+          <div class="next">
+          </div>
+        </nav></footer>
+    </article>
+
+  </main>
+
+<div class="asides">
+    <aside>
+        <h3>Search</h3>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </aside>
+    
+<aside>
+    <h3>Recent Logs</h3>
+    <ul>
+        
+            <li><a href="../../../log/23.012-101550/index.html">Defining the Divine Proportion</a></li>
+        
+    </ul>
+</aside>
+
+    
+
+    
+
+    
+
+<aside class="aside-types">
+    <h3>Types</h3>
+    <ul>
+        
+        <li><a href="../../../types/log.html">log</a></li>
+        
+    </ul>
+</aside>
+
+</div>
+<footer>
+    <div class="footer-nav">
+    <ul>
+        <li><a href="../../../about.html">About GEOMETOR</a></li>
+        <li><a href="../../../contribute.html">contribute</a></li>
+        <li><a href="../../../discuss.html">discuss</a></li>
+        <li><a href="../../../glossary.html">glossary</a></li>
+        <li><a href="../../../todos.html">todos</a></li>
+        <li><a href="../../../changelog.html">changelog</a></li>
+    </ul>
+</div>
+    <hr/>
+    <div role="contentinfo">
+        <p>
+                &copy; Copyright .
+        </p>
+    </div>
+</footer>
+
+  <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+  <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+  <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+  <script src="../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+
+
+</body>
+</html>

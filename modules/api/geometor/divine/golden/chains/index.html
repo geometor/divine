@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>geometor.divine.golden.chains &mdash; Project name not set  documentation</title>
   <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/styles.css?v=b9bf8c56" />
+  <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/styles.css?v=bc127b54" />
   <link rel="stylesheet" type="text/css" href="../../../../../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="../../../../../../_static/css/print.css" type="text/css" media="print" />
 </head>
@@ -86,7 +86,7 @@ geometric harmony.</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.divine.golden.chains.find_chains_in_sections" title="geometor.divine.golden.chains.find_chains_in_sections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">find_chains_in_sections</span></code></a>(→ dict)</p></td>
 <td><p>Identify chains of connected golden sections to form harmonic ranges.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#geometor.divine.golden.chains.unpack_chains" title="geometor.divine.golden.chains.unpack_chains"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unpack_chains</span></code></a>(→ list[geometor.model.Chain])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#geometor.divine.golden.chains.unpack_chains" title="geometor.divine.golden.chains.unpack_chains"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unpack_chains</span></code></a>(→ list[Chain])</p></td>
 <td><p>Unpack the chain tree into a list of individual Chain objects.</p></td>
 </tr>
 </tbody>
@@ -96,7 +96,7 @@ geometric harmony.</p>
 <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="geometor.divine.golden.chains.find_chains_in_sections">
-<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.chains.</span></span><span class="sig-name descname"><span class="pre">find_chains_in_sections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sections</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#list" title="(in Python v3.9)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">geometor.model.Section</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#dict" title="(in Python v3.9)"><span class="pre">dict</span></a></span></span><a class="headerlink" href="#geometor.divine.golden.chains.find_chains_in_sections" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.chains.</span></span><span class="sig-name descname"><span class="pre">find_chains_in_sections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sections</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a></span></span><a class="reference internal" href="../../../../../../_modules/geometor/divine/golden/chains.html#find_chains_in_sections"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#geometor.divine.golden.chains.find_chains_in_sections" title="Link to this definition">¶</a></dt>
 <dd><p>Identify chains of connected golden sections to form harmonic ranges.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -107,14 +107,14 @@ geometric harmony.</p>
 Section and connected Sections are child nodes.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#dict" title="(in Python v3.9)">dict</a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#dict" title="(in Python v3.13)">dict</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="geometor.divine.golden.chains.unpack_chains">
-<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.chains.</span></span><span class="sig-name descname"><span class="pre">unpack_chains</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tree</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#dict" title="(in Python v3.9)"><span class="pre">dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#list" title="(in Python v3.9)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">geometor.model.Chain</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.divine.golden.chains.unpack_chains" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.chains.</span></span><span class="sig-name descname"><span class="pre">unpack_chains</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tree</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Chain</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../../../../../../_modules/geometor/divine/golden/chains.html#unpack_chains"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#geometor.divine.golden.chains.unpack_chains" title="Link to this definition">¶</a></dt>
 <dd><p>Unpack the chain tree into a list of individual Chain objects.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -128,7 +128,7 @@ Section and connected Sections are child nodes.</p>
 of connected golden sections.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.9/library/stdtypes.html#list" title="(in Python v3.9)">list</a>[Chain]</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#list" title="(in Python v3.13)">list</a>[Chain]</p>
 </dd>
 </dl>
 </dd></dl>

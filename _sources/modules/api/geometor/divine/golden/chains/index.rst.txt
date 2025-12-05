@@ -42,7 +42,7 @@ Functions
 Module Contents
 ---------------
 
-.. py:function:: find_chains_in_sections(sections: list[geometor.model.Section]) -> dict
+.. py:function:: find_chains_in_sections(sections: list[Section]) -> dict
 
    Identify chains of connected golden sections to form harmonic ranges.
 
@@ -53,7 +53,7 @@ Module Contents
    :rtype: dict
 
 
-.. py:function:: unpack_chains(tree: dict) -> list[geometor.model.Chain]
+.. py:function:: unpack_chains(tree: dict) -> list[Chain]
 
    Unpack the chain tree into a list of individual Chain objects.
 
