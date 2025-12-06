@@ -4,7 +4,7 @@ from collections import defaultdict
 
 from geometor.model import *
 from geometor.model.utils import *
-from geometor.render import *
+
 
 def check_range(r):
     """

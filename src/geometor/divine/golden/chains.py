@@ -28,8 +28,9 @@ from __future__ import annotations
 from collections import defaultdict
 
 from geometor.model import *
+from geometor.model.chains import Chain
 from geometor.model.utils import *
-from geometor.render import *
+
 
 
 

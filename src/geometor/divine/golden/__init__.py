@@ -10,8 +10,9 @@ from collections import defaultdict
 
 from geometor.model import *
 from geometor.model.utils import *
-from geometor.render import *
-from geometor.model.utils import *
+
+import sympy as sp
+import sympy.geometry as spg
 
 from multiprocessing import Pool, cpu_count
 

@@ -1,13 +1,22 @@
 changelog
 =========
 
+0.3.4
+-----
+*2025-12-06*
+
+**refactor**
+
+-   Removed unused `geometor.render` imports.
+-   Fixed `CHANGELOG.rst` formatting.
+
 0.3.3
 -----
 *2025-12-06*
 
 **chore**
 
-.. + Updated project metadata and removed redundant module-level variables.
+-   Updated project metadata and removed redundant module-level variables.
 
 0.3.2
 -----
@@ -21,7 +30,7 @@ changelog
 
 **changed**
 
-.. + Point creation logging is now commented out to reduce noise.
+-   Point creation logging is now commented out to reduce noise.
 
 0.3.0
 -----
@@ -29,7 +38,7 @@ changelog
 
 **changed**
 
-.. + Point creation logging is now commented out to reduce noise.
+-   Point creation logging is now commented out to reduce noise.
 
 0.2.4
 -----
@@ -37,7 +46,7 @@ changelog
 
 **fixed**
 
-.. + Grouping fix in the UI.
+-   Grouping fix in the UI.
 
 0.2.3
 -----
@@ -45,7 +54,7 @@ changelog
 
 **changed**
 
-.. + Updated analysis to ignore points marked with the `guide` property.
+-   Updated analysis to ignore points marked with the `guide` property.
 
 0.2.2
 -----
@@ -53,7 +62,7 @@ changelog
 
 **changed**
 
-.. + Refactored logging.
+-   Refactored logging.
 
 0.2.1
 -----
@@ -61,8 +70,8 @@ changelog
 
 **changed**
 
-.. + Adapted the analysis functions to work with the new synchronous hook system in the `geometor-model` library.
-.. + Centralized all point-related logging within the `point_added_listener` to ensure correct output sequence.
+-   Adapted the analysis functions to work with the new synchronous hook system in the `geometor-model` library.
+-   Centralized all point-related logging within the `point_added_listener` to ensure correct output sequence.
 
 0.2.0
 -----
@@ -70,7 +79,7 @@ changelog
 
 **added**
 
-.. + Added section grouping analysis.
+-   Added section grouping analysis.
 
 0.1.0 
 -----
@@ -78,15 +87,15 @@ changelog
 
 **fixed**
 
-.. + Fixed bug in data processing (`#42 <https://github.com/example/repo/issues/42>`_)
-.. + Improved error handling in API calls
+-   Fixed bug in data processing (`#42 <https://github.com/example/repo/issues/42>`_)
+-   Improved error handling in API calls
 
 **added**
 
-.. + Fixed bug in data processing (`#42 <https://github.com/example/repo/issues/42>`_)
-.. + Improved error handling in API calls
+-   Fixed bug in data processing (`#42 <https://github.com/example/repo/issues/42>`_)
+-   Improved error handling in API calls
 
 **changed**
 
-.. + Fixed bug in data processing (`#42 <https://github.com/example/repo/issues/42>`_)
-.. + Improved error handling in API calls
+-   Fixed bug in data processing (`#42 <https://github.com/example/repo/issues/42>`_)
+-   Improved error handling in API calls
