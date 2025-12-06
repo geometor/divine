@@ -20,8 +20,4 @@ __all__ = [
 ]
 
 
-__author__ = "geometor"
-__maintainer__ = "geometor"
-__email__ = "github@geometor.com"
-__version__ = "0.3.2"
-__licence__ = "MIT"
+__version__ = "0.3.3"

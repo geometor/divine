@@ -1,6 +1,14 @@
 changelog
 =========
 
+0.3.3
+-----
+*2025-12-06*
+
+**chore**
+
+.. + Updated project metadata and removed redundant module-level variables.
+
 0.3.2
 -----
 
