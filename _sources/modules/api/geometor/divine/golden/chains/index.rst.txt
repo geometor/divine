@@ -53,7 +53,7 @@ Module Contents
    :rtype: dict
 
 
-.. py:function:: unpack_chains(tree: dict) -> list[Chain]
+.. py:function:: unpack_chains(tree: dict) -> list[geometor.model.chains.Chain]
 
    Unpack the chain tree into a list of individual Chain objects.
 
