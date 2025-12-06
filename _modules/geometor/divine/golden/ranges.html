@@ -66,12 +66,14 @@
           </div>
         </nav>
           <h1>Source code for geometor.divine.golden.ranges</h1><div class="highlight"><pre>
-<span></span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
+<span></span><span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span>
 
-<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model.utils</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sp</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sympy.geometry</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">spg</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">itertools</span><span class="w"> </span><span class="kn">import</span> <span class="n">combinations</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">sort_points</span>
 
 
 <div class="viewcode-block" id="check_range">
@@ -145,7 +147,6 @@
         <span class="n">harmonics_by_segment</span><span class="p">[</span><span class="n">line</span><span class="p">]</span> <span class="o">=</span> <span class="n">group_by_segments</span>
 
     <span class="k">return</span> <span class="n">harmonics_by_segment</span></div>
-
 
 </pre></div>
       </div>

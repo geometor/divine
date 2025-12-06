@@ -69,37 +69,33 @@
 <span></span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">Golden Chain Analyzer: Harmonic Range Identification in Golden Sections</span>
 
-<span class="sd">This module is designed to analyze and explore chains of connected golden </span>
-<span class="sd">sections, unraveling the harmonic ranges within geometric structures. </span>
-<span class="sd">Utilizing sophisticated mathematical analysis and geometric algorithms, </span>
-<span class="sd">it aims to identify, categorize, and unpack chains, providing an intuitive </span>
+<span class="sd">This module is designed to analyze and explore chains of connected golden</span>
+<span class="sd">sections, unraveling the harmonic ranges within geometric structures.</span>
+<span class="sd">Utilizing sophisticated mathematical analysis and geometric algorithms,</span>
+<span class="sd">it aims to identify, categorize, and unpack chains, providing an intuitive</span>
 <span class="sd">understanding of their intrinsic geometric harmonies.</span>
 
 <span class="sd">Features:</span>
-<span class="sd">  </span>
-<span class="sd">- `find_chains_in_sections`: A function designed to meticulously identify </span>
-<span class="sd">  chains within a collection of sections, resulting in a hierarchical tree </span>
+
+<span class="sd">- `find_chains_in_sections`: A function designed to meticulously identify</span>
+<span class="sd">  chains within a collection of sections, resulting in a hierarchical tree</span>
 <span class="sd">  structure representing connected sections.</span>
-<span class="sd">  </span>
-<span class="sd">- `unpack_chains`: Unveils the chains hidden within the tree structure, </span>
+
+<span class="sd">- `unpack_chains`: Unveils the chains hidden within the tree structure,</span>
 <span class="sd">  outputting a list of individual `Chain` objects ready for analysis.</span>
 
 <span class="sd">Each chain’s flow is characterized by the comparative lengths of consecutive</span>
-<span class="sd">segments, represented symbolically to understand the progression and </span>
-<span class="sd">transitions in segment lengths. Furthermore, this module empowers users to </span>
-<span class="sd">explore symmetry lines within chains, unveiling a subtle, profound aspect of </span>
+<span class="sd">segments, represented symbolically to understand the progression and</span>
+<span class="sd">transitions in segment lengths. Furthermore, this module empowers users to</span>
+<span class="sd">explore symmetry lines within chains, unveiling a subtle, profound aspect of</span>
 <span class="sd">geometric harmony.</span>
 
 <span class="sd">&quot;&quot;&quot;</span>
 
 <span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span>
 
-<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model.sections</span><span class="w"> </span><span class="kn">import</span> <span class="n">Section</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model.chains</span><span class="w"> </span><span class="kn">import</span> <span class="n">Chain</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model.utils</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
-
-
 
 
 <div class="viewcode-block" id="find_chains_in_sections">

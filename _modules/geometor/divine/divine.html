@@ -67,9 +67,11 @@
 <span></span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">divine</span>
 <span class="sd">&quot;&quot;&quot;</span>
+
 <span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model</span><span class="w"> </span><span class="kn">import</span> <span class="n">Model</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">.events</span><span class="w"> </span><span class="kn">import</span> <span class="n">point_added_listener</span>
+
 
 <div class="viewcode-block" id="register_divine_hook">
 <a class="viewcode-back" href="../../../modules/index.html#geometor.divine.divine.register_divine_hook">[docs]</a>
@@ -81,7 +83,6 @@
 <span class="sd">        model: The model to attach the analysis hook to.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">model</span><span class="o">.</span><span class="n">set_analysis_hook</span><span class="p">(</span><span class="k">lambda</span> <span class="n">model</span><span class="p">,</span> <span class="n">pt</span><span class="p">:</span> <span class="n">point_added_listener</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">pt</span><span class="p">))</span></div>
-
 
 </pre></div>
       </div>

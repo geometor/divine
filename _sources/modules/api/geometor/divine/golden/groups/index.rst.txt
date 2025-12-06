@@ -17,7 +17,7 @@ Functions
 Module Contents
 ---------------
 
-.. py:function:: group_sections_by_size(sections: list[Section]) -> dict[geometor.model.utils.sp.Expr, list[Section]]
+.. py:function:: group_sections_by_size(sections: list[geometor.model.sections.Section]) -> dict[sympy.Expr, list[geometor.model.sections.Section]]
 
    Group sections by their minimum length.
 
@@ -27,7 +27,7 @@ Module Contents
    :rtype: dict
 
 
-.. py:function:: group_sections_by_segments(sections: list[Section]) -> dict[geometor.model.utils.spg.Segment, list[Section]]
+.. py:function:: group_sections_by_segments(sections: list[geometor.model.sections.Section]) -> dict[sympy.geometry.Segment, list[geometor.model.sections.Section]]
 
    Group sections by the segments they contain.
 
@@ -37,7 +37,7 @@ Module Contents
    :rtype: dict
 
 
-.. py:function:: group_sections_by_points(sections: list[Section]) -> dict[geometor.model.utils.spg.Point, list[Section]]
+.. py:function:: group_sections_by_points(sections: list[geometor.model.sections.Section]) -> dict[sympy.geometry.Point, list[geometor.model.sections.Section]]
 
    Group sections by the points they contain.
 

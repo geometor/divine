@@ -41,9 +41,9 @@ Functions
    geometor.divine.golden.group_sections_by_size
    geometor.divine.golden.group_sections_by_segments
    geometor.divine.golden.group_sections_by_points
-   geometor.divine.golden.check_range
    geometor.divine.golden.analyze_harmonics
    geometor.divine.golden.analyze_harmonics_by_segment
+   geometor.divine.golden.check_range
    geometor.divine.golden.find_golden_sections_in_model
    geometor.divine.golden.find_golden_sections_in_points
    geometor.divine.golden.is_section_golden
@@ -52,7 +52,7 @@ Functions
 Package Contents
 ----------------
 
-.. py:function:: find_chains_in_sections(sections: list[Section]) -> dict
+.. py:function:: find_chains_in_sections(sections: list[geometor.model.sections.Section]) -> dict
 
    Identify chains of connected golden sections to form harmonic ranges.
 
@@ -75,7 +75,7 @@ Package Contents
    :rtype: list[Chain]
 
 
-.. py:function:: group_sections_by_size(sections: list[Section]) -> dict[geometor.model.utils.sp.Expr, list[Section]]
+.. py:function:: group_sections_by_size(sections: list[geometor.model.sections.Section]) -> dict[sympy.Expr, list[geometor.model.sections.Section]]
 
    Group sections by their minimum length.
 
@@ -85,7 +85,7 @@ Package Contents
    :rtype: dict
 
 
-.. py:function:: group_sections_by_segments(sections: list[Section]) -> dict[geometor.model.utils.spg.Segment, list[Section]]
+.. py:function:: group_sections_by_segments(sections: list[geometor.model.sections.Section]) -> dict[sympy.geometry.Segment, list[geometor.model.sections.Section]]
 
    Group sections by the segments they contain.
 
@@ -95,7 +95,7 @@ Package Contents
    :rtype: dict
 
 
-.. py:function:: group_sections_by_points(sections: list[Section]) -> dict[geometor.model.utils.spg.Point, list[Section]]
+.. py:function:: group_sections_by_points(sections: list[geometor.model.sections.Section]) -> dict[sympy.geometry.Point, list[geometor.model.sections.Section]]
 
    Group sections by the points they contain.
 
@@ -103,16 +103,6 @@ Package Contents
 
    :returns: Mapping of point to list of sections.
    :rtype: dict
-
-
-.. py:function:: check_range(r)
-
-   Check if a range of 4 points forms a harmonic range.
-
-   :param r: A tuple of 4 points.
-
-   :returns: The cross ratio value (0 if harmonic).
-   :rtype: sp.Expr
 
 
 .. py:function:: analyze_harmonics(line)
@@ -135,11 +125,21 @@ Package Contents
    :rtype: dict
 
 
+.. py:function:: check_range(r)
+
+   Check if a range of 4 points forms a harmonic range.
+
+   :param r: A tuple of 4 points.
+
+   :returns: The cross ratio value (0 if harmonic).
+   :rtype: sp.Expr
+
+
 .. py:data:: Φ
 
 .. py:data:: phi
 
-.. py:function:: find_golden_sections_in_model(model: ranges.Model) -> tuple[list[Section], dict[ranges.spg.Line, list[Section]]]
+.. py:function:: find_golden_sections_in_model(model: geometor.model.Model) -> tuple[list[geometor.model.sections.Section], dict[sympy.geometry.Line, list[geometor.model.sections.Section]]]
 
    Analyze all lines in the model for golden sections.
 
@@ -150,7 +150,7 @@ Package Contents
    :rtype: tuple
 
 
-.. py:function:: find_golden_sections_in_points(pts) -> list[Section]
+.. py:function:: find_golden_sections_in_points(pts) -> list[geometor.model.sections.Section]
 
    Find golden sections in combinations of 3 points in list.
 
