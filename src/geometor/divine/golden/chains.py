@@ -1,37 +1,33 @@
 """
 Golden Chain Analyzer: Harmonic Range Identification in Golden Sections
 
-This module is designed to analyze and explore chains of connected golden 
-sections, unraveling the harmonic ranges within geometric structures. 
-Utilizing sophisticated mathematical analysis and geometric algorithms, 
-it aims to identify, categorize, and unpack chains, providing an intuitive 
+This module is designed to analyze and explore chains of connected golden
+sections, unraveling the harmonic ranges within geometric structures.
+Utilizing sophisticated mathematical analysis and geometric algorithms,
+it aims to identify, categorize, and unpack chains, providing an intuitive
 understanding of their intrinsic geometric harmonies.
 
 Features:
-  
-- `find_chains_in_sections`: A function designed to meticulously identify 
-  chains within a collection of sections, resulting in a hierarchical tree 
+
+- `find_chains_in_sections`: A function designed to meticulously identify
+  chains within a collection of sections, resulting in a hierarchical tree
   structure representing connected sections.
-  
-- `unpack_chains`: Unveils the chains hidden within the tree structure, 
+
+- `unpack_chains`: Unveils the chains hidden within the tree structure,
   outputting a list of individual `Chain` objects ready for analysis.
 
 Each chain’s flow is characterized by the comparative lengths of consecutive
-segments, represented symbolically to understand the progression and 
-transitions in segment lengths. Furthermore, this module empowers users to 
-explore symmetry lines within chains, unveiling a subtle, profound aspect of 
+segments, represented symbolically to understand the progression and
+transitions in segment lengths. Furthermore, this module empowers users to
+explore symmetry lines within chains, unveiling a subtle, profound aspect of
 geometric harmony.
 
 """
 
 from __future__ import annotations
-from collections import defaultdict
 
-from geometor.model import *
+from geometor.model.sections import Section
 from geometor.model.chains import Chain
-from geometor.model.utils import *
-
-
 
 
 def find_chains_in_sections(sections: list[Section]) -> dict:

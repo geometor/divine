@@ -1,9 +1,11 @@
-
 from __future__ import annotations
 from collections import defaultdict
 
-from geometor.model import *
-from geometor.model.utils import *
+import sympy as sp
+import sympy.geometry as spg
+
+from itertools import combinations
+from geometor.model.utils import sort_points
 
 
 def check_range(r):
@@ -69,4 +71,3 @@ def analyze_harmonics_by_segment(sections_by_line):
         harmonics_by_segment[line] = group_by_segments
 
     return harmonics_by_segment
-

@@ -1,9 +1,9 @@
 from __future__ import annotations
 from collections import defaultdict
 
-from geometor.model import *
-from geometor.model.utils import *
-
+import sympy as sp
+import sympy.geometry as spg
+from geometor.model.sections import Section
 
 
 def group_sections_by_size(sections: list[Section]) -> dict[sp.Expr, list[Section]]:

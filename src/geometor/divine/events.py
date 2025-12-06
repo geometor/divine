@@ -1,14 +1,14 @@
 """
 Event listeners for divine analysis.
 """
+
 from __future__ import annotations
-import sympy as sp
 import sympy.geometry as spg
 from geometor.model import Model
-from geometor.model.element import Element
 from geometor.model.sections import Section
 
 from geometor.model.utils import sort_points
+
 
 def point_added_listener(model: Model, pt: spg.Point):
     """
@@ -26,30 +26,36 @@ def point_added_listener(model: Model, pt: spg.Point):
     def log_analysis(message):
         model.log(f"        {message}")
 
-    log_analysis(f"divine analysis")
+    log_analysis("divine analysis")
 
     parent_lines = [p for p in model[pt].parents if isinstance(p, spg.Line)]
     if not parent_lines:
         log_analysis("no parent lines found")
         return
 
-    line_IDs = ", ".join([f"[bold]{model[l].ID}[/bold]" for l in parent_lines])
     # log_analysis(f"found {len(parent_lines)} parent line(s): {line_IDs}")
 
     for i, line in enumerate(parent_lines):
-        log_analysis(f"line {i+1} of {len(parent_lines)} : [bold]{model[line].ID}[/bold]")
-        points_on_line = [p for p in model.points if line.contains(p) and not model[p].guide]
+        log_analysis(
+            f"line {i + 1} of {len(parent_lines)} : [bold]{model[line].ID}[/bold]"
+        )
+        points_on_line = [
+            p for p in model.points if line.contains(p) and not model[p].guide
+        ]
 
         if len(points_on_line) < 3:
-            log_analysis(f"  line has fewer than 3 points")
+            log_analysis("  line has fewer than 3 points")
             continue
 
         sorted_pts = sort_points(points_on_line)
         from itertools import combinations
+
         section_candidates = list(combinations(sorted_pts, 3))
 
         relevant_sections = [s for s in section_candidates if pt in s]
-        log_analysis(f"  {len(relevant_sections)} sections with [bold]{model[pt].ID}[/bold]")
+        log_analysis(
+            f"  {len(relevant_sections)} sections with [bold]{model[pt].ID}[/bold]"
+        )
 
         for section_pts in relevant_sections:
             section = Section(section_pts)

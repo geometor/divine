@@ -4,21 +4,43 @@ find and analyze golden sections
 .. todo:: create a sections module
 """
 
-
 from __future__ import annotations
-from collections import defaultdict
 
-from geometor.model import *
-from geometor.model.utils import *
+
+from itertools import combinations
+
+from geometor.model import Model
+from geometor.model.sections import Section
+from geometor.model.utils import sort_points
 
 import sympy as sp
 import sympy.geometry as spg
 
 from multiprocessing import Pool, cpu_count
 
-from .chains import *
-from .groups import *
-from .ranges import *
+from .chains import find_chains_in_sections, unpack_chains
+from .groups import (
+    group_sections_by_size,
+    group_sections_by_segments,
+    group_sections_by_points,
+)
+from .ranges import analyze_harmonics, analyze_harmonics_by_segment, check_range
+
+__all__ = [
+    "find_golden_sections_in_model",
+    "find_golden_sections_in_points",
+    "is_section_golden",
+    "find_chains_in_sections",
+    "unpack_chains",
+    "group_sections_by_size",
+    "group_sections_by_segments",
+    "group_sections_by_points",
+    "analyze_harmonics",
+    "analyze_harmonics_by_segment",
+    "check_range",
+    "Φ",
+    "phi",
+]
 
 Φ = sp.GoldenRatio
 phi = sp.Rational(1, 2) + (sp.sqrt(5) / 2)
@@ -68,7 +90,6 @@ def find_golden_sections_in_points(pts) -> list[Section]:
     sections = list(combinations(pts, 3))
     print(f"sections in line: {len(sections)}")
 
-
     with Pool(cpu_count()) as pool:
         results = pool.map(is_section_golden, sections)
         goldens = [Section(section) for i, section in enumerate(sections) if results[i]]
@@ -81,5 +102,3 @@ def find_golden_sections_in_points(pts) -> list[Section]:
 def is_section_golden(section_points) -> bool:
     section = Section(section_points)
     return section.is_golden
-
-

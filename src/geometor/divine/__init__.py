@@ -12,6 +12,7 @@ Usage:
 ------
 Register the divine hook with a :class:`~geometor.model.Model` instance to enable real-time analysis.
 """
+
 from __future__ import annotations
 from .divine import register_divine_hook
 
