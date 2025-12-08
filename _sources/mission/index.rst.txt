@@ -4,9 +4,10 @@
 mission
 =======
 
-.. include:: statement.rst
+    identify golden sections and harmonic ranges within geometric models
 
 goals
 -----
 
-
+.. collection::
+   :sort: order
