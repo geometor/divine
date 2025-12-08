@@ -3,6 +3,14 @@ geometor.divine.golden.ranges
 
 .. py:module:: geometor.divine.golden.ranges
 
+.. autoapi-nested-parse::
+
+   Analysis of harmonic ranges in geometric lines.
+
+   This module provides functions to identify and analyze harmonic ranges within
+   lines and segments of the model.
+
+
 
 Functions
 ---------
@@ -17,7 +25,7 @@ Functions
 Module Contents
 ---------------
 
-.. py:function:: check_range(r)
+.. py:function:: check_range(r: tuple[sympy.geometry.Point, Ellipsis]) -> sympy.Expr
 
    Check if a range of 4 points forms a harmonic range.
 
@@ -27,7 +35,7 @@ Module Contents
    :rtype: sp.Expr
 
 
-.. py:function:: analyze_harmonics(line)
+.. py:function:: analyze_harmonics(line: sympy.geometry.Line) -> list[tuple[sympy.geometry.Point, Ellipsis]]
 
    Analyze a line for harmonic ranges.
 
@@ -37,7 +45,7 @@ Module Contents
    :rtype: list
 
 
-.. py:function:: analyze_harmonics_by_segment(sections_by_line)
+.. py:function:: analyze_harmonics_by_segment(sections_by_line: dict) -> dict
 
    Group harmonic ranges by segment.
 

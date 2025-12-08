@@ -1,5 +1,6 @@
-"""
-Event listeners for divine analysis.
+"""Event listeners for divine analysis.
+
+This module contains listeners that trigger analysis when elements are added to the model.
 """
 
 from __future__ import annotations
@@ -10,10 +11,8 @@ from geometor.model.sections import Section
 from geometor.model.utils import sort_points
 
 
-def point_added_listener(model: Model, pt: spg.Point):
-    """
-    Logs the creation of a point and then analyzes it to find all
-    possible line sections.
+def point_added_listener(model: Model, pt: spg.Point) -> None:
+    """Logs the creation of a point and then analyzes it to find all possible line sections.
 
     Args:
         model: The model containing the point.
@@ -23,7 +22,7 @@ def point_added_listener(model: Model, pt: spg.Point):
     # model.log(f"    [bold]{model[pt].ID}[/bold] : {{ {pt.x}, {pt.y} }}")
 
     # Use a local log function for indented analysis messages.
-    def log_analysis(message):
+    def log_analysis(message: str) -> None:
         model.log(f"        {message}")
 
     log_analysis("divine analysis")

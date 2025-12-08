@@ -5,17 +5,14 @@ geometor.divine
 
 .. autoapi-nested-parse::
 
-   The :mod:`geometor.divine` module provides tools for analyzing geometric models to identify
-   divine proportions, golden sections, and harmonic ranges.
+   Tools for analyzing geometric models to identify divine proportions.
 
-   Key Components:
-   ---------------
+   **Key Components**
    - **Analysis Hook**: A mechanism :func:`register_divine_hook` to automatically analyze points as they are added to the model.
    - **Golden Sections**: Tools to find and verify golden ratio relationships (:mod:`geometor.divine.golden`).
    - **Events**: Listeners that trigger analysis on model updates.
 
-   Usage:
-   ------
+   **Usage**
    Register the divine hook with a :class:`~geometor.model.Model` instance to enable real-time analysis.
 
 
@@ -43,7 +40,7 @@ Functions
 Package Contents
 ----------------
 
-.. py:function:: register_divine_hook(model: geometor.model.Model)
+.. py:function:: register_divine_hook(model: geometor.model.Model) -> None
 
    Initializes the divine analysis by registering the listener with the model's hook.
 

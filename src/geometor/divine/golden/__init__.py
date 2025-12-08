@@ -1,5 +1,6 @@
-"""
-find and analyze golden sections
+"""Find and analyze golden sections.
+
+This module provides tools for identifying golden sections in lines and points.
 
 .. todo:: create a sections module
 """
@@ -49,15 +50,14 @@ phi = sp.Rational(1, 2) + (sp.sqrt(5) / 2)
 def find_golden_sections_in_model(
     model: Model,
 ) -> tuple[list[Section], dict[spg.Line, list[Section]]]:
-    """
-    Analyze all lines in the model for golden sections.
+    """Analyze all lines in the model for golden sections.
 
     Args:
         model: The model to analyze.
 
     Returns:
         tuple: A tuple containing a list of all golden sections and a dictionary
-        mapping lines to their golden sections.
+            mapping lines to their golden sections.
     """
     sections = []
     sections_by_line = {}
@@ -73,9 +73,8 @@ def find_golden_sections_in_model(
     return sections, sections_by_line
 
 
-def find_golden_sections_in_points(pts) -> list[Section]:
-    """
-    Find golden sections in combinations of 3 points in list.
+def find_golden_sections_in_points(pts: list[spg.Point]) -> list[Section]:
+    """Find golden sections in combinations of 3 points in list.
 
     Args:
         pts: A list of points to analyze.
@@ -99,6 +98,14 @@ def find_golden_sections_in_points(pts) -> list[Section]:
     return goldens
 
 
-def is_section_golden(section_points) -> bool:
+def is_section_golden(section_points: tuple[spg.Point, ...]) -> bool:
+    """Check if a set of points forms a golden section.
+
+    Args:
+        section_points: The points forming the section.
+
+    Returns:
+        bool: True if the section is a golden section.
+    """
     section = Section(section_points)
     return section.is_golden

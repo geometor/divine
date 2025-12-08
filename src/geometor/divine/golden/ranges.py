@@ -1,3 +1,9 @@
+"""Analysis of harmonic ranges in geometric lines.
+
+This module provides functions to identify and analyze harmonic ranges within
+lines and segments of the model.
+"""
+
 from __future__ import annotations
 from collections import defaultdict
 
@@ -8,9 +14,8 @@ from itertools import combinations
 from geometor.model.utils import sort_points
 
 
-def check_range(r):
-    """
-    Check if a range of 4 points forms a harmonic range.
+def check_range(r: tuple[spg.Point, ...]) -> sp.Expr:
+    """Check if a range of 4 points forms a harmonic range.
 
     Args:
         r: A tuple of 4 points.
@@ -25,9 +30,8 @@ def check_range(r):
     return sp.simplify((ad / cd) - (ac / bc))
 
 
-def analyze_harmonics(line):
-    """
-    Analyze a line for harmonic ranges.
+def analyze_harmonics(line: spg.Line) -> list[tuple[spg.Point, ...]]:
+    """Analyze a line for harmonic ranges.
 
     Args:
         line: The line to analyze.
@@ -51,9 +55,8 @@ def analyze_harmonics(line):
     return harmonics
 
 
-def analyze_harmonics_by_segment(sections_by_line):
-    """
-    Group harmonic ranges by segment.
+def analyze_harmonics_by_segment(sections_by_line: dict) -> dict:
+    """Group harmonic ranges by segment.
 
     Args:
         sections_by_line: Dictionary of sections by line.

@@ -7,6 +7,8 @@ geometor.divine.events
 
    Event listeners for divine analysis.
 
+   This module contains listeners that trigger analysis when elements are added to the model.
+
 
 
 Functions
@@ -20,10 +22,9 @@ Functions
 Module Contents
 ---------------
 
-.. py:function:: point_added_listener(model: geometor.model.Model, pt: sympy.geometry.Point)
+.. py:function:: point_added_listener(model: geometor.model.Model, pt: sympy.geometry.Point) -> None
 
-   Logs the creation of a point and then analyzes it to find all
-   possible line sections.
+   Logs the creation of a point and then analyzes it to find all possible line sections.
 
    :param model: The model containing the point.
    :param pt: The point that was added.
