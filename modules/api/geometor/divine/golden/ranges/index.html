@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>geometor.divine.golden.ranges &mdash; Project name not set  documentation</title>
   <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/styles.css?v=dabe459a" />
+  <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/styles.css?v=b65c493b" />
   <link rel="stylesheet" type="text/css" href="../../../../../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="../../../../../../_static/css/print.css" type="text/css" media="print" />
   <link rel="icon" href="../../../../../../_static/favicon.ico" />
@@ -69,17 +69,20 @@
         </nav>
           <section id="module-geometor.divine.golden.ranges">
 <span id="geometor-divine-golden-ranges"></span><h1>geometor.divine.golden.ranges<a class="headerlink" href="#module-geometor.divine.golden.ranges" title="Link to this heading">¶</a></h1>
+<p>Analysis of harmonic ranges in geometric lines.</p>
+<p>This module provides functions to identify and analyze harmonic ranges within
+lines and segments of the model.</p>
 <section id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#geometor.divine.golden.ranges.check_range" title="geometor.divine.golden.ranges.check_range"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_range</span></code></a>(r)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geometor.divine.golden.ranges.check_range" title="geometor.divine.golden.ranges.check_range"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_range</span></code></a>(→ sympy.Expr)</p></td>
 <td><p>Check if a range of 4 points forms a harmonic range.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#geometor.divine.golden.ranges.analyze_harmonics" title="geometor.divine.golden.ranges.analyze_harmonics"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analyze_harmonics</span></code></a>(line)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#geometor.divine.golden.ranges.analyze_harmonics" title="geometor.divine.golden.ranges.analyze_harmonics"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analyze_harmonics</span></code></a>(→ list[tuple[sympy.geometry.Point, ...)</p></td>
 <td><p>Analyze a line for harmonic ranges.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#geometor.divine.golden.ranges.analyze_harmonics_by_segment" title="geometor.divine.golden.ranges.analyze_harmonics_by_segment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analyze_harmonics_by_segment</span></code></a>(sections_by_line)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geometor.divine.golden.ranges.analyze_harmonics_by_segment" title="geometor.divine.golden.ranges.analyze_harmonics_by_segment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analyze_harmonics_by_segment</span></code></a>(→ dict)</p></td>
 <td><p>Group harmonic ranges by segment.</p></td>
 </tr>
 </tbody>
@@ -89,7 +92,7 @@
 <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="geometor.divine.golden.ranges.check_range">
-<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.ranges.</span></span><span class="sig-name descname"><span class="pre">check_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.divine.golden.ranges.check_range" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.ranges.</span></span><span class="sig-name descname"><span class="pre">check_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Ellipsis</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.divine.golden.ranges.check_range" title="Link to this definition">¶</a></dt>
 <dd><p>Check if a range of 4 points forms a harmonic range.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -106,7 +109,7 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="geometor.divine.golden.ranges.analyze_harmonics">
-<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.ranges.</span></span><span class="sig-name descname"><span class="pre">analyze_harmonics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.divine.golden.ranges.analyze_harmonics" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.ranges.</span></span><span class="sig-name descname"><span class="pre">analyze_harmonics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Line</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Ellipsis</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.divine.golden.ranges.analyze_harmonics" title="Link to this definition">¶</a></dt>
 <dd><p>Analyze a line for harmonic ranges.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -123,7 +126,7 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="geometor.divine.golden.ranges.analyze_harmonics_by_segment">
-<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.ranges.</span></span><span class="sig-name descname"><span class="pre">analyze_harmonics_by_segment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sections_by_line</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.divine.golden.ranges.analyze_harmonics_by_segment" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.ranges.</span></span><span class="sig-name descname"><span class="pre">analyze_harmonics_by_segment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sections_by_line</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a></span></span><a class="headerlink" href="#geometor.divine.golden.ranges.analyze_harmonics_by_segment" title="Link to this definition">¶</a></dt>
 <dd><p>Group harmonic ranges by segment.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>

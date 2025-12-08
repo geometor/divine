@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>geometor.divine.golden &mdash; Project name not set  documentation</title>
   <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=dabe459a" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=b65c493b" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
   <link rel="icon" href="../../../../../_static/favicon.ico" />
@@ -67,7 +67,8 @@
         </nav>
           <section id="module-geometor.divine.golden">
 <span id="geometor-divine-golden"></span><h1>geometor.divine.golden<a class="headerlink" href="#module-geometor.divine.golden" title="Link to this heading">¶</a></h1>
-<p>find and analyze golden sections</p>
+<p>Find and analyze golden sections.</p>
+<p>This module provides tools for identifying golden sections in lines and points.</p>
 <div class="admonition-todo admonition" id="id1">
 <p class="admonition-title">Todo</p>
 <p>create a sections module</p>
@@ -114,13 +115,13 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.divine.golden.group_sections_by_points" title="geometor.divine.golden.group_sections_by_points"><code class="xref py py-obj docutils literal notranslate"><span class="pre">group_sections_by_points</span></code></a>(→ dict[sympy.geometry.Point, ...)</p></td>
 <td><p>Group sections by the points they contain.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#geometor.divine.golden.analyze_harmonics" title="geometor.divine.golden.analyze_harmonics"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analyze_harmonics</span></code></a>(line)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#geometor.divine.golden.analyze_harmonics" title="geometor.divine.golden.analyze_harmonics"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analyze_harmonics</span></code></a>(→ list[tuple[sympy.geometry.Point, ...)</p></td>
 <td><p>Analyze a line for harmonic ranges.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#geometor.divine.golden.analyze_harmonics_by_segment" title="geometor.divine.golden.analyze_harmonics_by_segment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analyze_harmonics_by_segment</span></code></a>(sections_by_line)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geometor.divine.golden.analyze_harmonics_by_segment" title="geometor.divine.golden.analyze_harmonics_by_segment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">analyze_harmonics_by_segment</span></code></a>(→ dict)</p></td>
 <td><p>Group harmonic ranges by segment.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#geometor.divine.golden.check_range" title="geometor.divine.golden.check_range"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_range</span></code></a>(r)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#geometor.divine.golden.check_range" title="geometor.divine.golden.check_range"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_range</span></code></a>(→ sympy.Expr)</p></td>
 <td><p>Check if a range of 4 points forms a harmonic range.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.divine.golden.find_golden_sections_in_model" title="geometor.divine.golden.find_golden_sections_in_model"><code class="xref py py-obj docutils literal notranslate"><span class="pre">find_golden_sections_in_model</span></code></a>(...)</p></td>
@@ -130,7 +131,7 @@
 <td><p>Find golden sections in combinations of 3 points in list.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.divine.golden.is_section_golden" title="geometor.divine.golden.is_section_golden"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_section_golden</span></code></a>(→ bool)</p></td>
-<td><p></p></td>
+<td><p>Check if a set of points forms a golden section.</p></td>
 </tr>
 </tbody>
 </table>
@@ -146,8 +147,11 @@
 <dd class="field-odd"><p><strong>sections</strong> – A list of Section objects representing golden sections to be analyzed.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A dictionary representing a tree structure where each node is a
-Section and connected Sections are child nodes.</p>
+<dd class="field-even"><p><dl class="simple">
+<dt>A dictionary representing a tree structure where each node is a</dt><dd><p>Section and connected Sections are child nodes.</p>
+</dd>
+</dl>
+</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#dict" title="(in Python v3.13)">dict</a></p>
@@ -161,14 +165,15 @@ Section and connected Sections are child nodes.</p>
 <dd><p>Unpack the chain tree into a list of individual Chain objects.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>tree</strong> – A dictionary representing a tree structure where each node is a</p></li>
-<li><p><strong>nodes.</strong> (<em>Section and connected Sections are child</em>)</p></li>
-</ul>
+<dd class="field-odd"><p><strong>tree</strong> – A dictionary representing a tree structure where each node is a
+Section and connected Sections are child nodes.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A list containing Chain objects, each representing a chain
-of connected golden sections.</p>
+<dd class="field-even"><p><dl class="simple">
+<dt>A list containing Chain objects, each representing a chain</dt><dd><p>of connected golden sections.</p>
+</dd>
+</dl>
+</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#list" title="(in Python v3.13)">list</a>[Chain]</p>
@@ -229,7 +234,7 @@ of connected golden sections.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="geometor.divine.golden.analyze_harmonics">
-<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">analyze_harmonics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.divine.golden.analyze_harmonics" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">analyze_harmonics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Line</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Ellipsis</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.divine.golden.analyze_harmonics" title="Link to this definition">¶</a></dt>
 <dd><p>Analyze a line for harmonic ranges.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -246,7 +251,7 @@ of connected golden sections.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="geometor.divine.golden.analyze_harmonics_by_segment">
-<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">analyze_harmonics_by_segment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sections_by_line</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.divine.golden.analyze_harmonics_by_segment" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">analyze_harmonics_by_segment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sections_by_line</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a></span></span><a class="headerlink" href="#geometor.divine.golden.analyze_harmonics_by_segment" title="Link to this definition">¶</a></dt>
 <dd><p>Group harmonic ranges by segment.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -263,7 +268,7 @@ of connected golden sections.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="geometor.divine.golden.check_range">
-<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">check_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.divine.golden.check_range" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">check_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Ellipsis</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.divine.golden.check_range" title="Link to this definition">¶</a></dt>
 <dd><p>Check if a range of 4 points forms a harmonic range.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -297,8 +302,11 @@ of connected golden sections.</p>
 <dd class="field-odd"><p><strong>model</strong> – The model to analyze.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A tuple containing a list of all golden sections and a dictionary
-mapping lines to their golden sections.</p>
+<dd class="field-even"><p><dl class="simple">
+<dt>A tuple containing a list of all golden sections and a dictionary</dt><dd><p>mapping lines to their golden sections.</p>
+</dd>
+</dl>
+</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#tuple" title="(in Python v3.13)">tuple</a></p>
@@ -308,7 +316,7 @@ mapping lines to their golden sections.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="geometor.divine.golden.find_golden_sections_in_points">
-<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">find_golden_sections_in_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pts</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">geometor.model.sections.Section</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.divine.golden.find_golden_sections_in_points" title="Link to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">find_golden_sections_in_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pts</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">geometor.model.sections.Section</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.divine.golden.find_golden_sections_in_points" title="Link to this definition">¶</a></dt>
 <dd><p>Find golden sections in combinations of 3 points in list.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -325,8 +333,20 @@ mapping lines to their golden sections.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="geometor.divine.golden.is_section_golden">
-<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">is_section_golden</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">section_points</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/library/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#geometor.divine.golden.is_section_golden" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">is_section_golden</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">section_points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Ellipsis</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/library/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></span><a class="headerlink" href="#geometor.divine.golden.is_section_golden" title="Link to this definition">¶</a></dt>
+<dd><p>Check if a set of points forms a golden section.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>section_points</strong> – The points forming the section.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the section is a golden section.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/library/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+</dd>
+</dl>
+</dd></dl>
 
 </section>
 </section>

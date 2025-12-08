@@ -5,7 +5,9 @@ geometor.divine.golden
 
 .. autoapi-nested-parse::
 
-   find and analyze golden sections
+   Find and analyze golden sections.
+
+   This module provides tools for identifying golden sections in lines and points.
 
    .. todo:: create a sections module
 
@@ -58,8 +60,10 @@ Package Contents
 
    :param sections: A list of Section objects representing golden sections to be analyzed.
 
-   :returns: A dictionary representing a tree structure where each node is a
-             Section and connected Sections are child nodes.
+   :returns:
+
+             A dictionary representing a tree structure where each node is a
+                 Section and connected Sections are child nodes.
    :rtype: dict
 
 
@@ -68,10 +72,12 @@ Package Contents
    Unpack the chain tree into a list of individual Chain objects.
 
    :param tree: A dictionary representing a tree structure where each node is a
-   :param Section and connected Sections are child nodes.:
+                Section and connected Sections are child nodes.
 
-   :returns: A list containing Chain objects, each representing a chain
-             of connected golden sections.
+   :returns:
+
+             A list containing Chain objects, each representing a chain
+                 of connected golden sections.
    :rtype: list[Chain]
 
 
@@ -105,7 +111,7 @@ Package Contents
    :rtype: dict
 
 
-.. py:function:: analyze_harmonics(line)
+.. py:function:: analyze_harmonics(line: sympy.geometry.Line) -> list[tuple[sympy.geometry.Point, Ellipsis]]
 
    Analyze a line for harmonic ranges.
 
@@ -115,7 +121,7 @@ Package Contents
    :rtype: list
 
 
-.. py:function:: analyze_harmonics_by_segment(sections_by_line)
+.. py:function:: analyze_harmonics_by_segment(sections_by_line: dict) -> dict
 
    Group harmonic ranges by segment.
 
@@ -125,7 +131,7 @@ Package Contents
    :rtype: dict
 
 
-.. py:function:: check_range(r)
+.. py:function:: check_range(r: tuple[sympy.geometry.Point, Ellipsis]) -> sympy.Expr
 
    Check if a range of 4 points forms a harmonic range.
 
@@ -145,12 +151,14 @@ Package Contents
 
    :param model: The model to analyze.
 
-   :returns: A tuple containing a list of all golden sections and a dictionary
-             mapping lines to their golden sections.
+   :returns:
+
+             A tuple containing a list of all golden sections and a dictionary
+                 mapping lines to their golden sections.
    :rtype: tuple
 
 
-.. py:function:: find_golden_sections_in_points(pts) -> list[geometor.model.sections.Section]
+.. py:function:: find_golden_sections_in_points(pts: list[sympy.geometry.Point]) -> list[geometor.model.sections.Section]
 
    Find golden sections in combinations of 3 points in list.
 
@@ -160,5 +168,13 @@ Package Contents
    :rtype: list[Section]
 
 
-.. py:function:: is_section_golden(section_points) -> bool
+.. py:function:: is_section_golden(section_points: tuple[sympy.geometry.Point, Ellipsis]) -> bool
+
+   Check if a set of points forms a golden section.
+
+   :param section_points: The points forming the section.
+
+   :returns: True if the section is a golden section.
+   :rtype: bool
+
 

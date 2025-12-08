@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>geometor.divine.golden.chains &mdash; Project name not set  documentation</title>
   <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/styles.css?v=dabe459a" />
+  <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/styles.css?v=b65c493b" />
   <link rel="stylesheet" type="text/css" href="../../../../../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="../../../../../../_static/css/print.css" type="text/css" media="print" />
   <link rel="icon" href="../../../../../../_static/favicon.ico" />
@@ -69,7 +69,7 @@
         </nav>
           <section id="module-geometor.divine.golden.chains">
 <span id="geometor-divine-golden-chains"></span><h1>geometor.divine.golden.chains<a class="headerlink" href="#module-geometor.divine.golden.chains" title="Link to this heading">¶</a></h1>
-<p>Golden Chain Analyzer: Harmonic Range Identification in Golden Sections</p>
+<p>Golden Chain Analyzer: Harmonic Range Identification in Golden Sections.</p>
 <p>This module is designed to analyze and explore chains of connected golden
 sections, unraveling the harmonic ranges within geometric structures.
 Utilizing sophisticated mathematical analysis and geometric algorithms,
@@ -77,11 +77,11 @@ it aims to identify, categorize, and unpack chains, providing an intuitive
 understanding of their intrinsic geometric harmonies.</p>
 <p>Features:</p>
 <ul class="simple">
-<li><p><cite>find_chains_in_sections</cite>: A function designed to meticulously identify
+<li><p><code class="docutils literal notranslate"><span class="pre">find_chains_in_sections</span></code>: A function designed to meticulously identify
 chains within a collection of sections, resulting in a hierarchical tree
 structure representing connected sections.</p></li>
-<li><p><cite>unpack_chains</cite>: Unveils the chains hidden within the tree structure,
-outputting a list of individual <cite>Chain</cite> objects ready for analysis.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">unpack_chains</span></code>: Unveils the chains hidden within the tree structure,
+outputting a list of individual <code class="xref py py-class docutils literal notranslate"><span class="pre">Chain</span></code> objects ready for analysis.</p></li>
 </ul>
 <p>Each chain’s flow is characterized by the comparative lengths of consecutive
 segments, represented symbolically to understand the progression and
@@ -112,8 +112,11 @@ geometric harmony.</p>
 <dd class="field-odd"><p><strong>sections</strong> – A list of Section objects representing golden sections to be analyzed.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A dictionary representing a tree structure where each node is a
-Section and connected Sections are child nodes.</p>
+<dd class="field-even"><p><dl class="simple">
+<dt>A dictionary representing a tree structure where each node is a</dt><dd><p>Section and connected Sections are child nodes.</p>
+</dd>
+</dl>
+</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#dict" title="(in Python v3.13)">dict</a></p>
@@ -127,14 +130,15 @@ Section and connected Sections are child nodes.</p>
 <dd><p>Unpack the chain tree into a list of individual Chain objects.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>tree</strong> – A dictionary representing a tree structure where each node is a</p></li>
-<li><p><strong>nodes.</strong> (<em>Section and connected Sections are child</em>)</p></li>
-</ul>
+<dd class="field-odd"><p><strong>tree</strong> – A dictionary representing a tree structure where each node is a
+Section and connected Sections are child nodes.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A list containing Chain objects, each representing a chain
-of connected golden sections.</p>
+<dd class="field-even"><p><dl class="simple">
+<dt>A list containing Chain objects, each representing a chain</dt><dd><p>of connected golden sections.</p>
+</dd>
+</dl>
+</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/library/stdtypes.html#list" title="(in Python v3.13)">list</a>[Chain]</p>

@@ -13,7 +13,7 @@ Key functionalities of ``geometor.divine`` include:
 
 This module is designed to be intuitive yet powerful, catering to both enthusiasts and professionals in geometry, nature, and mathematics. Through its advanced analysis capabilities, ``geometor.divine`` aims to deepen the understanding of the golden ratio, offering a new perspective on its role and significance in the realm of geometry.
 
-.. image:: /_static/geometor-divine-overview.png
+.. .. image:: /_static/geometor-divine-overview.png
 
 .. _`GEOMETOR`: https://geometor.com
 .. _`Project's Website`: https://geometor.github.io/divine

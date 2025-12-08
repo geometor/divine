@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>geometor.divine.events &mdash; Project name not set  documentation</title>
   <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=dabe459a" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=b65c493b" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
   <link rel="icon" href="../../../../../_static/favicon.ico" />
@@ -68,12 +68,13 @@
           <section id="module-geometor.divine.events">
 <span id="geometor-divine-events"></span><h1>geometor.divine.events<a class="headerlink" href="#module-geometor.divine.events" title="Link to this heading">¶</a></h1>
 <p>Event listeners for divine analysis.</p>
+<p>This module contains listeners that trigger analysis when elements are added to the model.</p>
 <section id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
 <table class="autosummary longtable docutils align-default">
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#geometor.divine.events.point_added_listener" title="geometor.divine.events.point_added_listener"><code class="xref py py-obj docutils literal notranslate"><span class="pre">point_added_listener</span></code></a>(model, pt)</p></td>
-<td><p>Logs the creation of a point and then analyzes it to find all</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#geometor.divine.events.point_added_listener" title="geometor.divine.events.point_added_listener"><code class="xref py py-obj docutils literal notranslate"><span class="pre">point_added_listener</span></code></a>(→ None)</p></td>
+<td><p>Logs the creation of a point and then analyzes it to find all possible line sections.</p></td>
 </tr>
 </tbody>
 </table>
@@ -82,9 +83,8 @@
 <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="geometor.divine.events.point_added_listener">
-<span class="sig-prename descclassname"><span class="pre">geometor.divine.events.</span></span><span class="sig-name descname"><span class="pre">point_added_listener</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.divine.events.point_added_listener" title="Link to this definition">¶</a></dt>
-<dd><p>Logs the creation of a point and then analyzes it to find all
-possible line sections.</p>
+<span class="sig-prename descclassname"><span class="pre">geometor.divine.events.</span></span><span class="sig-name descname"><span class="pre">point_added_listener</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#geometor.divine.events.point_added_listener" title="Link to this definition">¶</a></dt>
+<dd><p>Logs the creation of a point and then analyzes it to find all possible line sections.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
