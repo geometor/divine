@@ -1,6 +1,16 @@
 changelog
 =========
 
+0.3.5
+-----
+*2025-12-08*
+
+**documentation**
+
+-   Comprehensive update to docstrings across the codebase.
+-   Added type hints to functions and methods.
+-   Updated API documentation to reflect changes.
+
 0.3.4
 -----
 *2025-12-06*
