@@ -6,12 +6,12 @@ GEOMETOR • divine
 .. image:: https://img.shields.io/github/license/geometor/divine.svg
    :target: https://github.com/geometor/divine/blob/main/LICENSE
 
-**Seeking harmony in the noise.**
+**An analysis engine for identifying golden sections and harmonic ranges.**
 
 Overview
 --------
 
-``geometor.divine`` is the analytical engine of the GEOMETOR ecosystem. While ``geometor.model`` builds the geometry, ``divine`` observes it, searching for hidden patterns, proportions, and relationships.
+``geometor.divine`` is an analysis engine for identifying golden sections and harmonic ranges. While ``geometor.model`` builds the geometry, ``divine`` observes it, searching for hidden patterns, proportions, and relationships.
 
 Its primary mission is to identify instances of the **Divine Proportion** (the Golden Ratio, $\phi \approx 1.618$) and other harmonic structures that emerge from simple constructions.
 
