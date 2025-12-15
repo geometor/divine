@@ -4,22 +4,23 @@ from rich import print
 class Sexagesimal:
     """
     A class to represent numbers in a sexagesimal (base-60) format.
-    
+
     This class takes an integer and represents it in a sexagesimal format using
     two internal bases: a quasi base-5 and base-12. Each "register" in the
     sexagesimal representation contains two parts:
 
-    - a part that counts up to 5 (represented with '>') 
+    - a part that counts up to 5 (represented with '>')
     - and another part that counts up to 12 (represented with '|').
-    
+
     Attributes:
     registers (list): A list of dictionaries where each dictionary holds boolean values
                       representing the presence of a symbol in base-5 and base-12 parts.
-    
+
     Methods:
     _parse_sexagesimal(value): Recursively parses an integer into the sexagesimal format and stores it in registers.
     symbols(): Returns a string representation of the sexagesimal number using specific symbols.
     """
+
     def __init__(self, value=0):
         """
         Initializes the Sexagesimal object, setting up the registers and parsing the input value.
@@ -54,7 +55,6 @@ class Sexagesimal:
         self.registers.insert(0, register)
 
         self._parse_sexagesimal(quotient)
-
 
     @property
     def symbols(self):

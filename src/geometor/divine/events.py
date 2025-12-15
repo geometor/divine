@@ -12,11 +12,12 @@ from geometor.model.utils import sort_points
 
 
 def point_added_listener(model: Model, pt: spg.Point) -> None:
-    """Logs the creation of a point and then analyzes it to find all possible line sections.
+    """Log the creation of a point and then analyze it to find all possible line sections.
 
     Args:
         model: The model containing the point.
         pt: The point that was added.
+
     """
     # Log the creation of the point first.
     # model.log(f"    [bold]{model[pt].ID}[/bold] : {{ {pt.x}, {pt.y} }}")

@@ -1,6 +1,7 @@
 """
 constructs the classic 'vesica pisces'
 """
+
 from geometor.model import *
 from geometor.model.helpers import *
 from geometor.render import *
@@ -64,7 +65,7 @@ def run():
         print("floats: ", chain.numerical_lengths)
         print("fibs: ", chain.fibonacci_IDs)
 
-    print('flow: ')
+    print("flow: ")
     for chain in chains:
         IDs = ["_".join(section.get_IDs(model)) for section in chain.sections]
         print(chain.count_symmetry_lines(), chain.flow)
@@ -75,7 +76,7 @@ def run():
     #  plotter = Plotter(model.name)
     #  plotter.plot_model(model)
     #  plot_sections(plotter, model, sections)
-    
+
     #  plotter = Plotter(model.name)
     #  plotter.plot_model(model)
     #  plot_chains(plotter, model, chains)
@@ -92,20 +93,21 @@ def run():
     report_sequence_rst(model)
 
 
-
 def report_sequence_rst(model, filename="model_report.rst"):
     """Generate a sequential RST report of the model."""
-    with open(filename, 'w') as file:
+    with open(filename, "w") as file:
         file.write(f"MODEL Report: {model.name}\n")
         file.write("=" * len(f"MODEL Report: {model.name}") + "\n\n")
 
         file.write(".. list-table:: Sequence\n")
         file.write("   :header-rows: 1\n\n")
-        file.write("   * - Label\n     - <\n     - >\n     - Classes\n     - Parents\n     - Equation\n")
+        file.write(
+            "   * - Label\n     - <\n     - >\n     - Classes\n     - Parents\n     - Equation\n"
+        )
 
         for el, details in model.items():
-            el_classes = ', '.join(details.classes.keys())
-            el_parents = ', '.join(
+            el_classes = ", ".join(details.classes.keys())
+            el_parents = ", ".join(
                 [f":math:`{model[parent].label}`" for parent in details.parents.keys()]
             )
 
@@ -136,12 +138,12 @@ def report_sequence_rst(model, filename="model_report.rst"):
                 row[5] = f":math:`{sp.latex(el.equation())}`"
 
             elif isinstance(el, spg.Segment) or isinstance(el, spg.Polygon):
-                vertices = ', '.join([f":math:`{model[pt].label or pt}`" for pt in el.vertices])
+                vertices = ", ".join(
+                    [f":math:`{model[pt].label or pt}`" for pt in el.vertices]
+                )
                 row[1] = vertices
 
             file.write("   * - " + "\n     - ".join(row) + "\n")
-
-
 
 
 if __name__ == "__main__":

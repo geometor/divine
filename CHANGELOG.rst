@@ -1,6 +1,17 @@
 changelog
 =========
 
+0.3.6
+-----
+*2025-12-15*
+
+**docs**
+
+-   Implemented rigorous code quality checks for docstrings and type hints.
+-   Fixed all outstanding docstring errors in ``divine.py``, ``events.py``, and ``golden/groups.py``.
+-   Verified codebase against strict `ruff` standards.
+
+
 0.3.5
 -----
 *2025-12-08*

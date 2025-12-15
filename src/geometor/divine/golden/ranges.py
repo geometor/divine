@@ -22,6 +22,7 @@ def check_range(r: tuple[spg.Point, ...]) -> sp.Expr:
 
     Returns:
         sp.Expr: The cross ratio value (0 if harmonic).
+
     """
     ad = spg.Segment(r[0], r[3]).length
     cd = spg.Segment(r[2], r[3]).length
@@ -38,6 +39,7 @@ def analyze_harmonics(line: spg.Line) -> list[tuple[spg.Point, ...]]:
 
     Returns:
         list: A list of harmonic ranges (tuples of 4 points).
+
     """
     line_pts = sort_points(line.pts)
     #  for pt in line_pts:
@@ -63,6 +65,7 @@ def analyze_harmonics_by_segment(sections_by_line: dict) -> dict:
 
     Returns:
         dict: Nested dictionary mapping lines to segments to harmonic ranges.
+
     """
     harmonics_by_segment = {}
     for line, line_sections in sections_by_line.items():

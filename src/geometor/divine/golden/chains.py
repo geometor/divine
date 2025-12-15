@@ -37,6 +37,7 @@ def find_chains_in_sections(sections: list[Section]) -> dict:
     Returns:
         dict: A dictionary representing a tree structure where each node is a
             Section and connected Sections are child nodes.
+
     """
 
     def add_to_chain_tree(section: Section, tree: dict) -> None:
@@ -84,6 +85,7 @@ def unpack_chains(tree: dict) -> list[Chain]:
     Returns:
         list[Chain]: A list containing Chain objects, each representing a chain
             of connected golden sections.
+
     """
 
     def dfs(node: dict, path: list[Section], chains: list[Chain]) -> None:
