@@ -25,7 +25,7 @@ Module Contents
 
 .. py:function:: register_divine_hook(model: geometor.model.Model) -> None
 
-   Initializes the divine analysis by registering the listener with the model's hook.
+   Initialize the divine analysis by registering the listener with the model's hook.
 
    :param model: The model to attach the analysis hook to.
 

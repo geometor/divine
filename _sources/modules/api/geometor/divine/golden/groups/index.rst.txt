@@ -3,6 +3,11 @@ geometor.divine.golden.groups
 
 .. py:module:: geometor.divine.golden.groups
 
+.. autoapi-nested-parse::
+
+   Module for grouping and organizing Golden Sections.
+
+
 
 Functions
 ---------
