@@ -4,13 +4,12 @@ constructs the classic 'vesica pisces'
 
 from geometor.model import *
 from geometor.model.helpers import *
-from geometor.render import *
 
-from geometor.divine import *
+from geometor.divine.golden import *
 
 
 def run():
-    model = Model("vesica4a")
+    model = Model("vesica-divine")
     A = model.set_point(0, 0, classes=["given"])
     B = model.set_point(1, 0, classes=["given"])
 
@@ -27,20 +26,12 @@ def run():
     model.set_polygon([A, B, E])
     model.set_polygon([A, B, F])
 
-    model.construct_line(E, F, classes=["red"])
+    model.construct_line(E, F, classes=["bisector"])
     model.construct_circle(A, D)
     model.construct_circle(B, C)
 
-    model.set_wedge(A, B, F, E)
 
-    #  report_summary(model)
-    #  report_group_by_type(model)
-
-    sequencer = Sequencer(model.name)
-    #  sequencer.plot_sequence(model, extensions=['png'])
-    sequencer.step_sequence(model)
-    plt.show()
-
+    print()
     print("\nfind golden sections in model: \n")
     sections, sections_by_line = find_golden_sections_in_model(model)
     print(f"sections: {len(sections)}")
@@ -49,6 +40,7 @@ def run():
         #  print(section.ratio)
         #  print(section.min_length)
         #  #  print(section.points)
+        model.set_section(section.points, classes=["golden"])
         print(section.get_IDs(model))
 
     chain_tree = find_chains_in_sections(sections)
@@ -70,27 +62,8 @@ def run():
         IDs = ["_".join(section.get_IDs(model)) for section in chain.sections]
         print(chain.count_symmetry_lines(), chain.flow)
 
-    #  groups_by_size = group_sections_by_size(sections)
-    #  print(groups_by_size)
-
-    #  plotter = Plotter(model.name)
-    #  plotter.plot_model(model)
-    #  plot_sections(plotter, model, sections)
-
-    #  plotter = Plotter(model.name)
-    #  plotter.plot_model(model)
-    #  plot_chains(plotter, model, chains)
-
-    #  groups = group_sections_by_points(sections)
-    #  plotter = Plotter(model.name)
-    #  plotter.plot_model(model)
-    #  title = "group sections by point"
-    #  plot_groups(plotter, model, groups, title)
-
-    #  plt.show()
-
-    report_sequence(model)
-    report_sequence_rst(model)
+    model.report_summary()
+    model.save("vesica-divine.json")
 
 
 def report_sequence_rst(model, filename="model_report.rst"):

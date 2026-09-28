@@ -24,7 +24,7 @@ Module Contents
 
 .. py:function:: point_added_listener(model: geometor.model.Model, pt: sympy.geometry.Point) -> None
 
-   Logs the creation of a point and then analyzes it to find all possible line sections.
+   Log the creation of a point and then analyze it to find all possible line sections.
 
    :param model: The model containing the point.
    :param pt: The point that was added.

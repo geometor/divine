@@ -20,21 +20,7 @@ The `divine` library provides tools to identify golden sections, harmonic ranges
 -   `chains.py`:  Logic for connecting individual sections into linked chains.
 -   `groups.py`:  Aggregating findings into meaningful groups.
 
-## Getting Started
 
-### Installation
-
-```bash
-git clone https://github.com/geometor/divine
-cd divine
-pip install -e .
-```
-
-### Running Tests
-
-```bash
-pytest
-```
 
 ### Key Tasks for Contributors
 
