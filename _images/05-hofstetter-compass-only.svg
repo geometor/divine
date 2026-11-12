@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 680 480" data-graphic-id="05-hofstetter-compass-only" role="img" aria-label="GC-01.05 — Mascheroni Five-Circle Compass-Only Construction">
+  <title>GC-01.05 — Mascheroni Five-Circle Compass-Only Construction</title>
+  <defs>
+    <marker id="geom-tick-1" markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
+      <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" />
+    </marker>
+    <marker id="geom-tick-2" markerUnits="userSpaceOnUse" viewBox="-7 -8 14 16" markerWidth="14" markerHeight="16" orient="auto">
+      <line x1="-2.4" y1="-6.2" x2="-2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+      <line x1="2.4" y1="-6.2" x2="2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+    </marker>
+    <marker id="geom-tick-3" markerUnits="userSpaceOnUse" viewBox="-9 -8 18 16" markerWidth="18" markerHeight="16" orient="auto">
+      <line x1="-4.4" y1="-6.2" x2="-4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+      <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+      <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+    </marker>
+  </defs>
+  <style>
+.euclid-graphic {
+    font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  .euclid-graphic .svg-bg { fill: none; }
+  .euclid-graphic .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82; }
+  .euclid-graphic .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62; }
+  .euclid-graphic .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92; }
+  .euclid-graphic .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round; }
+  .euclid-graphic .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72; }
+  .euclid-graphic .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58; }
+  .euclid-graphic .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88; }
+  .euclid-graphic .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68; }
+  .euclid-graphic .geom-segment.golden-segment { fill: none; stroke: #b45309; stroke-width: 2.8; stroke-linecap: round; stroke-opacity: 0.55; }
+  .euclid-graphic .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none; }
+  .euclid-graphic .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round; }
+  .euclid-graphic .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round; }
+  .euclid-graphic .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none; }
+  .euclid-graphic .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5; }
+  .euclid-graphic .geom-point.given-point { fill: #0f172a; }
+  .euclid-graphic .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7; }
+  .euclid-graphic .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none; }
+  .euclid-graphic .geom-label {
+    fill: #1c1917;
+    font-size: 13.5px;
+    font-weight: 600;
+    paint-order: stroke fill;
+    stroke: #fafaf9;
+    stroke-opacity: 0.92;
+    stroke-width: 3.6px;
+    stroke-linejoin: round;
+    user-select: none;
+  }
+  .euclid-graphic .geom-label-sub { font-size: 10px; font-weight: 600; }
+  @media (prefers-color-scheme: dark) {
+    .euclid-graphic .geom-circle.conic-curve { stroke: #38bdf8; }
+    .euclid-graphic .geom-circle.aux-circle { stroke: #7dd3fc; }
+    .euclid-graphic .geom-circle.golden-circle { stroke: #f5c542; }
+    .euclid-graphic .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1; }
+    .euclid-graphic .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542; }
+    .euclid-graphic .geom-line { stroke: #94a3b8; }
+    .euclid-graphic .geom-line.aux-line { stroke: #64748b; }
+    .euclid-graphic .geom-segment.struct-segment { stroke: #cbd5e1; }
+    .euclid-graphic .geom-segment.aux-segment { stroke: #64748b; }
+    .euclid-graphic .geom-segment.golden-segment { stroke: #facc15; }
+    .euclid-graphic .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32; }
+    .euclid-graphic .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7; }
+    .euclid-graphic .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5; }
+    .euclid-graphic .geom-point { fill: #38bdf8; stroke: #141417; }
+    .euclid-graphic .geom-point.given-point { fill: #e2e8f0; }
+    .euclid-graphic .geom-point.golden-point { fill: #f5c542; stroke: #141417; }
+    .euclid-graphic .geom-point-halo { stroke: #f5c542; }
+    .euclid-graphic .geom-label { fill: #f4f4f5; stroke: #141417; }
+  }
+  </style>
+  <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
+  <g id="elements">
+    <g id="graphics">
+      <circle class="geom-circle aux-circle" cx="297.87" cy="240" r="84.26" data-ref="c1" data-aliases="(A) | ( A ) | ( A B ) | A(B) | ( A C ) | A(C) | ( A D ) | A(D) | ( A E ) | A(E) | ( B C D )" fill="none"><title>c1: x**2 + y**2 - 1 = 0</title></circle>
+      <circle class="geom-circle aux-circle" cx="382.13" cy="240" r="84.26" data-ref="c2" data-aliases="(B) | ( B ) | ( B A ) | B(A) | ( B C ) | B(C) | ( B D ) | B(D) | ( B F ) | B(F) | ( A C D )" fill="none"><title>c2: y**2 + (x - 1)**2 - 1 = 0</title></circle>
+      <circle class="geom-circle aux-circle" cx="340" cy="167.03" r="145.93" data-ref="c3" data-aliases="(C) | ( C ) | ( C D ) | C(D) | ( C E ) | C(E) | ( C F ) | C(F) | ( D E F )" fill="none"><title>c3: (x - 1/2)**2 + (y - sqrt(3)/2)**2 - 3 = 0</title></circle>
+      <circle class="geom-circle golden-circle" cx="382.13" cy="240" r="168.51" data-ref="c4" data-aliases="(B) | ( B ) | ( B E ) | B(E) | ( B X ) | B(X) | ( B Y ) | B(Y) | ( E X Y )" fill="none"><title>c4: y**2 + (x - 1)**2 - 4 = 0</title></circle>
+      <circle class="geom-circle golden-circle" cx="297.87" cy="240" r="168.51" data-ref="c5" data-aliases="(A) | ( A ) | ( A F ) | A(F) | ( A X ) | A(X) | ( A Y ) | A(Y) | ( F X Y )" fill="none"><title>c5: x**2 + y**2 - 4 = 0</title></circle>
+      <path class="geom-segment golden-segment" d="M 340 167.03 L 340 285.1 L 340 403.16" data-ref="/ C D X /" data-aliases="CDX" fill="none" />
+      <path class="geom-segment golden-major-glow" d="M 340 167.03 L 340 240 L 340 312.97" fill="none" />
+      <path class="geom-segment golden-major" d="M 340 167.03 L 340 240 L 340 312.97" marker-mid="url(#geom-tick-1)" data-ref="/ C D /" data-aliases="[ C D ] | [ D C ] | / D C / | CD | DC" fill="none"><title>Golden major CD = sqrt(3)</title></path>
+      <path class="geom-segment golden-minor" d="M 340 312.97 L 340 358.06 L 340 403.16" marker-mid="url(#geom-tick-2)" data-ref="/ D X /" data-aliases="[ D X ] | [ X D ] | / X D / | DX | XD" fill="none"><title>Golden minor DX = (-sqrt(3) + sqrt(15))/2</title></path>
+    </g>
+    <g id="highlights">
+      <path class="geom-overlay" d="M 297.87 240 L 340 240 L 382.13 240" data-ref="AB" data-aliases="BA | / A B / | / B A / | [ A B ] | [ B A ]" fill="none" />
+      <path class="geom-overlay" d="M 297.87 240 L 318.94 203.52 L 340 167.03" data-ref="AC" data-aliases="CA | / A C / | / C A / | [ A C ] | [ C A ]" fill="none" />
+      <path class="geom-overlay" d="M 297.87 240 L 318.94 276.48 L 340 312.97" data-ref="AD" data-aliases="DA | / A D / | / D A / | [ A D ] | [ D A ]" fill="none" />
+      <path class="geom-overlay" d="M 297.87 240 L 255.74 240 L 213.62 240" data-ref="AE" data-aliases="EA | / A E / | / E A / | [ A E ] | [ E A ]" fill="none" />
+      <path class="geom-overlay" d="M 297.87 240 L 382.13 240 L 466.38 240" data-ref="AF" data-aliases="FA | / A F / | / F A / | [ A F ] | [ F A ]" fill="none" />
+      <path class="geom-overlay" d="M 297.87 240 L 318.94 321.58 L 340 403.16" data-ref="AX" data-aliases="XA | / A X / | / X A / | [ A X ] | [ X A ]" fill="none" />
+      <path class="geom-overlay" d="M 297.87 240 L 318.94 158.42 L 340 76.84" data-ref="AY" data-aliases="YA | / A Y / | / Y A / | [ A Y ] | [ Y A ]" fill="none" />
+      <path class="geom-overlay" d="M 382.13 240 L 361.06 203.52 L 340 167.03" data-ref="BC" data-aliases="CB | / B C / | / C B / | [ B C ] | [ C B ]" fill="none" />
+      <path class="geom-overlay" d="M 382.13 240 L 361.06 276.48 L 340 312.97" data-ref="BD" data-aliases="DB | / B D / | / D B / | [ B D ] | [ D B ]" fill="none" />
+      <path class="geom-overlay" d="M 382.13 240 L 297.87 240 L 213.62 240" data-ref="BE" data-aliases="EB | / B E / | / E B / | [ B E ] | [ E B ]" fill="none" />
+      <path class="geom-overlay" d="M 382.13 240 L 424.26 240 L 466.38 240" data-ref="BF" data-aliases="FB | / B F / | / F B / | [ B F ] | [ F B ]" fill="none" />
+      <path class="geom-overlay" d="M 382.13 240 L 361.06 321.58 L 340 403.16" data-ref="BX" data-aliases="XB | / B X / | / X B / | [ B X ] | [ X B ]" fill="none" />
+      <path class="geom-overlay" d="M 382.13 240 L 361.06 158.42 L 340 76.84" data-ref="BY" data-aliases="YB | / B Y / | / Y B / | [ B Y ] | [ Y B ]" fill="none" />
+      <path class="geom-overlay" d="M 340 167.03 L 340 240 L 340 312.97" data-ref="CD" data-aliases="DC | / C D / | / D C / | [ C D ] | [ D C ]" fill="none" />
+      <path class="geom-overlay" d="M 340 167.03 L 276.81 203.52 L 213.62 240" data-ref="CE" data-aliases="EC | / C E / | / E C / | [ C E ] | [ E C ]" fill="none" />
+      <path class="geom-overlay" d="M 340 167.03 L 403.19 203.52 L 466.38 240" data-ref="CF" data-aliases="FC | / C F / | / F C / | [ C F ] | [ F C ]" fill="none" />
+      <path class="geom-overlay" d="M 340 167.03 L 340 285.1 L 340 403.16" data-ref="CX" data-aliases="XC | / C X / | / X C / | [ C X ] | [ X C ]" fill="none" />
+      <path class="geom-overlay" d="M 340 167.03 L 340 121.94 L 340 76.84" data-ref="CY" data-aliases="YC | / C Y / | / Y C / | [ C Y ] | [ Y C ]" fill="none" />
+      <path class="geom-overlay" d="M 340 312.97 L 276.81 276.48 L 213.62 240" data-ref="DE" data-aliases="ED | / D E / | / E D / | [ D E ] | [ E D ]" fill="none" />
+      <path class="geom-overlay" d="M 340 312.97 L 403.19 276.48 L 466.38 240" data-ref="DF" data-aliases="FD | / D F / | / F D / | [ D F ] | [ F D ]" fill="none" />
+      <path class="geom-overlay" d="M 340 312.97 L 340 358.06 L 340 403.16" data-ref="DX" data-aliases="XD | / D X / | / X D / | [ D X ] | [ X D ]" fill="none" />
+      <path class="geom-overlay" d="M 340 312.97 L 340 194.9 L 340 76.84" data-ref="DY" data-aliases="YD | / D Y / | / Y D / | [ D Y ] | [ Y D ]" fill="none" />
+      <path class="geom-overlay" d="M 213.62 240 L 340 240 L 466.38 240" data-ref="EF" data-aliases="FE | / E F / | / F E / | [ E F ] | [ F E ]" fill="none" />
+      <path class="geom-overlay" d="M 213.62 240 L 276.81 321.58 L 340 403.16" data-ref="EX" data-aliases="XE | / E X / | / X E / | [ E X ] | [ X E ]" fill="none" />
+      <path class="geom-overlay" d="M 213.62 240 L 276.81 158.42 L 340 76.84" data-ref="EY" data-aliases="YE | / E Y / | / Y E / | [ E Y ] | [ Y E ]" fill="none" />
+      <path class="geom-overlay" d="M 466.38 240 L 403.19 321.58 L 340 403.16" data-ref="FX" data-aliases="XF | / F X / | / X F / | [ F X ] | [ X F ]" fill="none" />
+      <path class="geom-overlay" d="M 466.38 240 L 403.19 158.42 L 340 76.84" data-ref="FY" data-aliases="YF | / F Y / | / Y F / | [ F Y ] | [ Y F ]" fill="none" />
+      <path class="geom-overlay" d="M 340 403.16 L 340 240 L 340 76.84" data-ref="XY" data-aliases="YX | / X Y / | / Y X / | [ X Y ] | [ Y X ]" fill="none" />
+    </g>
+    <g id="points">
+      <circle class="geom-point" cx="213.62" cy="240" r="3.6" data-ref="E" data-latex-x="-1" data-latex-y="0"><title>E = (-1, 0)</title></circle>
+      <circle class="geom-point" cx="466.38" cy="240" r="3.6" data-ref="F" data-latex-x="2" data-latex-y="0"><title>F = (2, 0)</title></circle>
+      <circle class="geom-point golden-point" cx="340" cy="76.84" r="4.6" data-ref="Y" data-latex-x="\frac{1}{2}" data-latex-y="\frac{\sqrt{15}}{2}"><title>Y = (1/2, sqrt(15)/2)</title></circle>
+      <circle class="geom-point given-point" cx="297.87" cy="240" r="4.1" data-ref="A" data-latex-x="0" data-latex-y="0"><title>A = (0, 0)</title></circle>
+      <circle class="geom-point given-point" cx="382.13" cy="240" r="4.1" data-ref="B" data-latex-x="1" data-latex-y="0"><title>B = (1, 0)</title></circle>
+      <circle class="geom-point golden-point" cx="340" cy="167.03" r="4.6" data-ref="C" data-latex-x="\frac{1}{2}" data-latex-y="\frac{\sqrt{3}}{2}"><title>C = (1/2, sqrt(3)/2)</title></circle>
+      <circle class="geom-point-halo" cx="340" cy="312.97" r="9" fill="none" />
+      <circle class="geom-point golden-point" cx="340" cy="312.97" r="4.6" data-ref="D" data-latex-x="\frac{1}{2}" data-latex-y="- \frac{\sqrt{3}}{2}"><title>D = (1/2, -sqrt(3)/2)</title></circle>
+      <circle class="geom-point golden-point" cx="340" cy="403.16" r="4.6" data-ref="X" data-latex-x="\frac{1}{2}" data-latex-y="- \frac{\sqrt{15}}{2}"><title>X = (1/2, -sqrt(15)/2)</title></circle>
+    </g>
+    <g id="labels">
+      <text class="geom-label" x="227.44" y="244.76" data-ref="E">E</text>
+      <text class="geom-label" x="480.2" y="244.76" data-ref="F">F</text>
+      <text class="geom-label" x="342.12" y="99.71" data-ref="Y">Y</text>
+      <text class="geom-label" x="312.19" y="244.76" data-ref="A">A</text>
+      <text class="geom-label" x="396.45" y="244.76" data-ref="B">B</text>
+      <text class="geom-label" x="326.36" y="153.68" data-ref="C">C</text>
+      <text class="geom-label" x="315.09" y="336.18" data-ref="D">D</text>
+      <text class="geom-label" x="348.79" y="421.78" data-ref="X">X</text>
+    </g>
+  </g>
+</svg>

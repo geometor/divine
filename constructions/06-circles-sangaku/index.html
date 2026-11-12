@@ -1,0 +1,773 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GC-06 · Circles, Apollonian Windows, Yin–Yang &amp; Sangaku &mdash; Catalog of Golden Ratio Constructions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=a1baf04c" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../index.html">
+        <h1>GEOMETOR • divine</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">divine</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../mission/index.html"  >mission</a>
+        </li>
+        <li>
+          <a href="../../usage/index.html"  >usage</a>
+        </li>
+        <li>
+          <a href="../../modules/index.html"  >modules</a>
+        </li>
+        <li>
+          <a href="../../log/index.html"  >log</a>
+        </li>
+        <li>
+          <a href="../index.html" class="is-active" aria-selected="true" >Catalog of Golden Ratio Constructions</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../index.html" title="Return to Project Portal">&larr; divine</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">Catalog of Golden Ratio Constructions</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../05-pentagons-polygons/06-tran-wu-xing-equilaterals/index.html" title="GC-05.06 · Tran Quang Hung’s Fivefold Wu Xing Equilateral Star">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="01-bui-circle-droves/index.html" title="GC-06.01 · Bùi Quang Tuân’s Infinite Family of Golden Circle Secants"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="gc-06-circles-apollonian-windows-yinyang-sangaku">
+        <h1>GC-06 · Circles, Apollonian Windows, Yin–Yang &amp; Sangaku<a class="headerlink" href="#gc-06-circles-apollonian-windows-yinyang-sangaku" title="Link to this heading">¶</a></h1>
+        <p><em>Infinite rational secants, tangent equal circles, Kocik’s Golden Window, Yin–Yang, and Sangaku packings</em></p>
+        <p>Tangent circle packings translate tangency constraints into quadratic Descartes–Pythagoras equations whose positive roots repeatedly evaluate to <span class="math notranslate nohighlight">\(\phi\)</span>. This family catalogs <a class="person-ref" id="occ-person-bui-quang-tuan-1" href="../persons.html#person-bui-quang-tuan" data-person="bui-quang-tuan" title="Bùi Quang Tuân (fl. 2010 – present) — Vietnamese Geometer">Bùi Quang Tuân</a>’s infinite Diophantine secant pencil and four-circle vesica chain, tangent circle theorems by <a class="person-ref" id="occ-person-elliot-mcgucken-1" href="../persons.html#person-elliot-mcgucken" data-person="elliot-mcgucken" title="Elliot McGucken (fl. 2015 – present) — Physicist &amp; Recreational Geometer">Elliot McGucken</a> and <a class="person-ref" id="occ-person-thanos-kalogerakis-1" href="../persons.html#person-thanos-kalogerakis" data-person="thanos-kalogerakis" title="Thanos Kalogerakis (fl. 2016) — Greek Geometer">Thanos Kalogerakis</a>, <a class="person-ref" id="occ-person-jerzy-kocik-1" href="../persons.html#person-jerzy-kocik" data-person="jerzy-kocik" title="Jerzy Kocik (fl. 1990 – present) — Mathematician &amp; Physicist; Southern Illinois University">Jerzy Kocik</a>’s six-circle Apollonian <em>Golden Window</em>, <a class="person-ref" id="occ-person-john-arioni-1" href="../persons.html#person-john-arioni" data-person="john-arioni" title="John Arioni (fl. 2016) — Geometer">John Arioni</a>’s Yin–Yang secant, and three equal circles inscribed in a semicircle.</p>
+        <section class="level-2" id="cataloged-constructions-7">
+        <h2>Cataloged Constructions (7)<a class="headerlink" href="#cataloged-constructions-7" title="Link to this heading">¶</a></h2>
+            <section class="collection ">
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="01-bui-circle-droves/index.html" aria-label="GC-06.01 — Bùi Quang Tuân's Infinite Family of Golden Circle Secants">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="01-bui-circle-droves" role="img" aria-label="GC-06.01 — Bùi Quang Tuân's Infinite Family of Golden Circle Secants">
+          <title>GC-06.01 — Bùi Quang Tuân&#x27;s Infinite Family of Golden Circle Secants</title>
+          <defs>
+            <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" />
+            </marker>
+            <marker markerUnits="userSpaceOnUse" viewBox="-7 -8 14 16" markerWidth="14" markerHeight="16" orient="auto">
+              <line x1="-2.4" y1="-6.2" x2="-2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+              <line x1="2.4" y1="-6.2" x2="2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+            </marker>
+            <marker markerUnits="userSpaceOnUse" viewBox="-9 -8 18 16" markerWidth="18" markerHeight="16" orient="auto">
+              <line x1="-4.4" y1="-6.2" x2="-4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+            </marker>
+          </defs>
+          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
+          <g>
+            <g>
+              <circle class="geom-circle conic-curve" cx="340" cy="240" r="159.68" fill="none"><title>cO: x**2 + y**2 - 1 = 0</title></circle>
+              <path class="geom-line" d="M 12 240 L 340 240 L 668 240" fill="none"><title>AB: y = 0</title></path>
+              <path class="geom-line" d="M 488.08 468 L 400.99 240 L 313.9 12" fill="none"><title>C1D1: x*(sqrt(5)/3 + 1) + 2*y/3 - 2/3 = 0</title></path>
+              <path class="geom-line aux-line" d="M 633.19 468 L 400.99 240 L 168.79 12" fill="none"><title>C2D2: x*(sqrt(15)/8 + sqrt(3)/2) + 11*y/8 - 7*sqrt(3)/16 + sqrt(15)/16 = 0</title></path>
+              <path class="geom-segment golden-segment" d="M 340 240 L 419.84 240 L 499.68 240" fill="none" />
+              <path class="geom-segment golden-major-glow" d="M 400.99 240 L 450.33 240 L 499.68 240" fill="none" />
+              <path class="geom-segment golden-major" d="M 400.99 240 L 450.33 240 L 499.68 240" marker-mid="url(#geom-tick-1)" fill="none"><title>Golden major MB = -1/2 + sqrt(5)/2</title></path>
+              <path class="geom-segment golden-minor" d="M 340 240 L 370.5 240 L 400.99 240" marker-mid="url(#geom-tick-2)" fill="none"><title>Golden minor OM = 3/2 - sqrt(5)/2</title></path>
+            </g>
+            <g>
+              <circle class="geom-point" cx="180.32" cy="240" r="3.6" data-latex-x="-1" data-latex-y="0"><title>A = (-1, 0)</title></circle>
+              <circle class="geom-point" cx="340" cy="80.32" r="3.6" data-latex-x="0" data-latex-y="1"><title>C1 = (0, 1)</title></circle>
+              <circle class="geom-point" cx="446.45" cy="359.02" r="3.6" data-latex-x="\frac{2}{3}" data-latex-y="- \frac{\sqrt{5}}{3}"><title>D1 = (2/3, -sqrt(5)/3)</title></circle>
+              <circle class="geom-point" cx="260.16" cy="101.72" r="3.6" data-latex-x="- \frac{1}{2}" data-latex-y="\frac{\sqrt{3}}{2}"><title>C2 = (-1/2, sqrt(3)/2)</title></circle>
+              <circle class="geom-point" cx="479.72" cy="317.3" r="3.6" data-latex-x="\frac{7}{8}" data-latex-y="- \frac{\sqrt{15}}{8}"><title>D2 = (7/8, -sqrt(15)/8)</title></circle>
+              <circle class="geom-point golden-point" cx="340" cy="240" r="4.6" data-latex-x="0" data-latex-y="0"><title>O = (0, 0)</title></circle>
+              <circle class="geom-point golden-point" cx="499.68" cy="240" r="4.6" data-latex-x="1" data-latex-y="0"><title>B = (1, 0)</title></circle>
+              <circle class="geom-point-halo" cx="400.99" cy="240" r="9" fill="none" />
+              <circle class="geom-point golden-point" cx="400.99" cy="240" r="4.6" data-latex-x="\frac{3}{2} - \frac{\sqrt{5}}{2}" data-latex-y="0"><title>M = (3/2 - sqrt(5)/2, 0)</title></circle>
+            </g>
+            <g>
+              <text class="geom-label" x="188.41" y="257.91">A</text>
+              <text class="geom-label" x="323.24" y="102.27">C<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="459.67" y="363.78">D<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="251.7" y="125.08">C<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="492.94" y="322.06">D<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="348.79" y="258.62">O</text>
+              <text class="geom-label" x="508.47" y="258.62">B</text>
+              <text class="geom-label" x="387.36" y="262.87">M</text>
+            </g>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="01-bui-circle-droves/index.html">GC-06.01 · Bùi Quang Tuân’s Infinite Family of Golden Circle Secants</a></h2>
+                      <div class="enunciation">In unit circle <span class="geom-ref" data-ref="cO" title="cO">cO</span> on diameter <span class="geom-ref" data-ref="AB" title="AB">AB</span>, infinitely many rational-abscissa point pairs on opposite semicircles—including <span class="geom-ref" data-ref="C1" title="C1">C1</span> <span class="math notranslate nohighlight">\(= (0,1)\)</span>, <span class="geom-ref" data-ref="D1" title="D1">D1</span> <span class="math notranslate nohighlight">\(= (\tfrac{2}{3}, -\tfrac{\sqrt{5}}{3})\)</span> and <span class="geom-ref" data-ref="C2" title="C2">C2</span> <span class="math notranslate nohighlight">\(= (-\tfrac{1}{2}, \tfrac{\sqrt{3}}{2})\)</span>, <span class="geom-ref" data-ref="D2" title="D2">D2</span> <span class="math notranslate nohighlight">\(= (\tfrac{7}{8}, -\tfrac{\sqrt{15}}{8})\)</span>—concur on radius <span class="geom-ref" data-ref="OB" title="OB">OB</span> at the exact golden point <span class="geom-ref" data-ref="M" title="M">M</span> <span class="math notranslate nohighlight">\(= (1/\phi^2, 0)\)</span> where <span class="math notranslate nohighlight">\(|MB|/|OM| = \phi\)</span>.</div>
+                  </section>
+                </div>
+                <footer>
+
+                <div class="meta">
+                  <span class="category">
+                    <a href="../../categories/06-circles-sangaku.html">06-circles-sangaku</a>
+                  </span>
+                  <span class="tags">
+                    <a href="../../tags/field-q-sqrt3-phi.html">field-q-sqrt3-phi</a>
+                    <a href="../../tags/bui-quang-tuan.html">bui-quang-tuan</a>
+                  </span>
+                </div>
+                </footer>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="02-mcgucken-kalogerakis-equal-circles/index.html" aria-label="GC-06.02 — Elliot McGucken & Thanos Kalogerakis's Equal Tangent Circles">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="02-mcgucken-kalogerakis-equal-circles" role="img" aria-label="GC-06.02 — Elliot McGucken &amp; Thanos Kalogerakis's Equal Tangent Circles">
+          <title>GC-06.02 — Elliot McGucken &amp; Thanos Kalogerakis&#x27;s Equal Tangent Circles</title>
+          <defs>
+            <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" />
+            </marker>
+            <marker markerUnits="userSpaceOnUse" viewBox="-7 -8 14 16" markerWidth="14" markerHeight="16" orient="auto">
+              <line x1="-2.4" y1="-6.2" x2="-2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+              <line x1="2.4" y1="-6.2" x2="2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+            </marker>
+            <marker markerUnits="userSpaceOnUse" viewBox="-9 -8 18 16" markerWidth="18" markerHeight="16" orient="auto">
+              <line x1="-4.4" y1="-6.2" x2="-4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+            </marker>
+          </defs>
+          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
+          <g>
+            <g>
+              <circle class="geom-circle conic-curve" cx="217.87" cy="240" r="122.13" fill="none"><title>cB: x**2 + y**2 - 1 = 0</title></circle>
+              <circle class="geom-circle conic-curve" cx="462.13" cy="240" r="122.13" fill="none"><title>cD: y**2 + (x - 2)**2 - 1 = 0</title></circle>
+              <path class="geom-line aux-line" d="M 12 240 L 340 240 L 668 240" fill="none"><title>BD: y = 0</title></path>
+              <path class="geom-line" d="M 12 14.93 L 340 178.93 L 668 342.93" fill="none"><title>FD: x + 2*y - 2 = 0</title></path>
+              <path class="geom-segment aux-segment" d="M 217.87 362.13 L 217.87 240 L 217.87 117.87" fill="none" />
+              <path class="geom-segment golden-segment" d="M 217.87 117.87 L 394.62 206.24 L 571.37 294.62" fill="none" />
+              <path class="geom-segment golden-major-glow" d="M 352.89 185.38 L 462.13 240 L 571.37 294.62" fill="none" />
+              <path class="geom-segment golden-major" d="M 352.89 185.38 L 462.13 240 L 571.37 294.62" marker-mid="url(#geom-tick-1)" fill="none"><title>Golden major HI = 2</title></path>
+              <path class="geom-segment golden-minor" d="M 217.87 117.87 L 285.38 151.63 L 352.89 185.38" marker-mid="url(#geom-tick-2)" fill="none"><title>Golden minor FH = -1 + sqrt(5)</title></path>
+            </g>
+            <g>
+              <circle class="geom-point" cx="462.13" cy="240" r="3.6" data-latex-x="2" data-latex-y="0"><title>D = (2, 0)</title></circle>
+              <circle class="geom-point" cx="217.87" cy="362.13" r="3.6" data-latex-x="0" data-latex-y="-1"><title>A = (0, -1)</title></circle>
+              <circle class="geom-point given-point" cx="217.87" cy="240" r="4.1" data-latex-x="0" data-latex-y="0"><title>B = (0, 0)</title></circle>
+              <circle class="geom-point given-point" cx="340" cy="240" r="4.1" data-latex-x="1" data-latex-y="0"><title>C = (1, 0)</title></circle>
+              <circle class="geom-point golden-point" cx="217.87" cy="117.87" r="4.6" data-latex-x="0" data-latex-y="1"><title>F = (0, 1)</title></circle>
+              <circle class="geom-point-halo" cx="352.89" cy="185.38" r="9" fill="none" />
+              <circle class="geom-point golden-point" cx="352.89" cy="185.38" r="4.6" data-latex-x="2 - \frac{2 \sqrt{5}}{5}" data-latex-y="\frac{\sqrt{5}}{5}"><title>H = (2 - 2*sqrt(5)/5, sqrt(5)/5)</title></circle>
+              <circle class="geom-point golden-point" cx="571.37" cy="294.62" r="4.6" data-latex-x="\frac{2 \sqrt{5}}{5} + 2" data-latex-y="- \frac{\sqrt{5}}{5}"><title>I = (2*sqrt(5)/5 + 2, -sqrt(5)/5)</title></circle>
+            </g>
+            <g>
+              <text class="geom-label" x="463.86" y="261.94">D</text>
+              <text class="geom-label" x="225.95" y="380.04">A</text>
+              <text class="geom-label" x="226.31" y="258.27">B</text>
+              <text class="geom-label" x="348.44" y="258.27">C</text>
+              <text class="geom-label" x="197.56" y="136.49">F</text>
+              <text class="geom-label" x="355.01" y="208.25">H</text>
+              <text class="geom-label" x="573.48" y="317.49">I</text>
+            </g>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="02-mcgucken-kalogerakis-equal-circles/index.html">GC-06.02 · Elliot McGucken & Thanos Kalogerakis’s Equal Tangent Circles</a></h2>
+                      <div class="enunciation">Let equal unit circles <span class="geom-ref" data-ref="cB" title="cB">cB</span> and <span class="geom-ref" data-ref="cD" title="cD">cD</span> touch externally at <span class="geom-ref" data-ref="C" title="C">C</span>, and let <span class="geom-ref" data-ref="AF" title="AF">AF</span> be the diameter of <span class="geom-ref" data-ref="cB" title="cB">cB</span> perpendicular to line of centers <span class="geom-ref" data-ref="BD" title="BD">BD</span>. Secant <span class="geom-ref" data-ref="FD" title="FD">FD</span> cuts <span class="geom-ref" data-ref="cD" title="cD">cD</span> at <span class="geom-ref" data-ref="H" title="H">H</span> and <span class="geom-ref" data-ref="I" title="I">I</span> such that <span class="math notranslate nohighlight">\(|HI|/|FH| = |FI|/|HI| = |FI|/|AF| = \phi\)</span>.</div>
+                  </section>
+                </div>
+                <footer>
+
+                <div class="meta">
+                  <span class="category">
+                    <a href="../../categories/06-circles-sangaku.html">06-circles-sangaku</a>
+                  </span>
+                  <span class="tags">
+                    <a href="../../tags/field-q-phi.html">field-q-phi</a>
+                    <a href="../../tags/elliot-mcgucken.html">elliot-mcgucken</a>
+                    <a href="../../tags/thanos-kalogerakis.html">thanos-kalogerakis</a>
+                  </span>
+                </div>
+                </footer>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="03-bui-four-golden-circles/index.html" aria-label="GC-06.03 — Bùi Quang Tuân's Four Congruent Golden Circles">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="03-bui-four-golden-circles" role="img" aria-label="GC-06.03 — Bùi Quang Tuân's Four Congruent Golden Circles">
+          <title>GC-06.03 — Bùi Quang Tuân&#x27;s Four Congruent Golden Circles</title>
+          <defs>
+            <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" />
+            </marker>
+            <marker markerUnits="userSpaceOnUse" viewBox="-7 -8 14 16" markerWidth="14" markerHeight="16" orient="auto">
+              <line x1="-2.4" y1="-6.2" x2="-2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+              <line x1="2.4" y1="-6.2" x2="2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+            </marker>
+            <marker markerUnits="userSpaceOnUse" viewBox="-9 -8 18 16" markerWidth="18" markerHeight="16" orient="auto">
+              <line x1="-4.4" y1="-6.2" x2="-4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+            </marker>
+          </defs>
+          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
+          <g>
+            <g>
+              <circle class="geom-circle conic-curve" cx="312.81" cy="240" r="54.38" fill="none"><title>cA: y**2 + (x + 1/2)**2 - 1 = 0</title></circle>
+              <circle class="geom-circle conic-curve" cx="367.19" cy="240" r="54.38" fill="none"><title>cB: y**2 + (x - 1/2)**2 - 1 = 0</title></circle>
+              <circle class="geom-circle golden-circle" cx="340" cy="134.7" r="54.38" fill="none"><title>cD: x**2 + (y - sqrt(15)/2)**2 - 1 = 0</title></circle>
+              <circle class="geom-circle aux-circle" cx="340" cy="345.3" r="54.38" fill="none"><title>cC: x**2 + (y + sqrt(15)/2)**2 - 1 = 0</title></circle>
+              <path class="geom-line" d="M 340 468 L 340 240 L 340 12" fill="none"><title>NE: x = 0</title></path>
+              <path class="geom-segment golden-segment" d="M 340 287.09 L 340 210.9 L 340 134.7" fill="none" />
+              <path class="geom-segment golden-major-glow" d="M 340 192.91 L 340 240 L 340 287.09" fill="none" />
+              <path class="geom-segment golden-major" d="M 340 192.91 L 340 240 L 340 287.09" marker-mid="url(#geom-tick-1)" fill="none"><title>Golden major EN = sqrt(3)</title></path>
+              <path class="geom-segment golden-minor" d="M 340 192.91 L 340 163.8 L 340 134.7" marker-mid="url(#geom-tick-2)" fill="none"><title>Golden minor ED = (-sqrt(3) + sqrt(15))/2</title></path>
+            </g>
+            <g>
+              <circle class="geom-point golden-point" cx="340" cy="345.3" r="4.6" data-latex-x="0" data-latex-y="- \frac{\sqrt{15}}{2}"><title>C = (0, -sqrt(15)/2)</title></circle>
+              <circle class="geom-point given-point" cx="312.81" cy="240" r="4.1" data-latex-x="- \frac{1}{2}" data-latex-y="0"><title>A = (-1/2, 0)</title></circle>
+              <circle class="geom-point given-point" cx="367.19" cy="240" r="4.1" data-latex-x="\frac{1}{2}" data-latex-y="0"><title>B = (1/2, 0)</title></circle>
+              <circle class="geom-point-halo" cx="340" cy="192.91" r="9" fill="none" />
+              <circle class="geom-point golden-point" cx="340" cy="192.91" r="4.6" data-latex-x="0" data-latex-y="\frac{\sqrt{3}}{2}"><title>E = (0, sqrt(3)/2)</title></circle>
+              <circle class="geom-point golden-point" cx="340" cy="287.09" r="4.6" data-latex-x="0" data-latex-y="- \frac{\sqrt{3}}{2}"><title>N = (0, -sqrt(3)/2)</title></circle>
+              <circle class="geom-point golden-point" cx="340" cy="134.7" r="4.6" data-latex-x="0" data-latex-y="\frac{\sqrt{15}}{2}"><title>D = (0, sqrt(15)/2)</title></circle>
+            </g>
+            <g>
+              <text class="geom-label" x="354.82" y="350.06">C</text>
+              <text class="geom-label" x="321.25" y="258.27">A</text>
+              <text class="geom-label" x="381.51" y="244.76">B</text>
+              <text class="geom-label" x="353.39" y="179.21">E</text>
+              <text class="geom-label" x="315.09" y="310.31">N</text>
+              <text class="geom-label" x="354.82" y="139.46">D</text>
+            </g>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="03-bui-four-golden-circles/index.html">GC-06.03 · Bùi Quang Tuân’s Four Congruent Golden Circles</a></h2>
+                      <div class="enunciation">Let unit circles <span class="geom-ref" data-ref="cA" title="cA">cA</span> and <span class="geom-ref" data-ref="cB" title="cB">cB</span> pass through each other’s centers, intersecting at <span class="geom-ref" data-ref="E" title="E">E</span> and <span class="geom-ref" data-ref="N" title="N">N</span>, and let congruent unit circles <span class="geom-ref" data-ref="cD" title="cD">cD</span> and <span class="geom-ref" data-ref="cC" title="cC">cC</span> be externally tangent to both <span class="geom-ref" data-ref="cA" title="cA">cA</span> and <span class="geom-ref" data-ref="cB" title="cB">cB</span>. Then <span class="math notranslate nohighlight">\((C, N, E, D)\)</span> is a 4-point golden chain with <span class="math notranslate nohighlight">\(|EN|/|ED| = |ND|/|EN| = \phi\)</span>.</div>
+                  </section>
+                </div>
+                <footer>
+
+                <div class="meta">
+                  <span class="category">
+                    <a href="../../categories/06-circles-sangaku.html">06-circles-sangaku</a>
+                  </span>
+                  <span class="tags">
+                    <a href="../../tags/field-q-sqrt3-phi.html">field-q-sqrt3-phi</a>
+                    <a href="../../tags/golden-chain.html">golden-chain</a>
+                    <a href="../../tags/bui-quang-tuan.html">bui-quang-tuan</a>
+                  </span>
+                </div>
+                </footer>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="04-tran-mcgucken-three-tangent-circles/index.html" aria-label="GC-06.04 — Tran Quang Hung & Elliot McGucken's Three Tangent Circles">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="04-tran-mcgucken-three-tangent-circles" role="img" aria-label="GC-06.04 — Tran Quang Hung &amp; Elliot McGucken's Three Tangent Circles">
+          <title>GC-06.04 — Tran Quang Hung &amp; Elliot McGucken&#x27;s Three Tangent Circles</title>
+          <defs>
+            <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" />
+            </marker>
+            <marker markerUnits="userSpaceOnUse" viewBox="-7 -8 14 16" markerWidth="14" markerHeight="16" orient="auto">
+              <line x1="-2.4" y1="-6.2" x2="-2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+              <line x1="2.4" y1="-6.2" x2="2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+            </marker>
+            <marker markerUnits="userSpaceOnUse" viewBox="-9 -8 18 16" markerWidth="18" markerHeight="16" orient="auto">
+              <line x1="-4.4" y1="-6.2" x2="-4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+            </marker>
+          </defs>
+          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
+          <g>
+            <g>
+              <circle class="geom-circle aux-circle" cx="340" cy="165.89" r="85.57" fill="none"><title>cA: x**2 + (y - 2*sqrt(3)/3)**2 - 1 = 0</title></circle>
+              <circle class="geom-circle aux-circle" cx="254.43" cy="314.11" r="85.57" fill="none"><title>cB: (x + 1)**2 + (y + sqrt(3)/3)**2 - 1 = 0</title></circle>
+              <circle class="geom-circle aux-circle" cx="425.57" cy="314.11" r="85.57" fill="none"><title>cC: (x - 1)**2 + (y + sqrt(3)/3)**2 - 1 = 0</title></circle>
+              <circle class="geom-circle conic-curve" cx="340" cy="264.7" r="98.81" fill="none"><title>cO: x**2 + y**2 - 4/3 = 0</title></circle>
+              <polygon class="geom-polygon poly-shape" points="340,165.89 254.43,314.11 425.57,314.11" />
+              <path class="geom-line" d="M 428.85 468 L 297.21 240 L 165.58 12" fill="none"><title>DF: -sqrt(3)*x/2 - y/2 - sqrt(3)/6 = 0</title></path>
+              <path class="geom-segment golden-segment" d="M 340 314.11 L 305.39 254.15 L 270.77 194.2" fill="none" />
+              <path class="geom-segment golden-major-glow" d="M 340 314.11 L 318.61 277.05 L 297.21 240" fill="none" />
+              <path class="geom-segment golden-major" d="M 340 314.11 L 318.61 277.05 L 297.21 240" marker-mid="url(#geom-tick-1)" fill="none"><title>Golden major DF = 1</title></path>
+              <path class="geom-segment golden-minor" d="M 297.21 240 L 283.99 217.1 L 270.77 194.2" marker-mid="url(#geom-tick-2)" fill="none"><title>Golden minor FG = -1/2 + sqrt(5)/2</title></path>
+            </g>
+            <g>
+              <circle class="geom-point" cx="254.43" cy="314.11" r="3.6" data-latex-x="-1" data-latex-y="- \frac{\sqrt{3}}{3}"><title>B = (-1, -sqrt(3)/3)</title></circle>
+              <circle class="geom-point" cx="425.57" cy="314.11" r="3.6" data-latex-x="1" data-latex-y="- \frac{\sqrt{3}}{3}"><title>C = (1, -sqrt(3)/3)</title></circle>
+              <circle class="geom-point" cx="382.79" cy="240" r="3.6" data-latex-x="\frac{1}{2}" data-latex-y="\frac{\sqrt{3}}{6}"><title>E = (1/2, sqrt(3)/6)</title></circle>
+              <circle class="geom-point golden-point" cx="366.44" cy="359.91" r="4.6" data-latex-x="- \frac{1}{4} + \frac{\sqrt{5}}{4}" data-latex-y="- \frac{\sqrt{15}}{4} - \frac{\sqrt{3}}{12}"><title>J = (-1/4 + sqrt(5)/4, -sqrt(15)/4 - sqrt(3)/12)</title></circle>
+              <circle class="geom-point given-point" cx="340" cy="264.7" r="4.1" data-latex-x="0" data-latex-y="0"><title>O = (0, 0)</title></circle>
+              <circle class="geom-point given-point" cx="340" cy="165.89" r="4.1" data-latex-x="0" data-latex-y="\frac{2 \sqrt{3}}{3}"><title>A = (0, 2*sqrt(3)/3)</title></circle>
+              <circle class="geom-point golden-point" cx="340" cy="314.11" r="4.6" data-latex-x="0" data-latex-y="- \frac{\sqrt{3}}{3}"><title>D = (0, -sqrt(3)/3)</title></circle>
+              <circle class="geom-point-halo" cx="297.21" cy="240" r="9" fill="none" />
+              <circle class="geom-point golden-point" cx="297.21" cy="240" r="4.6" data-latex-x="- \frac{1}{2}" data-latex-y="\frac{\sqrt{3}}{6}"><title>F = (-1/2, sqrt(3)/6)</title></circle>
+              <circle class="geom-point golden-point" cx="270.77" cy="194.2" r="4.6" data-latex-x="- \frac{\sqrt{5}}{4} - \frac{1}{4}" data-latex-y="- \frac{\sqrt{3}}{12} + \frac{\sqrt{15}}{4}"><title>G = (-sqrt(5)/4 - 1/4, -sqrt(3)/12 + sqrt(15)/4)</title></circle>
+            </g>
+            <g>
+              <text class="geom-label" x="241.18" y="336.05">B</text>
+              <text class="geom-label" x="439.39" y="318.87">C</text>
+              <text class="geom-label" x="395.11" y="251.88">E</text>
+              <text class="geom-label" x="379.7" y="372.17">J</text>
+              <text class="geom-label" x="358.8" y="279.26">O</text>
+              <text class="geom-label" x="320.04" y="157.15">A</text>
+              <text class="geom-label" x="319.69" y="332.73">D</text>
+              <text class="geom-label" x="272.44" y="252.26">F</text>
+              <text class="geom-label" x="285.59" y="198.96">G</text>
+            </g>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="04-tran-mcgucken-three-tangent-circles/index.html">GC-06.04 · Tran Quang Hung & Elliot McGucken’s Three Tangent Circles</a></h2>
+                      <div class="enunciation">Let congruent unit circles <span class="geom-ref" data-ref="cA" title="cA">cA</span>, <span class="geom-ref" data-ref="cB" title="cB">cB</span>, <span class="geom-ref" data-ref="cC" title="cC">cC</span> be mutually externally tangent at <span class="geom-ref" data-ref="D" title="D">D</span>, <span class="geom-ref" data-ref="E" title="E">E</span>, <span class="geom-ref" data-ref="F" title="F">F</span>, and let circle <span class="geom-ref" data-ref="cO" title="cO">cO</span> pass through their centers <span class="geom-ref" data-ref="A" title="A">A</span>, <span class="geom-ref" data-ref="B" title="B">B</span>, <span class="geom-ref" data-ref="C" title="C">C</span>. Line <span class="geom-ref" data-ref="DF" title="DF">DF</span> intersects <span class="geom-ref" data-ref="cO" title="cO">cO</span> at <span class="geom-ref" data-ref="J" title="J">J</span> and <span class="geom-ref" data-ref="G" title="G">G</span> to form a 4-point golden chain <span class="math notranslate nohighlight">\(|DF|/|FG| = |DG|/|DF| = \phi\)</span>.</div>
+                  </section>
+                </div>
+                <footer>
+
+                <div class="meta">
+                  <span class="category">
+                    <a href="../../categories/06-circles-sangaku.html">06-circles-sangaku</a>
+                  </span>
+                  <span class="tags">
+                    <a href="../../tags/field-q-sqrt3-phi.html">field-q-sqrt3-phi</a>
+                    <a href="../../tags/golden-chain.html">golden-chain</a>
+                    <a href="../../tags/tran-quang-hung.html">tran-quang-hung</a>
+                    <a href="../../tags/elliot-mcgucken.html">elliot-mcgucken</a>
+                  </span>
+                </div>
+                </footer>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="05-kocik-golden-window/index.html" aria-label="GC-06.05 — Jerzy Kocik's Six-Circle Apollonian Golden Window (2010)">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="05-kocik-golden-window" role="img" aria-label="GC-06.05 — Jerzy Kocik's Six-Circle Apollonian Golden Window (2010)">
+          <title>GC-06.05 — Jerzy Kocik&#x27;s Six-Circle Apollonian Golden Window (2010)</title>
+          <defs>
+            <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" />
+            </marker>
+            <marker markerUnits="userSpaceOnUse" viewBox="-7 -8 14 16" markerWidth="14" markerHeight="16" orient="auto">
+              <line x1="-2.4" y1="-6.2" x2="-2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+              <line x1="2.4" y1="-6.2" x2="2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+            </marker>
+            <marker markerUnits="userSpaceOnUse" viewBox="-9 -8 18 16" markerWidth="18" markerHeight="16" orient="auto">
+              <line x1="-4.4" y1="-6.2" x2="-4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+            </marker>
+          </defs>
+          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
+          <g>
+            <g>
+              <circle class="geom-circle aux-circle" cx="321.15" cy="240" r="18.85" fill="none"><title>cC1: y**2 + (x + 1/2)**2 - 1/4 = 0</title></circle>
+              <circle class="geom-circle aux-circle" cx="358.85" cy="240" r="18.85" fill="none"><title>cC2: y**2 + (x - 1/2)**2 - 1/4 = 0</title></circle>
+              <circle class="geom-circle golden-circle" cx="241.31" cy="240" r="60.99" fill="none"><title>cC3: y**2 + (x + sqrt(5)/2 + 3/2)**2 - (1/2 + sqrt(5)/2)**2 = 0</title></circle>
+              <circle class="geom-circle golden-circle" cx="438.69" cy="240" r="60.99" fill="none"><title>cC4: y**2 + (x - 3/2 - sqrt(5)/2)**2 - (1/2 + sqrt(5)/2)**2 = 0</title></circle>
+              <circle class="geom-circle conic-curve" cx="340" cy="240" r="159.68" fill="none"><title>cO: x**2 + y**2 - (2 + sqrt(5))**2 = 0</title></circle>
+              <circle class="geom-circle aux-circle" cx="340" cy="151.73" r="71.41" fill="none"><title>cU1: x**2 + (y - 3*sqrt(5)/5 - 1)**2 - (2*sqrt(5)/5 + 1)**2 = 0</title></circle>
+              <circle class="geom-circle aux-circle" cx="340" cy="328.27" r="71.41" fill="none"><title>cU2: x**2 + (y + 1 + 3*sqrt(5)/5)**2 - (2*sqrt(5)/5 + 1)**2 = 0</title></circle>
+              <path class="geom-line" d="M 12 240 L 340 240 L 668 240" fill="none"><title>A3A4: y = 0</title></path>
+              <path class="geom-segment golden-segment" d="M 340 240 L 419.84 240 L 499.68 240" fill="none" />
+              <path class="geom-segment golden-major-glow" d="M 340 240 L 389.34 240 L 438.69 240" fill="none" />
+              <path class="geom-segment golden-major" d="M 340 240 L 389.34 240 L 438.69 240" marker-mid="url(#geom-tick-1)" fill="none"><title>Golden major OC4 = sqrt(5)/2 + 3/2</title></path>
+              <path class="geom-segment golden-minor" d="M 438.69 240 L 469.18 240 L 499.68 240" marker-mid="url(#geom-tick-2)" fill="none"><title>Golden minor C4A4 = 1/2 + sqrt(5)/2</title></path>
+            </g>
+            <g>
+              <circle class="geom-point" cx="302.31" cy="240" r="3.6" data-latex-x="-1" data-latex-y="0"><title>P1 = (-1, 0)</title></circle>
+              <circle class="geom-point" cx="241.31" cy="240" r="3.6" data-latex-x="- \frac{3}{2} - \frac{\sqrt{5}}{2}" data-latex-y="0"><title>C3 = (-3/2 - sqrt(5)/2, 0)</title></circle>
+              <circle class="geom-point" cx="180.32" cy="240" r="3.6" data-latex-x="- \sqrt{5} - 2" data-latex-y="0"><title>A3 = (-sqrt(5) - 2, 0)</title></circle>
+              <circle class="geom-point" cx="340" cy="151.73" r="3.6" data-latex-x="0" data-latex-y="1 + \frac{3 \sqrt{5}}{5}"><title>U1 = (0, 1 + 3*sqrt(5)/5)</title></circle>
+              <circle class="geom-point" cx="340" cy="328.27" r="3.6" data-latex-x="0" data-latex-y="- \frac{3 \sqrt{5}}{5} - 1"><title>U2 = (0, -3*sqrt(5)/5 - 1)</title></circle>
+              <circle class="geom-point" cx="340" cy="80.32" r="3.6" data-latex-x="0" data-latex-y="2 + \sqrt{5}"><title>T1 = (0, 2 + sqrt(5))</title></circle>
+              <circle class="geom-point" cx="340" cy="399.68" r="3.6" data-latex-x="0" data-latex-y="- \sqrt{5} - 2"><title>T2 = (0, -sqrt(5) - 2)</title></circle>
+              <circle class="geom-point given-point" cx="377.69" cy="240" r="4.1" data-latex-x="1" data-latex-y="0"><title>P2 = (1, 0)</title></circle>
+              <circle class="geom-point golden-point" cx="340" cy="240" r="4.6" data-latex-x="0" data-latex-y="0"><title>O = (0, 0)</title></circle>
+              <circle class="geom-point-halo" cx="438.69" cy="240" r="9" fill="none" />
+              <circle class="geom-point golden-point" cx="438.69" cy="240" r="4.6" data-latex-x="\frac{\sqrt{5}}{2} + \frac{3}{2}" data-latex-y="0"><title>C4 = (sqrt(5)/2 + 3/2, 0)</title></circle>
+              <circle class="geom-point golden-point" cx="499.68" cy="240" r="4.6" data-latex-x="2 + \sqrt{5}" data-latex-y="0"><title>A4 = (2 + sqrt(5), 0)</title></circle>
+            </g>
+            <g>
+              <text class="geom-label" x="278.52" y="257.91">P<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="248.18" y="257.91">C<tspan class="geom-label-sub" dy="3">3</tspan></text>
+              <text class="geom-label" x="187.19" y="257.91">A<tspan class="geom-label-sub" dy="3">3</tspan></text>
+              <text class="geom-label" x="353.22" y="156.49">U<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="353.22" y="333.03">U<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="346.87" y="98.23">T<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="346.87" y="417.59">T<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="384.92" y="258.27">P<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="334.24" y="270.86">O</text>
+              <text class="geom-label" x="446.26" y="258.62">C<tspan class="geom-label-sub" dy="3">4</tspan></text>
+              <text class="geom-label" x="507.25" y="258.62">A<tspan class="geom-label-sub" dy="3">4</tspan></text>
+            </g>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="05-kocik-golden-window/index.html">GC-06.05 · Jerzy Kocik’s Six-Circle Apollonian Golden Window (2010)</a></h2>
+                      <div class="enunciation">Place two unit-diameter circles <span class="geom-ref" data-ref="cC1" title="cC1">cC1</span>, <span class="geom-ref" data-ref="cC2" title="cC2">cC2</span> tangent at <span class="geom-ref" data-ref="O" title="O">O</span> and two flanking congruent circles <span class="geom-ref" data-ref="cC3" title="cC3">cC3</span>, <span class="geom-ref" data-ref="cC4" title="cC4">cC4</span> inside outer circle <span class="geom-ref" data-ref="cO" title="cO">cO</span>. Requiring symmetric upper and lower circles <span class="geom-ref" data-ref="cU1" title="cU1">cU1</span>, <span class="geom-ref" data-ref="cU2" title="cU2">cU2</span> to be simultaneously tangent to all five circles uniquely forces the flanking circles to have exact radius <span class="math notranslate nohighlight">\(\phi\)</span>, outer radius <span class="math notranslate nohighlight">\(\phi^3\)</span>, and <span class="math notranslate nohighlight">\(|OC4|/|C4A4| = \phi\)</span>.</div>
+                  </section>
+                </div>
+                <footer>
+
+                <div class="meta">
+                  <span class="category">
+                    <a href="../../categories/06-circles-sangaku.html">06-circles-sangaku</a>
+                  </span>
+                  <span class="tags">
+                    <a href="../../tags/field-q-phi.html">field-q-phi</a>
+                    <a href="../../tags/golden-chain.html">golden-chain</a>
+                    <a href="../../tags/jerzy-kocik.html">jerzy-kocik</a>
+                  </span>
+                </div>
+                </footer>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="06-arioni-yin-yang/index.html" aria-label="GC-06.06 — John Arioni's Golden Secant in the Yin-Yang Circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="06-arioni-yin-yang" role="img" aria-label="GC-06.06 — John Arioni's Golden Secant in the Yin-Yang Circle">
+          <title>GC-06.06 — John Arioni&#x27;s Golden Secant in the Yin-Yang Circle</title>
+          <defs>
+            <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" />
+            </marker>
+            <marker markerUnits="userSpaceOnUse" viewBox="-7 -8 14 16" markerWidth="14" markerHeight="16" orient="auto">
+              <line x1="-2.4" y1="-6.2" x2="-2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+              <line x1="2.4" y1="-6.2" x2="2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+            </marker>
+            <marker markerUnits="userSpaceOnUse" viewBox="-9 -8 18 16" markerWidth="18" markerHeight="16" orient="auto">
+              <line x1="-4.4" y1="-6.2" x2="-4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+            </marker>
+          </defs>
+          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
+          <g>
+            <g>
+              <circle class="geom-circle conic-curve" cx="340" cy="240" r="159.68" fill="none"><title>cO: x**2 + y**2 - 1 = 0</title></circle>
+              <circle class="geom-circle golden-circle" cx="260.16" cy="240" r="79.84" fill="none"><title>cA: y**2 + (x + 1/2)**2 - 1/4 = 0</title></circle>
+              <circle class="geom-circle aux-circle" cx="419.84" cy="240" r="79.84" fill="none"><title>cC: y**2 + (x - 1/2)**2 - 1/4 = 0</title></circle>
+              <path class="geom-line" d="M 146.16 468 L 260.16 240 L 374.16 12" fill="none"><title>BA: x - y/2 + 1/2 = 0</title></path>
+              <path class="geom-segment aux-segment" d="M 180.32 240 L 340 240 L 499.68 240" fill="none" />
+              <path class="geom-segment aux-segment" d="M 340 240 L 340 160.16 L 340 80.32" fill="none" />
+              <path class="geom-segment golden-segment" d="M 340 80.32 L 282.23 195.87 L 224.46 311.41" fill="none" />
+              <path class="geom-segment golden-major-glow" d="M 295.87 168.59 L 260.16 240 L 224.46 311.41" fill="none" />
+              <path class="geom-segment golden-major" d="M 295.87 168.59 L 260.16 240 L 224.46 311.41" marker-mid="url(#geom-tick-1)" fill="none"><title>Golden major HI = 1</title></path>
+              <path class="geom-segment golden-minor" d="M 340 80.32 L 317.93 124.46 L 295.87 168.59" marker-mid="url(#geom-tick-2)" fill="none"><title>Golden minor BH = -1/2 + sqrt(5)/2</title></path>
+            </g>
+            <g>
+              <circle class="geom-point" cx="180.32" cy="240" r="3.6" data-latex-x="-1" data-latex-y="0"><title>PL = (-1, 0)</title></circle>
+              <circle class="geom-point" cx="499.68" cy="240" r="3.6" data-latex-x="1" data-latex-y="0"><title>PR = (1, 0)</title></circle>
+              <circle class="geom-point" cx="260.16" cy="240" r="3.6" data-latex-x="- \frac{1}{2}" data-latex-y="0"><title>A = (-1/2, 0)</title></circle>
+              <circle class="geom-point" cx="419.84" cy="240" r="3.6" data-latex-x="\frac{1}{2}" data-latex-y="0"><title>C = (1/2, 0)</title></circle>
+              <circle class="geom-point given-point" cx="340" cy="240" r="4.1" data-latex-x="0" data-latex-y="0"><title>O = (0, 0)</title></circle>
+              <circle class="geom-point golden-point" cx="340" cy="80.32" r="4.6" data-latex-x="0" data-latex-y="1"><title>B = (0, 1)</title></circle>
+              <circle class="geom-point-halo" cx="295.87" cy="168.59" r="9" fill="none" />
+              <circle class="geom-point golden-point" cx="295.87" cy="168.59" r="4.6" data-latex-x="- \frac{1}{2} + \frac{\sqrt{5}}{10}" data-latex-y="\frac{\sqrt{5}}{5}"><title>H = (-1/2 + sqrt(5)/10, sqrt(5)/5)</title></circle>
+              <circle class="geom-point golden-point" cx="224.46" cy="311.41" r="4.6" data-latex-x="- \frac{1}{2} - \frac{\sqrt{5}}{10}" data-latex-y="- \frac{\sqrt{5}}{5}"><title>I = (-1/2 - sqrt(5)/10, -sqrt(5)/5)</title></circle>
+            </g>
+            <g>
+              <text class="geom-label" x="186.63" y="257.91">PL</text>
+              <text class="geom-label" x="512.62" y="244.76">PR</text>
+              <text class="geom-label" x="268.25" y="257.91">A</text>
+              <text class="geom-label" x="427.92" y="257.91">C</text>
+              <text class="geom-label" x="348.44" y="258.27">O</text>
+              <text class="geom-label" x="348.79" y="98.94">B</text>
+              <text class="geom-label" x="310.69" y="173.35">H</text>
+              <text class="geom-label" x="226.57" y="334.28">I</text>
+            </g>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="06-arioni-yin-yang/index.html">GC-06.06 · John Arioni’s Golden Secant in the Yin-Yang Circle</a></h2>
+                      <div class="enunciation">Inscribe twin tangent circles <span class="geom-ref" data-ref="cA" title="cA">cA</span> and <span class="geom-ref" data-ref="cC" title="cC">cC</span> of radius <span class="math notranslate nohighlight">\(\tfrac{1}{2}\)</span> along horizontal diameter <span class="geom-ref" data-ref="PLPR" title="PLPR">PLPR</span> of unit circle <span class="geom-ref" data-ref="cO" title="cO">cO</span>, and let <span class="geom-ref" data-ref="B" title="B">B</span> be the apex of perpendicular radius <span class="geom-ref" data-ref="OB" title="OB">OB</span>. Secant <span class="geom-ref" data-ref="BA" title="BA">BA</span> cuts <span class="geom-ref" data-ref="cA" title="cA">cA</span> at <span class="geom-ref" data-ref="H" title="H">H</span> and <span class="geom-ref" data-ref="I" title="I">I</span> such that <span class="math notranslate nohighlight">\(|HI|/|BH| = |BI|/|HI| = \phi\)</span>.</div>
+                  </section>
+                </div>
+                <footer>
+
+                <div class="meta">
+                  <span class="category">
+                    <a href="../../categories/06-circles-sangaku.html">06-circles-sangaku</a>
+                  </span>
+                  <span class="tags">
+                    <a href="../../tags/field-q-phi.html">field-q-phi</a>
+                    <a href="../../tags/john-arioni.html">john-arioni</a>
+                  </span>
+                </div>
+                </footer>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="07-three-circles-in-semicircle/index.html" aria-label="GC-06.07 — Three Tangent Equal Circles Inscribed in a Semicircle">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="07-three-circles-in-semicircle" role="img" aria-label="GC-06.07 — Three Tangent Equal Circles Inscribed in a Semicircle">
+          <title>GC-06.07 — Three Tangent Equal Circles Inscribed in a Semicircle</title>
+          <defs>
+            <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" />
+            </marker>
+            <marker markerUnits="userSpaceOnUse" viewBox="-7 -8 14 16" markerWidth="14" markerHeight="16" orient="auto">
+              <line x1="-2.4" y1="-6.2" x2="-2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+              <line x1="2.4" y1="-6.2" x2="2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+            </marker>
+            <marker markerUnits="userSpaceOnUse" viewBox="-9 -8 18 16" markerWidth="18" markerHeight="16" orient="auto">
+              <line x1="-4.4" y1="-6.2" x2="-4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+            </marker>
+          </defs>
+          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
+          <g>
+            <g>
+              <circle class="geom-circle conic-curve" cx="340" cy="240" r="159.68" fill="none"><title>cO: x**2 + y**2 - (1 + sqrt(5))**2 = 0</title></circle>
+              <circle class="geom-circle aux-circle" cx="241.31" cy="190.66" r="49.34" fill="none"><title>cC1: (x + 2)**2 + (y - 1)**2 - 1 = 0</title></circle>
+              <circle class="geom-circle aux-circle" cx="340" cy="190.66" r="49.34" fill="none"><title>cC0: x**2 + (y - 1)**2 - 1 = 0</title></circle>
+              <circle class="geom-circle golden-circle" cx="438.69" cy="190.66" r="49.34" fill="none"><title>cC2: (x - 2)**2 + (y - 1)**2 - 1 = 0</title></circle>
+              <path class="geom-line" d="M 12 240 L 340 240 L 668 240" fill="none"><title>AB: y = 0</title></path>
+              <path class="geom-line aux-line" d="M 12 404 L 340 240 L 668 76" fill="none"><title>OC2: -x + 2*y = 0</title></path>
+              <path class="geom-segment golden-segment" d="M 340 240 L 419.84 240 L 499.68 240" fill="none" />
+              <path class="geom-segment golden-major-glow" d="M 340 240 L 389.34 240 L 438.69 240" fill="none" />
+              <path class="geom-segment golden-major" d="M 340 240 L 389.34 240 L 438.69 240" marker-mid="url(#geom-tick-1)" fill="none"><title>Golden major OT2 = 2</title></path>
+              <path class="geom-segment golden-minor" d="M 438.69 240 L 469.18 240 L 499.68 240" marker-mid="url(#geom-tick-2)" fill="none"><title>Golden minor T2B = -1 + sqrt(5)</title></path>
+            </g>
+            <g>
+              <circle class="geom-point" cx="241.31" cy="240" r="3.6" data-latex-x="-2" data-latex-y="0"><title>T1 = (-2, 0)</title></circle>
+              <circle class="geom-point" cx="241.31" cy="190.66" r="3.6" data-latex-x="-2" data-latex-y="1"><title>C1 = (-2, 1)</title></circle>
+              <circle class="geom-point" cx="340" cy="190.66" r="3.6" data-latex-x="0" data-latex-y="1"><title>C0 = (0, 1)</title></circle>
+              <circle class="geom-point" cx="438.69" cy="190.66" r="3.6" data-latex-x="2" data-latex-y="1"><title>C2 = (2, 1)</title></circle>
+              <circle class="geom-point" cx="180.32" cy="240" r="3.6" data-latex-x="- \sqrt{5} - 1" data-latex-y="0"><title>A = (-sqrt(5) - 1, 0)</title></circle>
+              <circle class="geom-point golden-point" cx="394.55" cy="212.72" r="4.6" data-latex-x="2 - \frac{2 \sqrt{5}}{5}" data-latex-y="1 - \frac{\sqrt{5}}{5}"><title>S = (2 - 2*sqrt(5)/5, 1 - sqrt(5)/5)</title></circle>
+              <circle class="geom-point golden-point" cx="197.18" cy="311.41" r="4.6" data-latex-x="-2 - \frac{2 \sqrt{5}}{5}" data-latex-y="-1 - \frac{\sqrt{5}}{5}"><title>K = (-2 - 2*sqrt(5)/5, -1 - sqrt(5)/5)</title></circle>
+              <circle class="geom-point golden-point" cx="340" cy="240" r="4.6" data-latex-x="0" data-latex-y="0"><title>O = (0, 0)</title></circle>
+              <circle class="geom-point-halo" cx="438.69" cy="240" r="9" fill="none" />
+              <circle class="geom-point golden-point" cx="438.69" cy="240" r="4.6" data-latex-x="2" data-latex-y="0"><title>T2 = (2, 0)</title></circle>
+              <circle class="geom-point golden-point" cx="499.68" cy="240" r="4.6" data-latex-x="1 + \sqrt{5}" data-latex-y="0"><title>B = (1 + sqrt(5), 0)</title></circle>
+            </g>
+            <g>
+              <text class="geom-label" x="248.18" y="257.91">T<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="254.53" y="195.42">C<tspan class="geom-label-sub" dy="3">1</tspan></text>
+              <text class="geom-label" x="353.22" y="195.42">C<tspan class="geom-label-sub" dy="3">0</tspan></text>
+              <text class="geom-label" x="450.26" y="202.53">C<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="188.41" y="257.91">A</text>
+              <text class="geom-label" x="407.81" y="224.98">S</text>
+              <text class="geom-label" x="210.43" y="323.67">K</text>
+              <text class="geom-label" x="348.79" y="258.62">O</text>
+              <text class="geom-label" x="446.26" y="258.62">T<tspan class="geom-label-sub" dy="3">2</tspan></text>
+              <text class="geom-label" x="508.47" y="258.62">B</text>
+            </g>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="07-three-circles-in-semicircle/index.html">GC-06.07 · Three Tangent Equal Circles Inscribed in a Semicircle</a></h2>
+                      <div class="enunciation">Three congruent unit circles <span class="geom-ref" data-ref="cC1" title="cC1">cC1</span>, <span class="geom-ref" data-ref="cC0" title="cC0">cC0</span>, <span class="geom-ref" data-ref="cC2" title="cC2">cC2</span> stand in a tangent row on diameter <span class="geom-ref" data-ref="AB" title="AB">AB</span> of enclosing circle <span class="geom-ref" data-ref="cO" title="cO">cO</span> centered at <span class="geom-ref" data-ref="O" title="O">O</span>, touching <span class="geom-ref" data-ref="AB" title="AB">AB</span> at <span class="geom-ref" data-ref="T1" title="T1">T1</span>, <span class="geom-ref" data-ref="O" title="O">O</span>, <span class="geom-ref" data-ref="T2" title="T2">T2</span> and touching <span class="geom-ref" data-ref="cO" title="cO">cO</span> internally. Then <span class="geom-ref" data-ref="cO" title="cO">cO</span> has radius <span class="math notranslate nohighlight">\(2\phi\)</span> and <span class="geom-ref" data-ref="T2" title="T2">T2</span> divides <span class="geom-ref" data-ref="OB" title="OB">OB</span> in the golden ratio: <span class="math notranslate nohighlight">\(|OT2|/|T2B| = \phi\)</span>.</div>
+                  </section>
+                </div>
+                <footer>
+
+                <div class="meta">
+                  <span class="category">
+                    <a href="../../categories/06-circles-sangaku.html">06-circles-sangaku</a>
+                  </span>
+                  <span class="tags">
+                    <a href="../../tags/field-q-phi.html">field-q-phi</a>
+                    <a href="../../tags/golden-chain.html">golden-chain</a>
+                    <a href="../../tags/alexander-bogomolny.html">alexander-bogomolny</a>
+                  </span>
+                </div>
+                </footer>
+              </article>
+            </section></section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../05-pentagons-polygons/06-tran-wu-xing-equilaterals/index.html" title="GC-05.06 · Tran Quang Hung’s Fivefold Wu Xing Equilateral Star">&larr; <span class="nav-label">GC-05.06 · Tran Quang Hung’s Fivefold Wu Xing Equilateral Star</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">Catalog of Golden Ratio Constructions</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="01-bui-circle-droves/index.html" title="GC-06.01 · Bùi Quang Tuân’s Infinite Family of Golden Circle Secants"><span class="nav-label">GC-06.01 · Bùi Quang Tuân’s Infinite Family of Golden Circle Secants</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../log/23.012-101550/index.html">Defining the Divine Proportion</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-tags">
+      <h3>Tags</h3>
+      <ul>
+        <li><a href="../../tags/alexander-bogomolny.html">alexander-bogomolny</a></li>
+        <li><a href="../../tags/alexandre-borovik.html">alexandre-borovik</a></li>
+        <li><a href="../../tags/bui-quang-tuan.html">bui-quang-tuan</a></li>
+        <li><a href="../../tags/claudius-ptolemy.html">claudius-ptolemy</a></li>
+        <li><a href="../../tags/compass-only.html">compass-only</a></li>
+        <li><a href="../../tags/dao-thanh-oai.html">dao-thanh-oai</a></li>
+        <li><a href="../../tags/elliot-mcgucken.html">elliot-mcgucken</a></li>
+        <li><a href="../../tags/emile-lemoine.html">emile-lemoine</a></li>
+        <li><a href="../../tags/ercole-suppa.html">ercole-suppa</a></li>
+        <li><a href="../../tags/euclid.html">euclid</a></li>
+        <li><a href="../../tags/field-algebraic.html">field-algebraic</a></li>
+        <li><a href="../../tags/field-pentagonal.html">field-pentagonal</a></li>
+        <li><a href="../../tags/field-pentagonal-hexagonal.html">field-pentagonal-hexagonal</a></li>
+        <li><a href="../../tags/field-q-phi.html">field-q-phi</a></li>
+        <li><a href="../../tags/field-q-sqrt-phi.html">field-q-sqrt-phi</a></li>
+        <li><a href="../../tags/field-q-sqrt2-phi.html">field-q-sqrt2-phi</a></li>
+        <li><a href="../../tags/field-q-sqrt3-phi.html">field-q-sqrt3-phi</a></li>
+        <li><a href="../../tags/george-odom.html">george-odom</a></li>
+        <li><a href="../../tags/golden-chain.html">golden-chain</a></li>
+        <li><a href="../../tags/h-e-huntley.html">h-e-huntley</a></li>
+        <li><a href="../../tags/h-s-m-coxeter.html">h-s-m-coxeter</a></li>
+        <li><a href="../../tags/jerzy-kocik.html">jerzy-kocik</a></li>
+        <li><a href="../../tags/jingcheng-tong.html">jingcheng-tong</a></li>
+        <li><a href="../../tags/jo-niemeyer.html">jo-niemeyer</a></li>
+        <li><a href="../../tags/johannes-kepler.html">johannes-kepler</a></li>
+        <li><a href="../../tags/john-arioni.html">john-arioni</a></li>
+        <li><a href="../../tags/john-molokach.html">john-molokach</a></li>
+        <li><a href="../../tags/kurt-hofstetter.html">kurt-hofstetter</a></li>
+        <li><a href="../../tags/michel-bataille.html">michel-bataille</a></li>
+        <li><a href="../../tags/nguyen-thanh-dung.html">nguyen-thanh-dung</a></li>
+        <li><a href="../../tags/paul-curry.html">paul-curry</a></li>
+        <li><a href="../../tags/thanos-kalogerakis.html">thanos-kalogerakis</a></li>
+        <li><a href="../../tags/tran-quang-hung.html">tran-quang-hung</a></li>
+        <li><a href="../../tags/v-v-prasolov.html">v-v-prasolov</a></li>
+        <li><a href="../../tags/william-hooper.html">william-hooper</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-categories">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="../../categories/01-minimal-compass.html">01-minimal-compass</a></li>
+        <li><a href="../../categories/02-equilateral-hexagon.html">02-equilateral-hexagon</a></li>
+        <li><a href="../../categories/03-squares-rectangles.html">03-squares-rectangles</a></li>
+        <li><a href="../../categories/04-right-and-345.html">04-right-and-345</a></li>
+        <li><a href="../../categories/05-pentagons-polygons.html">05-pentagons-polygons</a></li>
+        <li><a href="../../categories/06-circles-sangaku.html">06-circles-sangaku</a></li>
+        <li><a href="../../categories/07-rhombi-trapezoids-algebra.html">07-rhombi-trapezoids-algebra</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../types/construction.html">construction</a></li>
+        <li><a href="../../types/family.html">family</a></li>
+        <li><a href="../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../about.html"  >About GEOMETOR</a></li>
+        <li><a href="../../contribute.html"  >contribute</a></li>
+        <li><a href="../../discuss.html"  >discuss</a></li>
+        <li><a href="../../glossary.html"  >glossary</a></li>
+        <li><a href="../../todos/index.html"  >todos</a></li>
+        <li><a href="../../changelog.html"  >changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=6c02275b"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

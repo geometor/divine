@@ -1,0 +1,657 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.divine.catalog.schema &mdash; GEOMETOR • divine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../../../../../../_static/custom.css?v=a1baf04c" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../../index.html">
+        <h1>GEOMETOR • divine</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">divine</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../../mission/index.html"  >mission</a>
+        </li>
+        <li>
+          <a href="../../../../../../usage/index.html"  >usage</a>
+        </li>
+        <li>
+          <a href="../../../../../index.html" class="is-active" aria-selected="true" >modules</a>
+        </li>
+        <li>
+          <a href="../../../../../../log/index.html"  >log</a>
+        </li>
+        <li>
+          <a href="../../../../../../constructions/index.html"  >Catalog of Golden Ratio Constructions</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../../index.html" title="Return to Project Portal">&larr; divine</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../../index.html">GEOMETOR • divine</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
+            <a class="book-crumb-link" href="../../../../../index.html">modules</a>
+            <span class="book-crumb-sep">/</span>
+            <a class="book-crumb-link" href="../index.html">geometor.divine.catalog</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../right_and_345/index.html" title="geometor.divine.catalog.right_and_345">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../squares_rectangles/index.html" title="geometor.divine.catalog.squares_rectangles"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="module-geometor.divine.catalog.schema">
+        <span id="geometor-divine-catalog-schema"></span><h1>geometor.divine.catalog.schema<a class="headerlink" href="#module-geometor.divine.catalog.schema" title="Link to this heading">¶</a></h1>
+        <p>Data schemas and exact symbolic certification for the Golden Ratio Catalog.</p>
+        <p>Every cataloged construction in <a class="reference internal" href="../index.html#module-geometor.divine.catalog" title="geometor.divine.catalog"><code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.divine.catalog</span></code></a> returns an exact
+        symbolic <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code> together with a verified
+        <a class="reference internal" href="#geometor.divine.catalog.schema.GoldenCertificate" title="geometor.divine.catalog.schema.GoldenCertificate"><code class="xref py py-class docutils literal notranslate"><span class="pre">GoldenCertificate</span></code></a> recording exact SymPy lengths, Rational Trigonometry
+        quadrances, Lemoine <em>Géométrographie</em> step metrics, algebraic number field
+        membership, and all golden sections and chains discovered automatically by
+        <a class="reference internal" href="../../golden/index.html#module-geometor.divine.golden" title="geometor.divine.golden"><code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.divine.golden</span></code></a>.</p>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.divine.catalog.schema.GeometrographieStats" title="geometor.divine.catalog.schema.GeometrographieStats"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GeometrographieStats</span></code></a></p></td>
+        <td><p>Constructive step metrics in the tradition of Émile Lemoine's <em>Géométrographie</em>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.divine.catalog.schema.DetectedSection" title="geometor.divine.catalog.schema.DetectedSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DetectedSection</span></code></a></p></td>
+        <td><p>An exact collinear golden section discovered by <a class="reference internal" href="../../golden/index.html#module-geometor.divine.golden" title="geometor.divine.golden"><code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.divine.golden</span></code></a>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.divine.catalog.schema.DetectedChain" title="geometor.divine.catalog.schema.DetectedChain"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DetectedChain</span></code></a></p></td>
+        <td><p>A connected chain of exact collinear golden sections.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.divine.catalog.schema.GoldenCertificate" title="geometor.divine.catalog.schema.GoldenCertificate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GoldenCertificate</span></code></a></p></td>
+        <td><p>Machine-verified exact symbolic certificate for a cataloged construction.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.divine.catalog.schema.ConstructionResult" title="geometor.divine.catalog.schema.ConstructionResult"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConstructionResult</span></code></a></p></td>
+        <td><p>Raw output returned by an individual symbolic construction builder.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.divine.catalog.schema.FamilySpec" title="geometor.divine.catalog.schema.FamilySpec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FamilySpec</span></code></a></p></td>
+        <td><p>Metadata describing one of the seven geometric families in the catalog.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.divine.catalog.schema.ConstructionSpec" title="geometor.divine.catalog.schema.ConstructionSpec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConstructionSpec</span></code></a></p></td>
+        <td><p>Complete catalog specification for a single Golden Ratio construction or theorem.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.divine.catalog.schema.count_geometrographie" title="geometor.divine.catalog.schema.count_geometrographie"><code class="xref py py-obj docutils literal notranslate"><span class="pre">count_geometrographie</span></code></a>(model) → GeometrographieStats</p></td>
+        <td><p>Compute Euclidean locus counts and Lemoine simplicity metrics for <code class="docutils literal notranslate"><span class="pre">model</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.divine.catalog.schema.certify_construction" title="geometor.divine.catalog.schema.certify_construction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">certify_construction</span></code></a>(spec) → tuple[geometor.model.Model, GoldenCertificate]</p></td>
+        <td><p>Execute <code class="docutils literal notranslate"><span class="pre">spec.builder()</span></code> and verify its exact symbolic golden certificate.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GeometrographieStats">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.divine.catalog.schema.</span></span><span class="sig-name descname"><span class="pre">GeometrographieStats</span></span><a class="headerlink" href="#geometor.divine.catalog.schema.GeometrographieStats" title="Link to this definition">¶</a></dt>
+        <dd><p>Constructive step metrics in the tradition of Émile Lemoine’s <em>Géométrographie</em>.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GeometrographieStats.given_points">
+        <span class="sig-name descname"><span class="pre">given_points</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.GeometrographieStats.given_points" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GeometrographieStats.constructed_lines">
+        <span class="sig-name descname"><span class="pre">constructed_lines</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.GeometrographieStats.constructed_lines" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GeometrographieStats.constructed_circles">
+        <span class="sig-name descname"><span class="pre">constructed_circles</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.GeometrographieStats.constructed_circles" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GeometrographieStats.constructed_segments">
+        <span class="sig-name descname"><span class="pre">constructed_segments</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.GeometrographieStats.constructed_segments" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GeometrographieStats.constructed_polygons">
+        <span class="sig-name descname"><span class="pre">constructed_polygons</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.GeometrographieStats.constructed_polygons" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GeometrographieStats.elementary_loci">
+        <span class="sig-name descname"><span class="pre">elementary_loci</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.GeometrographieStats.elementary_loci" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GeometrographieStats.lemoine_simplicity">
+        <span class="sig-name descname"><span class="pre">lemoine_simplicity</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.GeometrographieStats.lemoine_simplicity" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.DetectedSection">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.divine.catalog.schema.</span></span><span class="sig-name descname"><span class="pre">DetectedSection</span></span><a class="headerlink" href="#geometor.divine.catalog.schema.DetectedSection" title="Link to this definition">¶</a></dt>
+        <dd><p>An exact collinear golden section discovered by <a class="reference internal" href="../../golden/index.html#module-geometor.divine.golden" title="geometor.divine.golden"><code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.divine.golden</span></code></a>.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.DetectedSection.points">
+        <span class="sig-name descname"><span class="pre">points</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.divine.catalog.schema.DetectedSection.points" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.DetectedSection.long_segment">
+        <span class="sig-name descname"><span class="pre">long_segment</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.divine.catalog.schema.DetectedSection.long_segment" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.DetectedSection.short_segment">
+        <span class="sig-name descname"><span class="pre">short_segment</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.divine.catalog.schema.DetectedSection.short_segment" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.DetectedSection.q_long">
+        <span class="sig-name descname"><span class="pre">q_long</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.divine.catalog.schema.DetectedSection.q_long" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.DetectedSection.q_short">
+        <span class="sig-name descname"><span class="pre">q_short</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.divine.catalog.schema.DetectedSection.q_short" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.DetectedChain">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.divine.catalog.schema.</span></span><span class="sig-name descname"><span class="pre">DetectedChain</span></span><a class="headerlink" href="#geometor.divine.catalog.schema.DetectedChain" title="Link to this definition">¶</a></dt>
+        <dd><p>A connected chain of exact collinear golden sections.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.DetectedChain.points">
+        <span class="sig-name descname"><span class="pre">points</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.divine.catalog.schema.DetectedChain.points" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.DetectedChain.section_count">
+        <span class="sig-name descname"><span class="pre">section_count</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.DetectedChain.section_count" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.DetectedChain.flow">
+        <span class="sig-name descname"><span class="pre">flow</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.DetectedChain.flow" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GoldenCertificate">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.divine.catalog.schema.</span></span><span class="sig-name descname"><span class="pre">GoldenCertificate</span></span><a class="headerlink" href="#geometor.divine.catalog.schema.GoldenCertificate" title="Link to this definition">¶</a></dt>
+        <dd><p>Machine-verified exact symbolic certificate for a cataloged construction.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GoldenCertificate.slug">
+        <span class="sig-name descname"><span class="pre">slug</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.GoldenCertificate.slug" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GoldenCertificate.catalog_code">
+        <span class="sig-name descname"><span class="pre">catalog_code</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.GoldenCertificate.catalog_code" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GoldenCertificate.family_slug">
+        <span class="sig-name descname"><span class="pre">family_slug</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.GoldenCertificate.family_slug" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GoldenCertificate.title">
+        <span class="sig-name descname"><span class="pre">title</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.GoldenCertificate.title" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GoldenCertificate.primary_long">
+        <span class="sig-name descname"><span class="pre">primary_long</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.divine.catalog.schema.GoldenCertificate.primary_long" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GoldenCertificate.primary_short">
+        <span class="sig-name descname"><span class="pre">primary_short</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.divine.catalog.schema.GoldenCertificate.primary_short" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GoldenCertificate.primary_collinear">
+        <span class="sig-name descname"><span class="pre">primary_collinear</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.divine.catalog.schema.GoldenCertificate.primary_collinear" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GoldenCertificate.length_long">
+        <span class="sig-name descname"><span class="pre">length_long</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.divine.catalog.schema.GoldenCertificate.length_long" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GoldenCertificate.length_short">
+        <span class="sig-name descname"><span class="pre">length_short</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.divine.catalog.schema.GoldenCertificate.length_short" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GoldenCertificate.ratio_expr">
+        <span class="sig-name descname"><span class="pre">ratio_expr</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.divine.catalog.schema.GoldenCertificate.ratio_expr" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GoldenCertificate.q_long">
+        <span class="sig-name descname"><span class="pre">q_long</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.divine.catalog.schema.GoldenCertificate.q_long" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GoldenCertificate.q_short">
+        <span class="sig-name descname"><span class="pre">q_short</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.divine.catalog.schema.GoldenCertificate.q_short" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GoldenCertificate.quadrance_ratio">
+        <span class="sig-name descname"><span class="pre">quadrance_ratio</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.divine.catalog.schema.GoldenCertificate.quadrance_ratio" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GoldenCertificate.number_field">
+        <span class="sig-name descname"><span class="pre">number_field</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.GoldenCertificate.number_field" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GoldenCertificate.number_field_text">
+        <span class="sig-name descname"><span class="pre">number_field_text</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.GoldenCertificate.number_field_text" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GoldenCertificate.stats">
+        <span class="sig-name descname"><span class="pre">stats</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#geometor.divine.catalog.schema.GeometrographieStats" title="geometor.divine.catalog.schema.GeometrographieStats"><span class="pre">GeometrographieStats</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.GoldenCertificate.stats" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GoldenCertificate.detected_sections">
+        <span class="sig-name descname"><span class="pre">detected_sections</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.divine.catalog.schema.DetectedSection" title="geometor.divine.catalog.schema.DetectedSection"><span class="pre">DetectedSection</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.divine.catalog.schema.GoldenCertificate.detected_sections" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.GoldenCertificate.detected_chains">
+        <span class="sig-name descname"><span class="pre">detected_chains</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.divine.catalog.schema.DetectedChain" title="geometor.divine.catalog.schema.DetectedChain"><span class="pre">DetectedChain</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.divine.catalog.schema.GoldenCertificate.detected_chains" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionResult">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.divine.catalog.schema.</span></span><span class="sig-name descname"><span class="pre">ConstructionResult</span></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionResult" title="Link to this definition">¶</a></dt>
+        <dd><p>Raw output returned by an individual symbolic construction builder.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionResult.model">
+        <span class="sig-name descname"><span class="pre">model</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.Model</span></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionResult.model" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionResult.primary_long">
+        <span class="sig-name descname"><span class="pre">primary_long</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionResult.primary_long" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionResult.primary_short">
+        <span class="sig-name descname"><span class="pre">primary_short</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionResult.primary_short" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionResult.primary_collinear">
+        <span class="sig-name descname"><span class="pre">primary_collinear</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionResult.primary_collinear" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.FamilySpec">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.divine.catalog.schema.</span></span><span class="sig-name descname"><span class="pre">FamilySpec</span></span><a class="headerlink" href="#geometor.divine.catalog.schema.FamilySpec" title="Link to this definition">¶</a></dt>
+        <dd><p>Metadata describing one of the seven geometric families in the catalog.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.FamilySpec.slug">
+        <span class="sig-name descname"><span class="pre">slug</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.FamilySpec.slug" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.FamilySpec.code_prefix">
+        <span class="sig-name descname"><span class="pre">code_prefix</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.FamilySpec.code_prefix" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.FamilySpec.order">
+        <span class="sig-name descname"><span class="pre">order</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.FamilySpec.order" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.FamilySpec.title">
+        <span class="sig-name descname"><span class="pre">title</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.FamilySpec.title" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.FamilySpec.short_title">
+        <span class="sig-name descname"><span class="pre">short_title</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.FamilySpec.short_title" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.FamilySpec.subtitle">
+        <span class="sig-name descname"><span class="pre">subtitle</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.FamilySpec.subtitle" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.FamilySpec.summary">
+        <span class="sig-name descname"><span class="pre">summary</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.FamilySpec.summary" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.FamilySpec.overview_rst">
+        <span class="sig-name descname"><span class="pre">overview_rst</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.FamilySpec.overview_rst" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.divine.catalog.schema.</span></span><span class="sig-name descname"><span class="pre">ConstructionSpec</span></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec" title="Link to this definition">¶</a></dt>
+        <dd><p>Complete catalog specification for a single Golden Ratio construction or theorem.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.slug">
+        <span class="sig-name descname"><span class="pre">slug</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.slug" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.catalog_code">
+        <span class="sig-name descname"><span class="pre">catalog_code</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.catalog_code" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.family_slug">
+        <span class="sig-name descname"><span class="pre">family_slug</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.family_slug" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.order">
+        <span class="sig-name descname"><span class="pre">order</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#int" title="(in Python v3.13)"><span class="pre">int</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.order" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.title">
+        <span class="sig-name descname"><span class="pre">title</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.title" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.short_title">
+        <span class="sig-name descname"><span class="pre">short_title</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.short_title" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.discoverers">
+        <span class="sig-name descname"><span class="pre">discoverers</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.discoverers" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.year">
+        <span class="sig-name descname"><span class="pre">year</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.year" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.citations">
+        <span class="sig-name descname"><span class="pre">citations</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.citations" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.ctk_url">
+        <span class="sig-name descname"><span class="pre">ctk_url</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.ctk_url" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.ctk_title">
+        <span class="sig-name descname"><span class="pre">ctk_title</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.ctk_title" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.number_field">
+        <span class="sig-name descname"><span class="pre">number_field</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.number_field" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.number_field_text">
+        <span class="sig-name descname"><span class="pre">number_field_text</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.number_field_text" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.enunciation">
+        <span class="sig-name descname"><span class="pre">enunciation</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.enunciation" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.given_prose">
+        <span class="sig-name descname"><span class="pre">given_prose</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.given_prose" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.steps_prose">
+        <span class="sig-name descname"><span class="pre">steps_prose</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.steps_prose" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.proof_prose">
+        <span class="sig-name descname"><span class="pre">proof_prose</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.proof_prose" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.notes_prose">
+        <span class="sig-name descname"><span class="pre">notes_prose</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.notes_prose" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.terms">
+        <span class="sig-name descname"><span class="pre">terms</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.terms" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.builder">
+        <span class="sig-name descname"><span class="pre">builder</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/library/collections.abc.html#collections.abc.Callable" title="(in Python v3.13)"><span class="pre">collections.abc.Callable</span></a><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#geometor.divine.catalog.schema.ConstructionResult" title="geometor.divine.catalog.schema.ConstructionResult"><span class="pre">ConstructionResult</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.builder" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.ConstructionSpec.svg_bbox">
+        <span class="sig-name descname"><span class="pre">svg_bbox</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></span><a class="headerlink" href="#geometor.divine.catalog.schema.ConstructionSpec.svg_bbox" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.count_geometrographie">
+        <span class="sig-prename descclassname"><span class="pre">geometor.divine.catalog.schema.</span></span><span class="sig-name descname"><span class="pre">count_geometrographie</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.divine.catalog.schema.GeometrographieStats" title="geometor.divine.catalog.schema.GeometrographieStats"><span class="pre">GeometrographieStats</span></a></span></span><a class="headerlink" href="#geometor.divine.catalog.schema.count_geometrographie" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute Euclidean locus counts and Lemoine simplicity metrics for <code class="docutils literal notranslate"><span class="pre">model</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.divine.catalog.schema.certify_construction">
+        <span class="sig-prename descclassname"><span class="pre">geometor.divine.catalog.schema.</span></span><span class="sig-name descname"><span class="pre">certify_construction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">spec</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#geometor.divine.catalog.schema.ConstructionSpec" title="geometor.divine.catalog.schema.ConstructionSpec"><span class="pre">ConstructionSpec</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><span class="pre">geometor.model.Model</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#geometor.divine.catalog.schema.GoldenCertificate" title="geometor.divine.catalog.schema.GoldenCertificate"><span class="pre">GoldenCertificate</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.divine.catalog.schema.certify_construction" title="Link to this definition">¶</a></dt>
+        <dd><p>Execute <code class="docutils literal notranslate"><span class="pre">spec.builder()</span></code> and verify its exact symbolic golden certificate.</p>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../right_and_345/index.html" title="geometor.divine.catalog.right_and_345">&larr; <span class="nav-label">geometor.divine.catalog.right_and_345</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../../index.html">GEOMETOR • divine</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../squares_rectangles/index.html" title="geometor.divine.catalog.squares_rectangles"><span class="nav-label">geometor.divine.catalog.squares_rectangles</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../../../../log/23.012-101550/index.html">Defining the Divine Proportion</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-tags">
+      <h3>Tags</h3>
+      <ul>
+        <li><a href="../../../../../../tags/alexander-bogomolny.html">alexander-bogomolny</a></li>
+        <li><a href="../../../../../../tags/alexandre-borovik.html">alexandre-borovik</a></li>
+        <li><a href="../../../../../../tags/bui-quang-tuan.html">bui-quang-tuan</a></li>
+        <li><a href="../../../../../../tags/claudius-ptolemy.html">claudius-ptolemy</a></li>
+        <li><a href="../../../../../../tags/compass-only.html">compass-only</a></li>
+        <li><a href="../../../../../../tags/dao-thanh-oai.html">dao-thanh-oai</a></li>
+        <li><a href="../../../../../../tags/elliot-mcgucken.html">elliot-mcgucken</a></li>
+        <li><a href="../../../../../../tags/emile-lemoine.html">emile-lemoine</a></li>
+        <li><a href="../../../../../../tags/ercole-suppa.html">ercole-suppa</a></li>
+        <li><a href="../../../../../../tags/euclid.html">euclid</a></li>
+        <li><a href="../../../../../../tags/field-algebraic.html">field-algebraic</a></li>
+        <li><a href="../../../../../../tags/field-pentagonal.html">field-pentagonal</a></li>
+        <li><a href="../../../../../../tags/field-pentagonal-hexagonal.html">field-pentagonal-hexagonal</a></li>
+        <li><a href="../../../../../../tags/field-q-phi.html">field-q-phi</a></li>
+        <li><a href="../../../../../../tags/field-q-sqrt-phi.html">field-q-sqrt-phi</a></li>
+        <li><a href="../../../../../../tags/field-q-sqrt2-phi.html">field-q-sqrt2-phi</a></li>
+        <li><a href="../../../../../../tags/field-q-sqrt3-phi.html">field-q-sqrt3-phi</a></li>
+        <li><a href="../../../../../../tags/george-odom.html">george-odom</a></li>
+        <li><a href="../../../../../../tags/golden-chain.html">golden-chain</a></li>
+        <li><a href="../../../../../../tags/h-e-huntley.html">h-e-huntley</a></li>
+        <li><a href="../../../../../../tags/h-s-m-coxeter.html">h-s-m-coxeter</a></li>
+        <li><a href="../../../../../../tags/jerzy-kocik.html">jerzy-kocik</a></li>
+        <li><a href="../../../../../../tags/jingcheng-tong.html">jingcheng-tong</a></li>
+        <li><a href="../../../../../../tags/jo-niemeyer.html">jo-niemeyer</a></li>
+        <li><a href="../../../../../../tags/johannes-kepler.html">johannes-kepler</a></li>
+        <li><a href="../../../../../../tags/john-arioni.html">john-arioni</a></li>
+        <li><a href="../../../../../../tags/john-molokach.html">john-molokach</a></li>
+        <li><a href="../../../../../../tags/kurt-hofstetter.html">kurt-hofstetter</a></li>
+        <li><a href="../../../../../../tags/michel-bataille.html">michel-bataille</a></li>
+        <li><a href="../../../../../../tags/nguyen-thanh-dung.html">nguyen-thanh-dung</a></li>
+        <li><a href="../../../../../../tags/paul-curry.html">paul-curry</a></li>
+        <li><a href="../../../../../../tags/thanos-kalogerakis.html">thanos-kalogerakis</a></li>
+        <li><a href="../../../../../../tags/tran-quang-hung.html">tran-quang-hung</a></li>
+        <li><a href="../../../../../../tags/v-v-prasolov.html">v-v-prasolov</a></li>
+        <li><a href="../../../../../../tags/william-hooper.html">william-hooper</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-categories">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="../../../../../../categories/01-minimal-compass.html">01-minimal-compass</a></li>
+        <li><a href="../../../../../../categories/02-equilateral-hexagon.html">02-equilateral-hexagon</a></li>
+        <li><a href="../../../../../../categories/03-squares-rectangles.html">03-squares-rectangles</a></li>
+        <li><a href="../../../../../../categories/04-right-and-345.html">04-right-and-345</a></li>
+        <li><a href="../../../../../../categories/05-pentagons-polygons.html">05-pentagons-polygons</a></li>
+        <li><a href="../../../../../../categories/06-circles-sangaku.html">06-circles-sangaku</a></li>
+        <li><a href="../../../../../../categories/07-rhombi-trapezoids-algebra.html">07-rhombi-trapezoids-algebra</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../../types/construction.html">construction</a></li>
+        <li><a href="../../../../../../types/family.html">family</a></li>
+        <li><a href="../../../../../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../../../../about.html"  >About GEOMETOR</a></li>
+        <li><a href="../../../../../../contribute.html"  >contribute</a></li>
+        <li><a href="../../../../../../discuss.html"  >discuss</a></li>
+        <li><a href="../../../../../../glossary.html"  >glossary</a></li>
+        <li><a href="../../../../../../todos/index.html"  >todos</a></li>
+        <li><a href="../../../../../../changelog.html"  >changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../../_static/documentation_options.js?v=6c02275b"></script>
+  <script src="../../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

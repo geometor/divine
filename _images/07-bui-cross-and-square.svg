@@ -1,0 +1,304 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 680 480" data-graphic-id="07-bui-cross-and-square" role="img" aria-label="GC-03.07 — Bùi Quang Tuân &amp; Alexandre Borovik's Greek Cross &amp; Square">
+  <title>GC-03.07 — Bùi Quang Tuân &amp; Alexandre Borovik&#x27;s Greek Cross &amp; Square</title>
+  <defs>
+    <marker id="geom-tick-1" markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
+      <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" />
+    </marker>
+    <marker id="geom-tick-2" markerUnits="userSpaceOnUse" viewBox="-7 -8 14 16" markerWidth="14" markerHeight="16" orient="auto">
+      <line x1="-2.4" y1="-6.2" x2="-2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+      <line x1="2.4" y1="-6.2" x2="2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+    </marker>
+    <marker id="geom-tick-3" markerUnits="userSpaceOnUse" viewBox="-9 -8 18 16" markerWidth="18" markerHeight="16" orient="auto">
+      <line x1="-4.4" y1="-6.2" x2="-4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+      <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+      <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+    </marker>
+  </defs>
+  <style>
+.euclid-graphic {
+    font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  .euclid-graphic .svg-bg { fill: none; }
+  .euclid-graphic .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82; }
+  .euclid-graphic .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62; }
+  .euclid-graphic .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92; }
+  .euclid-graphic .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round; }
+  .euclid-graphic .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72; }
+  .euclid-graphic .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58; }
+  .euclid-graphic .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88; }
+  .euclid-graphic .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68; }
+  .euclid-graphic .geom-segment.golden-segment { fill: none; stroke: #b45309; stroke-width: 2.8; stroke-linecap: round; stroke-opacity: 0.55; }
+  .euclid-graphic .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none; }
+  .euclid-graphic .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round; }
+  .euclid-graphic .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round; }
+  .euclid-graphic .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none; }
+  .euclid-graphic .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5; }
+  .euclid-graphic .geom-point.given-point { fill: #0f172a; }
+  .euclid-graphic .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7; }
+  .euclid-graphic .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none; }
+  .euclid-graphic .geom-label {
+    fill: #1c1917;
+    font-size: 13.5px;
+    font-weight: 600;
+    paint-order: stroke fill;
+    stroke: #fafaf9;
+    stroke-opacity: 0.92;
+    stroke-width: 3.6px;
+    stroke-linejoin: round;
+    user-select: none;
+  }
+  .euclid-graphic .geom-label-sub { font-size: 10px; font-weight: 600; }
+  @media (prefers-color-scheme: dark) {
+    .euclid-graphic .geom-circle.conic-curve { stroke: #38bdf8; }
+    .euclid-graphic .geom-circle.aux-circle { stroke: #7dd3fc; }
+    .euclid-graphic .geom-circle.golden-circle { stroke: #f5c542; }
+    .euclid-graphic .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1; }
+    .euclid-graphic .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542; }
+    .euclid-graphic .geom-line { stroke: #94a3b8; }
+    .euclid-graphic .geom-line.aux-line { stroke: #64748b; }
+    .euclid-graphic .geom-segment.struct-segment { stroke: #cbd5e1; }
+    .euclid-graphic .geom-segment.aux-segment { stroke: #64748b; }
+    .euclid-graphic .geom-segment.golden-segment { stroke: #facc15; }
+    .euclid-graphic .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32; }
+    .euclid-graphic .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7; }
+    .euclid-graphic .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5; }
+    .euclid-graphic .geom-point { fill: #38bdf8; stroke: #141417; }
+    .euclid-graphic .geom-point.given-point { fill: #e2e8f0; }
+    .euclid-graphic .geom-point.golden-point { fill: #f5c542; stroke: #141417; }
+    .euclid-graphic .geom-point-halo { stroke: #f5c542; }
+    .euclid-graphic .geom-label { fill: #f4f4f5; stroke: #141417; }
+  }
+  </style>
+  <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
+  <g id="elements">
+    <g id="graphics">
+      <circle class="geom-circle conic-curve" cx="340" cy="240" r="159.68" data-ref="cO" data-aliases="(O) | ( O ) | ( O A ) | O(A) | ( O X1 ) | O(X1) | ( O X2 ) | O(X2) | ( O X3 ) | O(X3) | ( O X4 ) | O(X4) | ( O X5 ) | O(X5) | ( O X7 ) | O(X7) | ( O X8 ) | O(X8) | ( O S1 ) | O(S1) | ( O S2 ) | O(S2) | ( O S3 ) | O(S3) | ( O S4 ) | O(S4) | ( A X1 X2 )" fill="none"><title>cO: x**2 + y**2 - 10 = 0</title></circle>
+      <polygon class="geom-polygon poly-shape" points="289.51,88.52 390.49,88.52 390.49,189.51 491.48,189.51 491.48,290.49 390.49,290.49 390.49,391.48 289.51,391.48 289.51,290.49 188.52,290.49 188.52,189.51 289.51,189.51" data-ref="&lt; X1 A C X2 X3 D X4 X5 X6 X7 X8 X9 &gt;" data-aliases="CROSS | X1ACX2X3DX4X5X6X7X8X9 | &lt;X1ACX2X3DX4X5X6X7X8X9&gt;" />
+      <polygon class="geom-polygon golden-poly" points="227.09,127.09 452.91,127.09 452.91,352.91 227.09,352.91" data-ref="&lt; S1 S2 S3 S4 &gt;" data-aliases="S1S2S3S4 | &lt;S1S2S3S4&gt;" />
+      <path class="geom-line" d="M 390.49 468 L 390.49 240 L 390.49 12" data-ref="AC" data-aliases="[ A C ] | [ C A ] | CA | [ A D ] | [ D A ] | AD | DA | [ A X4 ] | [ X4 A ] | AX4 | X4A | [ A B ] | [ B A ] | AB | BA | [ A E ] | [ E A ] | AE | EA | [ C D ] | [ D C ] | CD | DC | [ C X4 ] | [ X4 C ] | CX4 | X4C | [ C B ] | [ B C ] | CB | BC | [ C E ] | [ E C ] | CE | EC | [ D X4 ] | [ X4 D ] | DX4 | X4D | [ D B ] | [ B D ] | DB | BD | [ D E ] | [ E D ] | DE | ED | [ X4 B ] | [ B X4 ] | X4B | BX4 | [ X4 E ] | [ E X4 ] | X4E | EX4 | [ B E ] | [ E B ] | BE | EB" fill="none"><title>AC: x - 1 = 0</title></path>
+      <path class="geom-line aux-line" d="M 12 127.09 L 340 127.09 L 668 127.09" data-ref="S1S2" data-aliases="[ S1 S2 ] | [ S2 S1 ] | S2S1 | [ S1 B ] | [ B S1 ] | S1B | BS1 | [ S2 B ] | [ B S2 ] | S2B | BS2" fill="none"><title>S1S2: y - sqrt(5) = 0</title></path>
+      <path class="geom-line aux-line" d="M 12 352.91 L 340 352.91 L 668 352.91" data-ref="S4S3" data-aliases="[ S3 S4 ] | [ S4 S3 ] | S3S4 | [ S3 E ] | [ E S3 ] | S3E | ES3 | [ S4 E ] | [ E S4 ] | S4E | ES4" fill="none"><title>S4S3: y + sqrt(5) = 0</title></path>
+      <path class="geom-segment golden-segment" d="M 390.49 88.52 L 390.49 139.01 L 390.49 189.51" data-ref="/ A B C /" data-aliases="ABC" fill="none" />
+      <path class="geom-segment golden-major-glow" d="M 390.49 127.09 L 390.49 158.3 L 390.49 189.51" fill="none" />
+      <path class="geom-segment golden-major" d="M 390.49 127.09 L 390.49 158.3 L 390.49 189.51" marker-mid="url(#geom-tick-1)" data-ref="/ B C /" data-aliases="[ B C ] | [ C B ] | / C B / | BC | CB" fill="none"><title>Golden major BC = -1 + sqrt(5)</title></path>
+      <path class="geom-segment golden-minor" d="M 390.49 88.52 L 390.49 107.8 L 390.49 127.09" marker-mid="url(#geom-tick-2)" data-ref="/ A B /" data-aliases="[ A B ] | [ B A ] | / B A / | AB | BA" fill="none"><title>Golden minor AB = 3 - sqrt(5)</title></path>
+    </g>
+    <g id="highlights">
+      <path class="geom-overlay" d="M 340 240 L 365.25 164.26 L 390.49 88.52" data-ref="OA" data-aliases="AO | / O A / | / A O / | [ O A ] | [ A O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 314.75 164.26 L 289.51 88.52" data-ref="OX1" data-aliases="X1O | / O X1 / | / X1 O / | [ O X1 ] | [ X1 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 365.25 214.75 L 390.49 189.51" data-ref="OC" data-aliases="CO | / O C / | / C O / | [ O C ] | [ C O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 415.74 214.75 L 491.48 189.51" data-ref="OX2" data-aliases="X2O | / O X2 / | / X2 O / | [ O X2 ] | [ X2 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 415.74 265.25 L 491.48 290.49" data-ref="OX3" data-aliases="X3O | / O X3 / | / X3 O / | [ O X3 ] | [ X3 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 365.25 265.25 L 390.49 290.49" data-ref="OD" data-aliases="DO | / O D / | / D O / | [ O D ] | [ D O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 365.25 315.74 L 390.49 391.48" data-ref="OX4" data-aliases="X4O | / O X4 / | / X4 O / | [ O X4 ] | [ X4 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 314.75 315.74 L 289.51 391.48" data-ref="OX5" data-aliases="X5O | / O X5 / | / X5 O / | [ O X5 ] | [ X5 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 314.75 265.25 L 289.51 290.49" data-ref="OX6" data-aliases="X6O | / O X6 / | / X6 O / | [ O X6 ] | [ X6 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 264.26 265.25 L 188.52 290.49" data-ref="OX7" data-aliases="X7O | / O X7 / | / X7 O / | [ O X7 ] | [ X7 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 264.26 214.75 L 188.52 189.51" data-ref="OX8" data-aliases="X8O | / O X8 / | / X8 O / | [ O X8 ] | [ X8 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 314.75 214.75 L 289.51 189.51" data-ref="OX9" data-aliases="X9O | / O X9 / | / X9 O / | [ O X9 ] | [ X9 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 283.55 183.55 L 227.09 127.09" data-ref="OS1" data-aliases="S1O | / O S1 / | / S1 O / | [ O S1 ] | [ S1 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 396.45 183.55 L 452.91 127.09" data-ref="OS2" data-aliases="S2O | / O S2 / | / S2 O / | [ O S2 ] | [ S2 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 396.45 296.45 L 452.91 352.91" data-ref="OS3" data-aliases="S3O | / O S3 / | / S3 O / | [ O S3 ] | [ S3 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 283.55 296.45 L 227.09 352.91" data-ref="OS4" data-aliases="S4O | / O S4 / | / S4 O / | [ O S4 ] | [ S4 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 365.25 183.55 L 390.49 127.09" data-ref="OB" data-aliases="BO | / O B / | / B O / | [ O B ] | [ B O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 365.25 296.45 L 390.49 352.91" data-ref="OE" data-aliases="EO | / O E / | / E O / | [ O E ] | [ E O ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 88.52 L 340 88.52 L 289.51 88.52" data-ref="AX1" data-aliases="X1A | / A X1 / | / X1 A / | [ A X1 ] | [ X1 A ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 88.52 L 390.49 139.01 L 390.49 189.51" data-ref="AC" data-aliases="CA | / A C / | / C A / | [ A C ] | [ C A ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 88.52 L 440.99 139.01 L 491.48 189.51" data-ref="AX2" data-aliases="X2A | / A X2 / | / X2 A / | [ A X2 ] | [ X2 A ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 88.52 L 440.99 189.51 L 491.48 290.49" data-ref="AX3" data-aliases="X3A | / A X3 / | / X3 A / | [ A X3 ] | [ X3 A ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 88.52 L 390.49 189.51 L 390.49 290.49" data-ref="AD" data-aliases="DA | / A D / | / D A / | [ A D ] | [ D A ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 88.52 L 390.49 240 L 390.49 391.48" data-ref="AX4" data-aliases="X4A | / A X4 / | / X4 A / | [ A X4 ] | [ X4 A ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 88.52 L 340 240 L 289.51 391.48" data-ref="AX5" data-aliases="X5A | / A X5 / | / X5 A / | [ A X5 ] | [ X5 A ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 88.52 L 340 189.51 L 289.51 290.49" data-ref="AX6" data-aliases="X6A | / A X6 / | / X6 A / | [ A X6 ] | [ X6 A ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 88.52 L 289.51 189.51 L 188.52 290.49" data-ref="AX7" data-aliases="X7A | / A X7 / | / X7 A / | [ A X7 ] | [ X7 A ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 88.52 L 289.51 139.01 L 188.52 189.51" data-ref="AX8" data-aliases="X8A | / A X8 / | / X8 A / | [ A X8 ] | [ X8 A ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 88.52 L 340 139.01 L 289.51 189.51" data-ref="AX9" data-aliases="X9A | / A X9 / | / X9 A / | [ A X9 ] | [ X9 A ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 88.52 L 308.79 107.8 L 227.09 127.09" data-ref="AS1" data-aliases="S1A | / A S1 / | / S1 A / | [ A S1 ] | [ S1 A ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 88.52 L 421.7 107.8 L 452.91 127.09" data-ref="AS2" data-aliases="S2A | / A S2 / | / S2 A / | [ A S2 ] | [ S2 A ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 88.52 L 421.7 220.71 L 452.91 352.91" data-ref="AS3" data-aliases="S3A | / A S3 / | / S3 A / | [ A S3 ] | [ S3 A ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 88.52 L 308.79 220.71 L 227.09 352.91" data-ref="AS4" data-aliases="S4A | / A S4 / | / S4 A / | [ A S4 ] | [ S4 A ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 88.52 L 390.49 107.8 L 390.49 127.09" data-ref="AB" data-aliases="BA | / A B / | / B A / | [ A B ] | [ B A ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 88.52 L 390.49 220.71 L 390.49 352.91" data-ref="AE" data-aliases="EA | / A E / | / E A / | [ A E ] | [ E A ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 88.52 L 340 139.01 L 390.49 189.51" data-ref="X1C" data-aliases="CX1 | / X1 C / | / C X1 / | [ X1 C ] | [ C X1 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 88.52 L 390.49 139.01 L 491.48 189.51" data-ref="X1X2" data-aliases="X2X1 | / X1 X2 / | / X2 X1 / | [ X1 X2 ] | [ X2 X1 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 88.52 L 390.49 189.51 L 491.48 290.49" data-ref="X1X3" data-aliases="X3X1 | / X1 X3 / | / X3 X1 / | [ X1 X3 ] | [ X3 X1 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 88.52 L 340 189.51 L 390.49 290.49" data-ref="X1D" data-aliases="DX1 | / X1 D / | / D X1 / | [ X1 D ] | [ D X1 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 88.52 L 340 240 L 390.49 391.48" data-ref="X1X4" data-aliases="X4X1 | / X1 X4 / | / X4 X1 / | [ X1 X4 ] | [ X4 X1 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 88.52 L 289.51 240 L 289.51 391.48" data-ref="X1X5" data-aliases="X5X1 | / X1 X5 / | / X5 X1 / | [ X1 X5 ] | [ X5 X1 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 88.52 L 289.51 189.51 L 289.51 290.49" data-ref="X1X6" data-aliases="X6X1 | / X1 X6 / | / X6 X1 / | [ X1 X6 ] | [ X6 X1 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 88.52 L 239.01 189.51 L 188.52 290.49" data-ref="X1X7" data-aliases="X7X1 | / X1 X7 / | / X7 X1 / | [ X1 X7 ] | [ X7 X1 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 88.52 L 239.01 139.01 L 188.52 189.51" data-ref="X1X8" data-aliases="X8X1 | / X1 X8 / | / X8 X1 / | [ X1 X8 ] | [ X8 X1 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 88.52 L 289.51 139.01 L 289.51 189.51" data-ref="X1X9" data-aliases="X9X1 | / X1 X9 / | / X9 X1 / | [ X1 X9 ] | [ X9 X1 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 88.52 L 258.3 107.8 L 227.09 127.09" data-ref="X1S1" data-aliases="S1X1 | / X1 S1 / | / S1 X1 / | [ X1 S1 ] | [ S1 X1 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 88.52 L 371.21 107.8 L 452.91 127.09" data-ref="X1S2" data-aliases="S2X1 | / X1 S2 / | / S2 X1 / | [ X1 S2 ] | [ S2 X1 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 88.52 L 371.21 220.71 L 452.91 352.91" data-ref="X1S3" data-aliases="S3X1 | / X1 S3 / | / S3 X1 / | [ X1 S3 ] | [ S3 X1 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 88.52 L 258.3 220.71 L 227.09 352.91" data-ref="X1S4" data-aliases="S4X1 | / X1 S4 / | / S4 X1 / | [ X1 S4 ] | [ S4 X1 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 88.52 L 340 107.8 L 390.49 127.09" data-ref="X1B" data-aliases="BX1 | / X1 B / | / B X1 / | [ X1 B ] | [ B X1 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 88.52 L 340 220.71 L 390.49 352.91" data-ref="X1E" data-aliases="EX1 | / X1 E / | / E X1 / | [ X1 E ] | [ E X1 ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 189.51 L 440.99 189.51 L 491.48 189.51" data-ref="CX2" data-aliases="X2C | / C X2 / | / X2 C / | [ C X2 ] | [ X2 C ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 189.51 L 440.99 240 L 491.48 290.49" data-ref="CX3" data-aliases="X3C | / C X3 / | / X3 C / | [ C X3 ] | [ X3 C ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 189.51 L 390.49 240 L 390.49 290.49" data-ref="CD" data-aliases="DC | / C D / | / D C / | [ C D ] | [ D C ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 189.51 L 390.49 290.49 L 390.49 391.48" data-ref="CX4" data-aliases="X4C | / C X4 / | / X4 C / | [ C X4 ] | [ X4 C ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 189.51 L 340 290.49 L 289.51 391.48" data-ref="CX5" data-aliases="X5C | / C X5 / | / X5 C / | [ C X5 ] | [ X5 C ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 189.51 L 340 240 L 289.51 290.49" data-ref="CX6" data-aliases="X6C | / C X6 / | / X6 C / | [ C X6 ] | [ X6 C ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 189.51 L 289.51 240 L 188.52 290.49" data-ref="CX7" data-aliases="X7C | / C X7 / | / X7 C / | [ C X7 ] | [ X7 C ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 189.51 L 289.51 189.51 L 188.52 189.51" data-ref="CX8" data-aliases="X8C | / C X8 / | / X8 C / | [ C X8 ] | [ X8 C ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 189.51 L 340 189.51 L 289.51 189.51" data-ref="CX9" data-aliases="X9C | / C X9 / | / X9 C / | [ C X9 ] | [ X9 C ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 189.51 L 308.79 158.3 L 227.09 127.09" data-ref="CS1" data-aliases="S1C | / C S1 / | / S1 C / | [ C S1 ] | [ S1 C ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 189.51 L 421.7 158.3 L 452.91 127.09" data-ref="CS2" data-aliases="S2C | / C S2 / | / S2 C / | [ C S2 ] | [ S2 C ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 189.51 L 421.7 271.21 L 452.91 352.91" data-ref="CS3" data-aliases="S3C | / C S3 / | / S3 C / | [ C S3 ] | [ S3 C ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 189.51 L 308.79 271.21 L 227.09 352.91" data-ref="CS4" data-aliases="S4C | / C S4 / | / S4 C / | [ C S4 ] | [ S4 C ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 189.51 L 390.49 158.3 L 390.49 127.09" data-ref="CB" data-aliases="BC | / C B / | / B C / | [ C B ] | [ B C ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 189.51 L 390.49 271.21 L 390.49 352.91" data-ref="CE" data-aliases="EC | / C E / | / E C / | [ C E ] | [ E C ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 189.51 L 491.48 240 L 491.48 290.49" data-ref="X2X3" data-aliases="X3X2 | / X2 X3 / | / X3 X2 / | [ X2 X3 ] | [ X3 X2 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 189.51 L 440.99 240 L 390.49 290.49" data-ref="X2D" data-aliases="DX2 | / X2 D / | / D X2 / | [ X2 D ] | [ D X2 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 189.51 L 440.99 290.49 L 390.49 391.48" data-ref="X2X4" data-aliases="X4X2 | / X2 X4 / | / X4 X2 / | [ X2 X4 ] | [ X4 X2 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 189.51 L 390.49 290.49 L 289.51 391.48" data-ref="X2X5" data-aliases="X5X2 | / X2 X5 / | / X5 X2 / | [ X2 X5 ] | [ X5 X2 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 189.51 L 390.49 240 L 289.51 290.49" data-ref="X2X6" data-aliases="X6X2 | / X2 X6 / | / X6 X2 / | [ X2 X6 ] | [ X6 X2 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 189.51 L 340 240 L 188.52 290.49" data-ref="X2X7" data-aliases="X7X2 | / X2 X7 / | / X7 X2 / | [ X2 X7 ] | [ X7 X2 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 189.51 L 340 189.51 L 188.52 189.51" data-ref="X2X8" data-aliases="X8X2 | / X2 X8 / | / X8 X2 / | [ X2 X8 ] | [ X8 X2 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 189.51 L 390.49 189.51 L 289.51 189.51" data-ref="X2X9" data-aliases="X9X2 | / X2 X9 / | / X9 X2 / | [ X2 X9 ] | [ X9 X2 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 189.51 L 359.29 158.3 L 227.09 127.09" data-ref="X2S1" data-aliases="S1X2 | / X2 S1 / | / S1 X2 / | [ X2 S1 ] | [ S1 X2 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 189.51 L 472.2 158.3 L 452.91 127.09" data-ref="X2S2" data-aliases="S2X2 | / X2 S2 / | / S2 X2 / | [ X2 S2 ] | [ S2 X2 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 189.51 L 472.2 271.21 L 452.91 352.91" data-ref="X2S3" data-aliases="S3X2 | / X2 S3 / | / S3 X2 / | [ X2 S3 ] | [ S3 X2 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 189.51 L 359.29 271.21 L 227.09 352.91" data-ref="X2S4" data-aliases="S4X2 | / X2 S4 / | / S4 X2 / | [ X2 S4 ] | [ S4 X2 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 189.51 L 440.99 158.3 L 390.49 127.09" data-ref="X2B" data-aliases="BX2 | / X2 B / | / B X2 / | [ X2 B ] | [ B X2 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 189.51 L 440.99 271.21 L 390.49 352.91" data-ref="X2E" data-aliases="EX2 | / X2 E / | / E X2 / | [ X2 E ] | [ E X2 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 290.49 L 440.99 290.49 L 390.49 290.49" data-ref="X3D" data-aliases="DX3 | / X3 D / | / D X3 / | [ X3 D ] | [ D X3 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 290.49 L 440.99 340.99 L 390.49 391.48" data-ref="X3X4" data-aliases="X4X3 | / X3 X4 / | / X4 X3 / | [ X3 X4 ] | [ X4 X3 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 290.49 L 390.49 340.99 L 289.51 391.48" data-ref="X3X5" data-aliases="X5X3 | / X3 X5 / | / X5 X3 / | [ X3 X5 ] | [ X5 X3 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 290.49 L 390.49 290.49 L 289.51 290.49" data-ref="X3X6" data-aliases="X6X3 | / X3 X6 / | / X6 X3 / | [ X3 X6 ] | [ X6 X3 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 290.49 L 340 290.49 L 188.52 290.49" data-ref="X3X7" data-aliases="X7X3 | / X3 X7 / | / X7 X3 / | [ X3 X7 ] | [ X7 X3 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 290.49 L 340 240 L 188.52 189.51" data-ref="X3X8" data-aliases="X8X3 | / X3 X8 / | / X8 X3 / | [ X3 X8 ] | [ X8 X3 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 290.49 L 390.49 240 L 289.51 189.51" data-ref="X3X9" data-aliases="X9X3 | / X3 X9 / | / X9 X3 / | [ X3 X9 ] | [ X9 X3 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 290.49 L 359.29 208.79 L 227.09 127.09" data-ref="X3S1" data-aliases="S1X3 | / X3 S1 / | / S1 X3 / | [ X3 S1 ] | [ S1 X3 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 290.49 L 472.2 208.79 L 452.91 127.09" data-ref="X3S2" data-aliases="S2X3 | / X3 S2 / | / S2 X3 / | [ X3 S2 ] | [ S2 X3 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 290.49 L 472.2 321.7 L 452.91 352.91" data-ref="X3S3" data-aliases="S3X3 | / X3 S3 / | / S3 X3 / | [ X3 S3 ] | [ S3 X3 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 290.49 L 359.29 321.7 L 227.09 352.91" data-ref="X3S4" data-aliases="S4X3 | / X3 S4 / | / S4 X3 / | [ X3 S4 ] | [ S4 X3 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 290.49 L 440.99 208.79 L 390.49 127.09" data-ref="X3B" data-aliases="BX3 | / X3 B / | / B X3 / | [ X3 B ] | [ B X3 ]" fill="none" />
+      <path class="geom-overlay" d="M 491.48 290.49 L 440.99 321.7 L 390.49 352.91" data-ref="X3E" data-aliases="EX3 | / X3 E / | / E X3 / | [ X3 E ] | [ E X3 ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 290.49 L 390.49 340.99 L 390.49 391.48" data-ref="DX4" data-aliases="X4D | / D X4 / | / X4 D / | [ D X4 ] | [ X4 D ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 290.49 L 340 340.99 L 289.51 391.48" data-ref="DX5" data-aliases="X5D | / D X5 / | / X5 D / | [ D X5 ] | [ X5 D ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 290.49 L 340 290.49 L 289.51 290.49" data-ref="DX6" data-aliases="X6D | / D X6 / | / X6 D / | [ D X6 ] | [ X6 D ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 290.49 L 289.51 290.49 L 188.52 290.49" data-ref="DX7" data-aliases="X7D | / D X7 / | / X7 D / | [ D X7 ] | [ X7 D ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 290.49 L 289.51 240 L 188.52 189.51" data-ref="DX8" data-aliases="X8D | / D X8 / | / X8 D / | [ D X8 ] | [ X8 D ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 290.49 L 340 240 L 289.51 189.51" data-ref="DX9" data-aliases="X9D | / D X9 / | / X9 D / | [ D X9 ] | [ X9 D ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 290.49 L 308.79 208.79 L 227.09 127.09" data-ref="DS1" data-aliases="S1D | / D S1 / | / S1 D / | [ D S1 ] | [ S1 D ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 290.49 L 421.7 208.79 L 452.91 127.09" data-ref="DS2" data-aliases="S2D | / D S2 / | / S2 D / | [ D S2 ] | [ S2 D ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 290.49 L 421.7 321.7 L 452.91 352.91" data-ref="DS3" data-aliases="S3D | / D S3 / | / S3 D / | [ D S3 ] | [ S3 D ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 290.49 L 308.79 321.7 L 227.09 352.91" data-ref="DS4" data-aliases="S4D | / D S4 / | / S4 D / | [ D S4 ] | [ S4 D ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 290.49 L 390.49 208.79 L 390.49 127.09" data-ref="DB" data-aliases="BD | / D B / | / B D / | [ D B ] | [ B D ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 290.49 L 390.49 321.7 L 390.49 352.91" data-ref="DE" data-aliases="ED | / D E / | / E D / | [ D E ] | [ E D ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 391.48 L 340 391.48 L 289.51 391.48" data-ref="X4X5" data-aliases="X5X4 | / X4 X5 / | / X5 X4 / | [ X4 X5 ] | [ X5 X4 ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 391.48 L 340 340.99 L 289.51 290.49" data-ref="X4X6" data-aliases="X6X4 | / X4 X6 / | / X6 X4 / | [ X4 X6 ] | [ X6 X4 ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 391.48 L 289.51 340.99 L 188.52 290.49" data-ref="X4X7" data-aliases="X7X4 | / X4 X7 / | / X7 X4 / | [ X4 X7 ] | [ X7 X4 ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 391.48 L 289.51 290.49 L 188.52 189.51" data-ref="X4X8" data-aliases="X8X4 | / X4 X8 / | / X8 X4 / | [ X4 X8 ] | [ X8 X4 ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 391.48 L 340 290.49 L 289.51 189.51" data-ref="X4X9" data-aliases="X9X4 | / X4 X9 / | / X9 X4 / | [ X4 X9 ] | [ X9 X4 ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 391.48 L 308.79 259.29 L 227.09 127.09" data-ref="X4S1" data-aliases="S1X4 | / X4 S1 / | / S1 X4 / | [ X4 S1 ] | [ S1 X4 ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 391.48 L 421.7 259.29 L 452.91 127.09" data-ref="X4S2" data-aliases="S2X4 | / X4 S2 / | / S2 X4 / | [ X4 S2 ] | [ S2 X4 ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 391.48 L 421.7 372.2 L 452.91 352.91" data-ref="X4S3" data-aliases="S3X4 | / X4 S3 / | / S3 X4 / | [ X4 S3 ] | [ S3 X4 ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 391.48 L 308.79 372.2 L 227.09 352.91" data-ref="X4S4" data-aliases="S4X4 | / X4 S4 / | / S4 X4 / | [ X4 S4 ] | [ S4 X4 ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 391.48 L 390.49 259.29 L 390.49 127.09" data-ref="X4B" data-aliases="BX4 | / X4 B / | / B X4 / | [ X4 B ] | [ B X4 ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 391.48 L 390.49 372.2 L 390.49 352.91" data-ref="X4E" data-aliases="EX4 | / X4 E / | / E X4 / | [ X4 E ] | [ E X4 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 391.48 L 289.51 340.99 L 289.51 290.49" data-ref="X5X6" data-aliases="X6X5 | / X5 X6 / | / X6 X5 / | [ X5 X6 ] | [ X6 X5 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 391.48 L 239.01 340.99 L 188.52 290.49" data-ref="X5X7" data-aliases="X7X5 | / X5 X7 / | / X7 X5 / | [ X5 X7 ] | [ X7 X5 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 391.48 L 239.01 290.49 L 188.52 189.51" data-ref="X5X8" data-aliases="X8X5 | / X5 X8 / | / X8 X5 / | [ X5 X8 ] | [ X8 X5 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 391.48 L 289.51 290.49 L 289.51 189.51" data-ref="X5X9" data-aliases="X9X5 | / X5 X9 / | / X9 X5 / | [ X5 X9 ] | [ X9 X5 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 391.48 L 258.3 259.29 L 227.09 127.09" data-ref="X5S1" data-aliases="S1X5 | / X5 S1 / | / S1 X5 / | [ X5 S1 ] | [ S1 X5 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 391.48 L 371.21 259.29 L 452.91 127.09" data-ref="X5S2" data-aliases="S2X5 | / X5 S2 / | / S2 X5 / | [ X5 S2 ] | [ S2 X5 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 391.48 L 371.21 372.2 L 452.91 352.91" data-ref="X5S3" data-aliases="S3X5 | / X5 S3 / | / S3 X5 / | [ X5 S3 ] | [ S3 X5 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 391.48 L 258.3 372.2 L 227.09 352.91" data-ref="X5S4" data-aliases="S4X5 | / X5 S4 / | / S4 X5 / | [ X5 S4 ] | [ S4 X5 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 391.48 L 340 259.29 L 390.49 127.09" data-ref="X5B" data-aliases="BX5 | / X5 B / | / B X5 / | [ X5 B ] | [ B X5 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 391.48 L 340 372.2 L 390.49 352.91" data-ref="X5E" data-aliases="EX5 | / X5 E / | / E X5 / | [ X5 E ] | [ E X5 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 290.49 L 239.01 290.49 L 188.52 290.49" data-ref="X6X7" data-aliases="X7X6 | / X6 X7 / | / X7 X6 / | [ X6 X7 ] | [ X7 X6 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 290.49 L 239.01 240 L 188.52 189.51" data-ref="X6X8" data-aliases="X8X6 | / X6 X8 / | / X8 X6 / | [ X6 X8 ] | [ X8 X6 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 290.49 L 289.51 240 L 289.51 189.51" data-ref="X6X9" data-aliases="X9X6 | / X6 X9 / | / X9 X6 / | [ X6 X9 ] | [ X9 X6 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 290.49 L 258.3 208.79 L 227.09 127.09" data-ref="X6S1" data-aliases="S1X6 | / X6 S1 / | / S1 X6 / | [ X6 S1 ] | [ S1 X6 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 290.49 L 371.21 208.79 L 452.91 127.09" data-ref="X6S2" data-aliases="S2X6 | / X6 S2 / | / S2 X6 / | [ X6 S2 ] | [ S2 X6 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 290.49 L 371.21 321.7 L 452.91 352.91" data-ref="X6S3" data-aliases="S3X6 | / X6 S3 / | / S3 X6 / | [ X6 S3 ] | [ S3 X6 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 290.49 L 258.3 321.7 L 227.09 352.91" data-ref="X6S4" data-aliases="S4X6 | / X6 S4 / | / S4 X6 / | [ X6 S4 ] | [ S4 X6 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 290.49 L 340 208.79 L 390.49 127.09" data-ref="X6B" data-aliases="BX6 | / X6 B / | / B X6 / | [ X6 B ] | [ B X6 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 290.49 L 340 321.7 L 390.49 352.91" data-ref="X6E" data-aliases="EX6 | / X6 E / | / E X6 / | [ X6 E ] | [ E X6 ]" fill="none" />
+      <path class="geom-overlay" d="M 188.52 290.49 L 188.52 240 L 188.52 189.51" data-ref="X7X8" data-aliases="X8X7 | / X7 X8 / | / X8 X7 / | [ X7 X8 ] | [ X8 X7 ]" fill="none" />
+      <path class="geom-overlay" d="M 188.52 290.49 L 239.01 240 L 289.51 189.51" data-ref="X7X9" data-aliases="X9X7 | / X7 X9 / | / X9 X7 / | [ X7 X9 ] | [ X9 X7 ]" fill="none" />
+      <path class="geom-overlay" d="M 188.52 290.49 L 207.8 208.79 L 227.09 127.09" data-ref="X7S1" data-aliases="S1X7 | / X7 S1 / | / S1 X7 / | [ X7 S1 ] | [ S1 X7 ]" fill="none" />
+      <path class="geom-overlay" d="M 188.52 290.49 L 320.71 208.79 L 452.91 127.09" data-ref="X7S2" data-aliases="S2X7 | / X7 S2 / | / S2 X7 / | [ X7 S2 ] | [ S2 X7 ]" fill="none" />
+      <path class="geom-overlay" d="M 188.52 290.49 L 320.71 321.7 L 452.91 352.91" data-ref="X7S3" data-aliases="S3X7 | / X7 S3 / | / S3 X7 / | [ X7 S3 ] | [ S3 X7 ]" fill="none" />
+      <path class="geom-overlay" d="M 188.52 290.49 L 207.8 321.7 L 227.09 352.91" data-ref="X7S4" data-aliases="S4X7 | / X7 S4 / | / S4 X7 / | [ X7 S4 ] | [ S4 X7 ]" fill="none" />
+      <path class="geom-overlay" d="M 188.52 290.49 L 289.51 208.79 L 390.49 127.09" data-ref="X7B" data-aliases="BX7 | / X7 B / | / B X7 / | [ X7 B ] | [ B X7 ]" fill="none" />
+      <path class="geom-overlay" d="M 188.52 290.49 L 289.51 321.7 L 390.49 352.91" data-ref="X7E" data-aliases="EX7 | / X7 E / | / E X7 / | [ X7 E ] | [ E X7 ]" fill="none" />
+      <path class="geom-overlay" d="M 188.52 189.51 L 239.01 189.51 L 289.51 189.51" data-ref="X8X9" data-aliases="X9X8 | / X8 X9 / | / X9 X8 / | [ X8 X9 ] | [ X9 X8 ]" fill="none" />
+      <path class="geom-overlay" d="M 188.52 189.51 L 207.8 158.3 L 227.09 127.09" data-ref="X8S1" data-aliases="S1X8 | / X8 S1 / | / S1 X8 / | [ X8 S1 ] | [ S1 X8 ]" fill="none" />
+      <path class="geom-overlay" d="M 188.52 189.51 L 320.71 158.3 L 452.91 127.09" data-ref="X8S2" data-aliases="S2X8 | / X8 S2 / | / S2 X8 / | [ X8 S2 ] | [ S2 X8 ]" fill="none" />
+      <path class="geom-overlay" d="M 188.52 189.51 L 320.71 271.21 L 452.91 352.91" data-ref="X8S3" data-aliases="S3X8 | / X8 S3 / | / S3 X8 / | [ X8 S3 ] | [ S3 X8 ]" fill="none" />
+      <path class="geom-overlay" d="M 188.52 189.51 L 207.8 271.21 L 227.09 352.91" data-ref="X8S4" data-aliases="S4X8 | / X8 S4 / | / S4 X8 / | [ X8 S4 ] | [ S4 X8 ]" fill="none" />
+      <path class="geom-overlay" d="M 188.52 189.51 L 289.51 158.3 L 390.49 127.09" data-ref="X8B" data-aliases="BX8 | / X8 B / | / B X8 / | [ X8 B ] | [ B X8 ]" fill="none" />
+      <path class="geom-overlay" d="M 188.52 189.51 L 289.51 271.21 L 390.49 352.91" data-ref="X8E" data-aliases="EX8 | / X8 E / | / E X8 / | [ X8 E ] | [ E X8 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 189.51 L 258.3 158.3 L 227.09 127.09" data-ref="X9S1" data-aliases="S1X9 | / X9 S1 / | / S1 X9 / | [ X9 S1 ] | [ S1 X9 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 189.51 L 371.21 158.3 L 452.91 127.09" data-ref="X9S2" data-aliases="S2X9 | / X9 S2 / | / S2 X9 / | [ X9 S2 ] | [ S2 X9 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 189.51 L 371.21 271.21 L 452.91 352.91" data-ref="X9S3" data-aliases="S3X9 | / X9 S3 / | / S3 X9 / | [ X9 S3 ] | [ S3 X9 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 189.51 L 258.3 271.21 L 227.09 352.91" data-ref="X9S4" data-aliases="S4X9 | / X9 S4 / | / S4 X9 / | [ X9 S4 ] | [ S4 X9 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 189.51 L 340 158.3 L 390.49 127.09" data-ref="X9B" data-aliases="BX9 | / X9 B / | / B X9 / | [ X9 B ] | [ B X9 ]" fill="none" />
+      <path class="geom-overlay" d="M 289.51 189.51 L 340 271.21 L 390.49 352.91" data-ref="X9E" data-aliases="EX9 | / X9 E / | / E X9 / | [ X9 E ] | [ E X9 ]" fill="none" />
+      <path class="geom-overlay" d="M 227.09 127.09 L 340 127.09 L 452.91 127.09" data-ref="S1S2" data-aliases="S2S1 | / S1 S2 / | / S2 S1 / | [ S1 S2 ] | [ S2 S1 ]" fill="none" />
+      <path class="geom-overlay" d="M 227.09 127.09 L 340 240 L 452.91 352.91" data-ref="S1S3" data-aliases="S3S1 | / S1 S3 / | / S3 S1 / | [ S1 S3 ] | [ S3 S1 ]" fill="none" />
+      <path class="geom-overlay" d="M 227.09 127.09 L 227.09 240 L 227.09 352.91" data-ref="S1S4" data-aliases="S4S1 | / S1 S4 / | / S4 S1 / | [ S1 S4 ] | [ S4 S1 ]" fill="none" />
+      <path class="geom-overlay" d="M 227.09 127.09 L 308.79 127.09 L 390.49 127.09" data-ref="S1B" data-aliases="BS1 | / S1 B / | / B S1 / | [ S1 B ] | [ B S1 ]" fill="none" />
+      <path class="geom-overlay" d="M 227.09 127.09 L 308.79 240 L 390.49 352.91" data-ref="S1E" data-aliases="ES1 | / S1 E / | / E S1 / | [ S1 E ] | [ E S1 ]" fill="none" />
+      <path class="geom-overlay" d="M 452.91 127.09 L 452.91 240 L 452.91 352.91" data-ref="S2S3" data-aliases="S3S2 | / S2 S3 / | / S3 S2 / | [ S2 S3 ] | [ S3 S2 ]" fill="none" />
+      <path class="geom-overlay" d="M 452.91 127.09 L 340 240 L 227.09 352.91" data-ref="S2S4" data-aliases="S4S2 | / S2 S4 / | / S4 S2 / | [ S2 S4 ] | [ S4 S2 ]" fill="none" />
+      <path class="geom-overlay" d="M 452.91 127.09 L 421.7 127.09 L 390.49 127.09" data-ref="S2B" data-aliases="BS2 | / S2 B / | / B S2 / | [ S2 B ] | [ B S2 ]" fill="none" />
+      <path class="geom-overlay" d="M 452.91 127.09 L 421.7 240 L 390.49 352.91" data-ref="S2E" data-aliases="ES2 | / S2 E / | / E S2 / | [ S2 E ] | [ E S2 ]" fill="none" />
+      <path class="geom-overlay" d="M 452.91 352.91 L 340 352.91 L 227.09 352.91" data-ref="S3S4" data-aliases="S4S3 | / S3 S4 / | / S4 S3 / | [ S3 S4 ] | [ S4 S3 ]" fill="none" />
+      <path class="geom-overlay" d="M 452.91 352.91 L 421.7 240 L 390.49 127.09" data-ref="S3B" data-aliases="BS3 | / S3 B / | / B S3 / | [ S3 B ] | [ B S3 ]" fill="none" />
+      <path class="geom-overlay" d="M 452.91 352.91 L 421.7 352.91 L 390.49 352.91" data-ref="S3E" data-aliases="ES3 | / S3 E / | / E S3 / | [ S3 E ] | [ E S3 ]" fill="none" />
+      <path class="geom-overlay" d="M 227.09 352.91 L 308.79 240 L 390.49 127.09" data-ref="S4B" data-aliases="BS4 | / S4 B / | / B S4 / | [ S4 B ] | [ B S4 ]" fill="none" />
+      <path class="geom-overlay" d="M 227.09 352.91 L 308.79 352.91 L 390.49 352.91" data-ref="S4E" data-aliases="ES4 | / S4 E / | / E S4 / | [ S4 E ] | [ E S4 ]" fill="none" />
+      <path class="geom-overlay" d="M 390.49 127.09 L 390.49 240 L 390.49 352.91" data-ref="BE" data-aliases="EB | / B E / | / E B / | [ B E ] | [ E B ]" fill="none" />
+    </g>
+    <g id="points">
+      <circle class="geom-point" cx="289.51" cy="88.52" r="3.6" data-ref="X1" data-latex-x="-1" data-latex-y="3"><title>X1 = (-1, 3)</title></circle>
+      <circle class="geom-point" cx="491.48" cy="189.51" r="3.6" data-ref="X2" data-latex-x="3" data-latex-y="1"><title>X2 = (3, 1)</title></circle>
+      <circle class="geom-point" cx="491.48" cy="290.49" r="3.6" data-ref="X3" data-latex-x="3" data-latex-y="-1"><title>X3 = (3, -1)</title></circle>
+      <circle class="geom-point" cx="390.49" cy="290.49" r="3.6" data-ref="D" data-latex-x="1" data-latex-y="-1"><title>D = (1, -1)</title></circle>
+      <circle class="geom-point" cx="390.49" cy="391.48" r="3.6" data-ref="X4" data-latex-x="1" data-latex-y="-3"><title>X4 = (1, -3)</title></circle>
+      <circle class="geom-point" cx="289.51" cy="391.48" r="3.6" data-ref="X5" data-latex-x="-1" data-latex-y="-3"><title>X5 = (-1, -3)</title></circle>
+      <circle class="geom-point" cx="289.51" cy="290.49" r="3.6" data-ref="X6" data-latex-x="-1" data-latex-y="-1"><title>X6 = (-1, -1)</title></circle>
+      <circle class="geom-point" cx="188.52" cy="290.49" r="3.6" data-ref="X7" data-latex-x="-3" data-latex-y="-1"><title>X7 = (-3, -1)</title></circle>
+      <circle class="geom-point" cx="188.52" cy="189.51" r="3.6" data-ref="X8" data-latex-x="-3" data-latex-y="1"><title>X8 = (-3, 1)</title></circle>
+      <circle class="geom-point" cx="289.51" cy="189.51" r="3.6" data-ref="X9" data-latex-x="-1" data-latex-y="1"><title>X9 = (-1, 1)</title></circle>
+      <circle class="geom-point" cx="227.09" cy="127.09" r="3.6" data-ref="S1" data-latex-x="- \sqrt{5}" data-latex-y="\sqrt{5}"><title>S1 = (-sqrt(5), sqrt(5))</title></circle>
+      <circle class="geom-point" cx="452.91" cy="127.09" r="3.6" data-ref="S2" data-latex-x="\sqrt{5}" data-latex-y="\sqrt{5}"><title>S2 = (sqrt(5), sqrt(5))</title></circle>
+      <circle class="geom-point" cx="452.91" cy="352.91" r="3.6" data-ref="S3" data-latex-x="\sqrt{5}" data-latex-y="- \sqrt{5}"><title>S3 = (sqrt(5), -sqrt(5))</title></circle>
+      <circle class="geom-point" cx="227.09" cy="352.91" r="3.6" data-ref="S4" data-latex-x="- \sqrt{5}" data-latex-y="- \sqrt{5}"><title>S4 = (-sqrt(5), -sqrt(5))</title></circle>
+      <circle class="geom-point golden-point" cx="390.49" cy="352.91" r="4.6" data-ref="E" data-latex-x="1" data-latex-y="- \sqrt{5}"><title>E = (1, -sqrt(5))</title></circle>
+      <circle class="geom-point given-point" cx="340" cy="240" r="4.1" data-ref="O" data-latex-x="0" data-latex-y="0"><title>O = (0, 0)</title></circle>
+      <circle class="geom-point golden-point" cx="390.49" cy="88.52" r="4.6" data-ref="A" data-latex-x="1" data-latex-y="3"><title>A = (1, 3)</title></circle>
+      <circle class="geom-point golden-point" cx="390.49" cy="189.51" r="4.6" data-ref="C" data-latex-x="1" data-latex-y="1"><title>C = (1, 1)</title></circle>
+      <circle class="geom-point-halo" cx="390.49" cy="127.09" r="9" fill="none" />
+      <circle class="geom-point golden-point" cx="390.49" cy="127.09" r="4.6" data-ref="B" data-latex-x="1" data-latex-y="\sqrt{5}"><title>B = (1, sqrt(5))</title></circle>
+    </g>
+    <g id="labels">
+      <text class="geom-label" x="296.38" y="106.43" data-ref="X1">X<tspan class="geom-label-sub" dy="3">1</tspan></text>
+      <text class="geom-label" x="504.7" y="194.27" data-ref="X2">X<tspan class="geom-label-sub" dy="3">2</tspan></text>
+      <text class="geom-label" x="504.7" y="295.25" data-ref="X3">X<tspan class="geom-label-sub" dy="3">3</tspan></text>
+      <text class="geom-label" x="398.58" y="308.41" data-ref="D">D</text>
+      <text class="geom-label" x="402.06" y="403.36" data-ref="X4">X<tspan class="geom-label-sub" dy="3">4</tspan></text>
+      <text class="geom-label" x="289.34" y="413.43" data-ref="X5">X<tspan class="geom-label-sub" dy="3">5</tspan></text>
+      <text class="geom-label" x="302.73" y="295.25" data-ref="X6">X<tspan class="geom-label-sub" dy="3">6</tspan></text>
+      <text class="geom-label" x="171.76" y="312.44" data-ref="X7">X<tspan class="geom-label-sub" dy="3">7</tspan></text>
+      <text class="geom-label" x="195.39" y="207.42" data-ref="X8">X<tspan class="geom-label-sub" dy="3">8</tspan></text>
+      <text class="geom-label" x="302.73" y="194.27" data-ref="X9">X<tspan class="geom-label-sub" dy="3">9</tspan></text>
+      <text class="geom-label" x="233.96" y="145" data-ref="S1">S<tspan class="geom-label-sub" dy="3">1</tspan></text>
+      <text class="geom-label" x="429.12" y="145" data-ref="S2">S<tspan class="geom-label-sub" dy="3">2</tspan></text>
+      <text class="geom-label" x="459.78" y="370.82" data-ref="S3">S<tspan class="geom-label-sub" dy="3">3</tspan></text>
+      <text class="geom-label" x="218.63" y="376.27" data-ref="S4">S<tspan class="geom-label-sub" dy="3">4</tspan></text>
+      <text class="geom-label" x="399.29" y="371.53" data-ref="E">E</text>
+      <text class="geom-label" x="354.32" y="244.76" data-ref="O">O</text>
+      <text class="geom-label" x="370.18" y="107.14" data-ref="A">A</text>
+      <text class="geom-label" x="399.29" y="208.12" data-ref="C">C</text>
+      <text class="geom-label" x="399.29" y="145.71" data-ref="B">B</text>
+    </g>
+  </g>
+</svg>

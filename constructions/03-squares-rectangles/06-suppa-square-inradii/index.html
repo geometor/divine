@@ -1,0 +1,403 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GC-03.06 · Ercole Suppa’s Square Midpoint Inradii Ratio (2015) &mdash; Catalog of Golden Ratio Constructions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=a1baf04c" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../index.html">
+        <h1>GEOMETOR • divine</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">divine</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../mission/index.html"  >mission</a>
+        </li>
+        <li>
+          <a href="../../../usage/index.html"  >usage</a>
+        </li>
+        <li>
+          <a href="../../../modules/index.html"  >modules</a>
+        </li>
+        <li>
+          <a href="../../../log/index.html"  >log</a>
+        </li>
+        <li>
+          <a href="../../index.html" class="is-active" aria-selected="true" >Catalog of Golden Ratio Constructions</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../index.html" title="Return to Project Portal">&larr; divine</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../index.html">Catalog of Golden Ratio Constructions</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Book Breadcrumbs">
+            <a class="book-crumb-link" href="../index.html">GC-03 · Squares, Lattice Grids & Golden Crosses</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../05-tran-3x3-incenter/index.html" title="GC-03.05 · Tran Quang Hung’s 3×3 Grid Incenter Division">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <strong class="book-track-item is-active" aria-current="page">Overview</strong>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="code.html">Code</a>
+            </nav>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../07-bui-cross-and-square/index.html" title="GC-03.07 · Bùi Quang Tuân &amp; Alexandre Borovik’s Greek Cross &amp; Square"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="gc-03-06-ercole-suppa-s-square-midpoint-inradii-ratio-2015">
+        <h1>GC-03.06 · Ercole Suppa’s Square Midpoint Inradii Ratio (2015)<a class="headerlink" href="#gc-03-06-ercole-suppa-s-square-midpoint-inradii-ratio-2015" title="Link to this heading">¶</a></h1>
+        <p><strong>Discoverer(s)</strong>: <a class="person-ref" id="occ-person-ercole-suppa-1" href="../../persons.html#person-ercole-suppa" data-person="ercole-suppa" title="Ercole Suppa (fl. 2005 – present) — Italian Geometer; Teramo">Ercole Suppa</a> | <strong>Date</strong>: 2015 | <strong>Field</strong>: <span class="math notranslate nohighlight">\(\mathbb{Q}(\phi)\)</span> | <strong>Loci</strong>: 4 (<a class="term-ref glossary-term" id="occ-term-geometrographie-1" href="../../glossary.html#term-geometrographie" data-term="geometrographie" title="Géométrographie (Lemoine Construction Complexity): Émile Lemoine&#x27;s 1902 operational metric counting elementary straightedge (R₁, R₂) and compass (C₁, C₂, C₃) operations; drawing a line through two points or a circle centered at one point through another each contributes simplicity 3.">Lemoine</a> <span class="math notranslate nohighlight">\(S = 12\)</span>)</p>
+        <div class="enunciation">In square <span class="geom-ref" data-ref="ABCD" title="ABCD">ABCD</span>, let <span class="geom-ref" data-ref="M" title="M">M</span> be the midpoint of side <span class="geom-ref" data-ref="AD" title="AD">AD</span>. The inradii <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(r\)</span> of triangles <span class="math notranslate nohighlight">\(\triangle BCM\)</span> (incircle <span class="geom-ref" data-ref="cEH" title="cEH">cEH</span>) and <span class="math notranslate nohighlight">\(\triangle CDM\)</span> (incircle <span class="geom-ref" data-ref="cFP" title="cFP">cFP</span>) satisfy <span class="math notranslate nohighlight">\(R / r = \phi\)</span>, and segment <span class="geom-ref" data-ref="EF" title="EF">EF</span> joining their incenters is divided by <span class="geom-ref" data-ref="CM" title="CM">CM</span> at <span class="geom-ref" data-ref="K" title="K">K</span> with <span class="math notranslate nohighlight">\(|EK|/|KF| = \phi\)</span>.</div>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 680 480" data-graphic-id="06-suppa-square-inradii" role="img" aria-label="GC-03.06 — Ercole Suppa's Square Midpoint Inradii Ratio (2015)">
+          <title>GC-03.06 — Ercole Suppa&#x27;s Square Midpoint Inradii Ratio (2015)</title>
+          <defs>
+            <marker id="geom-tick-1" markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" />
+            </marker>
+            <marker id="geom-tick-2" markerUnits="userSpaceOnUse" viewBox="-7 -8 14 16" markerWidth="14" markerHeight="16" orient="auto">
+              <line x1="-2.4" y1="-6.2" x2="-2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+              <line x1="2.4" y1="-6.2" x2="2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+            </marker>
+            <marker id="geom-tick-3" markerUnits="userSpaceOnUse" viewBox="-9 -8 18 16" markerWidth="18" markerHeight="16" orient="auto">
+              <line x1="-4.4" y1="-6.2" x2="-4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+            </marker>
+          </defs>
+          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
+          <g id="elements">
+            <g id="graphics">
+              <circle class="geom-circle golden-circle" cx="400.99" cy="240" r="98.69" data-ref="cEH" data-aliases="(E) | ( E ) | ( E H ) | E(H)" fill="none"><title>cEH: (y - 1)**2 + (x - 5/2 + sqrt(5)/2)**2 - (-1/2 + sqrt(5)/2)**2 = 0</title></circle>
+              <circle class="geom-circle aux-circle" cx="241.31" cy="338.69" r="60.99" data-ref="cFP" data-aliases="(F) | ( F ) | ( F P ) | F(P)" fill="none"><title>cFP: (x - 3/2 + sqrt(5)/2)**2 + (y - 3/2 + sqrt(5)/2)**2 - (3/2 - sqrt(5)/2)**2 = 0</title></circle>
+              <polygon class="geom-polygon poly-shape" points="180.32,80.32 499.68,80.32 499.68,399.68 180.32,399.68" data-ref="&lt; A B C D &gt;" data-aliases="ABCD | &lt;ABCD&gt;" />
+              <path class="geom-line" d="M 12 155.84 L 324.16 311.92 L 636.32 468" data-ref="CM" data-aliases="[ C M ] | [ M C ] | MC | [ C K ] | [ K C ] | CK | KC | [ M K ] | [ K M ] | MK | KM" fill="none"><title>CM: -x - 2*y + 2 = 0</title></path>
+              <path class="geom-line" d="M 668 74.98 L 350.04 271.49 L 32.08 468" data-ref="EF" data-aliases="[ E F ] | [ F E ] | FE | [ E K ] | [ K E ] | EK | KE | [ F K ] | [ K F ] | FK | KF" fill="none"><title>EF: x*(-1/2 + sqrt(5)/2) - y - 3*sqrt(5)/2 + 7/2 = 0</title></path>
+              <path class="geom-segment struct-segment" d="M 499.68 80.32 L 340 160.16 L 180.32 240" data-ref="BM" data-aliases="[ B M ] | [ M B ] | / B M / | / M B / | MB" fill="none" />
+              <path class="geom-segment golden-segment" d="M 400.99 240 L 321.15 289.34 L 241.31 338.69" data-ref="/ E K F /" data-aliases="EKF" fill="none" />
+              <path class="geom-segment golden-major-glow" d="M 400.99 240 L 351.65 270.5 L 302.31 300.99" fill="none" />
+              <path class="geom-segment golden-major" d="M 400.99 240 L 351.65 270.5 L 302.31 300.99" marker-mid="url(#geom-tick-1)" data-ref="/ E K /" data-aliases="[ E K ] | [ K E ] | / K E / | EK | KE" fill="none"><title>Golden major EK = sqrt(5 - 2*sqrt(5))</title></path>
+              <path class="geom-segment golden-minor" d="M 302.31 300.99 L 271.81 319.84 L 241.31 338.69" marker-mid="url(#geom-tick-2)" data-ref="/ K F /" data-aliases="[ K F ] | [ F K ] | / F K / | KF | FK" fill="none"><title>Golden minor KF = sqrt(2)*sqrt(25 - 11*sqrt(5))/2</title></path>
+            </g>
+            <g id="highlights">
+              <path class="geom-overlay" d="M 180.32 399.68 L 340 399.68 L 499.68 399.68" data-ref="DC" data-aliases="CD | / D C / | / C D / | [ D C ] | [ C D ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 399.68 L 340 240 L 499.68 80.32" data-ref="DB" data-aliases="BD | / D B / | / B D / | [ D B ] | [ B D ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 399.68 L 180.32 240 L 180.32 80.32" data-ref="DA" data-aliases="AD | / D A / | / A D / | [ D A ] | [ A D ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 399.68 L 180.32 319.84 L 180.32 240" data-ref="DM" data-aliases="MD | / D M / | / M D / | [ D M ] | [ M D ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 399.68 L 290.66 319.84 L 400.99 240" data-ref="DE" data-aliases="ED | / D E / | / E D / | [ D E ] | [ E D ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 399.68 L 340 319.84 L 499.68 240" data-ref="DH" data-aliases="HD | / D H / | / H D / | [ D H ] | [ H D ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 399.68 L 210.82 369.18 L 241.31 338.69" data-ref="DF" data-aliases="FD | / D F / | / F D / | [ D F ] | [ F D ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 399.68 L 210.82 399.68 L 241.31 399.68" data-ref="DP" data-aliases="PD | / D P / | / P D / | [ D P ] | [ P D ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 399.68 L 241.31 350.33 L 302.31 300.99" data-ref="DK" data-aliases="KD | / D K / | / K D / | [ D K ] | [ K D ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 399.68 L 499.68 240 L 499.68 80.32" data-ref="CB" data-aliases="BC | / C B / | / B C / | [ C B ] | [ B C ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 399.68 L 340 240 L 180.32 80.32" data-ref="CA" data-aliases="AC | / C A / | / A C / | [ C A ] | [ A C ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 399.68 L 340 319.84 L 180.32 240" data-ref="CM" data-aliases="MC | / C M / | / M C / | [ C M ] | [ M C ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 399.68 L 450.33 319.84 L 400.99 240" data-ref="CE" data-aliases="EC | / C E / | / E C / | [ C E ] | [ E C ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 399.68 L 499.68 319.84 L 499.68 240" data-ref="CH" data-aliases="HC | / C H / | / H C / | [ C H ] | [ H C ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 399.68 L 370.5 369.18 L 241.31 338.69" data-ref="CF" data-aliases="FC | / C F / | / F C / | [ C F ] | [ F C ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 399.68 L 370.5 399.68 L 241.31 399.68" data-ref="CP" data-aliases="PC | / C P / | / P C / | [ C P ] | [ P C ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 399.68 L 400.99 350.33 L 302.31 300.99" data-ref="CK" data-aliases="KC | / C K / | / K C / | [ C K ] | [ K C ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 80.32 L 340 80.32 L 180.32 80.32" data-ref="BA" data-aliases="AB | / B A / | / A B / | [ B A ] | [ A B ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 80.32 L 340 160.16 L 180.32 240" data-ref="BM" data-aliases="MB | / B M / | / M B / | [ B M ] | [ M B ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 80.32 L 450.33 160.16 L 400.99 240" data-ref="BE" data-aliases="EB | / B E / | / E B / | [ B E ] | [ E B ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 80.32 L 499.68 160.16 L 499.68 240" data-ref="BH" data-aliases="HB | / B H / | / H B / | [ B H ] | [ H B ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 80.32 L 370.5 209.5 L 241.31 338.69" data-ref="BF" data-aliases="FB | / B F / | / F B / | [ B F ] | [ F B ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 80.32 L 370.5 240 L 241.31 399.68" data-ref="BP" data-aliases="PB | / B P / | / P B / | [ B P ] | [ P B ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 80.32 L 400.99 190.66 L 302.31 300.99" data-ref="BK" data-aliases="KB | / B K / | / K B / | [ B K ] | [ K B ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 80.32 L 180.32 160.16 L 180.32 240" data-ref="AM" data-aliases="MA | / A M / | / M A / | [ A M ] | [ M A ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 80.32 L 290.66 160.16 L 400.99 240" data-ref="AE" data-aliases="EA | / A E / | / E A / | [ A E ] | [ E A ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 80.32 L 340 160.16 L 499.68 240" data-ref="AH" data-aliases="HA | / A H / | / H A / | [ A H ] | [ H A ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 80.32 L 210.82 209.5 L 241.31 338.69" data-ref="AF" data-aliases="FA | / A F / | / F A / | [ A F ] | [ F A ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 80.32 L 210.82 240 L 241.31 399.68" data-ref="AP" data-aliases="PA | / A P / | / P A / | [ A P ] | [ P A ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 80.32 L 241.31 190.66 L 302.31 300.99" data-ref="AK" data-aliases="KA | / A K / | / K A / | [ A K ] | [ K A ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 240 L 290.66 240 L 400.99 240" data-ref="ME" data-aliases="EM | / M E / | / E M / | [ M E ] | [ E M ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 240 L 340 240 L 499.68 240" data-ref="MH" data-aliases="HM | / M H / | / H M / | [ M H ] | [ H M ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 240 L 210.82 289.34 L 241.31 338.69" data-ref="MF" data-aliases="FM | / M F / | / F M / | [ M F ] | [ F M ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 240 L 210.82 319.84 L 241.31 399.68" data-ref="MP" data-aliases="PM | / M P / | / P M / | [ M P ] | [ P M ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 240 L 241.31 270.5 L 302.31 300.99" data-ref="MK" data-aliases="KM | / M K / | / K M / | [ M K ] | [ K M ]" fill="none" />
+              <path class="geom-overlay" d="M 400.99 240 L 450.33 240 L 499.68 240" data-ref="EH" data-aliases="HE | / E H / | / H E / | [ E H ] | [ H E ]" fill="none" />
+              <path class="geom-overlay" d="M 400.99 240 L 321.15 289.34 L 241.31 338.69" data-ref="EF" data-aliases="FE | / E F / | / F E / | [ E F ] | [ F E ]" fill="none" />
+              <path class="geom-overlay" d="M 400.99 240 L 321.15 319.84 L 241.31 399.68" data-ref="EP" data-aliases="PE | / E P / | / P E / | [ E P ] | [ P E ]" fill="none" />
+              <path class="geom-overlay" d="M 400.99 240 L 351.65 270.5 L 302.31 300.99" data-ref="EK" data-aliases="KE | / E K / | / K E / | [ E K ] | [ K E ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 240 L 370.5 289.34 L 241.31 338.69" data-ref="HF" data-aliases="FH | / H F / | / F H / | [ H F ] | [ F H ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 240 L 370.5 319.84 L 241.31 399.68" data-ref="HP" data-aliases="PH | / H P / | / P H / | [ H P ] | [ P H ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 240 L 400.99 270.5 L 302.31 300.99" data-ref="HK" data-aliases="KH | / H K / | / K H / | [ H K ] | [ K H ]" fill="none" />
+              <path class="geom-overlay" d="M 241.31 338.69 L 241.31 369.18 L 241.31 399.68" data-ref="FP" data-aliases="PF | / F P / | / P F / | [ F P ] | [ P F ]" fill="none" />
+              <path class="geom-overlay" d="M 241.31 338.69 L 271.81 319.84 L 302.31 300.99" data-ref="FK" data-aliases="KF | / F K / | / K F / | [ F K ] | [ K F ]" fill="none" />
+              <path class="geom-overlay" d="M 241.31 399.68 L 271.81 350.33 L 302.31 300.99" data-ref="PK" data-aliases="KP | / P K / | / K P / | [ P K ] | [ K P ]" fill="none" />
+            </g>
+            <g id="points">
+              <circle class="geom-point" cx="499.68" cy="80.32" r="3.6" data-ref="B" data-latex-x="2" data-latex-y="2"><title>B = (2, 2)</title></circle>
+              <circle class="geom-point" cx="180.32" cy="80.32" r="3.6" data-ref="A" data-latex-x="0" data-latex-y="2"><title>A = (0, 2)</title></circle>
+              <circle class="geom-point" cx="180.32" cy="240" r="3.6" data-ref="M" data-latex-x="0" data-latex-y="1"><title>M = (0, 1)</title></circle>
+              <circle class="geom-point" cx="499.68" cy="240" r="3.6" data-ref="H" data-latex-x="2" data-latex-y="1"><title>H = (2, 1)</title></circle>
+              <circle class="geom-point" cx="241.31" cy="399.68" r="3.6" data-ref="P" data-latex-x="\frac{3}{2} - \frac{\sqrt{5}}{2}" data-latex-y="0"><title>P = (3/2 - sqrt(5)/2, 0)</title></circle>
+              <circle class="geom-point given-point" cx="180.32" cy="399.68" r="4.1" data-ref="D" data-latex-x="0" data-latex-y="0"><title>D = (0, 0)</title></circle>
+              <circle class="geom-point given-point" cx="499.68" cy="399.68" r="4.1" data-ref="C" data-latex-x="2" data-latex-y="0"><title>C = (2, 0)</title></circle>
+              <circle class="geom-point golden-point" cx="400.99" cy="240" r="4.6" data-ref="E" data-latex-x="\frac{5}{2} - \frac{\sqrt{5}}{2}" data-latex-y="1"><title>E = (5/2 - sqrt(5)/2, 1)</title></circle>
+              <circle class="geom-point golden-point" cx="241.31" cy="338.69" r="4.6" data-ref="F" data-latex-x="\frac{3}{2} - \frac{\sqrt{5}}{2}" data-latex-y="\frac{3}{2} - \frac{\sqrt{5}}{2}"><title>F = (3/2 - sqrt(5)/2, 3/2 - sqrt(5)/2)</title></circle>
+              <circle class="geom-point-halo" cx="302.31" cy="300.99" r="9" fill="none" />
+              <circle class="geom-point golden-point" cx="302.31" cy="300.99" r="4.6" data-ref="K" data-latex-x="3 - \sqrt{5}" data-latex-y="- \frac{1}{2} + \frac{\sqrt{5}}{2}"><title>K = (3 - sqrt(5), -1/2 + sqrt(5)/2)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="513.5" y="85.08" data-ref="B">B</text>
+              <text class="geom-label" x="188.41" y="98.23" data-ref="A">A</text>
+              <text class="geom-label" x="160.72" y="257.91" data-ref="M">M</text>
+              <text class="geom-label" x="513.5" y="244.76" data-ref="H">H</text>
+              <text class="geom-label" x="249.4" y="417.59" data-ref="P">P</text>
+              <text class="geom-label" x="188.76" y="417.94" data-ref="D">D</text>
+              <text class="geom-label" x="501.6" y="422.08" data-ref="C">C</text>
+              <text class="geom-label" x="414.24" y="252.26" data-ref="E">E</text>
+              <text class="geom-label" x="254.57" y="350.95" data-ref="F">F</text>
+              <text class="geom-label" x="304.42" y="323.86" data-ref="K">K</text>
+            </g>
+          </g>
+        </svg>
+        </figure>
+        <section class="level-2" id="given-constructive-steps">
+        <h2>Given &amp; Constructive Steps<a class="headerlink" href="#given-constructive-steps" title="Link to this heading">¶</a></h2>
+        <p><strong>Given</strong>: Square <span class="geom-ref" data-ref="ABCD" title="ABCD">ABCD</span> of side <span class="math notranslate nohighlight">\(2\)</span> with <span class="geom-ref" data-ref="D" title="D">D</span> <span class="math notranslate nohighlight">\(= (0,0)\)</span>, <span class="geom-ref" data-ref="C" title="C">C</span> <span class="math notranslate nohighlight">\(= (2,0)\)</span>, <span class="geom-ref" data-ref="B" title="B">B</span> <span class="math notranslate nohighlight">\(= (2,2)\)</span>, <span class="geom-ref" data-ref="A" title="A">A</span> <span class="math notranslate nohighlight">\(= (0,2)\)</span> and midpoint <span class="geom-ref" data-ref="M" title="M">M</span> <span class="math notranslate nohighlight">\(= (0,1)\)</span>.</p>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Join <span class="geom-ref" data-ref="CM" title="CM">CM</span> and <span class="geom-ref" data-ref="BM" title="BM">BM</span>, partitioning the lower and right regions into right <span class="math notranslate nohighlight">\(\triangle CDM\)</span> and isosceles <span class="math notranslate nohighlight">\(\triangle BCM\)</span>.</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Inscribe circle <span class="geom-ref" data-ref="cEH" title="cEH">cEH</span> in <span class="math notranslate nohighlight">\(\triangle BCM\)</span> (incenter <span class="geom-ref" data-ref="E" title="E">E</span>, tangent to <span class="geom-ref" data-ref="BC" title="BC">BC</span> at <span class="geom-ref" data-ref="H" title="H">H</span>) and circle <span class="geom-ref" data-ref="cFP" title="cFP">cFP</span> in <span class="math notranslate nohighlight">\(\triangle CDM\)</span> (incenter <span class="geom-ref" data-ref="F" title="F">F</span>, tangent to <span class="geom-ref" data-ref="CD" title="CD">CD</span> at <span class="geom-ref" data-ref="P" title="P">P</span>).</div>
+        <div class="geom-step geom-step-step" data-step-kind="step"><span class="geom-step-badge geom-badge-step">step</span> Join incenters <span class="geom-ref" data-ref="EF" title="EF">EF</span> to intersect shared side <span class="geom-ref" data-ref="CM" title="CM">CM</span> at <span class="geom-ref" data-ref="K" title="K">K</span>.</div>
+        </section>
+        <section class="level-2" id="exact-symbolic-proof-certificate">
+        <h2>Exact Symbolic Proof &amp; Certificate<a class="headerlink" href="#exact-symbolic-proof-certificate" title="Link to this heading">¶</a></h2>
+        <p>For <span class="math notranslate nohighlight">\(\triangle BCM\)</span>, area <span class="math notranslate nohighlight">\(= 2\)</span> and semiperimeter <span class="math notranslate nohighlight">\(s_1 = 1 + \sqrt{5}\)</span> give inradius <span class="math notranslate nohighlight">\(R = \frac{2}{\sqrt{5}+1} = \frac{\sqrt{5}-1}{2} = 1/\phi\)</span>. For right <span class="math notranslate nohighlight">\(\triangle CDM\)</span> with legs <span class="math notranslate nohighlight">\(1, 2\)</span> and hypotenuse <span class="math notranslate nohighlight">\(\sqrt{5}\)</span>, inradius <span class="math notranslate nohighlight">\(r = \frac{1 + 2 - \sqrt{5}}{2} = \frac{3 - \sqrt{5}}{2} = 1/\phi^2\)</span>. Since <span class="geom-ref" data-ref="E" title="E">E</span> and <span class="geom-ref" data-ref="F" title="F">F</span> lie at perpendicular distances <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(r\)</span> on opposite sides of shared line <span class="geom-ref" data-ref="CM" title="CM">CM</span>, similar right triangles yield <span class="math notranslate nohighlight">\(|EK|/|KF| = R/r = \phi\)</span>.</p>
+        <table class="docutils align-default" id="id1">
+        <caption><span class="caption-text">Machine-Verified Symbolic Certificate</span><a class="headerlink" href="#id1" title="Link to this table">¶</a></caption>
+        <colgroup>
+        <col style="width: 30.0%" />
+        <col style="width: 70.0%" />
+        </colgroup>
+        <thead>
+        <tr class="row-odd"><th class="head"><p>Invariant</p></th>
+        <th class="head"><p>Exact Symbolic Value</p></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="row-even"><td><p>Primary Golden Ratio</p></td>
+        <td><p><span class="geom-ref" data-ref="EK" title="EK">EK</span> <span class="math notranslate nohighlight">\(/\)</span> <span class="geom-ref" data-ref="KF" title="KF">KF</span> <span class="math notranslate nohighlight">\(= \frac{1}{2} + \frac{\sqrt{5}}{2}\)</span> on collinear triple (<span class="geom-ref" data-ref="E" title="E">E</span>, <span class="geom-ref" data-ref="K" title="K">K</span>, <span class="geom-ref" data-ref="F" title="F">F</span>)</p></td>
+        </tr>
+        <tr class="row-odd"><td><p>Exact Segment Lengths</p></td>
+        <td><p><span class="math notranslate nohighlight">\(|EK| = \sqrt{5 - 2 \sqrt{5}}\)</span>, <span class="math notranslate nohighlight">\(|KF| = \frac{\sqrt{2} \sqrt{25 - 11 \sqrt{5}}}{2}\)</span></p></td>
+        </tr>
+        <tr class="row-even"><td><p>Rational Trigonometry <a class="term-ref glossary-term" id="occ-term-quadrance-1" href="../../glossary.html#term-quadrance" data-term="quadrance" title="Quadrance (Q(A, B) = (x₂ − x₁)² + (y₂ − y₁)²): Norman Wildberger&#x27;s Rational Trigonometry invariant measuring squared separation without square roots; two segments stand in ratio φ iff Q_long / Q_short = φ + 1 = φ².">Quadrances</a></p></td>
+        <td><p><span class="math notranslate nohighlight">\(Q(E, K) = 5 - 2 \sqrt{5}\)</span>, <span class="math notranslate nohighlight">\(Q(K, F) = \frac{25}{2} - \frac{11 \sqrt{5}}{2}\)</span>, <span class="math notranslate nohighlight">\(Q_{\text{long}}/Q_{\text{short}} = \frac{\sqrt{5}}{2} + \frac{3}{2} = \phi^2\)</span></p></td>
+        </tr>
+        <tr class="row-odd"><td><p>Algebraic Number Field</p></td>
+        <td><p><span class="math notranslate nohighlight">\(\mathbb{Q}(\phi)\)</span></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="term-ref glossary-term" id="occ-term-geometrographie-2" href="../../glossary.html#term-geometrographie" data-term="geometrographie" title="Géométrographie (Lemoine Construction Complexity): Émile Lemoine&#x27;s 1902 operational metric counting elementary straightedge (R₁, R₂) and compass (C₁, C₂, C₃) operations; drawing a line through two points or a circle centered at one point through another each contributes simplicity 3.">Géométrographie</a> Loci</p></td>
+        <td><p>2 given points · 2 lines · 2 circles · 1 polygons (elementary loci <span class="math notranslate nohighlight">\(= 4\)</span>, Lemoine <span class="math notranslate nohighlight">\(S = 12\)</span>)</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="automated-divine-scan">
+        <h2>Automated Divine Scan<a class="headerlink" href="#automated-divine-scan" title="Link to this heading">¶</a></h2>
+        <p><a class="reference internal" href="../../../modules/api/geometor/divine/golden/index.html#module-geometor.divine.golden" title="geometor.divine.golden"><code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.divine.golden</span></code></a> detected <strong>2</strong> exact collinear golden section(s) and <strong>0</strong> connected golden chain(s) in this model:</p>
+        <ul class="simple">
+        <li><p>Section (<span class="geom-ref" data-ref="M" title="M">M</span>, <span class="geom-ref" data-ref="K" title="K">K</span>, <span class="geom-ref" data-ref="C" title="C">C</span>): long <span class="math notranslate nohighlight">\(|KC|^2 = \frac{15}{2} - \frac{5 \sqrt{5}}{2}\)</span> vs. short <span class="math notranslate nohighlight">\(|MK|^2 = \frac{35}{2} - \frac{15 \sqrt{5}}{2}\)</span></p></li>
+        <li><p>Section (<span class="geom-ref" data-ref="F" title="F">F</span>, <span class="geom-ref" data-ref="K" title="K">K</span>, <span class="geom-ref" data-ref="E" title="E">E</span>): long <span class="math notranslate nohighlight">\(|KE|^2 = 5 - 2 \sqrt{5}\)</span> vs. short <span class="math notranslate nohighlight">\(|FK|^2 = \frac{25}{2} - \frac{11 \sqrt{5}}{2}\)</span></p></li>
+        </ul>
+        </section>
+        <section class="level-2" id="historical-commentary-attribution">
+        <h2>Historical Commentary &amp; Attribution<a class="headerlink" href="#historical-commentary-attribution" title="Link to this heading">¶</a></h2>
+        <p>Suppa’s theorem exhibits consecutive negative powers of <span class="math notranslate nohighlight">\(\phi\)</span> (<span class="math notranslate nohighlight">\(\phi^{-1}\)</span> and <span class="math notranslate nohighlight">\(\phi^{-2}\)</span>, whose sum <span class="math notranslate nohighlight">\(\phi^{-1} + \phi^{-2} = 1\)</span> equals half the side of the square) as exact Euclidean inradii.</p>
+        <ul class="simple">
+        <li><p><strong>Scholarly Citations</strong>: <a class="citation-ref" id="occ-cite-bogomolny-suppa-square-1" href="../../bibliography.html#cite-bogomolny-suppa-square" data-cite="bogomolny-suppa-square" title="Alexander Bogomolny — Cut-the-Knot: Golden Ratio via Two Incircles in a Square (© 1996–2018)">Cut-the-Knot: Golden Ratio via Two Incircles in a Square</a>, <a class="citation-ref" id="occ-cite-bogomolny-golden-ratio-1" href="../../bibliography.html#cite-bogomolny-golden-ratio" data-cite="bogomolny-golden-ratio" title="Alexander Bogomolny — Cut-the-Knot: Golden Ratio in Geometry (© 1996–2018)">Cut-the-Knot: Golden Ratio in Geometry</a></p></li>
+        <li><p><strong>Curated Reference</strong>: <a class="reference external" href="https://www.cut-the-knot.org/do_you_know/GoldenRatioInSquare.shtml">Golden Ratio via Two Incircles in a Square</a> (curated by <a class="person-ref" id="occ-person-alexander-bogomolny-1" href="../../persons.html#person-alexander-bogomolny" data-person="alexander-bogomolny" title="Alexander Bogomolny (1948 – 2018) — Mathematician, Educator &amp; Creator of Cut-the-Knot">Alexander Bogomolny</a>, <em>Cut-the-Knot</em>, © 1996–2018)</p></li>
+        <li><p><strong>Concepts</strong>: <a class="term-ref glossary-term" id="occ-term-golden-ratio-1" href="../../glossary.html#term-golden-ratio" data-term="golden-ratio" title="Golden Ratio (φ) (Sectio Aurea / Divina Proportione): The positive root φ = (1 + √5)/2 ≈ 1.6180339887 of x² − x − 1 = 0, satisfying φ² = φ + 1 and 1/φ = φ − 1.">Golden Ratio (φ)</a> · <a class="term-ref glossary-term" id="occ-term-golden-section-1" href="../../glossary.html#term-golden-section" data-term="golden-section" title="Golden Section (Collinear Division in φ): A collinear point triple (A, G, B) whose consecutive segments stand in the golden ratio |AG|/|GB| = φ (so |AB|/|AG| = φ as well).">Golden Section</a></p></li>
+        </ul>
+        <div class="toctree-wrapper compound">
+        </div>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+
+        <div class="meta">
+          <span class="category">
+            <a href="../../../categories/03-squares-rectangles.html">03-squares-rectangles</a>
+          </span>
+          <span class="tags">
+            <a href="../../../tags/field-q-phi.html">field-q-phi</a>
+            <a href="../../../tags/ercole-suppa.html">ercole-suppa</a>
+          </span>
+        </div>
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../05-tran-3x3-incenter/index.html" title="GC-03.05 · Tran Quang Hung’s 3×3 Grid Incenter Division">&larr; <span class="nav-label">GC-03.05 · Tran Quang Hung’s 3×3 Grid Incenter Division</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../index.html">Catalog of Golden Ratio Constructions</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="../07-bui-cross-and-square/index.html" title="GC-03.07 · Bùi Quang Tuân &amp; Alexandre Borovik’s Greek Cross &amp; Square"><span class="nav-label">GC-03.07 · Bùi Quang Tuân & Alexandre Borovik’s Greek Cross & Square</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-recent-logs">
+      <h3>Recent Logs</h3>
+      <ul>
+        <li><a href="../../../log/23.012-101550/index.html">Defining the Divine Proportion</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-tags">
+      <h3>Tags</h3>
+      <ul>
+        <li><a href="../../../tags/alexander-bogomolny.html">alexander-bogomolny</a></li>
+        <li><a href="../../../tags/alexandre-borovik.html">alexandre-borovik</a></li>
+        <li><a href="../../../tags/bui-quang-tuan.html">bui-quang-tuan</a></li>
+        <li><a href="../../../tags/claudius-ptolemy.html">claudius-ptolemy</a></li>
+        <li><a href="../../../tags/compass-only.html">compass-only</a></li>
+        <li><a href="../../../tags/dao-thanh-oai.html">dao-thanh-oai</a></li>
+        <li><a href="../../../tags/elliot-mcgucken.html">elliot-mcgucken</a></li>
+        <li><a href="../../../tags/emile-lemoine.html">emile-lemoine</a></li>
+        <li><a href="../../../tags/ercole-suppa.html">ercole-suppa</a></li>
+        <li><a href="../../../tags/euclid.html">euclid</a></li>
+        <li><a href="../../../tags/field-algebraic.html">field-algebraic</a></li>
+        <li><a href="../../../tags/field-pentagonal.html">field-pentagonal</a></li>
+        <li><a href="../../../tags/field-pentagonal-hexagonal.html">field-pentagonal-hexagonal</a></li>
+        <li><a href="../../../tags/field-q-phi.html">field-q-phi</a></li>
+        <li><a href="../../../tags/field-q-sqrt-phi.html">field-q-sqrt-phi</a></li>
+        <li><a href="../../../tags/field-q-sqrt2-phi.html">field-q-sqrt2-phi</a></li>
+        <li><a href="../../../tags/field-q-sqrt3-phi.html">field-q-sqrt3-phi</a></li>
+        <li><a href="../../../tags/george-odom.html">george-odom</a></li>
+        <li><a href="../../../tags/golden-chain.html">golden-chain</a></li>
+        <li><a href="../../../tags/h-e-huntley.html">h-e-huntley</a></li>
+        <li><a href="../../../tags/h-s-m-coxeter.html">h-s-m-coxeter</a></li>
+        <li><a href="../../../tags/jerzy-kocik.html">jerzy-kocik</a></li>
+        <li><a href="../../../tags/jingcheng-tong.html">jingcheng-tong</a></li>
+        <li><a href="../../../tags/jo-niemeyer.html">jo-niemeyer</a></li>
+        <li><a href="../../../tags/johannes-kepler.html">johannes-kepler</a></li>
+        <li><a href="../../../tags/john-arioni.html">john-arioni</a></li>
+        <li><a href="../../../tags/john-molokach.html">john-molokach</a></li>
+        <li><a href="../../../tags/kurt-hofstetter.html">kurt-hofstetter</a></li>
+        <li><a href="../../../tags/michel-bataille.html">michel-bataille</a></li>
+        <li><a href="../../../tags/nguyen-thanh-dung.html">nguyen-thanh-dung</a></li>
+        <li><a href="../../../tags/paul-curry.html">paul-curry</a></li>
+        <li><a href="../../../tags/thanos-kalogerakis.html">thanos-kalogerakis</a></li>
+        <li><a href="../../../tags/tran-quang-hung.html">tran-quang-hung</a></li>
+        <li><a href="../../../tags/v-v-prasolov.html">v-v-prasolov</a></li>
+        <li><a href="../../../tags/william-hooper.html">william-hooper</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-categories">
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="../../../categories/01-minimal-compass.html">01-minimal-compass</a></li>
+        <li><a href="../../../categories/02-equilateral-hexagon.html">02-equilateral-hexagon</a></li>
+        <li><a href="../../../categories/03-squares-rectangles.html">03-squares-rectangles</a></li>
+        <li><a href="../../../categories/04-right-and-345.html">04-right-and-345</a></li>
+        <li><a href="../../../categories/05-pentagons-polygons.html">05-pentagons-polygons</a></li>
+        <li><a href="../../../categories/06-circles-sangaku.html">06-circles-sangaku</a></li>
+        <li><a href="../../../categories/07-rhombi-trapezoids-algebra.html">07-rhombi-trapezoids-algebra</a></li>
+      </ul>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../types/construction.html">construction</a></li>
+        <li><a href="../../../types/family.html">family</a></li>
+        <li><a href="../../../types/log.html">log</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../about.html"  >About GEOMETOR</a></li>
+        <li><a href="../../../contribute.html"  >contribute</a></li>
+        <li><a href="../../../discuss.html"  >discuss</a></li>
+        <li><a href="../../../glossary.html"  >glossary</a></li>
+        <li><a href="../../../todos/index.html"  >todos</a></li>
+        <li><a href="../../../changelog.html"  >changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, GEOMETOR.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../_static/documentation_options.js?v=6c02275b"></script>
+  <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>
