@@ -5,11 +5,12 @@ geometor.divine.golden
 
 .. autoapi-nested-parse::
 
-   Find and analyze golden sections.
+   Find and analyze exact symbolic golden sections in GEOMETOR models.
 
-   This module provides tools for identifying golden sections in lines and points.
-
-   .. todo:: create a sections module
+   This module provides fast numerical pre-filtering paired with 100% exact
+   Rational Trigonometry symbolic verification (:func:`geometor.model.quadrance`
+   and :func:`geometor.model.zero_test`) to detect golden sections and chains
+   across lines and collinear point configurations in :class:`geometor.model.Model`.
 
 
 
@@ -40,54 +41,54 @@ Functions
 
    geometor.divine.golden.find_chains_in_sections
    geometor.divine.golden.unpack_chains
-   geometor.divine.golden.group_sections_by_size
-   geometor.divine.golden.group_sections_by_segments
    geometor.divine.golden.group_sections_by_points
+   geometor.divine.golden.group_sections_by_segments
+   geometor.divine.golden.group_sections_by_size
    geometor.divine.golden.analyze_harmonics
    geometor.divine.golden.analyze_harmonics_by_segment
    geometor.divine.golden.check_range
-   geometor.divine.golden.find_golden_sections_in_model
-   geometor.divine.golden.find_golden_sections_in_points
+   geometor.divine.golden.points_on_line
    geometor.divine.golden.is_section_golden
+   geometor.divine.golden.find_golden_sections_in_points
+   geometor.divine.golden.find_golden_sections_in_model
+   geometor.divine.golden.find_chains_in_model
 
 
 Package Contents
 ----------------
 
-.. py:function:: find_chains_in_sections(sections: list[geometor.model.sections.Section]) -> dict
+.. py:function:: find_chains_in_sections(sections: list[geometor.model.sections.Section]) -> dict[geometor.model.sections.Section, dict]
 
-   Identify chains of connected golden sections to form harmonic ranges.
+   Identify maximal chains of connected golden sections.
 
-   :param sections: A list of Section objects representing golden sections to be analyzed.
+   Two ordered sections ``(A, B, C)`` and ``(B, C, D)`` connect when the
+   trailing segment ``(B, C)`` of the first equals the leading segment
+   ``(B, C)`` of the second.
 
-   :returns:
+   :param sections: A list of :class:`Section` objects to analyze.
 
-             A dictionary representing a tree structure where each node is a
-                 Section and connected Sections are child nodes.
+   :returns: Tree structure mapping root :class:`Section` nodes to nested
+             dictionaries of connected successor :class:`Section` nodes.
    :rtype: dict
 
 
-.. py:function:: unpack_chains(tree: dict) -> list[geometor.model.chains.Chain]
+.. py:function:: unpack_chains(tree: dict[geometor.model.sections.Section, dict]) -> list[geometor.model.chains.Chain]
 
-   Unpack the chain tree into a list of individual Chain objects.
+   Unpack a chain tree into a list of individual :class:`Chain` objects.
 
-   :param tree: A dictionary representing a tree structure where each node is a
-                Section and connected Sections are child nodes.
+   :param tree: Tree structure returned by :func:`find_chains_in_sections`.
 
-   :returns:
-
-             A list containing Chain objects, each representing a chain
-                 of connected golden sections.
+   :returns: Connected golden-section chains.
    :rtype: list[Chain]
 
 
-.. py:function:: group_sections_by_size(sections: list[geometor.model.sections.Section]) -> dict[sympy.Expr, list[geometor.model.sections.Section]]
+.. py:function:: group_sections_by_points(sections: list[geometor.model.sections.Section]) -> dict[sympy.geometry.Point, list[geometor.model.sections.Section]]
 
-   Group sections by their minimum length.
+   Group sections by the points they contain.
 
    :param sections: List of sections to group.
 
-   :returns: Mapping of length expression to list of sections.
+   :returns: Mapping of point to list of sections.
    :rtype: dict
 
 
@@ -101,17 +102,17 @@ Package Contents
    :rtype: dict
 
 
-.. py:function:: group_sections_by_points(sections: list[geometor.model.sections.Section]) -> dict[sympy.geometry.Point, list[geometor.model.sections.Section]]
+.. py:function:: group_sections_by_size(sections: list[geometor.model.sections.Section]) -> dict[sympy.Expr, list[geometor.model.sections.Section]]
 
-   Group sections by the points they contain.
+   Group sections by their minimum length.
 
    :param sections: List of sections to group.
 
-   :returns: Mapping of point to list of sections.
+   :returns: Mapping of length expression to list of sections.
    :rtype: dict
 
 
-.. py:function:: analyze_harmonics(line: sympy.geometry.Line) -> list[tuple[sympy.geometry.Point, Ellipsis]]
+.. py:function:: analyze_harmonics(line: sympy.geometry.Line) -> list[tuple[sympy.geometry.Point, ...]]
 
    Analyze a line for harmonic ranges.
 
@@ -131,7 +132,7 @@ Package Contents
    :rtype: dict
 
 
-.. py:function:: check_range(r: tuple[sympy.geometry.Point, Ellipsis]) -> sympy.Expr
+.. py:function:: check_range(r: tuple[sympy.geometry.Point, ...]) -> sympy.Expr
 
    Check if a range of 4 points forms a harmonic range.
 
@@ -145,36 +146,60 @@ Package Contents
 
 .. py:data:: phi
 
-.. py:function:: find_golden_sections_in_model(model: geometor.model.Model) -> tuple[list[geometor.model.sections.Section], dict[sympy.geometry.Line, list[geometor.model.sections.Section]]]
+.. py:function:: points_on_line(model: geometor.model.Model, line: sympy.geometry.LinearEntity2D, *, include_guides: bool = False, point_floats: dict[sympy.geometry.Point2D, tuple[float, float]] | None = None) -> list[sympy.geometry.Point2D]
 
-   Analyze all lines in the model for golden sections.
+   Return all model points incident with ``line`` verified symbolically.
 
-   :param model: The model to analyze.
-
-   :returns:
-
-             A tuple containing a list of all golden sections and a dictionary
-                 mapping lines to their golden sections.
-   :rtype: tuple
+   Uses floating-point line residual screening followed by exact
+   :func:`~geometor.model.zero_test` verification on the implicit line
+   equation ``a*x + b*y + c = 0``.
 
 
-.. py:function:: find_golden_sections_in_points(pts: list[sympy.geometry.Point]) -> list[geometor.model.sections.Section]
+.. py:function:: is_section_golden(section_points: collections.abc.Sequence[sympy.geometry.Point2D]) -> bool
 
-   Find golden sections in combinations of 3 points in list.
+   Check whether three ordered collinear points form an exact golden section.
 
-   :param pts: A list of points to analyze.
+   First screens segment quadrances numerically, then proves exact equality
+   ``Q_long - (phi + 1) * Q_short == 0`` symbolically via
+   :func:`~geometor.model.quadrance` and :func:`~geometor.model.zero_test`.
 
-   :returns: A list of golden section objects found.
+   :param section_points: Sequence of three ordered collinear points ``(P, Q, R)``.
+
+   :returns: ``True`` if ``max(|PQ|, |QR|) / min(|PQ|, |QR|) == phi`` exactly.
+   :rtype: bool
+
+
+.. py:function:: find_golden_sections_in_points(pts: collections.abc.Sequence[sympy.geometry.Point2D], *, use_pool: bool = False) -> list[geometor.model.sections.Section]
+
+   Find all exact golden sections among 3-point combinations of collinear points.
+
+   :param pts: Collinear SymPy points to analyze.
+   :param use_pool: If ``True``, evaluate candidates across a process pool;
+                    defaults to fast in-process screening + exact algebraic proof.
+
+   :returns: Exact golden sections ordered along the line.
    :rtype: list[Section]
 
 
-.. py:function:: is_section_golden(section_points: tuple[sympy.geometry.Point, Ellipsis]) -> bool
+.. py:function:: find_golden_sections_in_model(model: geometor.model.Model, *, include_collinear: bool = True, include_guides: bool = False, use_pool: bool = False) -> tuple[list[geometor.model.sections.Section], dict[sympy.geometry.Line, list[geometor.model.sections.Section]]]
 
-   Check if a set of points forms a golden section.
+   Analyze all lines and collinear point triples in ``model`` for golden sections.
 
-   :param section_points: The points forming the section.
+   :param model: The exact symbolic :class:`~geometor.model.Model` to analyze.
+   :param include_collinear: When ``True`` (default), also sweep maximal collinear
+                             point triples on segments or circle-only configurations without
+                             requiring an infinite :class:`sympy.geometry.Line` in ``model.lines``.
+   :param include_guides: Whether to include guide points and guide lines.
+   :param use_pool: Whether to use ``multiprocessing.Pool`` per line.
 
-   :returns: True if the section is a golden section.
-   :rtype: bool
+   :returns: ``(sections, sections_by_line)`` containing deduplicated exact
+             golden :class:`Section` instances and a mapping from carrier lines to
+             their golden sections.
+   :rtype: tuple
+
+
+.. py:function:: find_chains_in_model(model: geometor.model.Model, *, include_collinear: bool = True, include_guides: bool = False) -> tuple[list[geometor.model.sections.Section], list[geometor.model.chains.Chain]]
+
+   Scan ``model`` for all exact golden sections and connected golden chains.
 
 

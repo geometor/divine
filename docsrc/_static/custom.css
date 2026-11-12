@@ -1,0 +1,238 @@
+/* =========================================================================
+   GEOMETOR • Divine — Catalog of Golden Ratio Constructions Palette
+   Styles inline .euclid-graphic figures and .euclid-thumbnail cards in both
+   light and dark modes while preserving geometor_interactive.js highlights.
+   ========================================================================= */
+
+:root {
+  --divine-svg-bg: #fafaf9;
+  --divine-ink: #1c1917;
+  --divine-label-halo: rgba(250, 250, 249, 0.92);
+  --divine-carrier: #475569;
+  --divine-aux-line: #64748b;
+  --divine-conic: #0284c7;
+  --divine-conic-aux: #0369a1;
+  --divine-poly-stroke: #334155;
+  --divine-poly-fill: #0284c7;
+  --divine-golden-major: #d4af37;
+  --divine-golden-major-glow: rgba(212, 175, 55, 0.28);
+  --divine-golden-minor: #c2410c;
+  --divine-golden-sec: #b45309;
+  --divine-pt-given: #0f172a;
+  --divine-pt-constructed: #0369a1;
+  --divine-pt-golden: #d4af37;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --divine-svg-bg: #141417;
+    --divine-ink: #f4f4f5;
+    --divine-label-halo: rgba(20, 20, 23, 0.92);
+    --divine-carrier: #94a3b8;
+    --divine-aux-line: #64748b;
+    --divine-conic: #38bdf8;
+    --divine-conic-aux: #7dd3fc;
+    --divine-poly-stroke: #cbd5e1;
+    --divine-poly-fill: #38bdf8;
+    --divine-golden-major: #f5c542;
+    --divine-golden-major-glow: rgba(245, 197, 66, 0.32);
+    --divine-golden-minor: #fb923c;
+    --divine-golden-sec: #facc15;
+    --divine-pt-given: #e2e8f0;
+    --divine-pt-constructed: #38bdf8;
+    --divine-pt-golden: #f5c542;
+  }
+}
+
+html[data-theme="dark"] {
+  --divine-svg-bg: #141417;
+  --divine-ink: #f4f4f5;
+  --divine-label-halo: rgba(20, 20, 23, 0.92);
+  --divine-carrier: #94a3b8;
+  --divine-aux-line: #64748b;
+  --divine-conic: #38bdf8;
+  --divine-conic-aux: #7dd3fc;
+  --divine-poly-stroke: #cbd5e1;
+  --divine-poly-fill: #38bdf8;
+  --divine-golden-major: #f5c542;
+  --divine-golden-major-glow: rgba(245, 197, 66, 0.32);
+  --divine-golden-minor: #fb923c;
+  --divine-golden-sec: #facc15;
+  --divine-pt-given: #e2e8f0;
+  --divine-pt-constructed: #38bdf8;
+  --divine-pt-golden: #f5c542;
+}
+
+html[data-theme="light"] {
+  --divine-svg-bg: #fafaf9;
+  --divine-ink: #1c1917;
+  --divine-label-halo: rgba(250, 250, 249, 0.92);
+  --divine-carrier: #475569;
+  --divine-aux-line: #64748b;
+  --divine-conic: #0284c7;
+  --divine-conic-aux: #0369a1;
+  --divine-poly-stroke: #334155;
+  --divine-poly-fill: #0284c7;
+  --divine-golden-major: #d4af37;
+  --divine-golden-major-glow: rgba(212, 175, 55, 0.28);
+  --divine-golden-minor: #c2410c;
+  --divine-golden-sec: #b45309;
+  --divine-pt-given: #0f172a;
+  --divine-pt-constructed: #0369a1;
+  --divine-pt-golden: #d4af37;
+}
+
+svg.euclid-graphic .svg-bg {
+  fill: none;
+}
+
+svg.euclid-graphic .geom-circle.conic-curve:not(.is-highlighted) {
+  fill: none;
+  stroke: var(--divine-conic);
+  stroke-width: 1.85;
+  stroke-opacity: 0.84;
+}
+
+svg.euclid-graphic .geom-circle.aux-circle:not(.is-highlighted) {
+  fill: none;
+  stroke: var(--divine-conic-aux);
+  stroke-width: 1.35;
+  stroke-dasharray: 5 3.5;
+  stroke-opacity: 0.62;
+}
+
+svg.euclid-graphic .geom-circle.golden-circle:not(.is-highlighted) {
+  fill: none;
+  stroke: var(--divine-golden-major);
+  stroke-width: 2.35;
+  stroke-opacity: 0.92;
+}
+
+svg.euclid-graphic .geom-polygon.poly-shape:not(.is-highlighted) {
+  fill: var(--divine-poly-fill);
+  fill-opacity: 0.07;
+  stroke: var(--divine-poly-stroke);
+  stroke-width: 1.85;
+  stroke-linejoin: round;
+}
+
+svg.euclid-graphic .geom-polygon.golden-poly:not(.is-highlighted) {
+  fill: var(--divine-golden-major);
+  fill-opacity: 0.11;
+  stroke: var(--divine-golden-major);
+  stroke-width: 2.1;
+  stroke-linejoin: round;
+}
+
+svg.euclid-graphic .geom-line:not(.is-highlighted) {
+  fill: none;
+  stroke: var(--divine-carrier);
+  stroke-width: 1.45;
+  stroke-linecap: round;
+  stroke-opacity: 0.72;
+}
+
+svg.euclid-graphic .geom-line.aux-line:not(.is-highlighted) {
+  stroke: var(--divine-aux-line);
+  stroke-width: 1.2;
+  stroke-dasharray: 5 3.5;
+  stroke-opacity: 0.58;
+}
+
+svg.euclid-graphic .geom-segment.struct-segment:not(.is-highlighted) {
+  fill: none;
+  stroke: var(--divine-poly-stroke);
+  stroke-width: 1.95;
+  stroke-linecap: round;
+  stroke-opacity: 0.88;
+}
+
+svg.euclid-graphic .geom-segment.aux-segment:not(.is-highlighted) {
+  fill: none;
+  stroke: var(--divine-aux-line);
+  stroke-width: 1.35;
+  stroke-dasharray: 4.5 3;
+  stroke-linecap: round;
+  stroke-opacity: 0.68;
+}
+
+svg.euclid-graphic .geom-segment.golden-segment:not(.is-highlighted) {
+  fill: none;
+  stroke: var(--divine-golden-sec);
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  stroke-opacity: 0.55;
+}
+
+svg.euclid-graphic .geom-segment.golden-major-glow {
+  fill: none;
+  stroke: var(--divine-golden-major-glow);
+  stroke-width: 9.5;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+svg.euclid-graphic .geom-segment.golden-major:not(.is-highlighted) {
+  fill: none;
+  stroke: var(--divine-golden-major);
+  color: var(--divine-ink);
+  stroke-width: 4.3;
+  stroke-linecap: round;
+}
+
+svg.euclid-graphic .geom-segment.golden-minor:not(.is-highlighted) {
+  fill: none;
+  stroke: var(--divine-golden-minor);
+  color: var(--divine-ink);
+  stroke-width: 3.7;
+  stroke-linecap: round;
+}
+
+svg.euclid-graphic .geom-overlay:not(.is-highlighted) {
+  fill: none;
+  stroke: transparent;
+  stroke-width: 10;
+  stroke-linecap: round;
+  opacity: 0;
+  pointer-events: none;
+}
+
+svg.euclid-graphic .geom-point:not(.is-highlighted) {
+  fill: var(--divine-pt-constructed);
+  stroke: var(--divine-svg-bg);
+  stroke-width: 1.5;
+}
+
+svg.euclid-graphic .geom-point.given-point:not(.is-highlighted) {
+  fill: var(--divine-pt-given);
+}
+
+svg.euclid-graphic .geom-point.golden-point:not(.is-highlighted) {
+  fill: var(--divine-pt-golden);
+  stroke: #1c1917;
+  stroke-width: 1.7;
+}
+
+svg.euclid-graphic .geom-point-halo {
+  fill: none;
+  stroke: var(--divine-golden-major);
+  stroke-opacity: 0.55;
+  stroke-width: 1.8;
+  pointer-events: none;
+}
+
+svg.euclid-graphic .geom-label:not(.is-highlighted) {
+  fill: var(--divine-ink);
+  font-size: 13.5px;
+  font-weight: 600;
+  paint-order: stroke fill;
+  stroke: var(--divine-label-halo);
+  stroke-width: 3.6px;
+  stroke-linejoin: round;
+  user-select: none;
+}
+
+svg.euclid-graphic .geom-label-sub {
+  font-size: 10px;
+  font-weight: 600;
+}

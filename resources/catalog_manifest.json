@@ -1,0 +1,1830 @@
+{
+  "title": "GEOMETOR Catalog of Golden Ratio Constructions",
+  "attribution": "Catalogs universal mathematical constructions and theorems curated in Alexander Bogomolny's Cut-the-Knot archive (© 1996–2018 Alexander Bogomolny) and peer-reviewed geometric literature, modeled from scratch in 100% exact SymPy symbolic algebra.",
+  "family_count": 7,
+  "construction_count": 45,
+  "total_detected_sections": 129,
+  "total_detected_chains": 33,
+  "families": [
+    {
+      "slug": "01-minimal-compass",
+      "code_prefix": "GC-01",
+      "order": 1,
+      "title": "Classical & Minimal-Step Compass Constructions",
+      "count": 7
+    },
+    {
+      "slug": "02-equilateral-hexagon",
+      "code_prefix": "GC-02",
+      "order": 2,
+      "title": "Equilateral Triangles & Regular Hexagons",
+      "count": 7
+    },
+    {
+      "slug": "03-squares-rectangles",
+      "code_prefix": "GC-03",
+      "order": 3,
+      "title": "Squares, Lattice Grids & Golden Crosses",
+      "count": 8
+    },
+    {
+      "slug": "04-right-and-345",
+      "code_prefix": "GC-04",
+      "order": 4,
+      "title": "Right Triangles, Egyptian 3–4–5 & Kepler Proportions",
+      "count": 4
+    },
+    {
+      "slug": "05-pentagons-polygons",
+      "code_prefix": "GC-05",
+      "order": 5,
+      "title": "Pentagons, Pentagrams, Affine Invariance & Stars",
+      "count": 6
+    },
+    {
+      "slug": "06-circles-sangaku",
+      "code_prefix": "GC-06",
+      "order": 6,
+      "title": "Circles, Apollonian Windows, Yin–Yang & Sangaku",
+      "count": 7
+    },
+    {
+      "slug": "07-rhombi-trapezoids-algebra",
+      "code_prefix": "GC-07",
+      "order": 7,
+      "title": "Rhombi, Trapezoids, Mixtilinear Circles & Dissections",
+      "count": 6
+    }
+  ],
+  "constructions": [
+    {
+      "catalog_code": "GC-01.01",
+      "slug": "01-euclid-ii-11",
+      "family_slug": "01-minimal-compass",
+      "title": "Euclid's Classical Golden Section (Elements II.11 & VI.30)",
+      "short_title": "Euclid II.11 & VI.30",
+      "discoverers": [
+        "euclid"
+      ],
+      "year": "c. 300 BCE",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenRatio.shtml",
+      "ctk_title": "Golden Ratio in Geometry",
+      "number_field": "\\mathbb{Q}(\\phi)",
+      "number_field_text": "Q(φ)",
+      "primary_long": [
+        "A",
+        "G"
+      ],
+      "primary_short": [
+        "G",
+        "B"
+      ],
+      "primary_collinear": [
+        "A",
+        "G",
+        "B"
+      ],
+      "length_long": "-1 + sqrt(5)",
+      "length_short": "3 - sqrt(5)",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "6 - 2*sqrt(5)",
+      "q_short": "14 - 6*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 3,
+      "lemoine_simplicity": 9,
+      "detected_section_count": 2,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/01-minimal-compass/01-euclid-ii-11/01-euclid-ii-11.svg"
+    },
+    {
+      "catalog_code": "GC-01.02",
+      "slug": "02-pythagorean-transfer",
+      "family_slug": "01-minimal-compass",
+      "title": "Right-Triangle Hypotenuse Transfer (1 : 2 : √5)",
+      "short_title": "Hypotenuse Transfer",
+      "discoverers": [
+        "euclid"
+      ],
+      "year": "Classical",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenRatio.shtml#construct",
+      "ctk_title": "Golden Ratio in Geometry — Classical Right-Triangle Division",
+      "number_field": "\\mathbb{Q}(\\phi)",
+      "number_field_text": "Q(φ)",
+      "primary_long": [
+        "A",
+        "G"
+      ],
+      "primary_short": [
+        "G",
+        "B"
+      ],
+      "primary_collinear": [
+        "A",
+        "G",
+        "B"
+      ],
+      "length_long": "-1 + sqrt(5)",
+      "length_short": "3 - sqrt(5)",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "6 - 2*sqrt(5)",
+      "q_short": "14 - 6*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 4,
+      "lemoine_simplicity": 12,
+      "detected_section_count": 2,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/01-minimal-compass/02-pythagorean-transfer/02-pythagorean-transfer.svg"
+    },
+    {
+      "catalog_code": "GC-01.03",
+      "slug": "03-lemoine-hofstetter-5step",
+      "family_slug": "01-minimal-compass",
+      "title": "Lemoine–Reusch–Hofstetter 5-Step Division",
+      "short_title": "Lemoine–Hofstetter 5-Step",
+      "discoverers": [
+        "emile-lemoine",
+        "kurt-hofstetter"
+      ],
+      "year": "1902 / 2003",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenRatio.shtml#5step",
+      "ctk_title": "Golden Ratio in Geometry — 5-Step Construction",
+      "number_field": "\\mathbb{Q}(\\sqrt{3}, \\phi)",
+      "number_field_text": "Q(√3, φ)",
+      "primary_long": [
+        "A",
+        "G"
+      ],
+      "primary_short": [
+        "G",
+        "B"
+      ],
+      "primary_collinear": [
+        "A",
+        "G",
+        "B"
+      ],
+      "length_long": "-1/2 + sqrt(5)/2",
+      "length_short": "3/2 - sqrt(5)/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "3/2 - sqrt(5)/2",
+      "q_short": "7/2 - 3*sqrt(5)/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 6,
+      "lemoine_simplicity": 18,
+      "detected_section_count": 2,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/01-minimal-compass/03-lemoine-hofstetter-5step/03-lemoine-hofstetter-5step.svg"
+    },
+    {
+      "catalog_code": "GC-01.04",
+      "slug": "04-hofstetter-5step-2004",
+      "family_slug": "01-minimal-compass",
+      "title": "Hofstetter's 2004 Five-Step Secant Division",
+      "short_title": "Hofstetter 5-Step (2004)",
+      "discoverers": [
+        "kurt-hofstetter"
+      ],
+      "year": "2004",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/Hofstetter3.shtml",
+      "ctk_title": "5-Step Construction of the Golden Ratio, One of Many",
+      "number_field": "\\mathbb{Q}(\\sqrt{3}, \\phi)",
+      "number_field_text": "Q(√3, φ)",
+      "primary_long": [
+        "A",
+        "G"
+      ],
+      "primary_short": [
+        "G",
+        "B"
+      ],
+      "primary_collinear": [
+        "A",
+        "G",
+        "B"
+      ],
+      "length_long": "-1/2 + sqrt(5)/2",
+      "length_short": "3/2 - sqrt(5)/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "3/2 - sqrt(5)/2",
+      "q_short": "7/2 - 3*sqrt(5)/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 5,
+      "lemoine_simplicity": 15,
+      "detected_section_count": 2,
+      "detected_chain_count": 1,
+      "svg_path": "docsrc/constructions/01-minimal-compass/04-hofstetter-5step-2004/04-hofstetter-5step-2004.svg"
+    },
+    {
+      "catalog_code": "GC-01.05",
+      "slug": "05-hofstetter-compass-only",
+      "family_slug": "01-minimal-compass",
+      "title": "Mascheroni Five-Circle Compass-Only Construction",
+      "short_title": "Compass-Only (5 Circles)",
+      "discoverers": [
+        "kurt-hofstetter"
+      ],
+      "year": "2002",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenRatioByCompass.shtml",
+      "ctk_title": "Golden Ratio by Compass Only",
+      "number_field": "\\mathbb{Q}(\\sqrt{3}, \\phi)",
+      "number_field_text": "Q(√3, φ)",
+      "primary_long": [
+        "C",
+        "D"
+      ],
+      "primary_short": [
+        "D",
+        "X"
+      ],
+      "primary_collinear": [
+        "C",
+        "D",
+        "X"
+      ],
+      "length_long": "sqrt(3)",
+      "length_short": "(-sqrt(3) + sqrt(15))/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "3",
+      "q_short": "9/2 - 3*sqrt(5)/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 5,
+      "lemoine_simplicity": 15,
+      "detected_section_count": 2,
+      "detected_chain_count": 1,
+      "svg_path": "docsrc/constructions/01-minimal-compass/05-hofstetter-compass-only/05-hofstetter-compass-only.svg"
+    },
+    {
+      "catalog_code": "GC-01.06",
+      "slug": "06-hofstetter-rusty-compass",
+      "family_slug": "01-minimal-compass",
+      "title": "Hofstetter's Fixed-Aperture Rusty-Compass Division",
+      "short_title": "Rusty Compass (2005)",
+      "discoverers": [
+        "kurt-hofstetter"
+      ],
+      "year": "2005",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenRatioByRustyCompass.shtml",
+      "ctk_title": "Golden Ratio with a Rusty Compass",
+      "number_field": "\\mathbb{Q}(\\sqrt{3}, \\phi)",
+      "number_field_text": "Q(√3, φ)",
+      "primary_long": [
+        "A",
+        "G"
+      ],
+      "primary_short": [
+        "G",
+        "B"
+      ],
+      "primary_collinear": [
+        "A",
+        "G",
+        "B"
+      ],
+      "length_long": "-1/2 + sqrt(5)/2",
+      "length_short": "3/2 - sqrt(5)/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "3/2 - sqrt(5)/2",
+      "q_short": "7/2 - 3*sqrt(5)/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 6,
+      "lemoine_simplicity": 18,
+      "detected_section_count": 1,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/01-minimal-compass/06-hofstetter-rusty-compass/06-hofstetter-rusty-compass.svg"
+    },
+    {
+      "catalog_code": "GC-01.07",
+      "slug": "07-bui-5step",
+      "family_slug": "01-minimal-compass",
+      "title": "Bùi Quang Tuân's Five-Step Three-Circle Secant",
+      "short_title": "Bùi 5-Step Secant",
+      "discoverers": [
+        "bui-quang-tuan"
+      ],
+      "year": "2014",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/BuiGoldenRatio5Step.shtml",
+      "ctk_title": "Golden Ratio in Five Steps",
+      "number_field": "\\mathbb{Q}(\\sqrt{5}, \\sqrt{7})",
+      "number_field_text": "Q(√5, √7)",
+      "primary_long": [
+        "M",
+        "P"
+      ],
+      "primary_short": [
+        "P",
+        "N"
+      ],
+      "primary_collinear": [
+        "M",
+        "P",
+        "N"
+      ],
+      "length_long": "sqrt(7)*sqrt(-sqrt(2)*sqrt(sqrt(5) + 3) + 4 + sqrt(10)*sqrt(sqrt(5) + 3))/4",
+      "length_short": "sqrt(7)*sqrt(-5*sqrt(2)*sqrt(sqrt(5) + 3) + sqrt(10)*sqrt(sqrt(5) + 3) + 12)/4",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "7/4 + (-7*sqrt(2)*sqrt(sqrt(5) + 3) + 7*sqrt(10)*sqrt(sqrt(5) + 3))/16",
+      "q_short": "(-35*sqrt(2)*sqrt(sqrt(5) + 3) + 7*sqrt(10)*sqrt(sqrt(5) + 3))/16 + 21/4",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 5,
+      "lemoine_simplicity": 15,
+      "detected_section_count": 1,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/01-minimal-compass/07-bui-5step/07-bui-5step.svg"
+    },
+    {
+      "catalog_code": "GC-02.01",
+      "slug": "01-odom-equilateral",
+      "family_slug": "02-equilateral-hexagon",
+      "title": "George Odom's Equilateral Midline & Circumcircle Chord (1983)",
+      "short_title": "Odom's Equilateral Midline",
+      "discoverers": [
+        "george-odom",
+        "h-s-m-coxeter"
+      ],
+      "year": "1983",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenRatio.shtml#Odom",
+      "ctk_title": "Golden Ratio in Geometry — George Odom's Construction",
+      "number_field": "\\mathbb{Q}(\\sqrt{3}, \\phi)",
+      "number_field_text": "Q(√3, φ)",
+      "primary_long": [
+        "L",
+        "M"
+      ],
+      "primary_short": [
+        "M",
+        "Y"
+      ],
+      "primary_collinear": [
+        "L",
+        "M",
+        "Y"
+      ],
+      "length_long": "sqrt(3)",
+      "length_short": "(-sqrt(3) + sqrt(15))/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "3",
+      "q_short": "9/2 - 3*sqrt(5)/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 2,
+      "lemoine_simplicity": 6,
+      "detected_section_count": 2,
+      "detected_chain_count": 1,
+      "svg_path": "docsrc/constructions/02-equilateral-hexagon/01-odom-equilateral/01-odom-equilateral.svg"
+    },
+    {
+      "catalog_code": "GC-02.02",
+      "slug": "02-bataille-triangle-square",
+      "family_slug": "02-equilateral-hexagon",
+      "title": "Michel Bataille's Equilateral Triangle & External Square",
+      "short_title": "Bataille Triangle & Square",
+      "discoverers": [
+        "michel-bataille"
+      ],
+      "year": "2011",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/MBatailleGoldenRatio.shtml",
+      "ctk_title": "From Equilateral Triangle and Square to Golden Ratio",
+      "number_field": "\\mathbb{Q}(\\sqrt{3}, \\phi)",
+      "number_field_text": "Q(√3, φ)",
+      "primary_long": [
+        "A",
+        "B"
+      ],
+      "primary_short": [
+        "B",
+        "F"
+      ],
+      "primary_collinear": [
+        "A",
+        "B",
+        "F"
+      ],
+      "length_long": "2",
+      "length_short": "-1 + sqrt(5)",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "4",
+      "q_short": "6 - 2*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 2,
+      "lemoine_simplicity": 6,
+      "detected_section_count": 1,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/02-equilateral-hexagon/02-bataille-triangle-square/02-bataille-triangle-square.svg"
+    },
+    {
+      "catalog_code": "GC-02.03",
+      "slug": "03-bui-two-equilaterals",
+      "family_slug": "02-equilateral-hexagon",
+      "title": "Bùi Quang Tuân's Side-and-Altitude Equilateral Triangles",
+      "short_title": "Coupled Equilateral Triangles",
+      "discoverers": [
+        "bui-quang-tuan"
+      ],
+      "year": "2011",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenQTB.shtml",
+      "ctk_title": "Golden Section in Two Equilateral Triangles",
+      "number_field": "\\mathbb{Q}(\\sqrt{3}, \\phi)",
+      "number_field_text": "Q(√3, φ)",
+      "primary_long": [
+        "M",
+        "P"
+      ],
+      "primary_short": [
+        "P",
+        "N"
+      ],
+      "primary_collinear": [
+        "M",
+        "P",
+        "N"
+      ],
+      "length_long": "(-sqrt(3) + sqrt(15))/2",
+      "length_short": "(-sqrt(15) + 3*sqrt(3))/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "9/2 - 3*sqrt(5)/2",
+      "q_short": "21/2 - 9*sqrt(5)/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 2,
+      "lemoine_simplicity": 6,
+      "detected_section_count": 1,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/02-equilateral-hexagon/03-bui-two-equilaterals/03-bui-two-equilaterals.svg"
+    },
+    {
+      "catalog_code": "GC-02.04",
+      "slug": "04-tran-reflected-equilaterals",
+      "family_slug": "02-equilateral-hexagon",
+      "title": "Tran Quang Hung's Reflected Equilateral Triangles",
+      "short_title": "Reflected Equilaterals",
+      "discoverers": [
+        "tran-quang-hung"
+      ],
+      "year": "2014",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/Buratino5.shtml",
+      "ctk_title": "Golden Ratio in Two Equilateral Triangles",
+      "number_field": "\\mathbb{Q}(\\sqrt{3}, \\phi)",
+      "number_field_text": "Q(√3, φ)",
+      "primary_long": [
+        "C",
+        "D"
+      ],
+      "primary_short": [
+        "D",
+        "B"
+      ],
+      "primary_collinear": [
+        "C",
+        "D",
+        "B"
+      ],
+      "length_long": "-1 + sqrt(5)",
+      "length_short": "3 - sqrt(5)",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "6 - 2*sqrt(5)",
+      "q_short": "14 - 6*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 4,
+      "lemoine_simplicity": 12,
+      "detected_section_count": 2,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/02-equilateral-hexagon/04-tran-reflected-equilaterals/04-tran-reflected-equilaterals.svg"
+    },
+    {
+      "catalog_code": "GC-02.05",
+      "slug": "05-tran-incircle-equilateral",
+      "family_slug": "02-equilateral-hexagon",
+      "title": "Nested Equilateral Triangles on the Incircle",
+      "short_title": "Incircle Nested Equilaterals",
+      "discoverers": [
+        "tran-quang-hung"
+      ],
+      "year": "2014",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/Buratino2.shtml",
+      "ctk_title": "Golden Ratio in Equilateral Triangles",
+      "number_field": "\\mathbb{Q}(\\sqrt{3}, \\phi)",
+      "number_field_text": "Q(√3, φ)",
+      "primary_long": [
+        "F",
+        "H"
+      ],
+      "primary_short": [
+        "A",
+        "F"
+      ],
+      "primary_collinear": [
+        "A",
+        "F",
+        "H"
+      ],
+      "length_long": "sqrt(3)",
+      "length_short": "(-sqrt(3) + sqrt(15))/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "3",
+      "q_short": "9/2 - 3*sqrt(5)/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 4,
+      "lemoine_simplicity": 12,
+      "detected_section_count": 3,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/02-equilateral-hexagon/05-tran-incircle-equilateral/05-tran-incircle-equilateral.svg"
+    },
+    {
+      "catalog_code": "GC-02.06",
+      "slug": "06-tran-hexagon-square",
+      "family_slug": "02-equilateral-hexagon",
+      "title": "Regular Hexagon & External Square Compass Sweep",
+      "short_title": "Hexagon & Square Sweep",
+      "discoverers": [
+        "tran-quang-hung"
+      ],
+      "year": "2014",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/Buratino3.shtml",
+      "ctk_title": "Golden Ratio in Hexagon",
+      "number_field": "\\mathbb{Q}(\\sqrt{3}, \\phi)",
+      "number_field_text": "Q(√3, φ)",
+      "primary_long": [
+        "F",
+        "I"
+      ],
+      "primary_short": [
+        "I",
+        "E"
+      ],
+      "primary_collinear": [
+        "F",
+        "I",
+        "E"
+      ],
+      "length_long": "-1 + sqrt(5)",
+      "length_short": "3 - sqrt(5)",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "6 - 2*sqrt(5)",
+      "q_short": "14 - 6*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 3,
+      "lemoine_simplicity": 9,
+      "detected_section_count": 2,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/02-equilateral-hexagon/06-tran-hexagon-square/06-tran-hexagon-square.svg"
+    },
+    {
+      "catalog_code": "GC-02.07",
+      "slug": "07-nguyen-butterfly-equilateral",
+      "family_slug": "02-equilateral-hexagon",
+      "title": "Butterfly Chords Astride an Equilateral Triangle",
+      "short_title": "Butterfly Equilateral",
+      "discoverers": [
+        "nguyen-thanh-dung"
+      ],
+      "year": "2016",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenRatioAstrideEquilateralTriangle.shtml",
+      "ctk_title": "Golden Ratio in a Butterfly Astride an Equilateral Triangle",
+      "number_field": "\\mathbb{Q}(\\sqrt{3}, \\phi)",
+      "number_field_text": "Q(√3, φ)",
+      "primary_long": [
+        "Y",
+        "Z"
+      ],
+      "primary_short": [
+        "Z",
+        "T"
+      ],
+      "primary_collinear": [
+        "Y",
+        "Z",
+        "T"
+      ],
+      "length_long": "sqrt(30)*sqrt(-5*sqrt(2)*sqrt(sqrt(5) + 3) - sqrt(10)*sqrt(sqrt(5) + 3) + 6*sqrt(5) + 18)/10",
+      "length_short": "sqrt(15)*sqrt(-10*sqrt(2)*sqrt(sqrt(5) + 3) - sqrt(5) + 19 + 3*sqrt(10)*sqrt(sqrt(5) + 3))/10",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "(-15*sqrt(2)*sqrt(sqrt(5) + 3) - 3*sqrt(10)*sqrt(sqrt(5) + 3) + 18*sqrt(5))/10 + 27/5",
+      "q_short": "(-30*sqrt(2)*sqrt(sqrt(5) + 3) - 3*sqrt(5) + 9*sqrt(10)*sqrt(sqrt(5) + 3))/20 + 57/20",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 6,
+      "lemoine_simplicity": 18,
+      "detected_section_count": 2,
+      "detected_chain_count": 1,
+      "svg_path": "docsrc/constructions/02-equilateral-hexagon/07-nguyen-butterfly-equilateral/07-nguyen-butterfly-equilateral.svg"
+    },
+    {
+      "catalog_code": "GC-03.01",
+      "slug": "01-tran-square-inscribed-semicircle",
+      "family_slug": "03-squares-rectangles",
+      "title": "Tran Quang Hung's Square Inscribed in a Right Isosceles Semicircle",
+      "short_title": "Square in Semicircle",
+      "discoverers": [
+        "tran-quang-hung"
+      ],
+      "year": "2014",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenRatioInRectangles.shtml",
+      "ctk_title": "Golden Ratio in Square and Circle",
+      "number_field": "\\mathbb{Q}(\\phi)",
+      "number_field_text": "Q(φ)",
+      "primary_long": [
+        "D",
+        "E"
+      ],
+      "primary_short": [
+        "E",
+        "P"
+      ],
+      "primary_collinear": [
+        "D",
+        "E",
+        "P"
+      ],
+      "length_long": "2",
+      "length_short": "-1 + sqrt(5)",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "4",
+      "q_short": "6 - 2*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 3,
+      "lemoine_simplicity": 9,
+      "detected_section_count": 2,
+      "detected_chain_count": 1,
+      "svg_path": "docsrc/constructions/03-squares-rectangles/01-tran-square-inscribed-semicircle/01-tran-square-inscribed-semicircle.svg"
+    },
+    {
+      "catalog_code": "GC-03.02",
+      "slug": "02-tran-square-midpoints",
+      "family_slug": "03-squares-rectangles",
+      "title": "Tran Quang Hung's Square Midpoint Circle Division",
+      "short_title": "Square Midpoint Circle",
+      "discoverers": [
+        "tran-quang-hung"
+      ],
+      "year": "2015",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/Buratino1.shtml",
+      "ctk_title": "Golden Ratio in Square via Midpoints",
+      "number_field": "\\mathbb{Q}(\\phi)",
+      "number_field_text": "Q(φ)",
+      "primary_long": [
+        "F",
+        "X"
+      ],
+      "primary_short": [
+        "X",
+        "N"
+      ],
+      "primary_collinear": [
+        "F",
+        "X",
+        "N"
+      ],
+      "length_long": "-1 + sqrt(5)",
+      "length_short": "3 - sqrt(5)",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "6 - 2*sqrt(5)",
+      "q_short": "14 - 6*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 4,
+      "lemoine_simplicity": 12,
+      "detected_section_count": 4,
+      "detected_chain_count": 1,
+      "svg_path": "docsrc/constructions/03-squares-rectangles/02-tran-square-midpoints/02-tran-square-midpoints.svg"
+    },
+    {
+      "catalog_code": "GC-03.03",
+      "slug": "03-nguyen-2x2-square",
+      "family_slug": "03-squares-rectangles",
+      "title": "Nguyen Thanh Dung's 2×2 Grid Compass Arc",
+      "short_title": "2×2 Grid Compass Arc",
+      "discoverers": [
+        "nguyen-thanh-dung"
+      ],
+      "year": "2016",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/2x2GoldenRatio.shtml",
+      "ctk_title": "Golden Ratio in 2x2 Square",
+      "number_field": "\\mathbb{Q}(\\phi)",
+      "number_field_text": "Q(φ)",
+      "primary_long": [
+        "M",
+        "B"
+      ],
+      "primary_short": [
+        "A",
+        "M"
+      ],
+      "primary_collinear": [
+        "A",
+        "M",
+        "B"
+      ],
+      "length_long": "-1 + sqrt(5)",
+      "length_short": "3 - sqrt(5)",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "6 - 2*sqrt(5)",
+      "q_short": "14 - 6*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 2,
+      "lemoine_simplicity": 6,
+      "detected_section_count": 1,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/03-squares-rectangles/03-nguyen-2x2-square/03-nguyen-2x2-square.svg"
+    },
+    {
+      "catalog_code": "GC-03.04",
+      "slug": "04-tran-mcgucken-3x3-circle",
+      "family_slug": "03-squares-rectangles",
+      "title": "Tran Quang Hung & Elliot McGucken's 3×3 Grid Circle",
+      "short_title": "3×3 Grid Diagonal Circle",
+      "discoverers": [
+        "tran-quang-hung",
+        "elliot-mcgucken"
+      ],
+      "year": "2016",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/3x3GoldenRatio.shtml",
+      "ctk_title": "Golden Ratio in 3x3 Square",
+      "number_field": "\\mathbb{Q}(\\sqrt{2}, \\phi)",
+      "number_field_text": "Q(√2, φ)",
+      "primary_long": [
+        "C",
+        "B"
+      ],
+      "primary_short": [
+        "B",
+        "A"
+      ],
+      "primary_collinear": [
+        "C",
+        "B",
+        "A"
+      ],
+      "length_long": "-sqrt(2) + sqrt(10)",
+      "length_short": "-sqrt(10) + 3*sqrt(2)",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "12 - 4*sqrt(5)",
+      "q_short": "28 - 12*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 2,
+      "lemoine_simplicity": 6,
+      "detected_section_count": 3,
+      "detected_chain_count": 1,
+      "svg_path": "docsrc/constructions/03-squares-rectangles/04-tran-mcgucken-3x3-circle/04-tran-mcgucken-3x3-circle.svg"
+    },
+    {
+      "catalog_code": "GC-03.05",
+      "slug": "05-tran-3x3-incenter",
+      "family_slug": "03-squares-rectangles",
+      "title": "Tran Quang Hung's 3×3 Grid Incenter Division",
+      "short_title": "3×3 Grid Incenter",
+      "discoverers": [
+        "tran-quang-hung"
+      ],
+      "year": "2016",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/3x3GoldenRatio2.shtml",
+      "ctk_title": "Another Golden Ratio in 3x3 Square",
+      "number_field": "\\mathbb{Q}(\\sqrt{2}, \\phi)",
+      "number_field_text": "Q(√2, φ)",
+      "primary_long": [
+        "P",
+        "T"
+      ],
+      "primary_short": [
+        "S",
+        "P"
+      ],
+      "primary_collinear": [
+        "S",
+        "P",
+        "T"
+      ],
+      "length_long": "(-sqrt(2) + sqrt(10))/2",
+      "length_short": "(-sqrt(10) + 3*sqrt(2))/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "3 - sqrt(5)",
+      "q_short": "7 - 3*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 2,
+      "lemoine_simplicity": 6,
+      "detected_section_count": 2,
+      "detected_chain_count": 1,
+      "svg_path": "docsrc/constructions/03-squares-rectangles/05-tran-3x3-incenter/05-tran-3x3-incenter.svg"
+    },
+    {
+      "catalog_code": "GC-03.06",
+      "slug": "06-suppa-square-inradii",
+      "family_slug": "03-squares-rectangles",
+      "title": "Ercole Suppa's Square Midpoint Inradii Ratio (2015)",
+      "short_title": "Suppa's Square Inradii",
+      "discoverers": [
+        "ercole-suppa"
+      ],
+      "year": "2015",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenRatioInSquare.shtml",
+      "ctk_title": "Golden Ratio via Two Incircles in a Square",
+      "number_field": "\\mathbb{Q}(\\phi)",
+      "number_field_text": "Q(φ)",
+      "primary_long": [
+        "E",
+        "K"
+      ],
+      "primary_short": [
+        "K",
+        "F"
+      ],
+      "primary_collinear": [
+        "E",
+        "K",
+        "F"
+      ],
+      "length_long": "sqrt(5 - 2*sqrt(5))",
+      "length_short": "sqrt(2)*sqrt(25 - 11*sqrt(5))/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "5 - 2*sqrt(5)",
+      "q_short": "25/2 - 11*sqrt(5)/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 4,
+      "lemoine_simplicity": 12,
+      "detected_section_count": 2,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/03-squares-rectangles/06-suppa-square-inradii/06-suppa-square-inradii.svg"
+    },
+    {
+      "catalog_code": "GC-03.07",
+      "slug": "07-bui-cross-and-square",
+      "family_slug": "03-squares-rectangles",
+      "title": "Bùi Quang Tuân & Alexandre Borovik's Greek Cross & Square",
+      "short_title": "Greek Cross & Square",
+      "discoverers": [
+        "bui-quang-tuan",
+        "alexandre-borovik"
+      ],
+      "year": "2015",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenCross.shtml",
+      "ctk_title": "Golden Cross and Golden Square",
+      "number_field": "\\mathbb{Q}(\\phi)",
+      "number_field_text": "Q(φ)",
+      "primary_long": [
+        "B",
+        "C"
+      ],
+      "primary_short": [
+        "A",
+        "B"
+      ],
+      "primary_collinear": [
+        "A",
+        "B",
+        "C"
+      ],
+      "length_long": "-1 + sqrt(5)",
+      "length_short": "3 - sqrt(5)",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "6 - 2*sqrt(5)",
+      "q_short": "14 - 6*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 4,
+      "lemoine_simplicity": 12,
+      "detected_section_count": 10,
+      "detected_chain_count": 3,
+      "svg_path": "docsrc/constructions/03-squares-rectangles/07-bui-cross-and-square/07-bui-cross-and-square.svg"
+    },
+    {
+      "catalog_code": "GC-03.08",
+      "slug": "08-arioni-rotating-square",
+      "family_slug": "03-squares-rectangles",
+      "title": "John Arioni's 30°-Rotated Unit Square & Diagonal Circle",
+      "short_title": "Arioni's Rotated Square",
+      "discoverers": [
+        "john-arioni"
+      ],
+      "year": "2016",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/JohnArioni.shtml",
+      "ctk_title": "Golden Ratio by Rotating a Square",
+      "number_field": "\\mathbb{Q}(\\sqrt{3}, \\phi)",
+      "number_field_text": "Q(√3, φ)",
+      "primary_long": [
+        "D",
+        "G"
+      ],
+      "primary_short": [
+        "G",
+        "E"
+      ],
+      "primary_collinear": [
+        "D",
+        "G",
+        "E"
+      ],
+      "length_long": "1",
+      "length_short": "-1/2 + sqrt(5)/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "1",
+      "q_short": "3/2 - sqrt(5)/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 2,
+      "lemoine_simplicity": 6,
+      "detected_section_count": 2,
+      "detected_chain_count": 1,
+      "svg_path": "docsrc/constructions/03-squares-rectangles/08-arioni-rotating-square/08-arioni-rotating-square.svg"
+    },
+    {
+      "catalog_code": "GC-04.01",
+      "slug": "01-huntley-egyptian-345",
+      "family_slug": "04-right-and-345",
+      "title": "H. E. Huntley's Golden Ratio in the 3-4-5 Right Triangle (1970)",
+      "short_title": "Egyptian 3-4-5 Triangle",
+      "discoverers": [
+        "h-e-huntley",
+        "tran-quang-hung"
+      ],
+      "year": "1970",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenRatio345.shtml",
+      "ctk_title": "Golden Ratio in the 3-4-5 Triangle",
+      "number_field": "\\mathbb{Q}(\\phi)",
+      "number_field_text": "Q(φ)",
+      "primary_long": [
+        "P",
+        "Q"
+      ],
+      "primary_short": [
+        "B",
+        "P"
+      ],
+      "primary_collinear": [
+        "B",
+        "P",
+        "Q"
+      ],
+      "length_long": "3",
+      "length_short": "-3/2 + 3*sqrt(5)/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "9",
+      "q_short": "27/2 - 9*sqrt(5)/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 2,
+      "lemoine_simplicity": 6,
+      "detected_section_count": 1,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/04-right-and-345/01-huntley-egyptian-345/01-huntley-egyptian-345.svg"
+    },
+    {
+      "catalog_code": "GC-04.02",
+      "slug": "02-kepler-geometric-triangle",
+      "family_slug": "04-right-and-345",
+      "title": "Johannes Kepler's Geometric-Progression Right Triangle (1597)",
+      "short_title": "Kepler's Right Triangle",
+      "discoverers": [
+        "johannes-kepler"
+      ],
+      "year": "1597",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenRatio.shtml",
+      "ctk_title": "Golden Ratio in Geometry — Kepler's Triangle",
+      "number_field": "\\mathbb{Q}(\\sqrt{\\phi})",
+      "number_field_text": "Q(√φ)",
+      "primary_long": [
+        "A",
+        "H"
+      ],
+      "primary_short": [
+        "H",
+        "B"
+      ],
+      "primary_collinear": [
+        "A",
+        "H",
+        "B"
+      ],
+      "length_long": "1/2 + sqrt(5)/2",
+      "length_short": "1",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "sqrt(5)/2 + 3/2",
+      "q_short": "1",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 2,
+      "lemoine_simplicity": 6,
+      "detected_section_count": 1,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/04-right-and-345/02-kepler-geometric-triangle/02-kepler-geometric-triangle.svg"
+    },
+    {
+      "catalog_code": "GC-04.03",
+      "slug": "03-niemeyer-three-segments",
+      "family_slug": "04-right-and-345",
+      "title": "Jo Niemeyer's Three Equal Leaning Segments",
+      "short_title": "Niemeyer's Three Segments",
+      "discoverers": [
+        "jo-niemeyer"
+      ],
+      "year": "2011",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenJo.shtml",
+      "ctk_title": "Golden Ratio in Three Equal Segments",
+      "number_field": "\\mathbb{Q}(\\sqrt{3}, \\phi)",
+      "number_field_text": "Q(√3, φ)",
+      "primary_long": [
+        "A1",
+        "A2"
+      ],
+      "primary_short": [
+        "A2",
+        "A3"
+      ],
+      "primary_collinear": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "length_long": "sqrt(3)",
+      "length_short": "(-sqrt(3) + sqrt(15))/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "3",
+      "q_short": "9/2 - 3*sqrt(5)/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 3,
+      "lemoine_simplicity": 9,
+      "detected_section_count": 1,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/04-right-and-345/03-niemeyer-three-segments/03-niemeyer-three-segments.svg"
+    },
+    {
+      "catalog_code": "GC-04.04",
+      "slug": "04-bui-van-obel-isosceles",
+      "family_slug": "04-right-and-345",
+      "title": "Bùi Quang Tuân's Van Obel Division in a Right Isosceles Triangle",
+      "short_title": "Van Obel Right Isosceles",
+      "discoverers": [
+        "bui-quang-tuan"
+      ],
+      "year": "2014",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/BuiGoldenRatio3.shtml",
+      "ctk_title": "Golden Ratio in Right Isosceles Triangle",
+      "number_field": "\\mathbb{Q}(\\phi)",
+      "number_field_text": "Q(φ)",
+      "primary_long": [
+        "O",
+        "E"
+      ],
+      "primary_short": [
+        "E",
+        "M"
+      ],
+      "primary_collinear": [
+        "O",
+        "E",
+        "M"
+      ],
+      "length_long": "-1/2 + sqrt(5)/2",
+      "length_short": "3/2 - sqrt(5)/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "3/2 - sqrt(5)/2",
+      "q_short": "7/2 - 3*sqrt(5)/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 6,
+      "lemoine_simplicity": 18,
+      "detected_section_count": 2,
+      "detected_chain_count": 1,
+      "svg_path": "docsrc/constructions/04-right-and-345/04-bui-van-obel-isosceles/04-bui-van-obel-isosceles.svg"
+    },
+    {
+      "catalog_code": "GC-05.01",
+      "slug": "01-ptolemy-pentagon-pentagram",
+      "family_slug": "05-pentagons-polygons",
+      "title": "Claudius Ptolemy's Regular Pentagon & Pentagram (Almagest I.10)",
+      "short_title": "Ptolemy's Pentagon & Pentagram",
+      "discoverers": [
+        "claudius-ptolemy",
+        "euclid"
+      ],
+      "year": "c. 150 CE",
+      "ctk_url": "https://www.cut-the-knot.org/pythagoras/pentagon.shtml",
+      "ctk_title": "Regular Pentagon and Golden Ratio",
+      "number_field": "\\mathbb{Q}(\\phi, \\sqrt{10 - 2\\sqrt{5}})",
+      "number_field_text": "Q(φ, √(10−2√5))",
+      "primary_long": [
+        "P1",
+        "K2"
+      ],
+      "primary_short": [
+        "K2",
+        "P4"
+      ],
+      "primary_collinear": [
+        "P1",
+        "K2",
+        "P4"
+      ],
+      "length_long": "sqrt(2)*sqrt(5 - sqrt(5))/2",
+      "length_short": "sqrt(5 - 2*sqrt(5))",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "5/2 - sqrt(5)/2",
+      "q_short": "5 - 2*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 6,
+      "lemoine_simplicity": 18,
+      "detected_section_count": 8,
+      "detected_chain_count": 2,
+      "svg_path": "docsrc/constructions/05-pentagons-polygons/01-ptolemy-pentagon-pentagram/01-ptolemy-pentagon-pentagram.svg"
+    },
+    {
+      "catalog_code": "GC-05.02",
+      "slug": "02-dao-tran-pentagon-bisector-incircle",
+      "family_slug": "05-pentagons-polygons",
+      "title": "Dao Thanh Oai's Regular Pentagon Edge Perpendicular",
+      "short_title": "Pentagon Edge Perpendicular",
+      "discoverers": [
+        "dao-thanh-oai",
+        "tran-quang-hung"
+      ],
+      "year": "2015",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenRatioInRegularPentagon.shtml",
+      "ctk_title": "Golden Ratio in Regular Pentagon",
+      "number_field": "\\mathbb{Q}(\\phi, \\sqrt{10 - 2\\sqrt{5}})",
+      "number_field_text": "Q(φ, √(10−2√5))",
+      "primary_long": [
+        "F",
+        "B"
+      ],
+      "primary_short": [
+        "A",
+        "F"
+      ],
+      "primary_collinear": [
+        "A",
+        "F",
+        "B"
+      ],
+      "length_long": "-1 + sqrt(5)",
+      "length_short": "3 - sqrt(5)",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "6 - 2*sqrt(5)",
+      "q_short": "14 - 6*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 3,
+      "lemoine_simplicity": 9,
+      "detected_section_count": 1,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/05-pentagons-polygons/02-dao-tran-pentagon-bisector-incircle/02-dao-tran-pentagon-bisector-incircle.svg"
+    },
+    {
+      "catalog_code": "GC-05.03",
+      "slug": "03-prasolov-bui-irregular-pentagon",
+      "family_slug": "05-pentagons-polygons",
+      "title": "Prasolov & Bùi Quang Tuân's Equi-Area Irregular Pentagon",
+      "short_title": "Equi-Area Irregular Pentagon",
+      "discoverers": [
+        "v-v-prasolov",
+        "bui-quang-tuan"
+      ],
+      "year": "2006",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/NoRegularPentagon.shtml",
+      "ctk_title": "Golden Ratio in an Irregular Pentagon",
+      "number_field": "\\mathbb{Q}(\\phi)",
+      "number_field_text": "Q(φ)",
+      "primary_long": [
+        "B",
+        "M"
+      ],
+      "primary_short": [
+        "M",
+        "D"
+      ],
+      "primary_collinear": [
+        "B",
+        "M",
+        "D"
+      ],
+      "length_long": "5/2 - sqrt(5)/2",
+      "length_short": "-5/2 + 3*sqrt(5)/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "15/2 - 5*sqrt(5)/2",
+      "q_short": "35/2 - 15*sqrt(5)/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 3,
+      "lemoine_simplicity": 9,
+      "detected_section_count": 6,
+      "detected_chain_count": 1,
+      "svg_path": "docsrc/constructions/05-pentagons-polygons/03-prasolov-bui-irregular-pentagon/03-prasolov-bui-irregular-pentagon.svg"
+    },
+    {
+      "catalog_code": "GC-05.04",
+      "slug": "04-tran-pentagon-hexagon",
+      "family_slug": "05-pentagons-polygons",
+      "title": "Tran Quang Hung's Shared-Base Regular Pentagon & Hexagon",
+      "short_title": "Pentagon Inside Hexagon",
+      "discoverers": [
+        "tran-quang-hung"
+      ],
+      "year": "2015",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/5-6-GoldenRatioIn.shtml",
+      "ctk_title": "Golden Ratio in Pentagon and Hexagon",
+      "number_field": "\\mathbb{Q}(\\sqrt{3}, \\phi, \\sqrt{10 - 2\\sqrt{5}})",
+      "number_field_text": "Q(√3, φ, √(10−2√5))",
+      "primary_long": [
+        "C",
+        "Q"
+      ],
+      "primary_short": [
+        "Q",
+        "B"
+      ],
+      "primary_collinear": [
+        "C",
+        "Q",
+        "B"
+      ],
+      "length_long": "-1 + sqrt(5)",
+      "length_short": "3 - sqrt(5)",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "6 - 2*sqrt(5)",
+      "q_short": "14 - 6*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 4,
+      "lemoine_simplicity": 12,
+      "detected_section_count": 2,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/05-pentagons-polygons/04-tran-pentagon-hexagon/04-tran-pentagon-hexagon.svg"
+    },
+    {
+      "catalog_code": "GC-05.05",
+      "slug": "05-tran-star-six-pentagons",
+      "family_slug": "05-pentagons-polygons",
+      "title": "Tran Quang Hung's Six-Pentagon Reflection Star",
+      "short_title": "Six-Pentagon Reflection Star",
+      "discoverers": [
+        "tran-quang-hung"
+      ],
+      "year": "2016",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/StarSixPentagonsGoldenRatio.shtml",
+      "ctk_title": "Star, Six Pentagons and Golden Ratio",
+      "number_field": "\\mathbb{Q}(\\phi, \\sqrt{10 - 2\\sqrt{5}})",
+      "number_field_text": "Q(φ, √(10−2√5))",
+      "primary_long": [
+        "A",
+        "G"
+      ],
+      "primary_short": [
+        "G",
+        "B"
+      ],
+      "primary_collinear": [
+        "A",
+        "G",
+        "B"
+      ],
+      "length_long": "-1 + sqrt(5)",
+      "length_short": "3 - sqrt(5)",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "6 - 2*sqrt(5)",
+      "q_short": "14 - 6*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 3,
+      "lemoine_simplicity": 9,
+      "detected_section_count": 13,
+      "detected_chain_count": 5,
+      "svg_path": "docsrc/constructions/05-pentagons-polygons/05-tran-star-six-pentagons/05-tran-star-six-pentagons.svg"
+    },
+    {
+      "catalog_code": "GC-05.06",
+      "slug": "06-tran-wu-xing-equilaterals",
+      "family_slug": "05-pentagons-polygons",
+      "title": "Tran Quang Hung's Fivefold Wu Xing Equilateral Star",
+      "short_title": "Wu Xing Equilateral Star",
+      "discoverers": [
+        "tran-quang-hung"
+      ],
+      "year": "2015",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenRatioInWuXing.shtml",
+      "ctk_title": "Golden Ratio in Wu Xing",
+      "number_field": "\\mathbb{Q}(\\sqrt{3}, \\phi, \\sqrt{10 - 2\\sqrt{5}})",
+      "number_field_text": "Q(√3, φ, √(10−2√5))",
+      "primary_long": [
+        "O",
+        "F"
+      ],
+      "primary_short": [
+        "F",
+        "W1"
+      ],
+      "primary_collinear": [
+        "O",
+        "F",
+        "W1"
+      ],
+      "length_long": "-1/2 + sqrt(5)/2",
+      "length_short": "3/2 - sqrt(5)/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "3/2 - sqrt(5)/2",
+      "q_short": "7/2 - 3*sqrt(5)/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 2,
+      "lemoine_simplicity": 6,
+      "detected_section_count": 1,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/05-pentagons-polygons/06-tran-wu-xing-equilaterals/06-tran-wu-xing-equilaterals.svg"
+    },
+    {
+      "catalog_code": "GC-06.01",
+      "slug": "01-bui-circle-droves",
+      "family_slug": "06-circles-sangaku",
+      "title": "Bùi Quang Tuân's Infinite Family of Golden Circle Secants",
+      "short_title": "Golden Circle Secants in Droves",
+      "discoverers": [
+        "bui-quang-tuan"
+      ],
+      "year": "2014",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/BuiGoldenRatioGeneral.shtml",
+      "ctk_title": "Golden Ratio in Circle — in Droves",
+      "number_field": "\\mathbb{Q}(\\sqrt{3}, \\phi)",
+      "number_field_text": "Q(√3, φ)",
+      "primary_long": [
+        "M",
+        "B"
+      ],
+      "primary_short": [
+        "O",
+        "M"
+      ],
+      "primary_collinear": [
+        "O",
+        "M",
+        "B"
+      ],
+      "length_long": "-1/2 + sqrt(5)/2",
+      "length_short": "3/2 - sqrt(5)/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "3/2 - sqrt(5)/2",
+      "q_short": "7/2 - 3*sqrt(5)/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 4,
+      "lemoine_simplicity": 12,
+      "detected_section_count": 1,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/06-circles-sangaku/01-bui-circle-droves/01-bui-circle-droves.svg"
+    },
+    {
+      "catalog_code": "GC-06.02",
+      "slug": "02-mcgucken-kalogerakis-equal-circles",
+      "family_slug": "06-circles-sangaku",
+      "title": "Elliot McGucken & Thanos Kalogerakis's Equal Tangent Circles",
+      "short_title": "Two Equal Tangent Circles",
+      "discoverers": [
+        "elliot-mcgucken",
+        "thanos-kalogerakis"
+      ],
+      "year": "2016",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/ElliotMcGucken1.shtml",
+      "ctk_title": "Golden Ratio in Two Equal Circles",
+      "number_field": "\\mathbb{Q}(\\phi)",
+      "number_field_text": "Q(φ)",
+      "primary_long": [
+        "H",
+        "I"
+      ],
+      "primary_short": [
+        "F",
+        "H"
+      ],
+      "primary_collinear": [
+        "F",
+        "H",
+        "I"
+      ],
+      "length_long": "2",
+      "length_short": "-1 + sqrt(5)",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "4",
+      "q_short": "6 - 2*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 4,
+      "lemoine_simplicity": 12,
+      "detected_section_count": 1,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/06-circles-sangaku/02-mcgucken-kalogerakis-equal-circles/02-mcgucken-kalogerakis-equal-circles.svg"
+    },
+    {
+      "catalog_code": "GC-06.03",
+      "slug": "03-bui-four-golden-circles",
+      "family_slug": "06-circles-sangaku",
+      "title": "Bùi Quang Tuân's Four Congruent Golden Circles",
+      "short_title": "Four Congruent Circles",
+      "discoverers": [
+        "bui-quang-tuan"
+      ],
+      "year": "2015",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/FourGoldenCircles.shtml",
+      "ctk_title": "Four Golden Circles",
+      "number_field": "\\mathbb{Q}(\\sqrt{3}, \\phi)",
+      "number_field_text": "Q(√3, φ)",
+      "primary_long": [
+        "E",
+        "N"
+      ],
+      "primary_short": [
+        "E",
+        "D"
+      ],
+      "primary_collinear": [
+        "N",
+        "E",
+        "D"
+      ],
+      "length_long": "sqrt(3)",
+      "length_short": "(-sqrt(3) + sqrt(15))/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "3",
+      "q_short": "9/2 - 3*sqrt(5)/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 5,
+      "lemoine_simplicity": 15,
+      "detected_section_count": 2,
+      "detected_chain_count": 1,
+      "svg_path": "docsrc/constructions/06-circles-sangaku/03-bui-four-golden-circles/03-bui-four-golden-circles.svg"
+    },
+    {
+      "catalog_code": "GC-06.04",
+      "slug": "04-tran-mcgucken-three-tangent-circles",
+      "family_slug": "06-circles-sangaku",
+      "title": "Tran Quang Hung & Elliot McGucken's Three Tangent Circles",
+      "short_title": "Three Tangent Circles",
+      "discoverers": [
+        "tran-quang-hung",
+        "elliot-mcgucken"
+      ],
+      "year": "2016",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/3TangentCirclesGoldenRatio.shtml",
+      "ctk_title": "Golden Ratio in Three Tangent Circles",
+      "number_field": "\\mathbb{Q}(\\sqrt{3}, \\phi)",
+      "number_field_text": "Q(√3, φ)",
+      "primary_long": [
+        "D",
+        "F"
+      ],
+      "primary_short": [
+        "F",
+        "G"
+      ],
+      "primary_collinear": [
+        "D",
+        "F",
+        "G"
+      ],
+      "length_long": "1",
+      "length_short": "-1/2 + sqrt(5)/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "1",
+      "q_short": "3/2 - sqrt(5)/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 5,
+      "lemoine_simplicity": 15,
+      "detected_section_count": 2,
+      "detected_chain_count": 1,
+      "svg_path": "docsrc/constructions/06-circles-sangaku/04-tran-mcgucken-three-tangent-circles/04-tran-mcgucken-three-tangent-circles.svg"
+    },
+    {
+      "catalog_code": "GC-06.05",
+      "slug": "05-kocik-golden-window",
+      "family_slug": "06-circles-sangaku",
+      "title": "Jerzy Kocik's Six-Circle Apollonian Golden Window (2010)",
+      "short_title": "Kocik's Golden Window",
+      "discoverers": [
+        "jerzy-kocik"
+      ],
+      "year": "2010",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenWindow.shtml",
+      "ctk_title": "Golden Window",
+      "number_field": "\\mathbb{Q}(\\phi)",
+      "number_field_text": "Q(φ)",
+      "primary_long": [
+        "O",
+        "C4"
+      ],
+      "primary_short": [
+        "C4",
+        "A4"
+      ],
+      "primary_collinear": [
+        "O",
+        "C4",
+        "A4"
+      ],
+      "length_long": "sqrt(5)/2 + 3/2",
+      "length_short": "1/2 + sqrt(5)/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "3*sqrt(5)/2 + 7/2",
+      "q_short": "sqrt(5)/2 + 3/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 8,
+      "lemoine_simplicity": 24,
+      "detected_section_count": 10,
+      "detected_chain_count": 3,
+      "svg_path": "docsrc/constructions/06-circles-sangaku/05-kocik-golden-window/05-kocik-golden-window.svg"
+    },
+    {
+      "catalog_code": "GC-06.06",
+      "slug": "06-arioni-yin-yang",
+      "family_slug": "06-circles-sangaku",
+      "title": "John Arioni's Golden Secant in the Yin-Yang Circle",
+      "short_title": "Yin-Yang Twin Circles",
+      "discoverers": [
+        "john-arioni"
+      ],
+      "year": "2016",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenRatioInYinYang.shtml",
+      "ctk_title": "Golden Ratio in Yin-Yang",
+      "number_field": "\\mathbb{Q}(\\phi)",
+      "number_field_text": "Q(φ)",
+      "primary_long": [
+        "H",
+        "I"
+      ],
+      "primary_short": [
+        "B",
+        "H"
+      ],
+      "primary_collinear": [
+        "B",
+        "H",
+        "I"
+      ],
+      "length_long": "1",
+      "length_short": "-1/2 + sqrt(5)/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "1",
+      "q_short": "3/2 - sqrt(5)/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 4,
+      "lemoine_simplicity": 12,
+      "detected_section_count": 1,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/06-circles-sangaku/06-arioni-yin-yang/06-arioni-yin-yang.svg"
+    },
+    {
+      "catalog_code": "GC-06.07",
+      "slug": "07-three-circles-in-semicircle",
+      "family_slug": "06-circles-sangaku",
+      "title": "Three Tangent Equal Circles Inscribed in a Semicircle",
+      "short_title": "Three Circles in a Semicircle",
+      "discoverers": [
+        "alexander-bogomolny"
+      ],
+      "year": "2010",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenRatio.shtml",
+      "ctk_title": "Golden Ratio in Three Tangent Circles in a Semicircle",
+      "number_field": "\\mathbb{Q}(\\phi)",
+      "number_field_text": "Q(φ)",
+      "primary_long": [
+        "O",
+        "T2"
+      ],
+      "primary_short": [
+        "T2",
+        "B"
+      ],
+      "primary_collinear": [
+        "O",
+        "T2",
+        "B"
+      ],
+      "length_long": "2",
+      "length_short": "-1 + sqrt(5)",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "4",
+      "q_short": "6 - 2*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 6,
+      "lemoine_simplicity": 18,
+      "detected_section_count": 4,
+      "detected_chain_count": 2,
+      "svg_path": "docsrc/constructions/06-circles-sangaku/07-three-circles-in-semicircle/07-three-circles-in-semicircle.svg"
+    },
+    {
+      "catalog_code": "GC-07.01",
+      "slug": "01-tran-rhombus-incircle",
+      "family_slug": "07-rhombi-trapezoids-algebra",
+      "title": "Tran Quang Hung's 2:1 Rhombus & Incircle Diagonal Division",
+      "short_title": "2:1 Rhombus Incircle",
+      "discoverers": [
+        "tran-quang-hung"
+      ],
+      "year": "2015",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/Buratino8.shtml",
+      "ctk_title": "Golden Ratio in Rhombus",
+      "number_field": "\\mathbb{Q}(\\phi)",
+      "number_field_text": "Q(φ)",
+      "primary_long": [
+        "E",
+        "F"
+      ],
+      "primary_short": [
+        "F",
+        "B"
+      ],
+      "primary_collinear": [
+        "E",
+        "F",
+        "B"
+      ],
+      "length_long": "4",
+      "length_short": "-2 + 2*sqrt(5)",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "16",
+      "q_short": "24 - 8*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 2,
+      "lemoine_simplicity": 6,
+      "detected_section_count": 2,
+      "detected_chain_count": 1,
+      "svg_path": "docsrc/constructions/07-rhombi-trapezoids-algebra/01-tran-rhombus-incircle/01-tran-rhombus-incircle.svg"
+    },
+    {
+      "catalog_code": "GC-07.02",
+      "slug": "02-molokach-golden-rhombus",
+      "family_slug": "07-rhombi-trapezoids-algebra",
+      "title": "John Molokach's Golden Rhombus from Shifted 1×3 Rectangles",
+      "short_title": "Molokach's Golden Rhombus",
+      "discoverers": [
+        "john-molokach"
+      ],
+      "year": "2014",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenRatioMolokach.shtml",
+      "ctk_title": "Golden Ratio via Golden Rhombus",
+      "number_field": "\\mathbb{Q}(\\phi)",
+      "number_field_text": "Q(φ)",
+      "primary_long": [
+        "T1",
+        "K"
+      ],
+      "primary_short": [
+        "K",
+        "A"
+      ],
+      "primary_collinear": [
+        "T1",
+        "K",
+        "A"
+      ],
+      "length_long": "1",
+      "length_short": "-1/2 + sqrt(5)/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "1",
+      "q_short": "3/2 - sqrt(5)/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 2,
+      "lemoine_simplicity": 6,
+      "detected_section_count": 6,
+      "detected_chain_count": 2,
+      "svg_path": "docsrc/constructions/07-rhombi-trapezoids-algebra/02-molokach-golden-rhombus/02-molokach-golden-rhombus.svg"
+    },
+    {
+      "catalog_code": "GC-07.03",
+      "slug": "03-tong-trapezoid-rms",
+      "family_slug": "07-rhombi-trapezoids-algebra",
+      "title": "Jingcheng Tong's Area-Bisecting Chord in a 1:3 Trapezoid",
+      "short_title": "1:3 Trapezoid Area Bisector",
+      "discoverers": [
+        "jingcheng-tong"
+      ],
+      "year": "2005",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenRatio.shtml",
+      "ctk_title": "Golden Ratio in Geometry — Trapezoid Area Bisector",
+      "number_field": "\\mathbb{Q}(\\phi)",
+      "number_field_text": "Q(φ)",
+      "primary_long": [
+        "A",
+        "M"
+      ],
+      "primary_short": [
+        "M",
+        "B"
+      ],
+      "primary_collinear": [
+        "A",
+        "M",
+        "B"
+      ],
+      "length_long": "-sqrt(2) + sqrt(10)",
+      "length_short": "-sqrt(10) + 3*sqrt(2)",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "12 - 4*sqrt(5)",
+      "q_short": "28 - 12*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 3,
+      "lemoine_simplicity": 9,
+      "detected_section_count": 2,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/07-rhombi-trapezoids-algebra/03-tong-trapezoid-rms/03-tong-trapezoid-rms.svg"
+    },
+    {
+      "catalog_code": "GC-07.04",
+      "slug": "04-tran-isosceles-trapezoid-60",
+      "family_slug": "07-rhombi-trapezoids-algebra",
+      "title": "Tran Quang Hung's 60° Isosceles Trapezoid Diagonal Division",
+      "short_title": "60° Isosceles Trapezoid",
+      "discoverers": [
+        "tran-quang-hung"
+      ],
+      "year": "2015",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/TQHGoldenRatio.shtml",
+      "ctk_title": "Golden Ratio in Isosceles Trapezoid",
+      "number_field": "\\mathbb{Q}(\\sqrt{3}, \\phi)",
+      "number_field_text": "Q(√3, φ)",
+      "primary_long": [
+        "C",
+        "M"
+      ],
+      "primary_short": [
+        "M",
+        "A"
+      ],
+      "primary_collinear": [
+        "A",
+        "M",
+        "C"
+      ],
+      "length_long": "-sqrt(3) + sqrt(15)",
+      "length_short": "-sqrt(15) + 3*sqrt(3)",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "18 - 6*sqrt(5)",
+      "q_short": "42 - 18*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 3,
+      "lemoine_simplicity": 9,
+      "detected_section_count": 1,
+      "detected_chain_count": 0,
+      "svg_path": "docsrc/constructions/07-rhombi-trapezoids-algebra/04-tran-isosceles-trapezoid-60/04-tran-isosceles-trapezoid-60.svg"
+    },
+    {
+      "catalog_code": "GC-07.05",
+      "slug": "05-tran-mixtilinear-equilateral",
+      "family_slug": "07-rhombi-trapezoids-algebra",
+      "title": "Tran Quang Hung's Mixtilinear Circle in an Equilateral Triangle",
+      "short_title": "Equilateral Mixtilinear Circle",
+      "discoverers": [
+        "tran-quang-hung",
+        "alexander-bogomolny",
+        "leo-giugiuc"
+      ],
+      "year": "2016",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenMixtilinear.shtml",
+      "ctk_title": "Golden Ratio in Mixtilinear Circles",
+      "number_field": "\\mathbb{Q}(\\sqrt{3}, \\phi)",
+      "number_field_text": "Q(√3, φ)",
+      "primary_long": [
+        "K",
+        "O"
+      ],
+      "primary_short": [
+        "O",
+        "J"
+      ],
+      "primary_collinear": [
+        "K",
+        "O",
+        "J"
+      ],
+      "length_long": "6",
+      "length_short": "-3 + 3*sqrt(5)",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "36",
+      "q_short": "54 - 18*sqrt(5)",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 3,
+      "lemoine_simplicity": 9,
+      "detected_section_count": 2,
+      "detected_chain_count": 1,
+      "svg_path": "docsrc/constructions/07-rhombi-trapezoids-algebra/05-tran-mixtilinear-equilateral/05-tran-mixtilinear-equilateral.svg"
+    },
+    {
+      "catalog_code": "GC-07.06",
+      "slug": "06-curry-hooper-dissection",
+      "family_slug": "07-rhombi-trapezoids-algebra",
+      "title": "Exact φ-Limit Resolution of the Hooper–Curry Fibonacci Dissection",
+      "short_title": "Hooper–Curry φ-Dissection",
+      "discoverers": [
+        "william-hooper",
+        "paul-curry",
+        "alexander-bogomolny"
+      ],
+      "year": "1794",
+      "ctk_url": "https://www.cut-the-knot.org/do_you_know/GoldenRatio.shtml",
+      "ctk_title": "Golden Ratio and the Missing-Square Dissection",
+      "number_field": "\\mathbb{Q}(\\phi)",
+      "number_field_text": "Q(φ)",
+      "primary_long": [
+        "A",
+        "Q"
+      ],
+      "primary_short": [
+        "Q",
+        "P"
+      ],
+      "primary_collinear": [
+        "A",
+        "Q",
+        "P"
+      ],
+      "length_long": "sqrt(3)",
+      "length_short": "(-sqrt(3) + sqrt(15))/2",
+      "ratio_expr": "GoldenRatio",
+      "q_long": "3",
+      "q_short": "9/2 - 3*sqrt(5)/2",
+      "quadrance_ratio": "1 + GoldenRatio",
+      "elementary_loci": 1,
+      "lemoine_simplicity": 3,
+      "detected_section_count": 8,
+      "detected_chain_count": 1,
+      "svg_path": "docsrc/constructions/07-rhombi-trapezoids-algebra/06-curry-hooper-dissection/06-curry-hooper-dissection.svg"
+    }
+  ]
+}

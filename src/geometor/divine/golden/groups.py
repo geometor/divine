@@ -1,6 +1,7 @@
 """Module for grouping and organizing Golden Sections."""
 
 from __future__ import annotations
+
 from collections import defaultdict
 
 import sympy as sp

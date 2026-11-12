@@ -25,7 +25,7 @@ Functions
 Module Contents
 ---------------
 
-.. py:function:: check_range(r: tuple[sympy.geometry.Point, Ellipsis]) -> sympy.Expr
+.. py:function:: check_range(r: tuple[sympy.geometry.Point, ...]) -> sympy.Expr
 
    Check if a range of 4 points forms a harmonic range.
 
@@ -35,7 +35,7 @@ Module Contents
    :rtype: sp.Expr
 
 
-.. py:function:: analyze_harmonics(line: sympy.geometry.Line) -> list[tuple[sympy.geometry.Point, Ellipsis]]
+.. py:function:: analyze_harmonics(line: sympy.geometry.Line) -> list[tuple[sympy.geometry.Point, ...]]
 
    Analyze a line for harmonic ranges.
 

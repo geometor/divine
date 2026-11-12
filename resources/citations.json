@@ -1,0 +1,466 @@
+{
+  "euclid-elements": {
+    "author": "Euclid",
+    "work": "Elements (Heath Edition)",
+    "locus": "Book II Prop. 11; Book IV Prop. 10–11; Book VI Def. 3 & Prop. 30; Book XIII Prop. 1–10",
+    "year": "c. 300 BCE",
+    "url": "https://geometor.github.io/euclid/",
+    "note": "Sir Thomas L. Heath, The Thirteen Books of Euclid's Elements, Cambridge University Press, 1908 (GEOMETOR Digital Scriptorium edition)."
+  },
+  "ptolemy-almagest": {
+    "author": "Claudius Ptolemy",
+    "work": "Syntaxis Mathematica (Almagest)",
+    "locus": "Book I, Chapter 10",
+    "year": "c. 150 CE",
+    "url": "",
+    "note": "G. J. Toomer (trans.), Ptolemy's Almagest, Duckworth / Springer, 1984."
+  },
+  "kepler-1597": {
+    "author": "Johannes Kepler",
+    "work": "Letter to Michael Mästlin (Tübingen, October 1597)",
+    "locus": "Gesammelte Werke, Vol. 13, Nr. 75",
+    "year": "1597",
+    "url": "",
+    "note": "First explicit derivation of the right triangle with sides in geometric progression 1 : √φ : φ."
+  },
+  "hooper-1794": {
+    "author": "William Hooper",
+    "work": "Rational Recreations",
+    "locus": "4th ed., Vol. 1, Problem XLIII",
+    "year": "1794",
+    "url": "",
+    "note": "Early geometric missing-area rectangle dissection later generalized by Sam Loyd, Martin Gardner, and Paul Curry."
+  },
+  "lemoine-1902": {
+    "author": "Émile Lemoine",
+    "work": "Géométrographie ou Art des constructions géométriques",
+    "locus": "Scientia No. 18, C. Naud, Paris",
+    "year": "1902",
+    "url": "",
+    "note": "Foundational treatise quantifying operational simplicity of straightedge-and-compass constructions; see also J. Reusch, Planimetrische Konstruktionen in geometrographischer Ausführung (1904)."
+  },
+  "huntley-1970": {
+    "author": "H. E. Huntley",
+    "work": "The Divine Proportion: A Study in Mathematical Beauty",
+    "locus": "Dover Publications, New York",
+    "year": "1970",
+    "url": "",
+    "note": "Classic exposition including the angle-bisector circle division in the 3-4-5 right triangle."
+  },
+  "odom-coxeter-1983": {
+    "author": "George Odom & H. S. M. Coxeter",
+    "work": "Elementary Problem E3007",
+    "locus": "American Mathematical Monthly 90(7), p. 482 (solution 93(7), 1986, p. 566)",
+    "year": "1983",
+    "url": "",
+    "note": "Equilateral-triangle midline extended to the circumcircle yields the golden section."
+  },
+  "hofstetter-2002": {
+    "author": "Kurt Hofstetter",
+    "work": "A Simple Construction of the Golden Section",
+    "locus": "Forum Geometricorum 2, pp. 65–66",
+    "year": "2002",
+    "url": "",
+    "note": "Five-circle Mascheroni compass-only construction of the golden section."
+  },
+  "hofstetter-2003": {
+    "author": "Kurt Hofstetter",
+    "work": "5-Step Division of a Segment in the Golden Section",
+    "locus": "Forum Geometricorum 3, pp. 205–206",
+    "year": "2003",
+    "url": "",
+    "note": "Minimal 5-step straightedge-and-compass internal division of a given segment."
+  },
+  "hofstetter-2004": {
+    "author": "Kurt Hofstetter",
+    "work": "Another 5-Step Division of a Segment in the Golden Section",
+    "locus": "Forum Geometricorum 4, pp. 21–22",
+    "year": "2004",
+    "url": "",
+    "note": "Alternative 5-step straightedge-and-compass division using three circles and two lines."
+  },
+  "hofstetter-2005": {
+    "author": "Kurt Hofstetter",
+    "work": "Division of a Segment in the Golden Section with Ruler and Rusty Compass",
+    "locus": "Forum Geometricorum 5, pp. 135–136",
+    "year": "2005",
+    "url": "",
+    "note": "Fixed-opening (rusty) compass construction dividing a unit segment in φ."
+  },
+  "prasolov-2006": {
+    "author": "V. V. Prasolov",
+    "work": "Problems in Plane Geometry",
+    "locus": "MCCME, Moscow (5th ed.)",
+    "year": "2006",
+    "url": "",
+    "note": "Affine equi-area characterization of golden diagonal ratios in irregular convex pentagons."
+  },
+  "kocik-2010": {
+    "author": "Jerzy Kocik",
+    "work": "Golden Window",
+    "locus": "Mathematics Magazine 83(5), pp. 384–390",
+    "year": "2010",
+    "url": "",
+    "note": "Six-circle Apollonian window packing forcing powers of φ, golden rectangles, and Kepler's triangle."
+  },
+  "bataille-2011": {
+    "author": "Michel Bataille",
+    "work": "Another Simple Construction of the Golden Section",
+    "locus": "Forum Geometricorum 11, pp. 55–56",
+    "year": "2011",
+    "url": "",
+    "note": "Constructs φ from an equilateral triangle and square erected on the same segment."
+  },
+  "knott-golden-section": {
+    "author": "Ron Knott",
+    "work": "Fibonacci Numbers and the Golden Section",
+    "locus": "University of Surrey Mathematical Archive",
+    "year": "1996–2024",
+    "url": "https://r-knott.surrey.ac.uk/Fibonacci/",
+    "note": "Companion archive cataloged in sibling GEOMETOR repository geometor/knott."
+  },
+  "bogomolny-golden-ratio": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in Geometry",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/GoldenRatio.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "ctk-compass-only": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio by Compass Only",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/GoldenRatioByCompass.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "ctk-rusty-compass": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio with a Rusty Compass",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/GoldenRatioByRustyCompass.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "ctk-hofstetter3": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Kurt Hofstetter's 5-Step Construction of the Golden Section",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/Hofstetter3.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "ctk-bui-5step": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Bùi Quang Tuân's 5-Step Construction of the Golden Ratio",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/BuiGoldenRatio5Step.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "ctk-bataille": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: From Equilateral Triangle and Square to Golden Ratio",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/MBatailleGoldenRatio.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "ctk-bui-qtb": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Section in Two Equilateral Triangles",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/GoldenQTB.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "ctk-bui-qtb2": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Section in Two Equilateral Triangles, II",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/GoldenQTBAnother.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "ctk-buratino2": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in Reflected Equilateral Triangles",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/Buratino2.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "ctk-buratino3": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in Regular Hexagon and Square",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/Buratino3.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "ctk-buratino5": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in Equilateral Triangle and Incircle",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/TranQuangHung2015.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "ctk-butterfly-equilateral": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio Astride Equilateral Triangle",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/GoldenRatioAstrideEquilateralTriangle.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-rectangles": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in Square and Circle",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/GoldenRatioInRectangles.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-buratino1": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in Square",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/Buratino1.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-2x2": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in 2×2 Square",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/2x2GoldenRatio.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-3x3-1": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in 3×3 Square",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/3x3GoldenRatio.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-3x3-2": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Another Golden Ratio in 3×3 Square",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/3x3GoldenRatio2.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-suppa-square": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio via Two Incircles in a Square",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/GoldenRatioInSquare.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-golden-cross": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Cross and Golden Square",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/GoldenCross.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-arioni-square": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio by Rotating a Square",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/JohnArioni.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-345": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio and the Egyptian 3-4-5 Triangle",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/GoldenRatio345.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-345-tqh": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Another Golden Ratio in the 3-4-5 Triangle",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/3-4-5-GoldenRatio.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-niemeyer": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio and Midpoints (Jo Niemeyer)",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/GoldenJo.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-bui-3": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in Right Isosceles Triangle",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/BuiGoldenRatio3.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-pentagon": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Regular Pentagon and Golden Ratio",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/pythagoras/pentagon.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-pentagon-dao": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in Regular Pentagon",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/GoldenRatioInRegularPentagon.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-pentagon-tqh": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Another Golden Ratio in Regular Pentagon",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/AnotherGoldenRatioInRegularPentagon.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-irregular-pentagon": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in an Irregular Pentagon",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/NoRegularPentagon.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-5-6": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in Pentagon and Hexagon",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/5-6-GoldenRatioIn.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-six-pentagons": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Star, Six Pentagons and Golden Ratio",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/StarSixPentagonsGoldenRatio.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-wu-xing": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in Wu Xing",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/GoldenRatioInWuXing.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-bui-general": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in Circle — in Droves",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/BuiGoldenRatioGeneral.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-bui-1": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in Circle",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/BuiGoldenRatio.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-mcgucken-1": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in Two Equal Circles",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/ElliotMcGucken1.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-kalogerakis": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in Two Tangent Circles",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/GoldenRatioInCircles.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-four-circles": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Four Golden Circles",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/FourGoldenCircles.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-3-tangent": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in Three Tangent Circles",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/3TangentCirclesGoldenRatio.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-golden-window": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Window",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/GoldenWindow.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-yin-yang": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in Yin-Yang",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/GoldenRatioInYinYang.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-buratino8": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in Rhombus",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/Buratino8.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-molokach": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio via Golden Rhombus",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/GoldenRatioMolokach.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-tqh-trapezoid": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in Isosceles Trapezoid",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/TQHGoldenRatio.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  },
+  "bogomolny-mixtilinear": {
+    "author": "Alexander Bogomolny",
+    "work": "Cut-the-Knot: Golden Ratio in Mixtilinear Circles",
+    "locus": "© 1996–2018",
+    "year": "1996–2018",
+    "url": "https://www.cut-the-knot.org/do_you_know/GoldenMixtilinear.shtml",
+    "note": "Interactive Mathematics Miscellany and Puzzles (cut-the-knot.org), © 1996–2018 Alexander Bogomolny."
+  }
+}

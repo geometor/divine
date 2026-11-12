@@ -5,7 +5,9 @@ geometor model.
 """
 
 from __future__ import annotations
+
 from geometor.model import Model
+
 from .events import point_added_listener
 
 

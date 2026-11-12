@@ -5,12 +5,12 @@ lines and segments of the model.
 """
 
 from __future__ import annotations
+
 from collections import defaultdict
+from itertools import combinations
 
 import sympy as sp
 import sympy.geometry as spg
-
-from itertools import combinations
 from geometor.model.utils import sort_points
 
 

@@ -7,26 +7,15 @@ geometor.divine.golden.chains
 
    Golden Chain Analyzer: Harmonic Range Identification in Golden Sections.
 
-   This module is designed to analyze and explore chains of connected golden
-   sections, unraveling the harmonic ranges within geometric structures.
-   Utilizing sophisticated mathematical analysis and geometric algorithms,
-   it aims to identify, categorize, and unpack chains, providing an intuitive
-   understanding of their intrinsic geometric harmonies.
+   This module analyzes and explores chains of connected golden sections,
+   unraveling proportional progressions within exact symbolic geometric models.
 
    Features:
 
-   - ``find_chains_in_sections``: A function designed to meticulously identify
-     chains within a collection of sections, resulting in a hierarchical tree
-     structure representing connected sections.
-
-   - ``unpack_chains``: Unveils the chains hidden within the tree structure,
-     outputting a list of individual :class:`Chain` objects ready for analysis.
-
-   Each chain’s flow is characterized by the comparative lengths of consecutive
-   segments, represented symbolically to understand the progression and
-   transitions in segment lengths. Furthermore, this module empowers users to
-   explore symmetry lines within chains, unveiling a subtle, profound aspect of
-   geometric harmony.
+   - ``find_chains_in_sections``: Identifies maximal chains within a collection of
+     golden sections, returning a hierarchical tree of connected sections.
+   - ``unpack_chains``: Unpacks the chain tree into individual :class:`Chain`
+     objects ready for symbolic inspection.
 
 
 
@@ -42,30 +31,28 @@ Functions
 Module Contents
 ---------------
 
-.. py:function:: find_chains_in_sections(sections: list[geometor.model.sections.Section]) -> dict
+.. py:function:: find_chains_in_sections(sections: list[geometor.model.sections.Section]) -> dict[geometor.model.sections.Section, dict]
 
-   Identify chains of connected golden sections to form harmonic ranges.
+   Identify maximal chains of connected golden sections.
 
-   :param sections: A list of Section objects representing golden sections to be analyzed.
+   Two ordered sections ``(A, B, C)`` and ``(B, C, D)`` connect when the
+   trailing segment ``(B, C)`` of the first equals the leading segment
+   ``(B, C)`` of the second.
 
-   :returns:
+   :param sections: A list of :class:`Section` objects to analyze.
 
-             A dictionary representing a tree structure where each node is a
-                 Section and connected Sections are child nodes.
+   :returns: Tree structure mapping root :class:`Section` nodes to nested
+             dictionaries of connected successor :class:`Section` nodes.
    :rtype: dict
 
 
-.. py:function:: unpack_chains(tree: dict) -> list[geometor.model.chains.Chain]
+.. py:function:: unpack_chains(tree: dict[geometor.model.sections.Section, dict]) -> list[geometor.model.chains.Chain]
 
-   Unpack the chain tree into a list of individual Chain objects.
+   Unpack a chain tree into a list of individual :class:`Chain` objects.
 
-   :param tree: A dictionary representing a tree structure where each node is a
-                Section and connected Sections are child nodes.
+   :param tree: Tree structure returned by :func:`find_chains_in_sections`.
 
-   :returns:
-
-             A list containing Chain objects, each representing a chain
-                 of connected golden sections.
+   :returns: Connected golden-section chains.
    :rtype: list[Chain]
 
 

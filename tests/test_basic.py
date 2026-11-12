@@ -1,4 +1,5 @@
 from geometor.model import Model
+
 from geometor.divine import register_divine_hook
 
 

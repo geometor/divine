@@ -1,6 +1,20 @@
 changelog
 =========
 
+0.4.0
+-----
+*2026-11-12*
+
+**added**
+
+-   **Catalog of Golden Ratio Constructions** (``geometor.divine.catalog``): 45 100% exact symbolic SymPy / ``geometor.model`` constructions across 7 geometric families (``GC-01.01`` through ``GC-07.06``), cataloging classical propositions, Hofstetter / Odom / Bui Quang Tuan / Tran Quang Hung constructions, Sangaku circle packings, and dissection paradoxes curated by Alexander Bogomolny (*Cut-the-Knot*) and peer-reviewed journals (*Forum Geometricorum*, *Crux Mathematicorum*, *Mathematical Reflections*, *AMM*).
+-   Exact Rational Trigonometry quadrance certificates (:class:`~geometor.divine.catalog.GoldenCertificate`), Lemoine Geometrographie step counts, automated golden-section and golden-chain discovery (129 sections, 33 chains across the catalog), interactive ``.euclid-graphic`` SVG renderer, and multi-track Book Codex under ``docsrc/constructions/``.
+-   Added :func:`~geometor.divine.golden.find_chains_in_model` and implicit collinear triple screening to ``geometor.divine.golden``.
+
+**fixed**
+
+-   Fixed an order-dependent ``in_chain`` pruning bug in :func:`~geometor.divine.golden.find_chains` and upgraded golden-section scanning to combine fast numerical pre-filtering with exact Rational Trigonometry ``quadrance`` and ``zero_test`` verification.
+
 0.3.6
 -----
 *2025-12-15*

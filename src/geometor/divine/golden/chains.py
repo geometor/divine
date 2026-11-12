@@ -1,106 +1,107 @@
 """Golden Chain Analyzer: Harmonic Range Identification in Golden Sections.
 
-This module is designed to analyze and explore chains of connected golden
-sections, unraveling the harmonic ranges within geometric structures.
-Utilizing sophisticated mathematical analysis and geometric algorithms,
-it aims to identify, categorize, and unpack chains, providing an intuitive
-understanding of their intrinsic geometric harmonies.
+This module analyzes and explores chains of connected golden sections,
+unraveling proportional progressions within exact symbolic geometric models.
 
 Features:
 
-- ``find_chains_in_sections``: A function designed to meticulously identify
-  chains within a collection of sections, resulting in a hierarchical tree
-  structure representing connected sections.
-
-- ``unpack_chains``: Unveils the chains hidden within the tree structure,
-  outputting a list of individual :class:`Chain` objects ready for analysis.
-
-Each chain’s flow is characterized by the comparative lengths of consecutive
-segments, represented symbolically to understand the progression and
-transitions in segment lengths. Furthermore, this module empowers users to
-explore symmetry lines within chains, unveiling a subtle, profound aspect of
-geometric harmony.
+- ``find_chains_in_sections``: Identifies maximal chains within a collection of
+  golden sections, returning a hierarchical tree of connected sections.
+- ``unpack_chains``: Unpacks the chain tree into individual :class:`Chain`
+  objects ready for symbolic inspection.
 """
 
 from __future__ import annotations
 
-from geometor.model.sections import Section
 from geometor.model.chains import Chain
+from geometor.model.sections import Section
 
 
-def find_chains_in_sections(sections: list[Section]) -> dict:
-    """Identify chains of connected golden sections to form harmonic ranges.
+def _endpoint_pair(points: list | tuple, start: bool) -> tuple:
+    pts = tuple(points)
+    return pts[:2] if start else pts[1:]
+
+
+def find_chains_in_sections(sections: list[Section]) -> dict[Section, dict]:
+    """Identify maximal chains of connected golden sections.
+
+    Two ordered sections ``(A, B, C)`` and ``(B, C, D)`` connect when the
+    trailing segment ``(B, C)`` of the first equals the leading segment
+    ``(B, C)`` of the second.
 
     Args:
-        sections: A list of Section objects representing golden sections to be analyzed.
+        sections: A list of :class:`Section` objects to analyze.
 
     Returns:
-        dict: A dictionary representing a tree structure where each node is a
-            Section and connected Sections are child nodes.
-
+        dict: Tree structure mapping root :class:`Section` nodes to nested
+        dictionaries of connected successor :class:`Section` nodes.
     """
+    unique_sections: list[Section] = []
+    seen_keys: set[tuple] = set()
+    for sec in sections:
+        pts_key = tuple(sec.points)
+        if pts_key not in seen_keys:
+            seen_keys.add(pts_key)
+            unique_sections.append(
+                sec if isinstance(sec.points, list) else Section(list(sec.points))
+            )
 
-    def add_to_chain_tree(section: Section, tree: dict) -> None:
-        next_sections = find_connected_sections(section, sections, in_chain)
-        for next_section in next_sections:
-            in_chain.add(next_section)
-            # TODO: don't add section to the tree until we know there is a chain section
-            tree[next_section] = {}
-            add_to_chain_tree(next_section, tree[next_section])
+    by_start: dict[tuple, list[Section]] = {}
+    has_predecessor: set[Section] = set()
+    for sec in unique_sections:
+        start_key = _endpoint_pair(sec.points, start=True)
+        by_start.setdefault(start_key, []).append(sec)
 
-    def find_connected_sections(
-        current_section: Section, sections: list[Section], in_chain: set
-    ) -> list[Section]:
-        connected_sections = []
-        # The last two points of the current section must be the first two of the next
-        current_end_points = current_section.points[1:]
-        for section in sections:
-            if section not in in_chain:
-                next_start_points = section.points[:2]
-                if current_end_points == next_start_points:
-                    connected_sections.append(section)
-        return connected_sections
+    for sec in unique_sections:
+        end_key = _endpoint_pair(sec.points, start=False)
+        for nxt in by_start.get(end_key, ()):
+            if nxt != sec:
+                has_predecessor.add(nxt)
 
-    chain_tree = {}
-    in_chain = set()
+    def build_subtree(current: Section, visited: frozenset[Section]) -> dict[Section, dict]:
+        end_key = _endpoint_pair(current.points, start=False)
+        subtree: dict[Section, dict] = {}
+        for nxt in by_start.get(end_key, ()):
+            if nxt not in visited:
+                subtree[nxt] = build_subtree(nxt, visited | {nxt})
+        return subtree
 
-    for section in sections:
-        if section not in in_chain:
-            # TODO: don't add section to the tree until we know there is a chain section
-            chain_tree[section] = {}
-            in_chain.add(section)
-            add_to_chain_tree(section, chain_tree[section])
+    chain_tree: dict[Section, dict] = {}
+    roots = [sec for sec in unique_sections if sec not in has_predecessor]
+    # Fallback in case of synthetic cyclic test fixtures
+    if not roots and unique_sections:
+        roots = list(unique_sections)
 
-    chain_tree = {k: v for k, v in chain_tree.items() if v}
+    for root in roots:
+        children = build_subtree(root, frozenset({root}))
+        if children:
+            chain_tree[root] = children
+
     return chain_tree
 
 
-def unpack_chains(tree: dict) -> list[Chain]:
-    """Unpack the chain tree into a list of individual Chain objects.
+def unpack_chains(tree: dict[Section, dict]) -> list[Chain]:
+    """Unpack a chain tree into a list of individual :class:`Chain` objects.
 
     Args:
-        tree: A dictionary representing a tree structure where each node is a
-            Section and connected Sections are child nodes.
+        tree: Tree structure returned by :func:`find_chains_in_sections`.
 
     Returns:
-        list[Chain]: A list containing Chain objects, each representing a chain
-            of connected golden sections.
-
+        list[Chain]: Connected golden-section chains.
     """
 
-    def dfs(node: dict, path: list[Section], chains: list[Chain]) -> None:
+    def dfs(node: dict[Section, dict], path: list[Section], chains: list[Chain]) -> None:
         if not node:
-            chains.append(Chain(path))  # Create a Chain object and add it to the chains
+            chains.append(Chain(path))
             return
-
         for child, subtree in node.items():
             dfs(subtree, path + [child], chains)
 
-    chains = []
+    chains: list[Chain] = []
     for root, subtree in tree.items():
-        if not subtree:  # Handle chains with only one section
+        if not subtree:
             chains.append(Chain([root]))
         else:
-            dfs(subtree, [root], chains)  # Starting the path with the root section
+            dfs(subtree, [root], chains)
 
     return chains

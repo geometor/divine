@@ -1,20 +1,11 @@
 .. geometor.divine intro
 
-``geometor.divine`` is a specialized library within the `GEOMETOR`_ initiative, dedicated to exploring and analyzing the golden ratio in geometric constructions.
+``geometor.divine`` is the Golden Ratio analysis engine and symbolic **Catalog of Golden Ratio Constructions** within the `GEOMETOR`_ ecosystem.
 
-Central to this module is the exploration of the golden ratio's presence and significance in natural and mathematical structures. It leverages sophisticated algorithms and mathematical tools to uncover, analyze, and visualize the intricate ways in which the golden ratio manifests in various geometric forms.
+Grounded in 100% exact symbolic algebra (:mod:`geometor.model`) and Rational Trigonometry :term:`quadrances <quadrance>`, ``geometor.divine`` combines automated proportional discovery with a curated Book Codex of classical and contemporary Golden Ratio theorems:
 
-Key functionalities of ``geometor.divine`` include:
-
-- Identifying and analyzing golden sections in geometric models.
-- Investigating chains of connected golden sections to reveal harmonic ranges.
-- Grouping and categorizing golden sections based on size, segments, and points.
-- Providing tools for in-depth exploration of the golden ratio in user-defined geometric constructions.
-
-This module is designed to be intuitive yet powerful, catering to both enthusiasts and professionals in geometry, nature, and mathematics. Through its advanced analysis capabilities, ``geometor.divine`` aims to deepen the understanding of the golden ratio, offering a new perspective on its role and significance in the realm of geometry.
-
-.. .. image:: /_static/geometor-divine-overview.png
+- **Automated Divine Discovery** (:mod:`geometor.divine.golden`): Scans exact symbolic models across explicit carrier lines and collinear point triples to certify golden sections (:math:`Q_{\text{long}} / Q_{\text{short}} = \phi + 1 = \phi^2`) and assemble maximal connected **golden chains**.
+- **Catalog of Golden Ratio Constructions** (:doc:`/constructions/index`, :mod:`geometor.divine.catalog`): Catalogs **45 exact symbolic constructions and theorems across 7 geometric families**—curated from classical antiquity (*Elements*, *Almagest*, Kepler, Lemoine), peer-reviewed geometry journals (*Forum Geometricorum*, *American Mathematical Monthly*, *Mathematics Magazine*), and Alexander Bogomolny's *Cut-the-Knot* archive (`GoldenRatio.shtml <https://www.cut-the-knot.org/do_you_know/GoldenRatio.shtml>`_, © 1996–2018)—alongside the companion Ron Knott Golden Ratio Catalog (``geometor/knott``).
+- **Interactive Vector Codex**: Every cataloged construction compiles into a two-track Book Codex page pairing newly authored GEOMETOR exposition and interactive ``.euclid-graphic`` SVGs with its self-contained SymPy builder and exact symbolic point coordinates.
 
 .. _`GEOMETOR`: https://geometor.com
-.. _`Project's Website`: https://geometor.github.io/divine
-

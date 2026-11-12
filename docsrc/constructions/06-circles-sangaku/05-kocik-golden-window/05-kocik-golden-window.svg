@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 680 480" data-graphic-id="05-kocik-golden-window" role="img" aria-label="GC-06.05 — Jerzy Kocik's Six-Circle Apollonian Golden Window (2010)">
+  <title>GC-06.05 — Jerzy Kocik&#x27;s Six-Circle Apollonian Golden Window (2010)</title>
+  <defs>
+    <marker id="geom-tick-1" markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
+      <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" />
+    </marker>
+    <marker id="geom-tick-2" markerUnits="userSpaceOnUse" viewBox="-7 -8 14 16" markerWidth="14" markerHeight="16" orient="auto">
+      <line x1="-2.4" y1="-6.2" x2="-2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+      <line x1="2.4" y1="-6.2" x2="2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+    </marker>
+    <marker id="geom-tick-3" markerUnits="userSpaceOnUse" viewBox="-9 -8 18 16" markerWidth="18" markerHeight="16" orient="auto">
+      <line x1="-4.4" y1="-6.2" x2="-4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+      <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+      <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+    </marker>
+  </defs>
+  <style>
+.euclid-graphic {
+    font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  .euclid-graphic .svg-bg { fill: none; }
+  .euclid-graphic .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82; }
+  .euclid-graphic .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62; }
+  .euclid-graphic .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92; }
+  .euclid-graphic .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round; }
+  .euclid-graphic .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72; }
+  .euclid-graphic .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58; }
+  .euclid-graphic .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88; }
+  .euclid-graphic .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68; }
+  .euclid-graphic .geom-segment.golden-segment { fill: none; stroke: #b45309; stroke-width: 2.8; stroke-linecap: round; stroke-opacity: 0.55; }
+  .euclid-graphic .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none; }
+  .euclid-graphic .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round; }
+  .euclid-graphic .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round; }
+  .euclid-graphic .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none; }
+  .euclid-graphic .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5; }
+  .euclid-graphic .geom-point.given-point { fill: #0f172a; }
+  .euclid-graphic .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7; }
+  .euclid-graphic .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none; }
+  .euclid-graphic .geom-label {
+    fill: #1c1917;
+    font-size: 13.5px;
+    font-weight: 600;
+    paint-order: stroke fill;
+    stroke: #fafaf9;
+    stroke-opacity: 0.92;
+    stroke-width: 3.6px;
+    stroke-linejoin: round;
+    user-select: none;
+  }
+  .euclid-graphic .geom-label-sub { font-size: 10px; font-weight: 600; }
+  @media (prefers-color-scheme: dark) {
+    .euclid-graphic .geom-circle.conic-curve { stroke: #38bdf8; }
+    .euclid-graphic .geom-circle.aux-circle { stroke: #7dd3fc; }
+    .euclid-graphic .geom-circle.golden-circle { stroke: #f5c542; }
+    .euclid-graphic .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1; }
+    .euclid-graphic .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542; }
+    .euclid-graphic .geom-line { stroke: #94a3b8; }
+    .euclid-graphic .geom-line.aux-line { stroke: #64748b; }
+    .euclid-graphic .geom-segment.struct-segment { stroke: #cbd5e1; }
+    .euclid-graphic .geom-segment.aux-segment { stroke: #64748b; }
+    .euclid-graphic .geom-segment.golden-segment { stroke: #facc15; }
+    .euclid-graphic .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32; }
+    .euclid-graphic .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7; }
+    .euclid-graphic .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5; }
+    .euclid-graphic .geom-point { fill: #38bdf8; stroke: #141417; }
+    .euclid-graphic .geom-point.given-point { fill: #e2e8f0; }
+    .euclid-graphic .geom-point.golden-point { fill: #f5c542; stroke: #141417; }
+    .euclid-graphic .geom-point-halo { stroke: #f5c542; }
+    .euclid-graphic .geom-label { fill: #f4f4f5; stroke: #141417; }
+  }
+  </style>
+  <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
+  <g id="elements">
+    <g id="graphics">
+      <circle class="geom-circle aux-circle" cx="321.15" cy="240" r="18.85" data-ref="cC1" data-aliases="(C1) | ( C1 ) | ( C1 O ) | C1(O) | ( C1 P1 ) | C1(P1)" fill="none"><title>cC1: y**2 + (x + 1/2)**2 - 1/4 = 0</title></circle>
+      <circle class="geom-circle aux-circle" cx="358.85" cy="240" r="18.85" data-ref="cC2" data-aliases="(C2) | ( C2 ) | ( C2 O ) | C2(O) | ( C2 P2 ) | C2(P2)" fill="none"><title>cC2: y**2 + (x - 1/2)**2 - 1/4 = 0</title></circle>
+      <circle class="geom-circle golden-circle" cx="241.31" cy="240" r="60.99" data-ref="cC3" data-aliases="(C3) | ( C3 ) | ( C3 P1 ) | C3(P1) | ( C3 A3 ) | C3(A3)" fill="none"><title>cC3: y**2 + (x + sqrt(5)/2 + 3/2)**2 - (1/2 + sqrt(5)/2)**2 = 0</title></circle>
+      <circle class="geom-circle golden-circle" cx="438.69" cy="240" r="60.99" data-ref="cC4" data-aliases="(C4) | ( C4 ) | ( C4 P2 ) | C4(P2) | ( C4 A4 ) | C4(A4)" fill="none"><title>cC4: y**2 + (x - 3/2 - sqrt(5)/2)**2 - (1/2 + sqrt(5)/2)**2 = 0</title></circle>
+      <circle class="geom-circle conic-curve" cx="340" cy="240" r="159.68" data-ref="cO" data-aliases="(O) | ( O ) | ( O A3 ) | O(A3) | ( O A4 ) | O(A4) | ( O T1 ) | O(T1) | ( O T2 ) | O(T2) | ( A3 A4 T1 )" fill="none"><title>cO: x**2 + y**2 - (2 + sqrt(5))**2 = 0</title></circle>
+      <circle class="geom-circle aux-circle" cx="340" cy="151.73" r="71.41" data-ref="cU1" data-aliases="(U1) | ( U1 ) | ( U1 T1 ) | U1(T1)" fill="none"><title>cU1: x**2 + (y - 3*sqrt(5)/5 - 1)**2 - (2*sqrt(5)/5 + 1)**2 = 0</title></circle>
+      <circle class="geom-circle aux-circle" cx="340" cy="328.27" r="71.41" data-ref="cU2" data-aliases="(U2) | ( U2 ) | ( U2 T2 ) | U2(T2)" fill="none"><title>cU2: x**2 + (y + 1 + 3*sqrt(5)/5)**2 - (2*sqrt(5)/5 + 1)**2 = 0</title></circle>
+      <path class="geom-line" d="M 12 240 L 340 240 L 668 240" data-ref="A3A4" data-aliases="[ O P1 ] | [ P1 O ] | OP1 | P1O | [ O P2 ] | [ P2 O ] | OP2 | P2O | [ O C3 ] | [ C3 O ] | OC3 | C3O | [ O C4 ] | [ C4 O ] | OC4 | C4O | [ O A3 ] | [ A3 O ] | OA3 | A3O | [ O A4 ] | [ A4 O ] | OA4 | A4O | [ P1 P2 ] | [ P2 P1 ] | P1P2 | P2P1 | [ P1 C3 ] | [ C3 P1 ] | P1C3 | C3P1 | [ P1 C4 ] | [ C4 P1 ] | P1C4 | C4P1 | [ P1 A3 ] | [ A3 P1 ] | P1A3 | A3P1 | [ P1 A4 ] | [ A4 P1 ] | P1A4 | A4P1 | [ P2 C3 ] | [ C3 P2 ] | P2C3 | C3P2 | [ P2 C4 ] | [ C4 P2 ] | P2C4 | C4P2 | [ P2 A3 ] | [ A3 P2 ] | P2A3 | A3P2 | [ P2 A4 ] | [ A4 P2 ] | P2A4 | A4P2 | [ C3 C4 ] | [ C4 C3 ] | C3C4 | C4C3 | [ C3 A3 ] | [ A3 C3 ] | C3A3 | A3C3 | [ C3 A4 ] | [ A4 C3 ] | C3A4 | A4C3 | [ C4 A3 ] | [ A3 C4 ] | C4A3 | A3C4 | [ C4 A4 ] | [ A4 C4 ] | C4A4 | A4C4 | [ A3 A4 ] | [ A4 A3 ] | A4A3" fill="none"><title>A3A4: y = 0</title></path>
+      <path class="geom-segment golden-segment" d="M 340 240 L 419.84 240 L 499.68 240" data-ref="/ O C4 A4 /" data-aliases="OC4A4" fill="none" />
+      <path class="geom-segment golden-major-glow" d="M 340 240 L 389.34 240 L 438.69 240" fill="none" />
+      <path class="geom-segment golden-major" d="M 340 240 L 389.34 240 L 438.69 240" marker-mid="url(#geom-tick-1)" data-ref="/ O C4 /" data-aliases="[ O C4 ] | [ C4 O ] | / C4 O / | OC4 | C4O" fill="none"><title>Golden major OC4 = sqrt(5)/2 + 3/2</title></path>
+      <path class="geom-segment golden-minor" d="M 438.69 240 L 469.18 240 L 499.68 240" marker-mid="url(#geom-tick-2)" data-ref="/ C4 A4 /" data-aliases="[ C4 A4 ] | [ A4 C4 ] | / A4 C4 / | C4A4 | A4C4" fill="none"><title>Golden minor C4A4 = 1/2 + sqrt(5)/2</title></path>
+    </g>
+    <g id="highlights">
+      <path class="geom-overlay" d="M 340 240 L 321.15 240 L 302.31 240" data-ref="OP1" data-aliases="P1O | / O P1 / | / P1 O / | [ O P1 ] | [ P1 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 358.85 240 L 377.69 240" data-ref="OP2" data-aliases="P2O | / O P2 / | / P2 O / | [ O P2 ] | [ P2 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 290.66 240 L 241.31 240" data-ref="OC3" data-aliases="C3O | / O C3 / | / C3 O / | [ O C3 ] | [ C3 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 389.34 240 L 438.69 240" data-ref="OC4" data-aliases="C4O | / O C4 / | / C4 O / | [ O C4 ] | [ C4 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 260.16 240 L 180.32 240" data-ref="OA3" data-aliases="A3O | / O A3 / | / A3 O / | [ O A3 ] | [ A3 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 419.84 240 L 499.68 240" data-ref="OA4" data-aliases="A4O | / O A4 / | / A4 O / | [ O A4 ] | [ A4 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 340 195.87 L 340 151.73" data-ref="OU1" data-aliases="U1O | / O U1 / | / U1 O / | [ O U1 ] | [ U1 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 340 284.13 L 340 328.27" data-ref="OU2" data-aliases="U2O | / O U2 / | / U2 O / | [ O U2 ] | [ U2 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 340 160.16 L 340 80.32" data-ref="OT1" data-aliases="T1O | / O T1 / | / T1 O / | [ O T1 ] | [ T1 O ]" fill="none" />
+      <path class="geom-overlay" d="M 340 240 L 340 319.84 L 340 399.68" data-ref="OT2" data-aliases="T2O | / O T2 / | / T2 O / | [ O T2 ] | [ T2 O ]" fill="none" />
+      <path class="geom-overlay" d="M 302.31 240 L 340 240 L 377.69 240" data-ref="P1P2" data-aliases="P2P1 | / P1 P2 / | / P2 P1 / | [ P1 P2 ] | [ P2 P1 ]" fill="none" />
+      <path class="geom-overlay" d="M 302.31 240 L 271.81 240 L 241.31 240" data-ref="P1C3" data-aliases="C3P1 | / P1 C3 / | / C3 P1 / | [ P1 C3 ] | [ C3 P1 ]" fill="none" />
+      <path class="geom-overlay" d="M 302.31 240 L 370.5 240 L 438.69 240" data-ref="P1C4" data-aliases="C4P1 | / P1 C4 / | / C4 P1 / | [ P1 C4 ] | [ C4 P1 ]" fill="none" />
+      <path class="geom-overlay" d="M 302.31 240 L 241.31 240 L 180.32 240" data-ref="P1A3" data-aliases="A3P1 | / P1 A3 / | / A3 P1 / | [ P1 A3 ] | [ A3 P1 ]" fill="none" />
+      <path class="geom-overlay" d="M 302.31 240 L 400.99 240 L 499.68 240" data-ref="P1A4" data-aliases="A4P1 | / P1 A4 / | / A4 P1 / | [ P1 A4 ] | [ A4 P1 ]" fill="none" />
+      <path class="geom-overlay" d="M 302.31 240 L 321.15 195.87 L 340 151.73" data-ref="P1U1" data-aliases="U1P1 | / P1 U1 / | / U1 P1 / | [ P1 U1 ] | [ U1 P1 ]" fill="none" />
+      <path class="geom-overlay" d="M 302.31 240 L 321.15 284.13 L 340 328.27" data-ref="P1U2" data-aliases="U2P1 | / P1 U2 / | / U2 P1 / | [ P1 U2 ] | [ U2 P1 ]" fill="none" />
+      <path class="geom-overlay" d="M 302.31 240 L 321.15 160.16 L 340 80.32" data-ref="P1T1" data-aliases="T1P1 | / P1 T1 / | / T1 P1 / | [ P1 T1 ] | [ T1 P1 ]" fill="none" />
+      <path class="geom-overlay" d="M 302.31 240 L 321.15 319.84 L 340 399.68" data-ref="P1T2" data-aliases="T2P1 | / P1 T2 / | / T2 P1 / | [ P1 T2 ] | [ T2 P1 ]" fill="none" />
+      <path class="geom-overlay" d="M 377.69 240 L 309.5 240 L 241.31 240" data-ref="P2C3" data-aliases="C3P2 | / P2 C3 / | / C3 P2 / | [ P2 C3 ] | [ C3 P2 ]" fill="none" />
+      <path class="geom-overlay" d="M 377.69 240 L 408.19 240 L 438.69 240" data-ref="P2C4" data-aliases="C4P2 | / P2 C4 / | / C4 P2 / | [ P2 C4 ] | [ C4 P2 ]" fill="none" />
+      <path class="geom-overlay" d="M 377.69 240 L 279.01 240 L 180.32 240" data-ref="P2A3" data-aliases="A3P2 | / P2 A3 / | / A3 P2 / | [ P2 A3 ] | [ A3 P2 ]" fill="none" />
+      <path class="geom-overlay" d="M 377.69 240 L 438.69 240 L 499.68 240" data-ref="P2A4" data-aliases="A4P2 | / P2 A4 / | / A4 P2 / | [ P2 A4 ] | [ A4 P2 ]" fill="none" />
+      <path class="geom-overlay" d="M 377.69 240 L 358.85 195.87 L 340 151.73" data-ref="P2U1" data-aliases="U1P2 | / P2 U1 / | / U1 P2 / | [ P2 U1 ] | [ U1 P2 ]" fill="none" />
+      <path class="geom-overlay" d="M 377.69 240 L 358.85 284.13 L 340 328.27" data-ref="P2U2" data-aliases="U2P2 | / P2 U2 / | / U2 P2 / | [ P2 U2 ] | [ U2 P2 ]" fill="none" />
+      <path class="geom-overlay" d="M 377.69 240 L 358.85 160.16 L 340 80.32" data-ref="P2T1" data-aliases="T1P2 | / P2 T1 / | / T1 P2 / | [ P2 T1 ] | [ T1 P2 ]" fill="none" />
+      <path class="geom-overlay" d="M 377.69 240 L 358.85 319.84 L 340 399.68" data-ref="P2T2" data-aliases="T2P2 | / P2 T2 / | / T2 P2 / | [ P2 T2 ] | [ T2 P2 ]" fill="none" />
+      <path class="geom-overlay" d="M 241.31 240 L 340 240 L 438.69 240" data-ref="C3C4" data-aliases="C4C3 | / C3 C4 / | / C4 C3 / | [ C3 C4 ] | [ C4 C3 ]" fill="none" />
+      <path class="geom-overlay" d="M 241.31 240 L 210.82 240 L 180.32 240" data-ref="C3A3" data-aliases="A3C3 | / C3 A3 / | / A3 C3 / | [ C3 A3 ] | [ A3 C3 ]" fill="none" />
+      <path class="geom-overlay" d="M 241.31 240 L 370.5 240 L 499.68 240" data-ref="C3A4" data-aliases="A4C3 | / C3 A4 / | / A4 C3 / | [ C3 A4 ] | [ A4 C3 ]" fill="none" />
+      <path class="geom-overlay" d="M 241.31 240 L 290.66 195.87 L 340 151.73" data-ref="C3U1" data-aliases="U1C3 | / C3 U1 / | / U1 C3 / | [ C3 U1 ] | [ U1 C3 ]" fill="none" />
+      <path class="geom-overlay" d="M 241.31 240 L 290.66 284.13 L 340 328.27" data-ref="C3U2" data-aliases="U2C3 | / C3 U2 / | / U2 C3 / | [ C3 U2 ] | [ U2 C3 ]" fill="none" />
+      <path class="geom-overlay" d="M 241.31 240 L 290.66 160.16 L 340 80.32" data-ref="C3T1" data-aliases="T1C3 | / C3 T1 / | / T1 C3 / | [ C3 T1 ] | [ T1 C3 ]" fill="none" />
+      <path class="geom-overlay" d="M 241.31 240 L 290.66 319.84 L 340 399.68" data-ref="C3T2" data-aliases="T2C3 | / C3 T2 / | / T2 C3 / | [ C3 T2 ] | [ T2 C3 ]" fill="none" />
+      <path class="geom-overlay" d="M 438.69 240 L 309.5 240 L 180.32 240" data-ref="C4A3" data-aliases="A3C4 | / C4 A3 / | / A3 C4 / | [ C4 A3 ] | [ A3 C4 ]" fill="none" />
+      <path class="geom-overlay" d="M 438.69 240 L 469.18 240 L 499.68 240" data-ref="C4A4" data-aliases="A4C4 | / C4 A4 / | / A4 C4 / | [ C4 A4 ] | [ A4 C4 ]" fill="none" />
+      <path class="geom-overlay" d="M 438.69 240 L 389.34 195.87 L 340 151.73" data-ref="C4U1" data-aliases="U1C4 | / C4 U1 / | / U1 C4 / | [ C4 U1 ] | [ U1 C4 ]" fill="none" />
+      <path class="geom-overlay" d="M 438.69 240 L 389.34 284.13 L 340 328.27" data-ref="C4U2" data-aliases="U2C4 | / C4 U2 / | / U2 C4 / | [ C4 U2 ] | [ U2 C4 ]" fill="none" />
+      <path class="geom-overlay" d="M 438.69 240 L 389.34 160.16 L 340 80.32" data-ref="C4T1" data-aliases="T1C4 | / C4 T1 / | / T1 C4 / | [ C4 T1 ] | [ T1 C4 ]" fill="none" />
+      <path class="geom-overlay" d="M 438.69 240 L 389.34 319.84 L 340 399.68" data-ref="C4T2" data-aliases="T2C4 | / C4 T2 / | / T2 C4 / | [ C4 T2 ] | [ T2 C4 ]" fill="none" />
+      <path class="geom-overlay" d="M 180.32 240 L 340 240 L 499.68 240" data-ref="A3A4" data-aliases="A4A3 | / A3 A4 / | / A4 A3 / | [ A3 A4 ] | [ A4 A3 ]" fill="none" />
+      <path class="geom-overlay" d="M 180.32 240 L 260.16 195.87 L 340 151.73" data-ref="A3U1" data-aliases="U1A3 | / A3 U1 / | / U1 A3 / | [ A3 U1 ] | [ U1 A3 ]" fill="none" />
+      <path class="geom-overlay" d="M 180.32 240 L 260.16 284.13 L 340 328.27" data-ref="A3U2" data-aliases="U2A3 | / A3 U2 / | / U2 A3 / | [ A3 U2 ] | [ U2 A3 ]" fill="none" />
+      <path class="geom-overlay" d="M 180.32 240 L 260.16 160.16 L 340 80.32" data-ref="A3T1" data-aliases="T1A3 | / A3 T1 / | / T1 A3 / | [ A3 T1 ] | [ T1 A3 ]" fill="none" />
+      <path class="geom-overlay" d="M 180.32 240 L 260.16 319.84 L 340 399.68" data-ref="A3T2" data-aliases="T2A3 | / A3 T2 / | / T2 A3 / | [ A3 T2 ] | [ T2 A3 ]" fill="none" />
+      <path class="geom-overlay" d="M 499.68 240 L 419.84 195.87 L 340 151.73" data-ref="A4U1" data-aliases="U1A4 | / A4 U1 / | / U1 A4 / | [ A4 U1 ] | [ U1 A4 ]" fill="none" />
+      <path class="geom-overlay" d="M 499.68 240 L 419.84 284.13 L 340 328.27" data-ref="A4U2" data-aliases="U2A4 | / A4 U2 / | / U2 A4 / | [ A4 U2 ] | [ U2 A4 ]" fill="none" />
+      <path class="geom-overlay" d="M 499.68 240 L 419.84 160.16 L 340 80.32" data-ref="A4T1" data-aliases="T1A4 | / A4 T1 / | / T1 A4 / | [ A4 T1 ] | [ T1 A4 ]" fill="none" />
+      <path class="geom-overlay" d="M 499.68 240 L 419.84 319.84 L 340 399.68" data-ref="A4T2" data-aliases="T2A4 | / A4 T2 / | / T2 A4 / | [ A4 T2 ] | [ T2 A4 ]" fill="none" />
+      <path class="geom-overlay" d="M 340 151.73 L 340 240 L 340 328.27" data-ref="U1U2" data-aliases="U2U1 | / U1 U2 / | / U2 U1 / | [ U1 U2 ] | [ U2 U1 ]" fill="none" />
+      <path class="geom-overlay" d="M 340 151.73 L 340 116.03 L 340 80.32" data-ref="U1T1" data-aliases="T1U1 | / U1 T1 / | / T1 U1 / | [ U1 T1 ] | [ T1 U1 ]" fill="none" />
+      <path class="geom-overlay" d="M 340 151.73 L 340 275.7 L 340 399.68" data-ref="U1T2" data-aliases="T2U1 | / U1 T2 / | / T2 U1 / | [ U1 T2 ] | [ T2 U1 ]" fill="none" />
+      <path class="geom-overlay" d="M 340 328.27 L 340 204.3 L 340 80.32" data-ref="U2T1" data-aliases="T1U2 | / U2 T1 / | / T1 U2 / | [ U2 T1 ] | [ T1 U2 ]" fill="none" />
+      <path class="geom-overlay" d="M 340 328.27 L 340 363.97 L 340 399.68" data-ref="U2T2" data-aliases="T2U2 | / U2 T2 / | / T2 U2 / | [ U2 T2 ] | [ T2 U2 ]" fill="none" />
+      <path class="geom-overlay" d="M 340 80.32 L 340 240 L 340 399.68" data-ref="T1T2" data-aliases="T2T1 | / T1 T2 / | / T2 T1 / | [ T1 T2 ] | [ T2 T1 ]" fill="none" />
+    </g>
+    <g id="points">
+      <circle class="geom-point" cx="302.31" cy="240" r="3.6" data-ref="P1" data-latex-x="-1" data-latex-y="0"><title>P1 = (-1, 0)</title></circle>
+      <circle class="geom-point" cx="241.31" cy="240" r="3.6" data-ref="C3" data-latex-x="- \frac{3}{2} - \frac{\sqrt{5}}{2}" data-latex-y="0"><title>C3 = (-3/2 - sqrt(5)/2, 0)</title></circle>
+      <circle class="geom-point" cx="180.32" cy="240" r="3.6" data-ref="A3" data-latex-x="- \sqrt{5} - 2" data-latex-y="0"><title>A3 = (-sqrt(5) - 2, 0)</title></circle>
+      <circle class="geom-point" cx="340" cy="151.73" r="3.6" data-ref="U1" data-latex-x="0" data-latex-y="1 + \frac{3 \sqrt{5}}{5}"><title>U1 = (0, 1 + 3*sqrt(5)/5)</title></circle>
+      <circle class="geom-point" cx="340" cy="328.27" r="3.6" data-ref="U2" data-latex-x="0" data-latex-y="- \frac{3 \sqrt{5}}{5} - 1"><title>U2 = (0, -3*sqrt(5)/5 - 1)</title></circle>
+      <circle class="geom-point" cx="340" cy="80.32" r="3.6" data-ref="T1" data-latex-x="0" data-latex-y="2 + \sqrt{5}"><title>T1 = (0, 2 + sqrt(5))</title></circle>
+      <circle class="geom-point" cx="340" cy="399.68" r="3.6" data-ref="T2" data-latex-x="0" data-latex-y="- \sqrt{5} - 2"><title>T2 = (0, -sqrt(5) - 2)</title></circle>
+      <circle class="geom-point given-point" cx="377.69" cy="240" r="4.1" data-ref="P2" data-latex-x="1" data-latex-y="0"><title>P2 = (1, 0)</title></circle>
+      <circle class="geom-point golden-point" cx="340" cy="240" r="4.6" data-ref="O" data-latex-x="0" data-latex-y="0"><title>O = (0, 0)</title></circle>
+      <circle class="geom-point-halo" cx="438.69" cy="240" r="9" fill="none" />
+      <circle class="geom-point golden-point" cx="438.69" cy="240" r="4.6" data-ref="C4" data-latex-x="\frac{\sqrt{5}}{2} + \frac{3}{2}" data-latex-y="0"><title>C4 = (sqrt(5)/2 + 3/2, 0)</title></circle>
+      <circle class="geom-point golden-point" cx="499.68" cy="240" r="4.6" data-ref="A4" data-latex-x="2 + \sqrt{5}" data-latex-y="0"><title>A4 = (2 + sqrt(5), 0)</title></circle>
+    </g>
+    <g id="labels">
+      <text class="geom-label" x="278.52" y="257.91" data-ref="P1">P<tspan class="geom-label-sub" dy="3">1</tspan></text>
+      <text class="geom-label" x="248.18" y="257.91" data-ref="C3">C<tspan class="geom-label-sub" dy="3">3</tspan></text>
+      <text class="geom-label" x="187.19" y="257.91" data-ref="A3">A<tspan class="geom-label-sub" dy="3">3</tspan></text>
+      <text class="geom-label" x="353.22" y="156.49" data-ref="U1">U<tspan class="geom-label-sub" dy="3">1</tspan></text>
+      <text class="geom-label" x="353.22" y="333.03" data-ref="U2">U<tspan class="geom-label-sub" dy="3">2</tspan></text>
+      <text class="geom-label" x="346.87" y="98.23" data-ref="T1">T<tspan class="geom-label-sub" dy="3">1</tspan></text>
+      <text class="geom-label" x="346.87" y="417.59" data-ref="T2">T<tspan class="geom-label-sub" dy="3">2</tspan></text>
+      <text class="geom-label" x="384.92" y="258.27" data-ref="P2">P<tspan class="geom-label-sub" dy="3">2</tspan></text>
+      <text class="geom-label" x="334.24" y="270.86" data-ref="O">O</text>
+      <text class="geom-label" x="446.26" y="258.62" data-ref="C4">C<tspan class="geom-label-sub" dy="3">4</tspan></text>
+      <text class="geom-label" x="507.25" y="258.62" data-ref="A4">A<tspan class="geom-label-sub" dy="3">4</tspan></text>
+    </g>
+  </g>
+</svg>
