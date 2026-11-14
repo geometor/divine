@@ -6,12 +6,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>usage &mdash; GEOMETOR • divine</title>
+  <title>Using This Edition &mdash; GEOMETOR • divine</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=8713e751" />
   <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=a1baf04c" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
@@ -38,19 +38,28 @@
       <label for="nav-Header-toggle" >Header</label>
       <ul>
         <li>
-          <a href="../mission/index.html"  >mission</a>
+          <a href="../constructions/index.html"  >Golden Constructions</a>
         </li>
         <li>
-          <a href="#" class="is-active" aria-selected="true" aria-current="page">usage</a>
+          <a href="../constructions/persons.html"  >People</a>
         </li>
         <li>
-          <a href="../modules/index.html"  >modules</a>
+          <a href="../constructions/bibliography.html"  >Bibliography</a>
         </li>
         <li>
-          <a href="../log/index.html"  >log</a>
+          <a href="../mission/index.html"  >Mission</a>
         </li>
         <li>
-          <a href="../constructions/index.html"  >Catalog of Golden Ratio Constructions</a>
+          <a href="#" class="is-active" aria-selected="true" aria-current="page">Usage</a>
+        </li>
+        <li>
+          <a href="../demos/index.html"  >Demos</a>
+        </li>
+        <li>
+          <a href="../log/index.html"  >Log</a>
+        </li>
+        <li>
+          <a href="../modules/index.html"  >Modules</a>
         </li>
       </ul>
     </nav>
@@ -68,7 +77,7 @@
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../mission/pattern_recognition.html" title="pattern recognition">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="../constructions/glossary.html" title="Glossary">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
           </div>
@@ -78,41 +87,114 @@
         </div>
       </header>
       <div class="content body book-content" role="main">
-        <section class="level-1" id="usage">
-        <h1>usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h1>
-            <section class="collection ">
-              <article class="excerpt">
-                <div class="content">
-                  <section>
-                    <h2><a href="installation.html">installation</a></h2>
-                      <p>You can install <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code> using pip:</p>
-                  </section>
-                </div>
-              </article>
-              <article class="excerpt">
-                <div class="content">
-                  <section>
-                    <h2><a href="getting_started.html">getting started</a></h2>
-                      <p><code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code> is typically used in conjunction with <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code>.</p>
-                  </section>
-                </div>
-              </article>
-              <article class="excerpt">
-                <div class="content">
-                  <section>
-                    <h2><a href="analysis/index.html">analysis</a></h2>
-                      <p>The core functionality of divine is to find patterns.</p>
-                  </section>
-                </div>
-              </article>
-            </section></section>
+        <section class="level-1" id="using-this-edition">
+        <h1>Using This Edition<a class="headerlink" href="#using-this-edition" title="Link to this heading">¶</a></h1>
+        <p class="rubric">Reader’s Guide to the Catalog of Golden Ratio Constructions &amp; Symbolic Discovery Engine</p>
+        <p>Welcome to the GEOMETOR edition of the <strong>Catalog of Golden Ratio Constructions</strong> and the <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code> symbolic discovery engine. This edition unites 45 certified ruler-and-compass constructions across 7 geometric families with automated golden section discovery and exact SymPy modeling.</p>
+        <hr class="docutils" />
+        <section class="level-2" id="synchronized-reading-tracks">
+        <h2>1. Synchronized Reading Tracks<a class="headerlink" href="#synchronized-reading-tracks" title="Link to this heading">¶</a></h2>
+        <p>Every construction in the catalog (<a class="reference internal" href="../constructions/index.html"><span class="doc">Catalog of Golden Ratio Constructions</span></a>) is organized across two synchronized companion tracks:</p>
+        <ul class="simple">
+        <li><p><strong>Synthesis Track</strong> (<code class="docutils literal notranslate"><span class="pre">index.rst</span></code>): The mathematical enunciation, historical background, Euclidean proof, and certified algebraic metrics (number field, Lemoine simplicity, and discovered golden chains).</p></li>
+        <li><p><strong>Code Track</strong> (<code class="docutils literal notranslate"><span class="pre">code.rst</span></code>): The complete, executable Python script using <code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.model</span></code> that builds the construction, accompanied by exact symbolic coordinates for every point, line, and circle.</p></li>
+        </ul>
+        <p>Switch seamlessly between the Synthesis and Code views using the track switcher in the chapter header bar.</p>
+        </section>
+        <hr class="docutils" />
+        <section class="level-2" id="interactive-vector-plates-deductive-links">
+        <h2>2. Interactive Vector Plates &amp; Deductive Links<a class="headerlink" href="#interactive-vector-plates-deductive-links" title="Link to this heading">¶</a></h2>
+        <p>Each construction is accompanied by a publication-grade interactive <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> SVG plate:</p>
+        <ul class="simple">
+        <li><p><strong>Bidirectional Highlighting</strong>: Hovering over or clicking diagram labels (<em>A</em>, <em>B</em>, <em>C</em>, <em>G</em>, segments, or circles) highlights the element on the plate and cross-references its role in the geometric proof.</p></li>
+        <li><p><strong>Golden Section Markers</strong>: Color-coded tick marks (single, double, triple ticks) identify collinear segments in extreme and mean ratio <span class="math notranslate nohighlight">\(Q_{\text{long}} / Q_{\text{short}} = \phi + 1 = \phi^2\)</span>.</p></li>
+        <li><p><strong>Theme Adaptability</strong>: Diagrams render crisply with high-contrast geometry optimized for both dark and parchment themes.</p></li>
+        </ul>
+        </section>
+        <hr class="docutils" />
+        <section class="level-2" id="full-text-search-with-in-page-highlighting">
+        <h2>3. Full-Text Search with In-Page Highlighting<a class="headerlink" href="#full-text-search-with-in-page-highlighting" title="Link to this heading">¶</a></h2>
+        <p>Search across the entire catalog and API documentation:</p>
+        <ul class="simple">
+        <li><p>Enter terms into the search bar in the left navigation sidebar.</p></li>
+        <li><p>Search results highlight matched keywords directly within chapter enunciations and proofs using URL <code class="docutils literal notranslate"><span class="pre">?highlight=</span></code> parameters.</p></li>
+        <li><p>Locate constructions by discoverer (e.g. <em>Odom</em>, <em>Kepler</em>, <em>Tran</em>), theorem type (<em>sangaku</em>, <em>pentagon</em>), or algebraic field.</p></li>
+        </ul>
+        </section>
+        <hr class="docutils" />
+        <section class="level-2" id="categories-tags-document-types-collection-views">
+        <h2>4. Categories, Tags, Document Types &amp; Collection Views<a class="headerlink" href="#categories-tags-document-types-collection-views" title="Link to this heading">¶</a></h2>
+        <p>Navigate the 45 constructions using rich taxonomy facets:</p>
+        <ul class="simple">
+        <li><p><strong>Taxonomy Facets</strong>: Browse by algebraic number field (<span class="math notranslate nohighlight">\(\mathbb{Q}(\phi)\)</span>, <span class="math notranslate nohighlight">\(\mathbb{Q}(\sqrt{2}, \phi)\)</span>, <span class="math notranslate nohighlight">\(\mathbb{Q}(\sqrt{3}, \phi)\)</span>, <span class="math notranslate nohighlight">\(\mathbb{Q}(\sqrt{\phi})\)</span>), construction type (<em>compass-only</em>, <em>golden-chain</em>), or discoverer.</p></li>
+        <li><p><strong>Collection View Toggles</strong>: Index pages support instant toggling between <strong>Cards</strong>, <strong>Banners</strong>, and <strong>List</strong> layouts to suit your research workflow.</p></li>
+        </ul>
+        </section>
+        <hr class="docutils" />
+        <section class="level-2" id="people-bibliography-glossary-tooltips">
+        <h2>5. People, Bibliography &amp; Glossary Tooltips<a class="headerlink" href="#people-bibliography-glossary-tooltips" title="Link to this heading">¶</a></h2>
+        <p>Rich contextual apparatus is integrated directly into the reading experience:</p>
+        <ul class="simple">
+        <li><p><strong>People Tooltips</strong>: Hovering over <span class="person-ref" data-person="alexander-bogomolny" title="Alexander Bogomolny (1948 – 2018) — Mathematician, Educator &amp; Creator of Cut-the-Knot">Alexander Bogomolny</span>, <span class="person-ref" data-person="euclid" title="Euclid of Alexandria (fl. c. 300 BCE) — Alexandrian Geometer; Author of the Elements">Euclid</span>, or contemporary geometers reveals biographical sketches and links to their full profile in <a class="reference internal" href="../constructions/persons.html"><span class="doc">People</span></a>.</p></li>
+        <li><p><strong>Citations</strong>: Citations (e.g. <span class="citation-ref" data-cite="euclid-elements" title="Euclid — Elements (Heath Edition) (Book II Prop. 11; Book IV Prop. 10–11; Book VI Def. 3 &amp; Prop. 30; Book XIII Prop. 1–10)">euclid-elements</span>) show primary treatise loci and Cut-the-Knot source URLs on hover, linking to <a class="reference internal" href="../constructions/bibliography.html"><span class="doc">Bibliography</span></a>.</p></li>
+        <li><p><strong>Glossary Terms</strong>: Technical terms like <a class="term-ref glossary-term" id="occ-term-quadrance-1" href="../glossary.html#term-quadrance" data-term="quadrance" title="Quadrance (Q(A, B) = (x₂ − x₁)² + (y₂ − y₁)²): Norman Wildberger&#x27;s Rational Trigonometry invariant measuring squared separation without square roots; two segments stand in ratio φ iff Q_long / Q_short = φ + 1 = φ².">quadrance</a>, <a class="term-ref glossary-term" id="occ-term-golden-chain-1" href="../glossary.html#term-golden-chain" data-term="golden-chain" title="Golden Chain (Connected Collinear φ-Progression): A sequence of four or more collinear points in which overlapping triples form consecutive golden sections (such as lengths 1/φ, 1, 1/φ or 1, φ, φ²).">golden chain</a>, and <a class="term-ref glossary-term" id="occ-term-geometrographie-1" href="../glossary.html#term-geometrographie" data-term="geometrographie" title="Géométrographie (Lemoine Construction Complexity): Émile Lemoine&#x27;s 1902 operational metric counting elementary straightedge (R₁, R₂) and compass (C₁, C₂, C₃) operations; drawing a line through two points or a circle centered at one point through another each contributes simplicity 3.">Géométrographie</a> display definition cards via <a class="reference internal" href="../constructions/glossary.html"><span class="doc">Glossary</span></a>.</p></li>
+        <li><p><strong>Master Comparative Table</strong>: Inspect all 45 constructions side-by-side in the <a class="reference internal" href="../constructions/comparative_table.html"><span class="doc">Comparative Table of All 45 Constructions</span></a>.</p></li>
+        </ul>
+        </section>
+        <hr class="docutils" />
+        <section class="level-2" id="installation-setup">
+        <h2>6. Installation &amp; Setup<a class="headerlink" href="#installation-setup" title="Link to this heading">¶</a></h2>
+        <p>Install <code class="docutils literal notranslate"><span class="pre">geometor.divine</span></code> from PyPI or editable source:</p>
+        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>geometor-divine
+        </pre></div>
+        </div>
+        <p>Or clone and install in development mode:</p>
+        <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/geometor/divine
+        <span class="nb">cd</span><span class="w"> </span>divine
+        pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
+        </pre></div>
+        </div>
+        </section>
+        <hr class="docutils" />
+        <section class="level-2" id="python-api-automated-discovery">
+        <h2>7. Python API &amp; Automated Discovery<a class="headerlink" href="#python-api-automated-discovery" title="Link to this heading">¶</a></h2>
+        <p>Scan arbitrary geometric models constructed with <code class="xref py py-mod docutils literal notranslate"><span class="pre">geometor.model</span></code> for hidden golden sections and multi-point chains:</p>
+        <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">geometor.model</span><span class="w"> </span><span class="kn">import</span> <span class="n">Model</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">geometor.divine.golden</span><span class="w"> </span><span class="kn">import</span> <span class="n">find_golden_sections_in_model</span><span class="p">,</span> <span class="n">find_chains_in_model</span>
+
+        <span class="c1"># Create or import an exact symbolic model</span>
+        <span class="n">model</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="s2">"golden_exploration"</span><span class="p">)</span>
+        <span class="c1"># ... perform geometric constructions ...</span>
+
+        <span class="c1"># Discover all collinear golden sections</span>
+        <span class="n">sections</span> <span class="o">=</span> <span class="n">find_golden_sections_in_model</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Discovered </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">sections</span><span class="p">)</span><span class="si">}</span><span class="s2"> golden sections"</span><span class="p">)</span>
+
+        <span class="c1"># Assemble connected golden chains</span>
+        <span class="n">chains</span> <span class="o">=</span> <span class="n">find_chains_in_model</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Found </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">chains</span><span class="p">)</span><span class="si">}</span><span class="s2"> maximal golden chains"</span><span class="p">)</span>
+        </pre></div>
+        </div>
+        </section>
+        <hr class="docutils" />
+        <section class="level-2" id="additional-guides">
+        <h2>8. Additional Guides<a class="headerlink" href="#additional-guides" title="Link to this heading">¶</a></h2>
+        <div class="toctree-wrapper compound">
+        <ul>
+        <li class="toctree-l1"><a class="reference internal" href="installation.html">installation</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="getting_started.html">getting started</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="analysis/index.html">analysis</a></li>
+        </ul>
+        </div>
+        </section>
+        </section>
 
       </div>
       <footer class="book-footer">
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../mission/pattern_recognition.html" title="pattern recognition">&larr; <span class="nav-label">pattern recognition</span></a>
+            <a class="book-nav-btn" href="../constructions/glossary.html" title="Glossary">&larr; <span class="nav-label">Glossary</span></a>
           </div>
           <div class="book-nav-center">
             <a class="book-toc-link" href="../index.html">GEOMETOR • divine</a>
@@ -213,12 +295,12 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../about.html"  >About GEOMETOR</a></li>
         <li><a href="../contribute.html"  >contribute</a></li>
         <li><a href="../discuss.html"  >discuss</a></li>
-        <li><a href="../glossary.html"  >glossary</a></li>
         <li><a href="../todos/index.html"  >todos</a></li>
         <li><a href="../changelog.html"  >changelog</a></li>
+        <li><a href="../about.html"  >About</a></li>
+        <li><a href="../constructions/glossary.html"  >Glossary</a></li>
       </ul>
     </div>
     <hr />
@@ -231,11 +313,12 @@
 
   <script src="../_static/jquery.js?v=5d32c60e"></script>
   <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../_static/documentation_options.js?v=6c02275b"></script>
+  <script src="../_static/documentation_options.js?v=c87aa342"></script>
   <script src="../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="../_static/js/search_highlight.js"></script>
 
 </body>

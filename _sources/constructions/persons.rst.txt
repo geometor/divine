@@ -1,7 +1,22 @@
-Index of Geometers & Contributors
-=================================
+:navigation: header
+:order: 5
+:nav_title: People
+
+People
+======
+
+.. rubric:: Curators, Classical Authors & Contemporary Geometers
 
 Biographical registry of classical, modern, and contemporary geometers whose theorems, constructions, and archival curations are represented in this catalog.
+
+Authors, Translators & Editors
+------------------------------
+
+.. _person-alexander-bogomolny:
+
+**Alexander Bogomolny** (1948 – 2018) — *Mathematician, Educator & Creator of Cut-the-Knot*
+   Founded Interactive Mathematics Miscellany and Puzzles (Cut-the-Knot, 1996–2018), curating, proving, and illustrating dozens of classical and contemporary Golden Ratio constructions contributed by geometers worldwide.
+   *Cataloged constructions*: :doc:`GC-06.07 <06-circles-sangaku/07-three-circles-in-semicircle/index>`, :doc:`GC-07.05 <07-rhombi-trapezoids-algebra/05-tran-mixtilinear-equilateral/index>`, :doc:`GC-07.06 <07-rhombi-trapezoids-algebra/06-curry-hooper-dissection/index>`
 
 .. _person-euclid:
 
@@ -9,16 +24,19 @@ Biographical registry of classical, modern, and contemporary geometers whose the
    Formulated division in extreme and mean ratio in Elements Book II Proposition 11 and Book VI Proposition 30, applying it to construct the regular pentagon (IV.11) and the icosahedron and dodecahedron (Book XIII).
    *Cataloged constructions*: :doc:`GC-01.01 <01-minimal-compass/01-euclid-ii-11/index>`, :doc:`GC-01.02 <01-minimal-compass/02-pythagorean-transfer/index>`, :doc:`GC-05.01 <05-pentagons-polygons/01-ptolemy-pentagon-pentagram/index>`
 
+.. _person-luca-pacioli:
+
+**Luca Pacioli** (c. 1447 – 1517) — *Franciscan Mathematician; Author of De Divina Proportione (1509)*
+   Chronicled thirteen 'effects' of extreme and mean ratio in De Divina Proportione (1509, illustrated by Leonardo da Vinci), popularizing the Renaissance title Divina Proportione.
+
 .. _person-claudius-ptolemy:
 
 **Claudius Ptolemy** (c. 100 – c. 170 CE) — *Alexandrian Astronomer & Geometer*
    Introduced the streamlined circle-and-midpoint construction of the regular decagon and pentagon in Almagest Book I, Chapter 10 to compute his trigonometric table of chords.
    *Cataloged constructions*: :doc:`GC-05.01 <05-pentagons-polygons/01-ptolemy-pentagon-pentagram/index>`
 
-.. _person-luca-pacioli:
-
-**Luca Pacioli** (c. 1447 – 1517) — *Franciscan Mathematician; Author of De Divina Proportione (1509)*
-   Chronicled thirteen 'effects' of extreme and mean ratio in De Divina Proportione (1509, illustrated by Leonardo da Vinci), popularizing the Renaissance title Divina Proportione.
+Cited Geometers, Philosophers & Scholars
+----------------------------------------
 
 .. _person-johannes-kepler:
 
@@ -61,12 +79,6 @@ Biographical registry of classical, modern, and contemporary geometers whose the
 **George Odom** (1941 – 2010) — *Artist & Amateur Geometer*
    Discovered the celebrated two-line equilateral-triangle midline construction of φ (1982–1983) through visual exploration of polyhedra and three-dimensional models.
    *Cataloged constructions*: :doc:`GC-02.01 <02-equilateral-hexagon/01-odom-equilateral/index>`
-
-.. _person-alexander-bogomolny:
-
-**Alexander Bogomolny** (1948 – 2018) — *Mathematician, Educator & Creator of Cut-the-Knot*
-   Founded Interactive Mathematics Miscellany and Puzzles (Cut-the-Knot, 1996–2018), curating, proving, and illustrating dozens of classical and contemporary Golden Ratio constructions contributed by geometers worldwide.
-   *Cataloged constructions*: :doc:`GC-06.07 <06-circles-sangaku/07-three-circles-in-semicircle/index>`, :doc:`GC-07.05 <07-rhombi-trapezoids-algebra/05-tran-mixtilinear-equilateral/index>`, :doc:`GC-07.06 <07-rhombi-trapezoids-algebra/06-curry-hooper-dissection/index>`
 
 .. _person-ron-knott:
 
