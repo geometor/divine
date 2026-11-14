@@ -15,7 +15,7 @@ entries side-by-side in the :doc:`Master Comparative Table <constructions/compar
 * :doc:`Using This Edition — Reader's Guide to Tracks, Highlighting & API <usage/index>`
 * :doc:`People — Classical, Modern & Contemporary Geometers <constructions/persons>`
 * :doc:`Bibliography — Primary Treatises, Journals & Archival Sources <constructions/bibliography>`
-* :doc:`Mission — Proportional Analysis & Automated Discovery <mission/index>`
+* :doc:`About This Edition — Golden Ratio Discoveries & Exact Proportions <about/index>`
 
 Indices
 -------
@@ -28,5 +28,6 @@ Indices
    :maxdepth: 2
    :hidden:
 
+   about/index
    constructions/index
    usage/index
