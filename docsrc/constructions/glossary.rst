@@ -1,5 +1,11 @@
-Glossary of Geometric & Algebraic Terms
-=======================================
+:navigation: footer
+:order: 93
+:nav_title: Glossary
+
+Glossary
+========
+
+.. rubric:: Classical Euclidean, Projective & Rational Trigonometry Invariants
 
 Definitions of classical Euclidean, projective, and Rational Trigonometry concepts used throughout the catalog.
 

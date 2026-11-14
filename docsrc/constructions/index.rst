@@ -1,10 +1,24 @@
+:navigation: header
+:order: 1
+:nav_title: Golden Constructions
 :layout: book
 :book_title: Catalog of Golden Ratio Constructions
-:navigation: header
-:order: 10
+:book_subtitle: Seven Geometric Families in Exact Symbolic Algebra
+:author: Alexander Bogomolny, Euclid & Contemporary Geometers
+:year: 2024
 
 Catalog of Golden Ratio Constructions
 =====================================
+
+.. rubric:: Seven Geometric Families in Exact Symbolic Algebra
+
+.. container:: title-page
+
+   | **Alexander Bogomolny, Euclid & Contemporary Geometers**
+   | *Curated from Cut-the-Knot & Classical Treatises*
+   |
+   | *Source*: Cut-the-Knot (1996–2018) & Classical Treatises
+   | *GEOMETOR Digital Edition*: 45 Exact Symbolic Constructions in Seven Geometric Families
 
 A machine-verified symbolic catalog of **45 geometric constructions and theorems** across **7 geometric families**, certifying **129 exact golden sections** and **33 connected golden chains** in 100% exact SymPy algebra.
 
@@ -20,15 +34,15 @@ In the GEOMETOR Digital Scriptorium tradition—alongside the companion Ron Knot
 3. **Automated Divine Discovery**: Every model is scanned by :mod:`geometor.divine.golden` to uncover secondary golden sections and connected :term:`golden chains <golden-chain>`.
 4. **Original Prose & Interactive Vector Plates**: All expositions, proofs, and theme-adaptive ``.euclid-graphic`` SVGs are newly authored for GEOMETOR with bidirectional ``:g:`` hover highlighting and full bibliographic attribution.
 
-Seven Geometric Families
-------------------------
+Table of Contents
+-----------------
 
 .. collection::
    :type: family
    :sort: order
 
-Comparative Synthesis & Scholarly Apparatus
--------------------------------------------
+Scholarly Apparatus
+-------------------
 
 - :doc:`comparative_table` — Complete metrics across all 45 constructions (number fields, elementary loci, Lemoine simplicity, and detected golden chains).
 - :doc:`bibliography` — Primary treatises, journal articles, and *Cut-the-Knot* archival citations.

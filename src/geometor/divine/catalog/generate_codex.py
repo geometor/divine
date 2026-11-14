@@ -322,12 +322,26 @@ def _render_book_index_rst(
     total_chains: int,
 ) -> str:
     lines: list[str] = [
+        ":navigation: header",
+        ":order: 1",
+        ":nav_title: Golden Constructions",
         ":layout: book",
         ":book_title: Catalog of Golden Ratio Constructions",
-        ":navigation: header",
-        ":order: 10",
+        ":book_subtitle: Seven Geometric Families in Exact Symbolic Algebra",
+        ":author: Alexander Bogomolny, Euclid & Contemporary Geometers",
+        ":year: 2024",
         "",
         _rst_heading("Catalog of Golden Ratio Constructions", "="),
+        "",
+        ".. rubric:: Seven Geometric Families in Exact Symbolic Algebra",
+        "",
+        ".. container:: title-page",
+        "",
+        "   | **Alexander Bogomolny, Euclid & Contemporary Geometers**",
+        "   | *Curated from Cut-the-Knot & Classical Treatises*",
+        "   |",
+        "   | *Source*: Cut-the-Knot (1996–2018) & Classical Treatises",
+        "   | *GEOMETOR Digital Edition*: 45 Exact Symbolic Constructions in Seven Geometric Families",
         "",
         (f"A machine-verified symbolic catalog of **{total_constructions} geometric constructions and theorems** "
         f"across **7 geometric families**, certifying **{total_sections} exact golden sections** and "
@@ -364,13 +378,13 @@ def _render_book_index_rst(
         "``.euclid-graphic`` SVGs are newly authored for GEOMETOR with bidirectional ``:g:`` hover "
         "highlighting and full bibliographic attribution."),
         "",
-        _rst_heading("Seven Geometric Families", "-"),
+        _rst_heading("Table of Contents", "-"),
         "",
         ".. collection::",
         "   :type: family",
         "   :sort: order",
         "",
-        _rst_heading("Comparative Synthesis & Scholarly Apparatus", "-"),
+        _rst_heading("Scholarly Apparatus", "-"),
         "",
         "- :doc:`comparative_table` — Complete metrics across all 45 constructions (number fields, elementary loci, Lemoine simplicity, and detected golden chains).",
         "- :doc:`bibliography` — Primary treatises, journal articles, and *Cut-the-Knot* archival citations.",
@@ -440,7 +454,13 @@ def _render_bibliography_rst(
     cite_usage: dict[str, list[ConstructionSpec]],
 ) -> str:
     lines: list[str] = [
-        _rst_heading("Bibliography & Archival Sources", "="),
+        ":navigation: header",
+        ":order: 6",
+        ":nav_title: Bibliography",
+        "",
+        _rst_heading("Bibliography", "="),
+        "",
+        ".. rubric:: Primary Treatises, Journal Articles & Cut-the-Knot Archival Sources",
         "",
         ("Primary mathematical treatises, peer-reviewed journal articles, and curated archival pages "
         "from :person:`Alexander Bogomolny <alexander-bogomolny>`'s *Interactive Mathematics Miscellany "
@@ -473,15 +493,52 @@ def _render_bibliography_rst(
 def _render_persons_rst(
     person_usage: dict[str, list[ConstructionSpec]],
 ) -> str:
+    primary_authors = ["alexander-bogomolny", "euclid", "luca-pacioli", "claudius-ptolemy"]
     lines: list[str] = [
-        _rst_heading("Index of Geometers & Contributors", "="),
+        ":navigation: header",
+        ":order: 5",
+        ":nav_title: People",
+        "",
+        _rst_heading("People", "="),
+        "",
+        ".. rubric:: Curators, Classical Authors & Contemporary Geometers",
         "",
         ("Biographical registry of classical, modern, and contemporary geometers whose theorems, "
         "constructions, and archival curations are represented in this catalog."),
         "",
+        _rst_heading("Authors, Translators & Editors", "-"),
+        "",
     ]
 
+    for slug in primary_authors:
+        if slug in PERSONS:
+            entry = PERSONS[slug]
+            lines.extend(
+                [
+                    f".. _person-{slug}:",
+                    "",
+                    f"**{entry['name']}** ({entry['dates']}) — *{entry['role']}*",
+                    f"   {entry['bio']}",
+                ]
+            )
+            used_in = person_usage.get(slug, [])
+            if used_in:
+                refs = ", ".join(
+                    f":doc:`{s.catalog_code} <{s.family_slug}/{s.slug}/index>`" for s in used_in
+                )
+                lines.append(f"   *Cataloged constructions*: {refs}")
+            lines.append("")
+
+    lines.extend(
+        [
+            _rst_heading("Cited Geometers, Philosophers & Scholars", "-"),
+            "",
+        ]
+    )
+
     for slug, entry in PERSONS.items():
+        if slug in primary_authors:
+            continue
         lines.extend(
             [
                 f".. _person-{slug}:",
@@ -505,7 +562,13 @@ def _render_glossary_rst(
     term_usage: dict[str, list[ConstructionSpec]],
 ) -> str:
     lines: list[str] = [
-        _rst_heading("Glossary of Geometric & Algebraic Terms", "="),
+        ":navigation: footer",
+        ":order: 93",
+        ":nav_title: Glossary",
+        "",
+        _rst_heading("Glossary", "="),
+        "",
+        ".. rubric:: Classical Euclidean, Projective & Rational Trigonometry Invariants",
         "",
         ("Definitions of classical Euclidean, projective, and Rational Trigonometry concepts "
         "used throughout the catalog."),

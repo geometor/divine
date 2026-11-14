@@ -1,7 +1,9 @@
 :navigation: header
-:order: 3
+:order: 40
+:nav_title: Modules
 
-modules
+=======
+Modules
 =======
 
 .. include:: api/geometor/divine/index.rst

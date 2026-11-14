@@ -1,5 +1,11 @@
-Bibliography & Archival Sources
-===============================
+:navigation: header
+:order: 6
+:nav_title: Bibliography
+
+Bibliography
+============
+
+.. rubric:: Primary Treatises, Journal Articles & Cut-the-Knot Archival Sources
 
 Primary mathematical treatises, peer-reviewed journal articles, and curated archival pages from :person:`Alexander Bogomolny <alexander-bogomolny>`'s *Interactive Mathematics Miscellany and Puzzles* (*Cut-the-Knot*, © 1996–2018).
 
