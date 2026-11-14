@@ -1,7 +1,9 @@
 :navigation: header
-:order: 1
+:order: 10
+:nav_title: Mission
 
-mission
+=======
+Mission
 =======
 
     identify golden sections and harmonic ranges within geometric models

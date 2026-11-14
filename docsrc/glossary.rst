@@ -1,5 +1,4 @@
-:navigation: footer
-:order: 4
+.. _glossary-root:
 
 glossary
 ========

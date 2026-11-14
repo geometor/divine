@@ -1,6 +1,7 @@
 
 :navigation: footer
-:order: 1
+:order: 50
+:nav_title: About
 
 .. _about:
 
