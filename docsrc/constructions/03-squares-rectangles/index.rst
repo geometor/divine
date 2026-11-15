@@ -11,6 +11,9 @@ GC-03 · Squares, Lattice Grids & Golden Crosses
 
 Orthogonal squares and :math:`2 \times 2` or :math:`3 \times 3` lattice grids naturally furnish :math:`1 : 2` and :math:`1 : 3` right triangles whose hypotenuses have quadrances :math:`5` and :math:`10`. Through circumcircles, triangle incenters, and :math:`30^\circ` rotations, geometers including :person:`Tran Quang Hung <tran-quang-hung>`, :person:`Ercole Suppa <ercole-suppa>`, :person:`Bùi Quang Tuân <bui-quang-tuan>`, :person:`Alexandre Borovik <alexandre-borovik>`, and :person:`John Arioni <john-arioni>` uncovered rich golden chains across elementary square configurations.
 
+.. picture:: /constructions/03-squares-rectangles/01-tran-square-inscribed-semicircle/01-tran-square-inscribed-semicircle.svg
+   :alt: Squares, Lattice Grids & Golden Crosses
+
 Cataloged Constructions (8)
 ---------------------------
 
