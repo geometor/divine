@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=8713e751" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=99410eb1" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=a1baf04c" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
@@ -91,6 +91,132 @@
         <h1>GC-01 · Classical &amp; Minimal-Step Compass Constructions<a class="headerlink" href="#gc-01-classical-minimal-step-compass-constructions" title="Link to this heading">¶</a></h1>
         <p><em>Euclid II.11, Lemoine–Hofstetter 5-step records, Mascheroni 5-circle compass-only, and rusty compass</em></p>
         <p>From <a class="person-ref" id="occ-person-euclid-1" href="../persons.html#person-euclid" data-person="euclid" title="Euclid of Alexandria (fl. c. 300 BCE) — Alexandrian Geometer; Author of the Elements">Euclid</a>’s <em>Elements</em> Book II Proposition 11 to early twenty-first-century <em>Forum Geometricorum</em> papers by <a class="person-ref" id="occ-person-kurt-hofstetter-1" href="../persons.html#person-kurt-hofstetter" data-person="kurt-hofstetter" title="Kurt Hofstetter (b. 1959) — Austrian Artist &amp; Geometer">Kurt Hofstetter</a> and <a class="person-ref" id="occ-person-bui-quang-tuan-1" href="../persons.html#person-bui-quang-tuan" data-person="bui-quang-tuan" title="Bùi Quang Tuân (fl. 2010 – present) — Vietnamese Geometer">Bùi Quang Tuân</a>, geometers have asked how economically a straight segment can be divided in <a class="term-ref glossary-term" id="occ-term-extreme-and-mean-ratio-1" href="../glossary.html#term-extreme-and-mean-ratio" data-term="extreme-and-mean-ratio" title="Extreme and Mean Ratio (ἄκρος καὶ μέσος λόγος (Euclid VI.Def.3)): Euclid&#x27;s classical definition: a straight line is cut in extreme and mean ratio when, as the whole line is to the greater segment, so is the greater to the less.">extreme and mean ratio</a>. This opening family catalogs the classical Euclidean gnomon, the Heron–Ptolemy right-triangle hypotenuse transfer, four distinct 5-step minimal Euclidean and rusty-compass divisions, and Hofstetter’s 5-circle Mascheroni compass-only construction.</p>
+        <figure class="photon-picture photon-svg">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="01-euclid-ii-11" role="img" aria-label="GC-01.01 — Euclid's Classical Golden Section (Elements II.11 &amp; VI.30)" width="680" height="480" data-svg-scope="s-19b0100f">
+          <style>
+            svg[data-svg-scope="s-19b0100f"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            svg[data-svg-scope="s-19b0100f"] .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82 }
+            svg[data-svg-scope="s-19b0100f"] .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62 }
+            svg[data-svg-scope="s-19b0100f"] .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92 }
+            svg[data-svg-scope="s-19b0100f"] .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round }
+            svg[data-svg-scope="s-19b0100f"] .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-19b0100f"] .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72 }
+            svg[data-svg-scope="s-19b0100f"] .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-19b0100f"] .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88 }
+            svg[data-svg-scope="s-19b0100f"] .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68 }
+            svg[data-svg-scope="s-19b0100f"] .geom-segment.golden-segment { fill: none; stroke: #b45309; stroke-width: 2.8; stroke-linecap: round; stroke-opacity: 0.55 }
+            svg[data-svg-scope="s-19b0100f"] .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none }
+            svg[data-svg-scope="s-19b0100f"] .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round }
+            svg[data-svg-scope="s-19b0100f"] .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round }
+            svg[data-svg-scope="s-19b0100f"] .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none }
+            svg[data-svg-scope="s-19b0100f"] .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5 }
+            svg[data-svg-scope="s-19b0100f"] .geom-point.given-point { fill: #0f172a }
+            svg[data-svg-scope="s-19b0100f"] .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7 }
+            svg[data-svg-scope="s-19b0100f"] .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none }
+            svg[data-svg-scope="s-19b0100f"] .geom-label { fill: #1c1917; font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: #fafaf9; stroke-opacity: 0.92; stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-19b0100f"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-circle.conic-curve { stroke: #38bdf8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-circle.aux-circle { stroke: #7dd3fc }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-circle.golden-circle { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-line { stroke: #94a3b8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-line.aux-line { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-segment.struct-segment { stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-segment.aux-segment { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-segment.golden-segment { stroke: #facc15 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-point { fill: #38bdf8; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-point.given-point { fill: #e2e8f0 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-point.golden-point { fill: #f5c542; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-point-halo { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-label { fill: #f4f4f5; stroke: #141417 }
+          </style>
+          <title>GC-01.01 — Euclid&#x27;s Classical Golden Section (Elements II.11 &amp; VI.30)</title>
+          <defs>
+            <marker id="geom-tick-1" markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" />
+            </marker>
+            <marker id="geom-tick-2" markerUnits="userSpaceOnUse" viewBox="-7 -8 14 16" markerWidth="14" markerHeight="16" orient="auto">
+              <line x1="-2.4" y1="-6.2" x2="-2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+              <line x1="2.4" y1="-6.2" x2="2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+            </marker>
+            <marker id="geom-tick-3" markerUnits="userSpaceOnUse" viewBox="-9 -8 18 16" markerWidth="18" markerHeight="16" orient="auto">
+              <line x1="-4.4" y1="-6.2" x2="-4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+            </marker>
+          </defs>
+          <g id="elements">
+            <g id="graphics">
+              <circle class="geom-circle aux-circle" cx="340" cy="240" r="159.68" data-ref="cMB" data-aliases="(M) | ( M ) | ( M B ) | M(B) | ( M C ) | M(C) | ( M E ) | M(E) | ( B C E )" fill="none"><title>cMB: x**2 + (y - 1)**2 - 5 = 0</title></circle>
+              <circle class="geom-circle golden-circle" cx="340" cy="311.41" r="88.27" data-ref="cAE" data-aliases="(A) | ( A ) | ( A E ) | A(E) | ( A G ) | A(G)" fill="none"><title>cAE: x**2 + y**2 - (-1 + sqrt(5))**2 = 0</title></circle>
+              <polygon class="geom-polygon poly-shape" points="340,311.41 482.82,311.41 482.82,168.59 340,168.59" data-ref="&lt; A B C D &gt;" data-aliases="ABCD | &lt;ABCD&gt;" />
+              <polygon class="geom-polygon golden-poly" points="340,311.41 428.27,311.41 428.27,399.68 340,399.68" data-ref="&lt; A G F E &gt;" data-aliases="AGFE | &lt;AGFE&gt;" />
+              <path class="geom-line aux-line" d="M 340 468 L 340 240 L 340 12" data-ref="AD" data-aliases="[ A D ] | [ D A ] | DA | [ A M ] | [ M A ] | AM | MA | [ A E ] | [ E A ] | AE | EA | [ D M ] | [ M D ] | DM | MD | [ D E ] | [ E D ] | DE | ED | [ M E ] | [ E M ] | ME | EM" fill="none"><title>AD: x = 0</title></path>
+              <path class="geom-segment struct-segment" d="M 340 311.41 L 411.41 311.41 L 482.82 311.41" data-ref="segAB" data-aliases="[ A B ] | [ B A ] | / A B / | / B A / | AB | BA" fill="none" />
+              <path class="geom-segment aux-segment" d="M 340 240 L 411.41 275.7 L 482.82 311.41" data-ref="MB" data-aliases="[ M B ] | [ B M ] | / M B / | / B M / | BM" fill="none" />
+              <path class="geom-segment golden-segment" d="M 340 311.41 L 411.41 311.41 L 482.82 311.41" data-ref="/ A G B /" data-aliases="AGB" fill="none" />
+              <path class="geom-segment golden-major-glow" d="M 340 311.41 L 384.13 311.41 L 428.27 311.41" fill="none" />
+              <path class="geom-segment golden-major" d="M 340 311.41 L 384.13 311.41 L 428.27 311.41" marker-mid="url(#geom-tick-1)" data-ref="/ A G /" data-aliases="[ A G ] | [ G A ] | / G A / | AG | GA" fill="none"><title>Golden major AG = -1 + sqrt(5)</title></path>
+              <path class="geom-segment golden-minor" d="M 428.27 311.41 L 455.54 311.41 L 482.82 311.41" marker-mid="url(#geom-tick-2)" data-ref="/ G B /" data-aliases="[ G B ] | [ B G ] | / B G / | GB | BG" fill="none"><title>Golden minor GB = 3 - sqrt(5)</title></path>
+            </g>
+            <g id="highlights">
+              <path class="geom-overlay" d="M 340 311.41 L 411.41 311.41 L 482.82 311.41" data-ref="AB" data-aliases="BA | / A B / | / B A / | [ A B ] | [ B A ]" fill="none" />
+              <path class="geom-overlay" d="M 340 311.41 L 340 240 L 340 168.59" data-ref="AD" data-aliases="DA | / A D / | / D A / | [ A D ] | [ D A ]" fill="none" />
+              <path class="geom-overlay" d="M 340 311.41 L 411.41 240 L 482.82 168.59" data-ref="AC" data-aliases="CA | / A C / | / C A / | [ A C ] | [ C A ]" fill="none" />
+              <path class="geom-overlay" d="M 340 311.41 L 340 275.7 L 340 240" data-ref="AM" data-aliases="MA | / A M / | / M A / | [ A M ] | [ M A ]" fill="none" />
+              <path class="geom-overlay" d="M 340 311.41 L 340 355.54 L 340 399.68" data-ref="AE" data-aliases="EA | / A E / | / E A / | [ A E ] | [ E A ]" fill="none" />
+              <path class="geom-overlay" d="M 340 311.41 L 384.13 311.41 L 428.27 311.41" data-ref="AG" data-aliases="GA | / A G / | / G A / | [ A G ] | [ G A ]" fill="none" />
+              <path class="geom-overlay" d="M 340 311.41 L 384.13 355.54 L 428.27 399.68" data-ref="AF" data-aliases="FA | / A F / | / F A / | [ A F ] | [ F A ]" fill="none" />
+              <path class="geom-overlay" d="M 482.82 311.41 L 411.41 240 L 340 168.59" data-ref="BD" data-aliases="DB | / B D / | / D B / | [ B D ] | [ D B ]" fill="none" />
+              <path class="geom-overlay" d="M 482.82 311.41 L 482.82 240 L 482.82 168.59" data-ref="BC" data-aliases="CB | / B C / | / C B / | [ B C ] | [ C B ]" fill="none" />
+              <path class="geom-overlay" d="M 482.82 311.41 L 411.41 275.7 L 340 240" data-ref="BM" data-aliases="MB | / B M / | / M B / | [ B M ] | [ M B ]" fill="none" />
+              <path class="geom-overlay" d="M 482.82 311.41 L 411.41 355.54 L 340 399.68" data-ref="BE" data-aliases="EB | / B E / | / E B / | [ B E ] | [ E B ]" fill="none" />
+              <path class="geom-overlay" d="M 482.82 311.41 L 455.54 311.41 L 428.27 311.41" data-ref="BG" data-aliases="GB | / B G / | / G B / | [ B G ] | [ G B ]" fill="none" />
+              <path class="geom-overlay" d="M 482.82 311.41 L 455.54 355.54 L 428.27 399.68" data-ref="BF" data-aliases="FB | / B F / | / F B / | [ B F ] | [ F B ]" fill="none" />
+              <path class="geom-overlay" d="M 340 168.59 L 411.41 168.59 L 482.82 168.59" data-ref="DC" data-aliases="CD | / D C / | / C D / | [ D C ] | [ C D ]" fill="none" />
+              <path class="geom-overlay" d="M 340 168.59 L 340 204.3 L 340 240" data-ref="DM" data-aliases="MD | / D M / | / M D / | [ D M ] | [ M D ]" fill="none" />
+              <path class="geom-overlay" d="M 340 168.59 L 340 284.13 L 340 399.68" data-ref="DE" data-aliases="ED | / D E / | / E D / | [ D E ] | [ E D ]" fill="none" />
+              <path class="geom-overlay" d="M 340 168.59 L 384.13 240 L 428.27 311.41" data-ref="DG" data-aliases="GD | / D G / | / G D / | [ D G ] | [ G D ]" fill="none" />
+              <path class="geom-overlay" d="M 340 168.59 L 384.13 284.13 L 428.27 399.68" data-ref="DF" data-aliases="FD | / D F / | / F D / | [ D F ] | [ F D ]" fill="none" />
+              <path class="geom-overlay" d="M 482.82 168.59 L 411.41 204.3 L 340 240" data-ref="CM" data-aliases="MC | / C M / | / M C / | [ C M ] | [ M C ]" fill="none" />
+              <path class="geom-overlay" d="M 482.82 168.59 L 411.41 284.13 L 340 399.68" data-ref="CE" data-aliases="EC | / C E / | / E C / | [ C E ] | [ E C ]" fill="none" />
+              <path class="geom-overlay" d="M 482.82 168.59 L 455.54 240 L 428.27 311.41" data-ref="CG" data-aliases="GC | / C G / | / G C / | [ C G ] | [ G C ]" fill="none" />
+              <path class="geom-overlay" d="M 482.82 168.59 L 455.54 284.13 L 428.27 399.68" data-ref="CF" data-aliases="FC | / C F / | / F C / | [ C F ] | [ F C ]" fill="none" />
+              <path class="geom-overlay" d="M 340 240 L 340 319.84 L 340 399.68" data-ref="ME" data-aliases="EM | / M E / | / E M / | [ M E ] | [ E M ]" fill="none" />
+              <path class="geom-overlay" d="M 340 240 L 384.13 275.7 L 428.27 311.41" data-ref="MG" data-aliases="GM | / M G / | / G M / | [ M G ] | [ G M ]" fill="none" />
+              <path class="geom-overlay" d="M 340 240 L 384.13 319.84 L 428.27 399.68" data-ref="MF" data-aliases="FM | / M F / | / F M / | [ M F ] | [ F M ]" fill="none" />
+              <path class="geom-overlay" d="M 340 399.68 L 384.13 355.54 L 428.27 311.41" data-ref="EG" data-aliases="GE | / E G / | / G E / | [ E G ] | [ G E ]" fill="none" />
+              <path class="geom-overlay" d="M 340 399.68 L 384.13 399.68 L 428.27 399.68" data-ref="EF" data-aliases="FE | / E F / | / F E / | [ E F ] | [ F E ]" fill="none" />
+              <path class="geom-overlay" d="M 428.27 311.41 L 428.27 355.54 L 428.27 399.68" data-ref="GF" data-aliases="FG | / G F / | / F G / | [ G F ] | [ F G ]" fill="none" />
+            </g>
+            <g id="points">
+              <circle class="geom-point" cx="340" cy="168.59" r="3.6" data-ref="D" data-latex-x="0" data-latex-y="2"><title>D = (0, 2)</title></circle>
+              <circle class="geom-point" cx="482.82" cy="168.59" r="3.6" data-ref="C" data-latex-x="2" data-latex-y="2"><title>C = (2, 2)</title></circle>
+              <circle class="geom-point" cx="340" cy="240" r="3.6" data-ref="M" data-latex-x="0" data-latex-y="1"><title>M = (0, 1)</title></circle>
+              <circle class="geom-point" cx="340" cy="399.68" r="3.6" data-ref="E" data-latex-x="0" data-latex-y="1 - \sqrt{5}"><title>E = (0, 1 - sqrt(5))</title></circle>
+              <circle class="geom-point" cx="428.27" cy="399.68" r="3.6" data-ref="F" data-latex-x="-1 + \sqrt{5}" data-latex-y="1 - \sqrt{5}"><title>F = (-1 + sqrt(5), 1 - sqrt(5))</title></circle>
+              <circle class="geom-point golden-point" cx="340" cy="311.41" r="4.6" data-ref="A" data-latex-x="0" data-latex-y="0"><title>A = (0, 0)</title></circle>
+              <circle class="geom-point golden-point" cx="482.82" cy="311.41" r="4.6" data-ref="B" data-latex-x="2" data-latex-y="0"><title>B = (2, 0)</title></circle>
+              <circle class="geom-point-halo" cx="428.27" cy="311.41" r="9" fill="none" />
+              <circle class="geom-point golden-point" cx="428.27" cy="311.41" r="4.6" data-ref="G" data-latex-x="-1 + \sqrt{5}" data-latex-y="0"><title>G = (-1 + sqrt(5), 0)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="348.09" y="186.5" data-ref="D">D</text>
+              <text class="geom-label" x="496.64" y="173.35" data-ref="C">C</text>
+              <text class="geom-label" x="320.39" y="257.91" data-ref="M">M</text>
+              <text class="geom-label" x="348.09" y="417.59" data-ref="E">E</text>
+              <text class="geom-label" x="442.09" y="404.44" data-ref="F">F</text>
+              <text class="geom-label" x="348.79" y="330.03" data-ref="A">A</text>
+              <text class="geom-label" x="497.64" y="316.17" data-ref="B">B</text>
+              <text class="geom-label" x="437.06" y="330.03" data-ref="G">G</text>
+            </g>
+          </g>
+        </svg>
+        </figure>
         <section class="level-2" id="cataloged-constructions-7">
         <h2>Cataloged Constructions (7)<a class="headerlink" href="#cataloged-constructions-7" title="Link to this heading">¶</a></h2>
             <section class="collection ">
@@ -98,7 +224,48 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="01-euclid-ii-11/index.html" aria-label="GC-01.01 — Euclid's Classical Golden Section (Elements II.11 & VI.30)">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="01-euclid-ii-11" role="img" aria-label="GC-01.01 — Euclid's Classical Golden Section (Elements II.11 &amp; VI.30)">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="01-euclid-ii-11" role="img" aria-label="GC-01.01 — Euclid's Classical Golden Section (Elements II.11 &amp; VI.30)" width="680" height="480" data-svg-scope="s-19b0100f">
+          <style>
+            svg[data-svg-scope="s-19b0100f"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            svg[data-svg-scope="s-19b0100f"] .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82 }
+            svg[data-svg-scope="s-19b0100f"] .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62 }
+            svg[data-svg-scope="s-19b0100f"] .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92 }
+            svg[data-svg-scope="s-19b0100f"] .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round }
+            svg[data-svg-scope="s-19b0100f"] .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-19b0100f"] .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72 }
+            svg[data-svg-scope="s-19b0100f"] .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-19b0100f"] .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88 }
+            svg[data-svg-scope="s-19b0100f"] .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68 }
+            svg[data-svg-scope="s-19b0100f"] .geom-segment.golden-segment { fill: none; stroke: #b45309; stroke-width: 2.8; stroke-linecap: round; stroke-opacity: 0.55 }
+            svg[data-svg-scope="s-19b0100f"] .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none }
+            svg[data-svg-scope="s-19b0100f"] .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round }
+            svg[data-svg-scope="s-19b0100f"] .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round }
+            svg[data-svg-scope="s-19b0100f"] .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none }
+            svg[data-svg-scope="s-19b0100f"] .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5 }
+            svg[data-svg-scope="s-19b0100f"] .geom-point.given-point { fill: #0f172a }
+            svg[data-svg-scope="s-19b0100f"] .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7 }
+            svg[data-svg-scope="s-19b0100f"] .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none }
+            svg[data-svg-scope="s-19b0100f"] .geom-label { fill: #1c1917; font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: #fafaf9; stroke-opacity: 0.92; stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-19b0100f"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-circle.conic-curve { stroke: #38bdf8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-circle.aux-circle { stroke: #7dd3fc }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-circle.golden-circle { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-line { stroke: #94a3b8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-line.aux-line { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-segment.struct-segment { stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-segment.aux-segment { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-segment.golden-segment { stroke: #facc15 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-point { fill: #38bdf8; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-point.given-point { fill: #e2e8f0 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-point.golden-point { fill: #f5c542; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-point-halo { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19b0100f"] .geom-label { fill: #f4f4f5; stroke: #141417 }
+          </style>
           <title>GC-01.01 — Euclid&#x27;s Classical Golden Section (Elements II.11 &amp; VI.30)</title>
           <defs>
             <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
@@ -114,7 +281,6 @@
               <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
             </marker>
           </defs>
-          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
           <g>
             <g>
               <circle class="geom-circle aux-circle" cx="340" cy="240" r="159.68" fill="none"><title>cMB: x**2 + (y - 1)**2 - 5 = 0</title></circle>
@@ -176,7 +342,48 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="02-pythagorean-transfer/index.html" aria-label="GC-01.02 — Right-Triangle Hypotenuse Transfer (1 : 2 : √5)">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="02-pythagorean-transfer" role="img" aria-label="GC-01.02 — Right-Triangle Hypotenuse Transfer (1 : 2 : √5)">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="02-pythagorean-transfer" role="img" aria-label="GC-01.02 — Right-Triangle Hypotenuse Transfer (1 : 2 : √5)" width="680" height="480" data-svg-scope="s-19006984">
+          <style>
+            svg[data-svg-scope="s-19006984"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            svg[data-svg-scope="s-19006984"] .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82 }
+            svg[data-svg-scope="s-19006984"] .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62 }
+            svg[data-svg-scope="s-19006984"] .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92 }
+            svg[data-svg-scope="s-19006984"] .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round }
+            svg[data-svg-scope="s-19006984"] .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-19006984"] .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72 }
+            svg[data-svg-scope="s-19006984"] .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-19006984"] .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88 }
+            svg[data-svg-scope="s-19006984"] .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68 }
+            svg[data-svg-scope="s-19006984"] .geom-segment.golden-segment { fill: none; stroke: #b45309; stroke-width: 2.8; stroke-linecap: round; stroke-opacity: 0.55 }
+            svg[data-svg-scope="s-19006984"] .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none }
+            svg[data-svg-scope="s-19006984"] .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round }
+            svg[data-svg-scope="s-19006984"] .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round }
+            svg[data-svg-scope="s-19006984"] .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none }
+            svg[data-svg-scope="s-19006984"] .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5 }
+            svg[data-svg-scope="s-19006984"] .geom-point.given-point { fill: #0f172a }
+            svg[data-svg-scope="s-19006984"] .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7 }
+            svg[data-svg-scope="s-19006984"] .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none }
+            svg[data-svg-scope="s-19006984"] .geom-label { fill: #1c1917; font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: #fafaf9; stroke-opacity: 0.92; stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-19006984"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19006984"] .geom-circle.conic-curve { stroke: #38bdf8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19006984"] .geom-circle.aux-circle { stroke: #7dd3fc }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19006984"] .geom-circle.golden-circle { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19006984"] .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19006984"] .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19006984"] .geom-line { stroke: #94a3b8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19006984"] .geom-line.aux-line { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19006984"] .geom-segment.struct-segment { stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19006984"] .geom-segment.aux-segment { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19006984"] .geom-segment.golden-segment { stroke: #facc15 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19006984"] .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19006984"] .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19006984"] .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19006984"] .geom-point { fill: #38bdf8; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19006984"] .geom-point.given-point { fill: #e2e8f0 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19006984"] .geom-point.golden-point { fill: #f5c542; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19006984"] .geom-point-halo { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-19006984"] .geom-label { fill: #f4f4f5; stroke: #141417 }
+          </style>
           <title>GC-01.02 — Right-Triangle Hypotenuse Transfer (1 : 2 : √5)</title>
           <defs>
             <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
@@ -192,7 +399,6 @@
               <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
             </marker>
           </defs>
-          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
           <g>
             <g>
               <circle class="geom-circle aux-circle" cx="450.33" cy="277.69" r="98.69" fill="none"><title>cBM: y**2 + (x - 2)**2 - 1 = 0</title></circle>
@@ -252,7 +458,48 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="03-lemoine-hofstetter-5step/index.html" aria-label="GC-01.03 — Lemoine–Reusch–Hofstetter 5-Step Division">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="03-lemoine-hofstetter-5step" role="img" aria-label="GC-01.03 — Lemoine–Reusch–Hofstetter 5-Step Division">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="03-lemoine-hofstetter-5step" role="img" aria-label="GC-01.03 — Lemoine–Reusch–Hofstetter 5-Step Division" width="680" height="480" data-svg-scope="s-a89bcde3">
+          <style>
+            svg[data-svg-scope="s-a89bcde3"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            svg[data-svg-scope="s-a89bcde3"] .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82 }
+            svg[data-svg-scope="s-a89bcde3"] .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62 }
+            svg[data-svg-scope="s-a89bcde3"] .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92 }
+            svg[data-svg-scope="s-a89bcde3"] .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round }
+            svg[data-svg-scope="s-a89bcde3"] .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-a89bcde3"] .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72 }
+            svg[data-svg-scope="s-a89bcde3"] .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-a89bcde3"] .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88 }
+            svg[data-svg-scope="s-a89bcde3"] .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68 }
+            svg[data-svg-scope="s-a89bcde3"] .geom-segment.golden-segment { fill: none; stroke: #b45309; stroke-width: 2.8; stroke-linecap: round; stroke-opacity: 0.55 }
+            svg[data-svg-scope="s-a89bcde3"] .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none }
+            svg[data-svg-scope="s-a89bcde3"] .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round }
+            svg[data-svg-scope="s-a89bcde3"] .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round }
+            svg[data-svg-scope="s-a89bcde3"] .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none }
+            svg[data-svg-scope="s-a89bcde3"] .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5 }
+            svg[data-svg-scope="s-a89bcde3"] .geom-point.given-point { fill: #0f172a }
+            svg[data-svg-scope="s-a89bcde3"] .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7 }
+            svg[data-svg-scope="s-a89bcde3"] .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none }
+            svg[data-svg-scope="s-a89bcde3"] .geom-label { fill: #1c1917; font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: #fafaf9; stroke-opacity: 0.92; stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-a89bcde3"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-a89bcde3"] .geom-circle.conic-curve { stroke: #38bdf8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-a89bcde3"] .geom-circle.aux-circle { stroke: #7dd3fc }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-a89bcde3"] .geom-circle.golden-circle { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-a89bcde3"] .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-a89bcde3"] .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-a89bcde3"] .geom-line { stroke: #94a3b8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-a89bcde3"] .geom-line.aux-line { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-a89bcde3"] .geom-segment.struct-segment { stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-a89bcde3"] .geom-segment.aux-segment { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-a89bcde3"] .geom-segment.golden-segment { stroke: #facc15 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-a89bcde3"] .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-a89bcde3"] .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-a89bcde3"] .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-a89bcde3"] .geom-point { fill: #38bdf8; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-a89bcde3"] .geom-point.given-point { fill: #e2e8f0 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-a89bcde3"] .geom-point.golden-point { fill: #f5c542; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-a89bcde3"] .geom-point-halo { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-a89bcde3"] .geom-label { fill: #f4f4f5; stroke: #141417 }
+          </style>
           <title>GC-01.03 — Lemoine–Reusch–Hofstetter 5-Step Division</title>
           <defs>
             <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
@@ -268,7 +515,6 @@
               <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
             </marker>
           </defs>
-          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
           <g>
             <g>
               <circle class="geom-circle aux-circle" cx="323.95" cy="261.41" r="107.03" fill="none"><title>cAB: x**2 + y**2 - 1 = 0</title></circle>
@@ -330,7 +576,48 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="04-hofstetter-5step-2004/index.html" aria-label="GC-01.04 — Hofstetter's 2004 Five-Step Secant Division">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="04-hofstetter-5step-2004" role="img" aria-label="GC-01.04 — Hofstetter's 2004 Five-Step Secant Division">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="04-hofstetter-5step-2004" role="img" aria-label="GC-01.04 — Hofstetter's 2004 Five-Step Secant Division" width="680" height="480" data-svg-scope="s-1a23b2d8">
+          <style>
+            svg[data-svg-scope="s-1a23b2d8"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            svg[data-svg-scope="s-1a23b2d8"] .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82 }
+            svg[data-svg-scope="s-1a23b2d8"] .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62 }
+            svg[data-svg-scope="s-1a23b2d8"] .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92 }
+            svg[data-svg-scope="s-1a23b2d8"] .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round }
+            svg[data-svg-scope="s-1a23b2d8"] .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-1a23b2d8"] .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72 }
+            svg[data-svg-scope="s-1a23b2d8"] .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-1a23b2d8"] .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88 }
+            svg[data-svg-scope="s-1a23b2d8"] .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68 }
+            svg[data-svg-scope="s-1a23b2d8"] .geom-segment.golden-segment { fill: none; stroke: #b45309; stroke-width: 2.8; stroke-linecap: round; stroke-opacity: 0.55 }
+            svg[data-svg-scope="s-1a23b2d8"] .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none }
+            svg[data-svg-scope="s-1a23b2d8"] .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round }
+            svg[data-svg-scope="s-1a23b2d8"] .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round }
+            svg[data-svg-scope="s-1a23b2d8"] .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none }
+            svg[data-svg-scope="s-1a23b2d8"] .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5 }
+            svg[data-svg-scope="s-1a23b2d8"] .geom-point.given-point { fill: #0f172a }
+            svg[data-svg-scope="s-1a23b2d8"] .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7 }
+            svg[data-svg-scope="s-1a23b2d8"] .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none }
+            svg[data-svg-scope="s-1a23b2d8"] .geom-label { fill: #1c1917; font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: #fafaf9; stroke-opacity: 0.92; stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-1a23b2d8"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-1a23b2d8"] .geom-circle.conic-curve { stroke: #38bdf8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-1a23b2d8"] .geom-circle.aux-circle { stroke: #7dd3fc }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-1a23b2d8"] .geom-circle.golden-circle { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-1a23b2d8"] .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-1a23b2d8"] .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-1a23b2d8"] .geom-line { stroke: #94a3b8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-1a23b2d8"] .geom-line.aux-line { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-1a23b2d8"] .geom-segment.struct-segment { stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-1a23b2d8"] .geom-segment.aux-segment { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-1a23b2d8"] .geom-segment.golden-segment { stroke: #facc15 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-1a23b2d8"] .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-1a23b2d8"] .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-1a23b2d8"] .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-1a23b2d8"] .geom-point { fill: #38bdf8; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-1a23b2d8"] .geom-point.given-point { fill: #e2e8f0 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-1a23b2d8"] .geom-point.golden-point { fill: #f5c542; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-1a23b2d8"] .geom-point-halo { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-1a23b2d8"] .geom-label { fill: #f4f4f5; stroke: #141417 }
+          </style>
           <title>GC-01.04 — Hofstetter&#x27;s 2004 Five-Step Secant Division</title>
           <defs>
             <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
@@ -346,7 +633,6 @@
               <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
             </marker>
           </defs>
-          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
           <g>
             <g>
               <circle class="geom-circle aux-circle" cx="386.05" cy="240" r="92.09" fill="none"><title>cAB: x**2 + y**2 - 1 = 0</title></circle>
@@ -405,7 +691,48 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="05-hofstetter-compass-only/index.html" aria-label="GC-01.05 — Mascheroni Five-Circle Compass-Only Construction">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="05-hofstetter-compass-only" role="img" aria-label="GC-01.05 — Mascheroni Five-Circle Compass-Only Construction">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="05-hofstetter-compass-only" role="img" aria-label="GC-01.05 — Mascheroni Five-Circle Compass-Only Construction" width="680" height="480" data-svg-scope="s-6141c0c1">
+          <style>
+            svg[data-svg-scope="s-6141c0c1"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            svg[data-svg-scope="s-6141c0c1"] .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82 }
+            svg[data-svg-scope="s-6141c0c1"] .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62 }
+            svg[data-svg-scope="s-6141c0c1"] .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92 }
+            svg[data-svg-scope="s-6141c0c1"] .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round }
+            svg[data-svg-scope="s-6141c0c1"] .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-6141c0c1"] .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72 }
+            svg[data-svg-scope="s-6141c0c1"] .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-6141c0c1"] .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88 }
+            svg[data-svg-scope="s-6141c0c1"] .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68 }
+            svg[data-svg-scope="s-6141c0c1"] .geom-segment.golden-segment { fill: none; stroke: #b45309; stroke-width: 2.8; stroke-linecap: round; stroke-opacity: 0.55 }
+            svg[data-svg-scope="s-6141c0c1"] .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none }
+            svg[data-svg-scope="s-6141c0c1"] .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round }
+            svg[data-svg-scope="s-6141c0c1"] .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round }
+            svg[data-svg-scope="s-6141c0c1"] .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none }
+            svg[data-svg-scope="s-6141c0c1"] .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5 }
+            svg[data-svg-scope="s-6141c0c1"] .geom-point.given-point { fill: #0f172a }
+            svg[data-svg-scope="s-6141c0c1"] .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7 }
+            svg[data-svg-scope="s-6141c0c1"] .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none }
+            svg[data-svg-scope="s-6141c0c1"] .geom-label { fill: #1c1917; font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: #fafaf9; stroke-opacity: 0.92; stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-6141c0c1"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-6141c0c1"] .geom-circle.conic-curve { stroke: #38bdf8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-6141c0c1"] .geom-circle.aux-circle { stroke: #7dd3fc }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-6141c0c1"] .geom-circle.golden-circle { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-6141c0c1"] .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-6141c0c1"] .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-6141c0c1"] .geom-line { stroke: #94a3b8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-6141c0c1"] .geom-line.aux-line { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-6141c0c1"] .geom-segment.struct-segment { stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-6141c0c1"] .geom-segment.aux-segment { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-6141c0c1"] .geom-segment.golden-segment { stroke: #facc15 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-6141c0c1"] .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-6141c0c1"] .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-6141c0c1"] .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-6141c0c1"] .geom-point { fill: #38bdf8; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-6141c0c1"] .geom-point.given-point { fill: #e2e8f0 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-6141c0c1"] .geom-point.golden-point { fill: #f5c542; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-6141c0c1"] .geom-point-halo { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-6141c0c1"] .geom-label { fill: #f4f4f5; stroke: #141417 }
+          </style>
           <title>GC-01.05 — Mascheroni Five-Circle Compass-Only Construction</title>
           <defs>
             <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
@@ -421,7 +748,6 @@
               <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
             </marker>
           </defs>
-          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
           <g>
             <g>
               <circle class="geom-circle aux-circle" cx="297.87" cy="240" r="84.26" fill="none"><title>c1: x**2 + y**2 - 1 = 0</title></circle>
@@ -483,7 +809,48 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="06-hofstetter-rusty-compass/index.html" aria-label="GC-01.06 — Hofstetter's Fixed-Aperture Rusty-Compass Division">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="06-hofstetter-rusty-compass" role="img" aria-label="GC-01.06 — Hofstetter's Fixed-Aperture Rusty-Compass Division">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="06-hofstetter-rusty-compass" role="img" aria-label="GC-01.06 — Hofstetter's Fixed-Aperture Rusty-Compass Division" width="680" height="480" data-svg-scope="s-ca2ff9b8">
+          <style>
+            svg[data-svg-scope="s-ca2ff9b8"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            svg[data-svg-scope="s-ca2ff9b8"] .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82 }
+            svg[data-svg-scope="s-ca2ff9b8"] .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62 }
+            svg[data-svg-scope="s-ca2ff9b8"] .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92 }
+            svg[data-svg-scope="s-ca2ff9b8"] .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round }
+            svg[data-svg-scope="s-ca2ff9b8"] .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-ca2ff9b8"] .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72 }
+            svg[data-svg-scope="s-ca2ff9b8"] .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-ca2ff9b8"] .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88 }
+            svg[data-svg-scope="s-ca2ff9b8"] .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68 }
+            svg[data-svg-scope="s-ca2ff9b8"] .geom-segment.golden-segment { fill: none; stroke: #b45309; stroke-width: 2.8; stroke-linecap: round; stroke-opacity: 0.55 }
+            svg[data-svg-scope="s-ca2ff9b8"] .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none }
+            svg[data-svg-scope="s-ca2ff9b8"] .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round }
+            svg[data-svg-scope="s-ca2ff9b8"] .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round }
+            svg[data-svg-scope="s-ca2ff9b8"] .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none }
+            svg[data-svg-scope="s-ca2ff9b8"] .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5 }
+            svg[data-svg-scope="s-ca2ff9b8"] .geom-point.given-point { fill: #0f172a }
+            svg[data-svg-scope="s-ca2ff9b8"] .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7 }
+            svg[data-svg-scope="s-ca2ff9b8"] .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none }
+            svg[data-svg-scope="s-ca2ff9b8"] .geom-label { fill: #1c1917; font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: #fafaf9; stroke-opacity: 0.92; stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-ca2ff9b8"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-ca2ff9b8"] .geom-circle.conic-curve { stroke: #38bdf8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-ca2ff9b8"] .geom-circle.aux-circle { stroke: #7dd3fc }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-ca2ff9b8"] .geom-circle.golden-circle { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-ca2ff9b8"] .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-ca2ff9b8"] .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-ca2ff9b8"] .geom-line { stroke: #94a3b8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-ca2ff9b8"] .geom-line.aux-line { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-ca2ff9b8"] .geom-segment.struct-segment { stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-ca2ff9b8"] .geom-segment.aux-segment { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-ca2ff9b8"] .geom-segment.golden-segment { stroke: #facc15 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-ca2ff9b8"] .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-ca2ff9b8"] .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-ca2ff9b8"] .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-ca2ff9b8"] .geom-point { fill: #38bdf8; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-ca2ff9b8"] .geom-point.given-point { fill: #e2e8f0 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-ca2ff9b8"] .geom-point.golden-point { fill: #f5c542; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-ca2ff9b8"] .geom-point-halo { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-ca2ff9b8"] .geom-label { fill: #f4f4f5; stroke: #141417 }
+          </style>
           <title>GC-01.06 — Hofstetter&#x27;s Fixed-Aperture Rusty-Compass Division</title>
           <defs>
             <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
@@ -499,7 +866,6 @@
               <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
             </marker>
           </defs>
-          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
           <g>
             <g>
               <circle class="geom-circle aux-circle" cx="263.85" cy="247.62" r="152.31" fill="none"><title>cAB: x**2 + y**2 - 1 = 0</title></circle>
@@ -558,7 +924,48 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="07-bui-5step/index.html" aria-label="GC-01.07 — Bùi Quang Tuân's Five-Step Three-Circle Secant">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="07-bui-5step" role="img" aria-label="GC-01.07 — Bùi Quang Tuân's Five-Step Three-Circle Secant">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="07-bui-5step" role="img" aria-label="GC-01.07 — Bùi Quang Tuân's Five-Step Three-Circle Secant" width="680" height="480" data-svg-scope="s-d71da1c1">
+          <style>
+            svg[data-svg-scope="s-d71da1c1"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            svg[data-svg-scope="s-d71da1c1"] .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82 }
+            svg[data-svg-scope="s-d71da1c1"] .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62 }
+            svg[data-svg-scope="s-d71da1c1"] .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92 }
+            svg[data-svg-scope="s-d71da1c1"] .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round }
+            svg[data-svg-scope="s-d71da1c1"] .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-d71da1c1"] .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72 }
+            svg[data-svg-scope="s-d71da1c1"] .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-d71da1c1"] .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88 }
+            svg[data-svg-scope="s-d71da1c1"] .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68 }
+            svg[data-svg-scope="s-d71da1c1"] .geom-segment.golden-segment { fill: none; stroke: #b45309; stroke-width: 2.8; stroke-linecap: round; stroke-opacity: 0.55 }
+            svg[data-svg-scope="s-d71da1c1"] .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none }
+            svg[data-svg-scope="s-d71da1c1"] .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round }
+            svg[data-svg-scope="s-d71da1c1"] .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round }
+            svg[data-svg-scope="s-d71da1c1"] .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none }
+            svg[data-svg-scope="s-d71da1c1"] .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5 }
+            svg[data-svg-scope="s-d71da1c1"] .geom-point.given-point { fill: #0f172a }
+            svg[data-svg-scope="s-d71da1c1"] .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7 }
+            svg[data-svg-scope="s-d71da1c1"] .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none }
+            svg[data-svg-scope="s-d71da1c1"] .geom-label { fill: #1c1917; font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: #fafaf9; stroke-opacity: 0.92; stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-d71da1c1"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-d71da1c1"] .geom-circle.conic-curve { stroke: #38bdf8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-d71da1c1"] .geom-circle.aux-circle { stroke: #7dd3fc }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-d71da1c1"] .geom-circle.golden-circle { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-d71da1c1"] .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-d71da1c1"] .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-d71da1c1"] .geom-line { stroke: #94a3b8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-d71da1c1"] .geom-line.aux-line { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-d71da1c1"] .geom-segment.struct-segment { stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-d71da1c1"] .geom-segment.aux-segment { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-d71da1c1"] .geom-segment.golden-segment { stroke: #facc15 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-d71da1c1"] .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-d71da1c1"] .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-d71da1c1"] .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-d71da1c1"] .geom-point { fill: #38bdf8; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-d71da1c1"] .geom-point.given-point { fill: #e2e8f0 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-d71da1c1"] .geom-point.golden-point { fill: #f5c542; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-d71da1c1"] .geom-point-halo { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-d71da1c1"] .geom-label { fill: #f4f4f5; stroke: #141417 }
+          </style>
           <title>GC-01.07 — Bùi Quang Tuân&#x27;s Five-Step Three-Circle Secant</title>
           <defs>
             <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
@@ -574,7 +981,6 @@
               <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
             </marker>
           </defs>
-          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
           <g>
             <g>
               <circle class="geom-circle conic-curve" cx="420.04" cy="227.36" r="84.26" fill="none"><title>cO: x**2 + y**2 - 1 = 0</title></circle>
@@ -754,7 +1160,7 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=5bfaad31"></script>
+  <script src="../../_static/documentation_options.js?v=90733dfc"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>

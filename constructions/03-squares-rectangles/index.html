@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=8713e751" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=99410eb1" />
   <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=a1baf04c" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
@@ -91,6 +91,151 @@
         <h1>GC-03 · Squares, Lattice Grids &amp; Golden Crosses<a class="headerlink" href="#gc-03-squares-lattice-grids-golden-crosses" title="Link to this heading">¶</a></h1>
         <p><em>Inscribed squares, 2×2 and 3×3 lattice grids, Suppa’s incircles, the Greek Cross, and rotated squares</em></p>
         <p>Orthogonal squares and <span class="math notranslate nohighlight">\(2 \times 2\)</span> or <span class="math notranslate nohighlight">\(3 \times 3\)</span> lattice grids naturally furnish <span class="math notranslate nohighlight">\(1 : 2\)</span> and <span class="math notranslate nohighlight">\(1 : 3\)</span> right triangles whose hypotenuses have quadrances <span class="math notranslate nohighlight">\(5\)</span> and <span class="math notranslate nohighlight">\(10\)</span>. Through circumcircles, triangle incenters, and <span class="math notranslate nohighlight">\(30^\circ\)</span> rotations, geometers including <a class="person-ref" id="occ-person-tran-quang-hung-1" href="../persons.html#person-tran-quang-hung" data-person="tran-quang-hung" title="Tran Quang Hung (fl. 2012 – present) — Vietnamese Geometer; Hanoi University of Science High School">Tran Quang Hung</a>, <a class="person-ref" id="occ-person-ercole-suppa-1" href="../persons.html#person-ercole-suppa" data-person="ercole-suppa" title="Ercole Suppa (fl. 2005 – present) — Italian Geometer; Teramo">Ercole Suppa</a>, <a class="person-ref" id="occ-person-bui-quang-tuan-1" href="../persons.html#person-bui-quang-tuan" data-person="bui-quang-tuan" title="Bùi Quang Tuân (fl. 2010 – present) — Vietnamese Geometer">Bùi Quang Tuân</a>, <a class="person-ref" id="occ-person-alexandre-borovik-1" href="../persons.html#person-alexandre-borovik" data-person="alexandre-borovik" title="Alexandre Borovik (b. 1956) — Mathematician; University of Manchester">Alexandre Borovik</a>, and <a class="person-ref" id="occ-person-john-arioni-1" href="../persons.html#person-john-arioni" data-person="john-arioni" title="John Arioni (fl. 2016) — Geometer">John Arioni</a> uncovered rich golden chains across elementary square configurations.</p>
+        <figure class="photon-picture photon-svg">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="01-tran-square-inscribed-semicircle" role="img" aria-label="GC-03.01 — Tran Quang Hung's Square Inscribed in a Right Isosceles Semicircle" width="680" height="480" data-svg-scope="s-e4104e9c">
+          <style>
+            svg[data-svg-scope="s-e4104e9c"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            svg[data-svg-scope="s-e4104e9c"] .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82 }
+            svg[data-svg-scope="s-e4104e9c"] .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62 }
+            svg[data-svg-scope="s-e4104e9c"] .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92 }
+            svg[data-svg-scope="s-e4104e9c"] .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round }
+            svg[data-svg-scope="s-e4104e9c"] .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-e4104e9c"] .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72 }
+            svg[data-svg-scope="s-e4104e9c"] .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-e4104e9c"] .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88 }
+            svg[data-svg-scope="s-e4104e9c"] .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68 }
+            svg[data-svg-scope="s-e4104e9c"] .geom-segment.golden-segment { fill: none; stroke: #b45309; stroke-width: 2.8; stroke-linecap: round; stroke-opacity: 0.55 }
+            svg[data-svg-scope="s-e4104e9c"] .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none }
+            svg[data-svg-scope="s-e4104e9c"] .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round }
+            svg[data-svg-scope="s-e4104e9c"] .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round }
+            svg[data-svg-scope="s-e4104e9c"] .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none }
+            svg[data-svg-scope="s-e4104e9c"] .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5 }
+            svg[data-svg-scope="s-e4104e9c"] .geom-point.given-point { fill: #0f172a }
+            svg[data-svg-scope="s-e4104e9c"] .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7 }
+            svg[data-svg-scope="s-e4104e9c"] .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none }
+            svg[data-svg-scope="s-e4104e9c"] .geom-label { fill: #1c1917; font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: #fafaf9; stroke-opacity: 0.92; stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-e4104e9c"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-circle.conic-curve { stroke: #38bdf8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-circle.aux-circle { stroke: #7dd3fc }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-circle.golden-circle { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-line { stroke: #94a3b8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-line.aux-line { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-segment.struct-segment { stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-segment.aux-segment { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-segment.golden-segment { stroke: #facc15 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-point { fill: #38bdf8; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-point.given-point { fill: #e2e8f0 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-point.golden-point { fill: #f5c542; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-point-halo { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-label { fill: #f4f4f5; stroke: #141417 }
+          </style>
+          <title>GC-03.01 — Tran Quang Hung&#x27;s Square Inscribed in a Right Isosceles Semicircle</title>
+          <defs>
+            <marker id="geom-tick-1" markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" />
+            </marker>
+            <marker id="geom-tick-2" markerUnits="userSpaceOnUse" viewBox="-7 -8 14 16" markerWidth="14" markerHeight="16" orient="auto">
+              <line x1="-2.4" y1="-6.2" x2="-2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+              <line x1="2.4" y1="-6.2" x2="2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+            </marker>
+            <marker id="geom-tick-3" markerUnits="userSpaceOnUse" viewBox="-9 -8 18 16" markerWidth="18" markerHeight="16" orient="auto">
+              <line x1="-4.4" y1="-6.2" x2="-4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+            </marker>
+          </defs>
+          <g id="elements">
+            <g id="graphics">
+              <circle class="geom-circle conic-curve" cx="340" cy="240" r="159.68" data-ref="cO" data-aliases="(O) | ( O ) | ( O A ) | O(A) | ( O B ) | O(B) | ( O C ) | O(C) | ( O Q ) | O(Q) | ( O P ) | O(P) | ( A B C )" fill="none"><title>cO: x**2 + y**2 - 9 = 0</title></circle>
+              <polygon class="geom-polygon poly-shape" points="180.32,240 499.68,240 340,80.32" data-ref="&lt; A B C &gt;" data-aliases="ABC | &lt;ABC&gt;" />
+              <polygon class="geom-polygon golden-poly" points="286.77,133.55 393.23,133.55 393.23,240 286.77,240" data-ref="&lt; D E G F &gt;" data-aliases="DEGF | &lt;DEGF&gt;" />
+              <path class="geom-line" d="M 12 240 L 340 240 L 668 240" data-ref="AB" data-aliases="[ O A ] | [ A O ] | OA | AO | [ O B ] | [ B O ] | OB | BO | [ O G ] | [ G O ] | OG | GO | [ O F ] | [ F O ] | OF | FO | [ A B ] | [ B A ] | BA | [ A G ] | [ G A ] | AG | GA | [ A F ] | [ F A ] | AF | FA | [ B G ] | [ G B ] | BG | GB | [ B F ] | [ F B ] | BF | FB | [ G F ] | [ F G ] | GF | FG" fill="none"><title>AB: y = 0</title></path>
+              <path class="geom-line" d="M 12 133.55 L 340 133.55 L 668 133.55" data-ref="DE" data-aliases="[ D E ] | [ E D ] | ED | [ D Q ] | [ Q D ] | DQ | QD | [ D P ] | [ P D ] | DP | PD | [ E Q ] | [ Q E ] | EQ | QE | [ E P ] | [ P E ] | EP | PE | [ Q P ] | [ P Q ] | QP | PQ" fill="none"><title>DE: y - 2 = 0</title></path>
+              <path class="geom-segment golden-segment" d="M 286.77 133.55 L 372.9 133.55 L 459.02 133.55" data-ref="/ D E P /" data-aliases="DEP" fill="none" />
+              <path class="geom-segment golden-major-glow" d="M 286.77 133.55 L 340 133.55 L 393.23 133.55" fill="none" />
+              <path class="geom-segment golden-major" d="M 286.77 133.55 L 340 133.55 L 393.23 133.55" marker-mid="url(#geom-tick-1)" data-ref="/ D E /" data-aliases="[ D E ] | [ E D ] | / E D / | DE | ED" fill="none"><title>Golden major DE = 2</title></path>
+              <path class="geom-segment golden-minor" d="M 393.23 133.55 L 426.12 133.55 L 459.02 133.55" marker-mid="url(#geom-tick-2)" data-ref="/ E P /" data-aliases="[ E P ] | [ P E ] | / P E / | EP | PE" fill="none"><title>Golden minor EP = -1 + sqrt(5)</title></path>
+            </g>
+            <g id="highlights">
+              <path class="geom-overlay" d="M 340 240 L 260.16 240 L 180.32 240" data-ref="OA" data-aliases="AO | / O A / | / A O / | [ O A ] | [ A O ]" fill="none" />
+              <path class="geom-overlay" d="M 340 240 L 419.84 240 L 499.68 240" data-ref="OB" data-aliases="BO | / O B / | / B O / | [ O B ] | [ B O ]" fill="none" />
+              <path class="geom-overlay" d="M 340 240 L 340 160.16 L 340 80.32" data-ref="OC" data-aliases="CO | / O C / | / C O / | [ O C ] | [ C O ]" fill="none" />
+              <path class="geom-overlay" d="M 340 240 L 313.39 186.77 L 286.77 133.55" data-ref="OD" data-aliases="DO | / O D / | / D O / | [ O D ] | [ D O ]" fill="none" />
+              <path class="geom-overlay" d="M 340 240 L 366.61 186.77 L 393.23 133.55" data-ref="OE" data-aliases="EO | / O E / | / E O / | [ O E ] | [ E O ]" fill="none" />
+              <path class="geom-overlay" d="M 340 240 L 366.61 240 L 393.23 240" data-ref="OG" data-aliases="GO | / O G / | / G O / | [ O G ] | [ G O ]" fill="none" />
+              <path class="geom-overlay" d="M 340 240 L 313.39 240 L 286.77 240" data-ref="OF" data-aliases="FO | / O F / | / F O / | [ O F ] | [ F O ]" fill="none" />
+              <path class="geom-overlay" d="M 340 240 L 280.49 186.77 L 220.98 133.55" data-ref="OQ" data-aliases="QO | / O Q / | / Q O / | [ O Q ] | [ Q O ]" fill="none" />
+              <path class="geom-overlay" d="M 340 240 L 399.51 186.77 L 459.02 133.55" data-ref="OP" data-aliases="PO | / O P / | / P O / | [ O P ] | [ P O ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 240 L 340 240 L 499.68 240" data-ref="AB" data-aliases="BA | / A B / | / B A / | [ A B ] | [ B A ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 240 L 260.16 160.16 L 340 80.32" data-ref="AC" data-aliases="CA | / A C / | / C A / | [ A C ] | [ C A ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 240 L 233.55 186.77 L 286.77 133.55" data-ref="AD" data-aliases="DA | / A D / | / D A / | [ A D ] | [ D A ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 240 L 286.77 186.77 L 393.23 133.55" data-ref="AE" data-aliases="EA | / A E / | / E A / | [ A E ] | [ E A ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 240 L 286.77 240 L 393.23 240" data-ref="AG" data-aliases="GA | / A G / | / G A / | [ A G ] | [ G A ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 240 L 233.55 240 L 286.77 240" data-ref="AF" data-aliases="FA | / A F / | / F A / | [ A F ] | [ F A ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 240 L 200.65 186.77 L 220.98 133.55" data-ref="AQ" data-aliases="QA | / A Q / | / Q A / | [ A Q ] | [ Q A ]" fill="none" />
+              <path class="geom-overlay" d="M 180.32 240 L 319.67 186.77 L 459.02 133.55" data-ref="AP" data-aliases="PA | / A P / | / P A / | [ A P ] | [ P A ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 240 L 419.84 160.16 L 340 80.32" data-ref="BC" data-aliases="CB | / B C / | / C B / | [ B C ] | [ C B ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 240 L 393.23 186.77 L 286.77 133.55" data-ref="BD" data-aliases="DB | / B D / | / D B / | [ B D ] | [ D B ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 240 L 446.45 186.77 L 393.23 133.55" data-ref="BE" data-aliases="EB | / B E / | / E B / | [ B E ] | [ E B ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 240 L 446.45 240 L 393.23 240" data-ref="BG" data-aliases="GB | / B G / | / G B / | [ B G ] | [ G B ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 240 L 393.23 240 L 286.77 240" data-ref="BF" data-aliases="FB | / B F / | / F B / | [ B F ] | [ F B ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 240 L 360.33 186.77 L 220.98 133.55" data-ref="BQ" data-aliases="QB | / B Q / | / Q B / | [ B Q ] | [ Q B ]" fill="none" />
+              <path class="geom-overlay" d="M 499.68 240 L 479.35 186.77 L 459.02 133.55" data-ref="BP" data-aliases="PB | / B P / | / P B / | [ B P ] | [ P B ]" fill="none" />
+              <path class="geom-overlay" d="M 340 80.32 L 313.39 106.94 L 286.77 133.55" data-ref="CD" data-aliases="DC | / C D / | / D C / | [ C D ] | [ D C ]" fill="none" />
+              <path class="geom-overlay" d="M 340 80.32 L 366.61 106.94 L 393.23 133.55" data-ref="CE" data-aliases="EC | / C E / | / E C / | [ C E ] | [ E C ]" fill="none" />
+              <path class="geom-overlay" d="M 340 80.32 L 366.61 160.16 L 393.23 240" data-ref="CG" data-aliases="GC | / C G / | / G C / | [ C G ] | [ G C ]" fill="none" />
+              <path class="geom-overlay" d="M 340 80.32 L 313.39 160.16 L 286.77 240" data-ref="CF" data-aliases="FC | / C F / | / F C / | [ C F ] | [ F C ]" fill="none" />
+              <path class="geom-overlay" d="M 340 80.32 L 280.49 106.94 L 220.98 133.55" data-ref="CQ" data-aliases="QC | / C Q / | / Q C / | [ C Q ] | [ Q C ]" fill="none" />
+              <path class="geom-overlay" d="M 340 80.32 L 399.51 106.94 L 459.02 133.55" data-ref="CP" data-aliases="PC | / C P / | / P C / | [ C P ] | [ P C ]" fill="none" />
+              <path class="geom-overlay" d="M 286.77 133.55 L 340 133.55 L 393.23 133.55" data-ref="DE" data-aliases="ED | / D E / | / E D / | [ D E ] | [ E D ]" fill="none" />
+              <path class="geom-overlay" d="M 286.77 133.55 L 340 186.77 L 393.23 240" data-ref="DG" data-aliases="GD | / D G / | / G D / | [ D G ] | [ G D ]" fill="none" />
+              <path class="geom-overlay" d="M 286.77 133.55 L 286.77 186.77 L 286.77 240" data-ref="DF" data-aliases="FD | / D F / | / F D / | [ D F ] | [ F D ]" fill="none" />
+              <path class="geom-overlay" d="M 286.77 133.55 L 253.88 133.55 L 220.98 133.55" data-ref="DQ" data-aliases="QD | / D Q / | / Q D / | [ D Q ] | [ Q D ]" fill="none" />
+              <path class="geom-overlay" d="M 286.77 133.55 L 372.9 133.55 L 459.02 133.55" data-ref="DP" data-aliases="PD | / D P / | / P D / | [ D P ] | [ P D ]" fill="none" />
+              <path class="geom-overlay" d="M 393.23 133.55 L 393.23 186.77 L 393.23 240" data-ref="EG" data-aliases="GE | / E G / | / G E / | [ E G ] | [ G E ]" fill="none" />
+              <path class="geom-overlay" d="M 393.23 133.55 L 340 186.77 L 286.77 240" data-ref="EF" data-aliases="FE | / E F / | / F E / | [ E F ] | [ F E ]" fill="none" />
+              <path class="geom-overlay" d="M 393.23 133.55 L 307.1 133.55 L 220.98 133.55" data-ref="EQ" data-aliases="QE | / E Q / | / Q E / | [ E Q ] | [ Q E ]" fill="none" />
+              <path class="geom-overlay" d="M 393.23 133.55 L 426.12 133.55 L 459.02 133.55" data-ref="EP" data-aliases="PE | / E P / | / P E / | [ E P ] | [ P E ]" fill="none" />
+              <path class="geom-overlay" d="M 393.23 240 L 340 240 L 286.77 240" data-ref="GF" data-aliases="FG | / G F / | / F G / | [ G F ] | [ F G ]" fill="none" />
+              <path class="geom-overlay" d="M 393.23 240 L 307.1 186.77 L 220.98 133.55" data-ref="GQ" data-aliases="QG | / G Q / | / Q G / | [ G Q ] | [ Q G ]" fill="none" />
+              <path class="geom-overlay" d="M 393.23 240 L 426.12 186.77 L 459.02 133.55" data-ref="GP" data-aliases="PG | / G P / | / P G / | [ G P ] | [ P G ]" fill="none" />
+              <path class="geom-overlay" d="M 286.77 240 L 253.88 186.77 L 220.98 133.55" data-ref="FQ" data-aliases="QF | / F Q / | / Q F / | [ F Q ] | [ Q F ]" fill="none" />
+              <path class="geom-overlay" d="M 286.77 240 L 372.9 186.77 L 459.02 133.55" data-ref="FP" data-aliases="PF | / F P / | / P F / | [ F P ] | [ P F ]" fill="none" />
+              <path class="geom-overlay" d="M 220.98 133.55 L 340 133.55 L 459.02 133.55" data-ref="QP" data-aliases="PQ | / Q P / | / P Q / | [ Q P ] | [ P Q ]" fill="none" />
+            </g>
+            <g id="points">
+              <circle class="geom-point" cx="340" cy="80.32" r="3.6" data-ref="C" data-latex-x="0" data-latex-y="3"><title>C = (0, 3)</title></circle>
+              <circle class="geom-point" cx="393.23" cy="240" r="3.6" data-ref="G" data-latex-x="1" data-latex-y="0"><title>G = (1, 0)</title></circle>
+              <circle class="geom-point" cx="286.77" cy="240" r="3.6" data-ref="F" data-latex-x="-1" data-latex-y="0"><title>F = (-1, 0)</title></circle>
+              <circle class="geom-point golden-point" cx="220.98" cy="133.55" r="4.6" data-ref="Q" data-latex-x="- \sqrt{5}" data-latex-y="2"><title>Q = (-sqrt(5), 2)</title></circle>
+              <circle class="geom-point given-point" cx="340" cy="240" r="4.1" data-ref="O" data-latex-x="0" data-latex-y="0"><title>O = (0, 0)</title></circle>
+              <circle class="geom-point given-point" cx="180.32" cy="240" r="4.1" data-ref="A" data-latex-x="-3" data-latex-y="0"><title>A = (-3, 0)</title></circle>
+              <circle class="geom-point given-point" cx="499.68" cy="240" r="4.1" data-ref="B" data-latex-x="3" data-latex-y="0"><title>B = (3, 0)</title></circle>
+              <circle class="geom-point golden-point" cx="286.77" cy="133.55" r="4.6" data-ref="D" data-latex-x="-1" data-latex-y="2"><title>D = (-1, 2)</title></circle>
+              <circle class="geom-point-halo" cx="393.23" cy="133.55" r="9" fill="none" />
+              <circle class="geom-point golden-point" cx="393.23" cy="133.55" r="4.6" data-ref="E" data-latex-x="1" data-latex-y="2"><title>E = (1, 2)</title></circle>
+              <circle class="geom-point golden-point" cx="459.02" cy="133.55" r="4.6" data-ref="P" data-latex-x="\sqrt{5}" data-latex-y="2"><title>P = (sqrt(5), 2)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="334.24" y="103.68" data-ref="C">C</text>
+              <text class="geom-label" x="401.31" y="257.91" data-ref="G">G</text>
+              <text class="geom-label" x="294.86" y="257.91" data-ref="F">F</text>
+              <text class="geom-label" x="229.78" y="152.17" data-ref="Q">Q</text>
+              <text class="geom-label" x="348.44" y="258.27" data-ref="O">O</text>
+              <text class="geom-label" x="188.76" y="258.27" data-ref="A">A</text>
+              <text class="geom-label" x="508.12" y="258.27" data-ref="B">B</text>
+              <text class="geom-label" x="295.57" y="152.17" data-ref="D">D</text>
+              <text class="geom-label" x="372.91" y="152.17" data-ref="E">E</text>
+              <text class="geom-label" x="453.26" y="157.91" data-ref="P">P</text>
+            </g>
+          </g>
+        </svg>
+        </figure>
         <section class="level-2" id="cataloged-constructions-8">
         <h2>Cataloged Constructions (8)<a class="headerlink" href="#cataloged-constructions-8" title="Link to this heading">¶</a></h2>
             <section class="collection ">
@@ -98,7 +243,48 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="01-tran-square-inscribed-semicircle/index.html" aria-label="GC-03.01 — Tran Quang Hung's Square Inscribed in a Right Isosceles Semicircle">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="01-tran-square-inscribed-semicircle" role="img" aria-label="GC-03.01 — Tran Quang Hung's Square Inscribed in a Right Isosceles Semicircle">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="01-tran-square-inscribed-semicircle" role="img" aria-label="GC-03.01 — Tran Quang Hung's Square Inscribed in a Right Isosceles Semicircle" width="680" height="480" data-svg-scope="s-e4104e9c">
+          <style>
+            svg[data-svg-scope="s-e4104e9c"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            svg[data-svg-scope="s-e4104e9c"] .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82 }
+            svg[data-svg-scope="s-e4104e9c"] .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62 }
+            svg[data-svg-scope="s-e4104e9c"] .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92 }
+            svg[data-svg-scope="s-e4104e9c"] .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round }
+            svg[data-svg-scope="s-e4104e9c"] .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-e4104e9c"] .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72 }
+            svg[data-svg-scope="s-e4104e9c"] .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-e4104e9c"] .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88 }
+            svg[data-svg-scope="s-e4104e9c"] .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68 }
+            svg[data-svg-scope="s-e4104e9c"] .geom-segment.golden-segment { fill: none; stroke: #b45309; stroke-width: 2.8; stroke-linecap: round; stroke-opacity: 0.55 }
+            svg[data-svg-scope="s-e4104e9c"] .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none }
+            svg[data-svg-scope="s-e4104e9c"] .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round }
+            svg[data-svg-scope="s-e4104e9c"] .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round }
+            svg[data-svg-scope="s-e4104e9c"] .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none }
+            svg[data-svg-scope="s-e4104e9c"] .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5 }
+            svg[data-svg-scope="s-e4104e9c"] .geom-point.given-point { fill: #0f172a }
+            svg[data-svg-scope="s-e4104e9c"] .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7 }
+            svg[data-svg-scope="s-e4104e9c"] .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none }
+            svg[data-svg-scope="s-e4104e9c"] .geom-label { fill: #1c1917; font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: #fafaf9; stroke-opacity: 0.92; stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-e4104e9c"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-circle.conic-curve { stroke: #38bdf8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-circle.aux-circle { stroke: #7dd3fc }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-circle.golden-circle { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-line { stroke: #94a3b8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-line.aux-line { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-segment.struct-segment { stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-segment.aux-segment { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-segment.golden-segment { stroke: #facc15 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-point { fill: #38bdf8; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-point.given-point { fill: #e2e8f0 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-point.golden-point { fill: #f5c542; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-point-halo { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e4104e9c"] .geom-label { fill: #f4f4f5; stroke: #141417 }
+          </style>
           <title>GC-03.01 — Tran Quang Hung&#x27;s Square Inscribed in a Right Isosceles Semicircle</title>
           <defs>
             <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
@@ -114,7 +300,6 @@
               <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
             </marker>
           </defs>
-          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
           <g>
             <g>
               <circle class="geom-circle conic-curve" cx="340" cy="240" r="159.68" fill="none"><title>cO: x**2 + y**2 - 9 = 0</title></circle>
@@ -179,7 +364,48 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="02-tran-square-midpoints/index.html" aria-label="GC-03.02 — Tran Quang Hung's Square Midpoint Circle Division">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="02-tran-square-midpoints" role="img" aria-label="GC-03.02 — Tran Quang Hung's Square Midpoint Circle Division">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="02-tran-square-midpoints" role="img" aria-label="GC-03.02 — Tran Quang Hung's Square Midpoint Circle Division" width="680" height="480" data-svg-scope="s-9095cee1">
+          <style>
+            svg[data-svg-scope="s-9095cee1"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            svg[data-svg-scope="s-9095cee1"] .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82 }
+            svg[data-svg-scope="s-9095cee1"] .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62 }
+            svg[data-svg-scope="s-9095cee1"] .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92 }
+            svg[data-svg-scope="s-9095cee1"] .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round }
+            svg[data-svg-scope="s-9095cee1"] .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-9095cee1"] .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72 }
+            svg[data-svg-scope="s-9095cee1"] .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-9095cee1"] .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88 }
+            svg[data-svg-scope="s-9095cee1"] .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68 }
+            svg[data-svg-scope="s-9095cee1"] .geom-segment.golden-segment { fill: none; stroke: #b45309; stroke-width: 2.8; stroke-linecap: round; stroke-opacity: 0.55 }
+            svg[data-svg-scope="s-9095cee1"] .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none }
+            svg[data-svg-scope="s-9095cee1"] .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round }
+            svg[data-svg-scope="s-9095cee1"] .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round }
+            svg[data-svg-scope="s-9095cee1"] .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none }
+            svg[data-svg-scope="s-9095cee1"] .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5 }
+            svg[data-svg-scope="s-9095cee1"] .geom-point.given-point { fill: #0f172a }
+            svg[data-svg-scope="s-9095cee1"] .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7 }
+            svg[data-svg-scope="s-9095cee1"] .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none }
+            svg[data-svg-scope="s-9095cee1"] .geom-label { fill: #1c1917; font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: #fafaf9; stroke-opacity: 0.92; stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-9095cee1"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9095cee1"] .geom-circle.conic-curve { stroke: #38bdf8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9095cee1"] .geom-circle.aux-circle { stroke: #7dd3fc }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9095cee1"] .geom-circle.golden-circle { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9095cee1"] .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9095cee1"] .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9095cee1"] .geom-line { stroke: #94a3b8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9095cee1"] .geom-line.aux-line { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9095cee1"] .geom-segment.struct-segment { stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9095cee1"] .geom-segment.aux-segment { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9095cee1"] .geom-segment.golden-segment { stroke: #facc15 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9095cee1"] .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9095cee1"] .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9095cee1"] .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9095cee1"] .geom-point { fill: #38bdf8; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9095cee1"] .geom-point.given-point { fill: #e2e8f0 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9095cee1"] .geom-point.golden-point { fill: #f5c542; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9095cee1"] .geom-point-halo { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9095cee1"] .geom-label { fill: #f4f4f5; stroke: #141417 }
+          </style>
           <title>GC-03.02 — Tran Quang Hung&#x27;s Square Midpoint Circle Division</title>
           <defs>
             <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
@@ -195,7 +421,6 @@
               <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
             </marker>
           </defs>
-          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
           <g>
             <g>
               <circle class="geom-circle aux-circle" cx="312.72" cy="240" r="159.68" fill="none"><title>cKA: y**2 + (x + 1)**2 - 5 = 0</title></circle>
@@ -265,7 +490,48 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="03-nguyen-2x2-square/index.html" aria-label="GC-03.03 — Nguyen Thanh Dung's 2×2 Grid Compass Arc">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="03-nguyen-2x2-square" role="img" aria-label="GC-03.03 — Nguyen Thanh Dung's 2×2 Grid Compass Arc">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="03-nguyen-2x2-square" role="img" aria-label="GC-03.03 — Nguyen Thanh Dung's 2×2 Grid Compass Arc" width="680" height="480" data-svg-scope="s-e7cc969c">
+          <style>
+            svg[data-svg-scope="s-e7cc969c"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            svg[data-svg-scope="s-e7cc969c"] .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82 }
+            svg[data-svg-scope="s-e7cc969c"] .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62 }
+            svg[data-svg-scope="s-e7cc969c"] .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92 }
+            svg[data-svg-scope="s-e7cc969c"] .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round }
+            svg[data-svg-scope="s-e7cc969c"] .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-e7cc969c"] .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72 }
+            svg[data-svg-scope="s-e7cc969c"] .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-e7cc969c"] .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88 }
+            svg[data-svg-scope="s-e7cc969c"] .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68 }
+            svg[data-svg-scope="s-e7cc969c"] .geom-segment.golden-segment { fill: none; stroke: #b45309; stroke-width: 2.8; stroke-linecap: round; stroke-opacity: 0.55 }
+            svg[data-svg-scope="s-e7cc969c"] .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none }
+            svg[data-svg-scope="s-e7cc969c"] .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round }
+            svg[data-svg-scope="s-e7cc969c"] .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round }
+            svg[data-svg-scope="s-e7cc969c"] .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none }
+            svg[data-svg-scope="s-e7cc969c"] .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5 }
+            svg[data-svg-scope="s-e7cc969c"] .geom-point.given-point { fill: #0f172a }
+            svg[data-svg-scope="s-e7cc969c"] .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7 }
+            svg[data-svg-scope="s-e7cc969c"] .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none }
+            svg[data-svg-scope="s-e7cc969c"] .geom-label { fill: #1c1917; font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: #fafaf9; stroke-opacity: 0.92; stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-e7cc969c"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e7cc969c"] .geom-circle.conic-curve { stroke: #38bdf8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e7cc969c"] .geom-circle.aux-circle { stroke: #7dd3fc }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e7cc969c"] .geom-circle.golden-circle { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e7cc969c"] .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e7cc969c"] .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e7cc969c"] .geom-line { stroke: #94a3b8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e7cc969c"] .geom-line.aux-line { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e7cc969c"] .geom-segment.struct-segment { stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e7cc969c"] .geom-segment.aux-segment { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e7cc969c"] .geom-segment.golden-segment { stroke: #facc15 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e7cc969c"] .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e7cc969c"] .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e7cc969c"] .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e7cc969c"] .geom-point { fill: #38bdf8; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e7cc969c"] .geom-point.given-point { fill: #e2e8f0 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e7cc969c"] .geom-point.golden-point { fill: #f5c542; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e7cc969c"] .geom-point-halo { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e7cc969c"] .geom-label { fill: #f4f4f5; stroke: #141417 }
+          </style>
           <title>GC-03.03 — Nguyen Thanh Dung&#x27;s 2×2 Grid Compass Arc</title>
           <defs>
             <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
@@ -281,7 +547,6 @@
               <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
             </marker>
           </defs>
-          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
           <g>
             <g>
               <circle class="geom-circle golden-circle" cx="367.28" cy="240" r="159.68" fill="none"><title>cCD: y**2 + (x - 2)**2 - 5 = 0</title></circle>
@@ -347,7 +612,48 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="04-tran-mcgucken-3x3-circle/index.html" aria-label="GC-03.04 — Tran Quang Hung & Elliot McGucken's 3×3 Grid Circle">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="04-tran-mcgucken-3x3-circle" role="img" aria-label="GC-03.04 — Tran Quang Hung &amp; Elliot McGucken's 3×3 Grid Circle">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="04-tran-mcgucken-3x3-circle" role="img" aria-label="GC-03.04 — Tran Quang Hung &amp; Elliot McGucken's 3×3 Grid Circle" width="680" height="480" data-svg-scope="s-35e6289d">
+          <style>
+            svg[data-svg-scope="s-35e6289d"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            svg[data-svg-scope="s-35e6289d"] .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82 }
+            svg[data-svg-scope="s-35e6289d"] .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62 }
+            svg[data-svg-scope="s-35e6289d"] .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92 }
+            svg[data-svg-scope="s-35e6289d"] .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round }
+            svg[data-svg-scope="s-35e6289d"] .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-35e6289d"] .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72 }
+            svg[data-svg-scope="s-35e6289d"] .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-35e6289d"] .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88 }
+            svg[data-svg-scope="s-35e6289d"] .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68 }
+            svg[data-svg-scope="s-35e6289d"] .geom-segment.golden-segment { fill: none; stroke: #b45309; stroke-width: 2.8; stroke-linecap: round; stroke-opacity: 0.55 }
+            svg[data-svg-scope="s-35e6289d"] .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none }
+            svg[data-svg-scope="s-35e6289d"] .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round }
+            svg[data-svg-scope="s-35e6289d"] .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round }
+            svg[data-svg-scope="s-35e6289d"] .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none }
+            svg[data-svg-scope="s-35e6289d"] .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5 }
+            svg[data-svg-scope="s-35e6289d"] .geom-point.given-point { fill: #0f172a }
+            svg[data-svg-scope="s-35e6289d"] .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7 }
+            svg[data-svg-scope="s-35e6289d"] .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none }
+            svg[data-svg-scope="s-35e6289d"] .geom-label { fill: #1c1917; font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: #fafaf9; stroke-opacity: 0.92; stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-35e6289d"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-35e6289d"] .geom-circle.conic-curve { stroke: #38bdf8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-35e6289d"] .geom-circle.aux-circle { stroke: #7dd3fc }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-35e6289d"] .geom-circle.golden-circle { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-35e6289d"] .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-35e6289d"] .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-35e6289d"] .geom-line { stroke: #94a3b8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-35e6289d"] .geom-line.aux-line { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-35e6289d"] .geom-segment.struct-segment { stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-35e6289d"] .geom-segment.aux-segment { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-35e6289d"] .geom-segment.golden-segment { stroke: #facc15 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-35e6289d"] .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-35e6289d"] .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-35e6289d"] .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-35e6289d"] .geom-point { fill: #38bdf8; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-35e6289d"] .geom-point.given-point { fill: #e2e8f0 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-35e6289d"] .geom-point.golden-point { fill: #f5c542; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-35e6289d"] .geom-point-halo { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-35e6289d"] .geom-label { fill: #f4f4f5; stroke: #141417 }
+          </style>
           <title>GC-03.04 — Tran Quang Hung &amp; Elliot McGucken&#x27;s 3×3 Grid Circle</title>
           <defs>
             <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
@@ -363,7 +669,6 @@
               <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
             </marker>
           </defs>
-          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
           <g>
             <g>
               <circle class="geom-circle golden-circle" cx="340" cy="240" r="159.68" fill="none"><title>cOT: x**2 + y**2 - 10 = 0</title></circle>
@@ -435,7 +740,48 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="05-tran-3x3-incenter/index.html" aria-label="GC-03.05 — Tran Quang Hung's 3×3 Grid Incenter Division">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="05-tran-3x3-incenter" role="img" aria-label="GC-03.05 — Tran Quang Hung's 3×3 Grid Incenter Division">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="05-tran-3x3-incenter" role="img" aria-label="GC-03.05 — Tran Quang Hung's 3×3 Grid Incenter Division" width="680" height="480" data-svg-scope="s-f25342cd">
+          <style>
+            svg[data-svg-scope="s-f25342cd"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            svg[data-svg-scope="s-f25342cd"] .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82 }
+            svg[data-svg-scope="s-f25342cd"] .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62 }
+            svg[data-svg-scope="s-f25342cd"] .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92 }
+            svg[data-svg-scope="s-f25342cd"] .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round }
+            svg[data-svg-scope="s-f25342cd"] .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-f25342cd"] .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72 }
+            svg[data-svg-scope="s-f25342cd"] .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-f25342cd"] .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88 }
+            svg[data-svg-scope="s-f25342cd"] .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68 }
+            svg[data-svg-scope="s-f25342cd"] .geom-segment.golden-segment { fill: none; stroke: #b45309; stroke-width: 2.8; stroke-linecap: round; stroke-opacity: 0.55 }
+            svg[data-svg-scope="s-f25342cd"] .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none }
+            svg[data-svg-scope="s-f25342cd"] .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round }
+            svg[data-svg-scope="s-f25342cd"] .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round }
+            svg[data-svg-scope="s-f25342cd"] .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none }
+            svg[data-svg-scope="s-f25342cd"] .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5 }
+            svg[data-svg-scope="s-f25342cd"] .geom-point.given-point { fill: #0f172a }
+            svg[data-svg-scope="s-f25342cd"] .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7 }
+            svg[data-svg-scope="s-f25342cd"] .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none }
+            svg[data-svg-scope="s-f25342cd"] .geom-label { fill: #1c1917; font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: #fafaf9; stroke-opacity: 0.92; stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-f25342cd"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-f25342cd"] .geom-circle.conic-curve { stroke: #38bdf8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-f25342cd"] .geom-circle.aux-circle { stroke: #7dd3fc }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-f25342cd"] .geom-circle.golden-circle { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-f25342cd"] .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-f25342cd"] .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-f25342cd"] .geom-line { stroke: #94a3b8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-f25342cd"] .geom-line.aux-line { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-f25342cd"] .geom-segment.struct-segment { stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-f25342cd"] .geom-segment.aux-segment { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-f25342cd"] .geom-segment.golden-segment { stroke: #facc15 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-f25342cd"] .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-f25342cd"] .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-f25342cd"] .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-f25342cd"] .geom-point { fill: #38bdf8; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-f25342cd"] .geom-point.given-point { fill: #e2e8f0 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-f25342cd"] .geom-point.golden-point { fill: #f5c542; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-f25342cd"] .geom-point-halo { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-f25342cd"] .geom-label { fill: #f4f4f5; stroke: #141417 }
+          </style>
           <title>GC-03.05 — Tran Quang Hung&#x27;s 3×3 Grid Incenter Division</title>
           <defs>
             <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
@@ -451,7 +797,6 @@
               <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
             </marker>
           </defs>
-          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
           <g>
             <g>
               <circle class="geom-circle golden-circle" cx="327.44" cy="252.56" r="93.04" fill="none"><title>cPT: (x - 5/2 + sqrt(5)/2)**2 + (y - 5/2 + sqrt(5)/2)**2 - 2*(-1/2 + sqrt(5)/2)**2 = 0</title></circle>
@@ -518,7 +863,48 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="06-suppa-square-inradii/index.html" aria-label="GC-03.06 — Ercole Suppa's Square Midpoint Inradii Ratio (2015)">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="06-suppa-square-inradii" role="img" aria-label="GC-03.06 — Ercole Suppa's Square Midpoint Inradii Ratio (2015)">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="06-suppa-square-inradii" role="img" aria-label="GC-03.06 — Ercole Suppa's Square Midpoint Inradii Ratio (2015)" width="680" height="480" data-svg-scope="s-5b125431">
+          <style>
+            svg[data-svg-scope="s-5b125431"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            svg[data-svg-scope="s-5b125431"] .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82 }
+            svg[data-svg-scope="s-5b125431"] .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62 }
+            svg[data-svg-scope="s-5b125431"] .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92 }
+            svg[data-svg-scope="s-5b125431"] .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round }
+            svg[data-svg-scope="s-5b125431"] .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-5b125431"] .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72 }
+            svg[data-svg-scope="s-5b125431"] .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-5b125431"] .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88 }
+            svg[data-svg-scope="s-5b125431"] .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68 }
+            svg[data-svg-scope="s-5b125431"] .geom-segment.golden-segment { fill: none; stroke: #b45309; stroke-width: 2.8; stroke-linecap: round; stroke-opacity: 0.55 }
+            svg[data-svg-scope="s-5b125431"] .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none }
+            svg[data-svg-scope="s-5b125431"] .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round }
+            svg[data-svg-scope="s-5b125431"] .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round }
+            svg[data-svg-scope="s-5b125431"] .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none }
+            svg[data-svg-scope="s-5b125431"] .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5 }
+            svg[data-svg-scope="s-5b125431"] .geom-point.given-point { fill: #0f172a }
+            svg[data-svg-scope="s-5b125431"] .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7 }
+            svg[data-svg-scope="s-5b125431"] .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none }
+            svg[data-svg-scope="s-5b125431"] .geom-label { fill: #1c1917; font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: #fafaf9; stroke-opacity: 0.92; stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-5b125431"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-5b125431"] .geom-circle.conic-curve { stroke: #38bdf8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-5b125431"] .geom-circle.aux-circle { stroke: #7dd3fc }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-5b125431"] .geom-circle.golden-circle { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-5b125431"] .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-5b125431"] .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-5b125431"] .geom-line { stroke: #94a3b8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-5b125431"] .geom-line.aux-line { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-5b125431"] .geom-segment.struct-segment { stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-5b125431"] .geom-segment.aux-segment { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-5b125431"] .geom-segment.golden-segment { stroke: #facc15 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-5b125431"] .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-5b125431"] .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-5b125431"] .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-5b125431"] .geom-point { fill: #38bdf8; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-5b125431"] .geom-point.given-point { fill: #e2e8f0 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-5b125431"] .geom-point.golden-point { fill: #f5c542; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-5b125431"] .geom-point-halo { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-5b125431"] .geom-label { fill: #f4f4f5; stroke: #141417 }
+          </style>
           <title>GC-03.06 — Ercole Suppa&#x27;s Square Midpoint Inradii Ratio (2015)</title>
           <defs>
             <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
@@ -534,7 +920,6 @@
               <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
             </marker>
           </defs>
-          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
           <g>
             <g>
               <circle class="geom-circle golden-circle" cx="400.99" cy="240" r="98.69" fill="none"><title>cEH: (y - 1)**2 + (x - 5/2 + sqrt(5)/2)**2 - (-1/2 + sqrt(5)/2)**2 = 0</title></circle>
@@ -599,7 +984,48 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="07-bui-cross-and-square/index.html" aria-label="GC-03.07 — Bùi Quang Tuân & Alexandre Borovik's Greek Cross & Square">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="07-bui-cross-and-square" role="img" aria-label="GC-03.07 — Bùi Quang Tuân &amp; Alexandre Borovik's Greek Cross &amp; Square">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="07-bui-cross-and-square" role="img" aria-label="GC-03.07 — Bùi Quang Tuân &amp; Alexandre Borovik's Greek Cross &amp; Square" width="680" height="480" data-svg-scope="s-691b1cf3">
+          <style>
+            svg[data-svg-scope="s-691b1cf3"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            svg[data-svg-scope="s-691b1cf3"] .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82 }
+            svg[data-svg-scope="s-691b1cf3"] .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62 }
+            svg[data-svg-scope="s-691b1cf3"] .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92 }
+            svg[data-svg-scope="s-691b1cf3"] .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round }
+            svg[data-svg-scope="s-691b1cf3"] .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-691b1cf3"] .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72 }
+            svg[data-svg-scope="s-691b1cf3"] .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-691b1cf3"] .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88 }
+            svg[data-svg-scope="s-691b1cf3"] .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68 }
+            svg[data-svg-scope="s-691b1cf3"] .geom-segment.golden-segment { fill: none; stroke: #b45309; stroke-width: 2.8; stroke-linecap: round; stroke-opacity: 0.55 }
+            svg[data-svg-scope="s-691b1cf3"] .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none }
+            svg[data-svg-scope="s-691b1cf3"] .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round }
+            svg[data-svg-scope="s-691b1cf3"] .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round }
+            svg[data-svg-scope="s-691b1cf3"] .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none }
+            svg[data-svg-scope="s-691b1cf3"] .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5 }
+            svg[data-svg-scope="s-691b1cf3"] .geom-point.given-point { fill: #0f172a }
+            svg[data-svg-scope="s-691b1cf3"] .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7 }
+            svg[data-svg-scope="s-691b1cf3"] .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none }
+            svg[data-svg-scope="s-691b1cf3"] .geom-label { fill: #1c1917; font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: #fafaf9; stroke-opacity: 0.92; stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-691b1cf3"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-691b1cf3"] .geom-circle.conic-curve { stroke: #38bdf8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-691b1cf3"] .geom-circle.aux-circle { stroke: #7dd3fc }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-691b1cf3"] .geom-circle.golden-circle { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-691b1cf3"] .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-691b1cf3"] .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-691b1cf3"] .geom-line { stroke: #94a3b8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-691b1cf3"] .geom-line.aux-line { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-691b1cf3"] .geom-segment.struct-segment { stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-691b1cf3"] .geom-segment.aux-segment { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-691b1cf3"] .geom-segment.golden-segment { stroke: #facc15 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-691b1cf3"] .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-691b1cf3"] .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-691b1cf3"] .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-691b1cf3"] .geom-point { fill: #38bdf8; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-691b1cf3"] .geom-point.given-point { fill: #e2e8f0 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-691b1cf3"] .geom-point.golden-point { fill: #f5c542; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-691b1cf3"] .geom-point-halo { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-691b1cf3"] .geom-label { fill: #f4f4f5; stroke: #141417 }
+          </style>
           <title>GC-03.07 — Bùi Quang Tuân &amp; Alexandre Borovik&#x27;s Greek Cross &amp; Square</title>
           <defs>
             <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
@@ -615,7 +1041,6 @@
               <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
             </marker>
           </defs>
-          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
           <g>
             <g>
               <circle class="geom-circle conic-curve" cx="340" cy="240" r="159.68" fill="none"><title>cO: x**2 + y**2 - 10 = 0</title></circle>
@@ -700,7 +1125,48 @@
                 <div class="content">
                   <figure class="excerpt-svg">
                     <a href="08-arioni-rotating-square/index.html" aria-label="GC-03.08 — John Arioni's 30°-Rotated Unit Square & Diagonal Circle">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" viewBox="0 0 680 480" data-graphic-id="08-arioni-rotating-square" role="img" aria-label="GC-03.08 — John Arioni's 30°-Rotated Unit Square &amp; Diagonal Circle">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="08-arioni-rotating-square" role="img" aria-label="GC-03.08 — John Arioni's 30°-Rotated Unit Square &amp; Diagonal Circle" width="680" height="480" data-svg-scope="s-e72ffad5">
+          <style>
+            svg[data-svg-scope="s-e72ffad5"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            svg[data-svg-scope="s-e72ffad5"] .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82 }
+            svg[data-svg-scope="s-e72ffad5"] .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62 }
+            svg[data-svg-scope="s-e72ffad5"] .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92 }
+            svg[data-svg-scope="s-e72ffad5"] .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round }
+            svg[data-svg-scope="s-e72ffad5"] .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-e72ffad5"] .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72 }
+            svg[data-svg-scope="s-e72ffad5"] .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-e72ffad5"] .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88 }
+            svg[data-svg-scope="s-e72ffad5"] .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68 }
+            svg[data-svg-scope="s-e72ffad5"] .geom-segment.golden-segment { fill: none; stroke: #b45309; stroke-width: 2.8; stroke-linecap: round; stroke-opacity: 0.55 }
+            svg[data-svg-scope="s-e72ffad5"] .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none }
+            svg[data-svg-scope="s-e72ffad5"] .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round }
+            svg[data-svg-scope="s-e72ffad5"] .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round }
+            svg[data-svg-scope="s-e72ffad5"] .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none }
+            svg[data-svg-scope="s-e72ffad5"] .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5 }
+            svg[data-svg-scope="s-e72ffad5"] .geom-point.given-point { fill: #0f172a }
+            svg[data-svg-scope="s-e72ffad5"] .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7 }
+            svg[data-svg-scope="s-e72ffad5"] .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none }
+            svg[data-svg-scope="s-e72ffad5"] .geom-label { fill: #1c1917; font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: #fafaf9; stroke-opacity: 0.92; stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-e72ffad5"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e72ffad5"] .geom-circle.conic-curve { stroke: #38bdf8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e72ffad5"] .geom-circle.aux-circle { stroke: #7dd3fc }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e72ffad5"] .geom-circle.golden-circle { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e72ffad5"] .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e72ffad5"] .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e72ffad5"] .geom-line { stroke: #94a3b8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e72ffad5"] .geom-line.aux-line { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e72ffad5"] .geom-segment.struct-segment { stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e72ffad5"] .geom-segment.aux-segment { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e72ffad5"] .geom-segment.golden-segment { stroke: #facc15 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e72ffad5"] .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e72ffad5"] .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e72ffad5"] .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e72ffad5"] .geom-point { fill: #38bdf8; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e72ffad5"] .geom-point.given-point { fill: #e2e8f0 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e72ffad5"] .geom-point.golden-point { fill: #f5c542; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e72ffad5"] .geom-point-halo { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e72ffad5"] .geom-label { fill: #f4f4f5; stroke: #141417 }
+          </style>
           <title>GC-03.08 — John Arioni&#x27;s 30°-Rotated Unit Square &amp; Diagonal Circle</title>
           <defs>
             <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
@@ -716,7 +1182,6 @@
               <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
             </marker>
           </defs>
-          <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
           <g>
             <g>
               <circle class="geom-circle golden-circle" cx="340" cy="240" r="159.68" fill="none"><title>cAC: (x - 1/2)**2 + (y - sqrt(3)/2)**2 - (1/2 + sqrt(3)/2)**2 - (1/2 - sqrt(3)/2)**2 = 0</title></circle>
@@ -901,7 +1366,7 @@
 
   <script src="../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../_static/documentation_options.js?v=5bfaad31"></script>
+  <script src="../../_static/documentation_options.js?v=90733dfc"></script>
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
