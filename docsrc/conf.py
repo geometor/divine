@@ -32,7 +32,6 @@ setup_globals(org, org_name, repo, repo_name)  # noqa: F405
 html_theme = "foundation"
 html_static_path = ["_static"]
 html_css_files = ["custom.css"]
-html_logo = None
 autoapi_add_toctree_entry = False
 napoleon_use_ivar = True
 if "overview/intro.rst" not in exclude_patterns:  # noqa: F405
