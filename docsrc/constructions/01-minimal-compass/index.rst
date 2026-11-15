@@ -11,6 +11,9 @@ GC-01 · Classical & Minimal-Step Compass Constructions
 
 From :person:`Euclid <euclid>`'s *Elements* Book II Proposition 11 to early twenty-first-century *Forum Geometricorum* papers by :person:`Kurt Hofstetter <kurt-hofstetter>` and :person:`Bùi Quang Tuân <bui-quang-tuan>`, geometers have asked how economically a straight segment can be divided in :term:`extreme and mean ratio <extreme-and-mean-ratio>`. This opening family catalogs the classical Euclidean gnomon, the Heron–Ptolemy right-triangle hypotenuse transfer, four distinct 5-step minimal Euclidean and rusty-compass divisions, and Hofstetter's 5-circle Mascheroni compass-only construction.
 
+.. picture:: /constructions/01-minimal-compass/01-euclid-ii-11/01-euclid-ii-11.svg
+   :alt: Classical & Minimal-Step Compass Constructions
+
 Cataloged Constructions (7)
 ---------------------------
 

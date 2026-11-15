@@ -1,6 +1,12 @@
 changelog
 =========
 
+0.4.4
+-----
+*2026-11-15*
+
+- Added representative ``.. picture::`` hero figures to the 7 family container pages (``GC-01`` through ``GC-07``) and rebuilt inline SVGs with explicit ``viewBox`` dimensions and scoped dark/light theme styles (``publish`` ``v0.4.6``).
+
 0.4.3
 -----
 *2026-11-15*

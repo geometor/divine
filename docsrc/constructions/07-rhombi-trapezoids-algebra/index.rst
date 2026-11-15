@@ -11,6 +11,9 @@ GC-07 · Rhombi, Trapezoids, Mixtilinear Circles & Dissections
 
 Rounding out the catalog, quadrilaterals and curvilinear touchings demonstrate how quadratic means, tangency altitudes, and Cassini's Fibonacci identity converge on :math:`\phi`. Entries span :person:`Tran Quang Hung <tran-quang-hung>`'s :math:`2:1` rhombus incircle, :math:`60^\circ` half-hexagon trapezoid, and equilateral mixtilinear circle; :person:`John Molokach <john-molokach>`'s golden rhombus from shifted :math:`1 \times 3` rectangles; :person:`Jingcheng Tong <jingcheng-tong>`'s root-mean-square trapezoid bisector; and the exact :math:`\phi`-power resolution of the :person:`William Hooper <william-hooper>`–:person:`Paul Curry <paul-curry>` dissection paradox.
 
+.. picture:: /constructions/07-rhombi-trapezoids-algebra/01-tran-rhombus-incircle/01-tran-rhombus-incircle.svg
+   :alt: Rhombi, Trapezoids, Mixtilinear Circles & Dissections
+
 Cataloged Constructions (6)
 ---------------------------
 
