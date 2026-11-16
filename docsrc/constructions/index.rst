@@ -1,11 +1,14 @@
+:type: book
 :navigation: header
 :order: 1
 :nav_title: Golden Constructions
+:breadcrumb_title: Golden Constructions
 :layout: book
 :book_title: Catalog of Golden Ratio Constructions
 :book_subtitle: Seven Geometric Families in Exact Symbolic Algebra
 :author: Alexander Bogomolny, Euclid & Contemporary Geometers
 :year: 2024
+:excerpt: A machine-verified symbolic catalog of 45 geometric constructions across seven families certifying 129 exact golden sections.
 
 Catalog of Golden Ratio Constructions
 =====================================

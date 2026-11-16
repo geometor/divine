@@ -1,9 +1,12 @@
-GEOMETOR • divine
-=================
+===========================
+Divine Proportion Discovery
+===========================
 
-Exact symbolic discovery engine and **Catalog of Golden Ratio Constructions**.
+Exact symbolic discovery engine and catalog of golden ratio constructions across classical and modern geometry.
 
-.. include:: overview/intro.rst
+.. collection::
+   :type: book
+   :sort: order
 
 Catalog of Golden Ratio Constructions
 -------------------------------------
@@ -17,13 +20,6 @@ entries side-by-side in the :doc:`Master Comparative Table <constructions/compar
 * :doc:`Bibliography — Primary Treatises, Journals & Archival Sources <constructions/bibliography>`
 * :doc:`About This Edition — Golden Ratio Discoveries & Exact Proportions <about/index>`
 
-Indices
--------
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
 .. toctree::
    :maxdepth: 2
    :hidden:
@@ -31,3 +27,12 @@ Indices
    about/index
    constructions/index
    usage/index
+
+----
+
+Indices
+-------
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

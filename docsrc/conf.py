@@ -29,6 +29,10 @@ repo_name = "divine"
 
 setup_globals(org, org_name, repo, repo_name)  # noqa: F405
 
+site_title = "Divine Proportion Discovery"
+project = site_title
+html_title = f"{site_title} • {org_name}"
+
 html_theme = "foundation"
 html_static_path = ["_static"]
 html_css_files = ["custom.css"]
