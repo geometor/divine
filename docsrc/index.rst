@@ -1,8 +1,12 @@
+.. container:: author-overline
+
+   semantic digital archive • mathematical catalog
+
 ===========================
 Divine Proportion Discovery
 ===========================
 
-Exact symbolic discovery engine and catalog of golden ratio constructions across classical and modern geometry.
+The mathematical catalog provides an automated symbolic discovery engine and machine-certified corpus of golden ratio constructions across classical and contemporary geometry. Within the interconnected `GEOMETOR <https://geometor.com/books/>`_ semantic digital archive, these constructions are liberated into exact algebraic models over $\mathbb{Q}(\sqrt{5})$, theme-adaptive vector diagrams, and verified golden chains speaking one shared geometric language.
 
 .. collection::
    :type: book
