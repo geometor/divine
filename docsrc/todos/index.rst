@@ -1,5 +1,6 @@
 :navigation: footer
-:order: 5
+:order: 40
+:nav_title: Todos
 
 todos
 =====

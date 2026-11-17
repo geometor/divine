@@ -1,4 +1,3 @@
-:navigation: footer
 :order: 93
 :nav_title: Glossary
 
