@@ -61,7 +61,7 @@
           <a href="../../constructions/index.html"  >Golden Constructions</a>
         </li>
         <li>
-          <a href="../../constructions/persons.html"  >People</a>
+          <a href="../../constructions/people/index.html"  >People</a>
         </li>
         <li>
           <a href="../../constructions/bibliography.html"  >Bibliography</a>
@@ -112,6 +112,233 @@
         <section class="level-1" id="golden-sections">
         <h1>golden sections<a class="headerlink" href="#golden-sections" title="Link to this heading">¶</a></h1>
         <p>Divine identifies points that divide segments into the golden ratio ($\phi$).</p>
+        <p>Find and analyze exact symbolic golden sections in GEOMETOR models.</p>
+        <p>This module provides fast numerical pre-filtering paired with 100% exact
+        Rational Trigonometry symbolic verification (<code class="xref py py-func docutils literal notranslate"><span class="pre">geometor.model.quadrance()</span></code>
+        and <code class="xref py py-func docutils literal notranslate"><span class="pre">geometor.model.zero_test()</span></code>) to detect golden sections and chains
+        across lines and collinear point configurations in <code class="xref py py-class docutils literal notranslate"><span class="pre">geometor.model.Model</span></code>.</p>
+        <dl class="py function">
+        <dt class="sig sig-object py">
+        <span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">analyze_harmonics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.sympy.org/latest/modules/geometry/lines.html#sympy.geometry.line.Line" title="(in SymPy v1.14.0)"><span class="pre">Line</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.sympy.org/latest/modules/geometry/points.html#sympy.geometry.point.Point" title="(in SymPy v1.14.0)"><span class="pre">Point</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span></dt>
+        <dd><p>Analyze a line for harmonic ranges.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>line</strong> – The line to analyze.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>A list of harmonic ranges (tuples of 4 points).</p>
+        </dd>
+        <dt class="field-odd">Return type<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)">list</a></p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py">
+        <span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">analyze_harmonics_by_segment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sections_by_line</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a></span></span></dt>
+        <dd><p>Group harmonic ranges by segment.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>sections_by_line</strong> – Dictionary of sections by line.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Nested dictionary mapping lines to segments to harmonic ranges.</p>
+        </dd>
+        <dt class="field-odd">Return type<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)">dict</a></p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py">
+        <span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">check_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.sympy.org/latest/modules/geometry/points.html#sympy.geometry.point.Point" title="(in SymPy v1.14.0)"><span class="pre">Point</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.sympy.org/latest/modules/core.html#sympy.core.expr.Expr" title="(in SymPy v1.14.0)"><span class="pre">Expr</span></a></span></span></dt>
+        <dd><p>Check if a range of 4 points forms a harmonic range.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>r</strong> – A tuple of 4 points.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>The cross ratio value (0 if harmonic).</p>
+        </dd>
+        <dt class="field-odd">Return type<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>sp.Expr</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py">
+        <span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">find_chains_in_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Model</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_collinear</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_guides</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Chain</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span></dt>
+        <dd><p>Scan <code class="docutils literal notranslate"><span class="pre">model</span></code> for all exact golden sections and connected golden chains.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py">
+        <span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">find_chains_in_sections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sections</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">]</span></span></span></span></dt>
+        <dd><p>Identify maximal chains of connected golden sections.</p>
+        <p>Two ordered sections <code class="docutils literal notranslate"><span class="pre">(A,</span> <span class="pre">B,</span> <span class="pre">C)</span></code> and <code class="docutils literal notranslate"><span class="pre">(B,</span> <span class="pre">C,</span> <span class="pre">D)</span></code> connect when the
+        trailing segment <code class="docutils literal notranslate"><span class="pre">(B,</span> <span class="pre">C)</span></code> of the first equals the leading segment
+        <code class="docutils literal notranslate"><span class="pre">(B,</span> <span class="pre">C)</span></code> of the second.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>sections</strong> – A list of <code class="xref py py-class docutils literal notranslate"><span class="pre">Section</span></code> objects to analyze.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Tree structure mapping root <code class="xref py py-class docutils literal notranslate"><span class="pre">Section</span></code> nodes to nested
+        dictionaries of connected successor <code class="xref py py-class docutils literal notranslate"><span class="pre">Section</span></code> nodes.</p>
+        </dd>
+        <dt class="field-odd">Return type<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)">dict</a></p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py">
+        <span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">find_golden_sections_in_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Model</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_collinear</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_guides</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_pool</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.sympy.org/latest/modules/geometry/lines.html#sympy.geometry.line.Line" title="(in SymPy v1.14.0)"><span class="pre">Line</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span></dt>
+        <dd><p>Analyze all lines and collinear point triples in <code class="docutils literal notranslate"><span class="pre">model</span></code> for golden sections.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>model</strong> – The exact symbolic <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code> to analyze.</p></li>
+        <li><p><strong>include_collinear</strong> – When <code class="docutils literal notranslate"><span class="pre">True</span></code> (default), also sweep maximal collinear
+        point triples on segments or circle-only configurations without
+        requiring an infinite <code class="xref py py-class docutils literal notranslate"><span class="pre">sympy.geometry.Line</span></code> in <code class="docutils literal notranslate"><span class="pre">model.lines</span></code>.</p></li>
+        <li><p><strong>include_guides</strong> – Whether to include guide points and guide lines.</p></li>
+        <li><p><strong>use_pool</strong> – Whether to use <code class="docutils literal notranslate"><span class="pre">multiprocessing.Pool</span></code> per line.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">(sections,</span> <span class="pre">sections_by_line)</span></code> containing deduplicated exact
+        golden <code class="xref py py-class docutils literal notranslate"><span class="pre">Section</span></code> instances and a mapping from carrier lines to
+        their golden sections.</p>
+        </dd>
+        <dt class="field-odd">Return type<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)">tuple</a></p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py">
+        <span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">find_golden_sections_in_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pts</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/collections.abc.html#collections.abc.Sequence" title="(in Python v3.13)"><span class="pre">Sequence</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.sympy.org/latest/modules/geometry/points.html#sympy.geometry.point.Point2D" title="(in SymPy v1.14.0)"><span class="pre">Point2D</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_pool</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span></span></span></dt>
+        <dd><p>Find all exact golden sections among 3-point combinations of collinear points.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>pts</strong> – Collinear SymPy points to analyze.</p></li>
+        <li><p><strong>use_pool</strong> – If <code class="docutils literal notranslate"><span class="pre">True</span></code>, evaluate candidates across a process pool;
+        defaults to fast in-process screening + exact algebraic proof.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact golden sections ordered along the line.</p>
+        </dd>
+        <dt class="field-odd">Return type<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)">list</a>[Section]</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py">
+        <span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">group_sections_by_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sections</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.sympy.org/latest/modules/geometry/points.html#sympy.geometry.point.Point" title="(in SymPy v1.14.0)"><span class="pre">Point</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span></dt>
+        <dd><p>Group sections by the points they contain.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>sections</strong> – List of sections to group.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Mapping of point to list of sections.</p>
+        </dd>
+        <dt class="field-odd">Return type<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)">dict</a></p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py">
+        <span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">group_sections_by_segments</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sections</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.sympy.org/latest/modules/geometry/lines.html#sympy.geometry.line.Segment" title="(in SymPy v1.14.0)"><span class="pre">Segment</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span></dt>
+        <dd><p>Group sections by the segments they contain.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>sections</strong> – List of sections to group.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Mapping of segment to list of sections.</p>
+        </dd>
+        <dt class="field-odd">Return type<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)">dict</a></p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py">
+        <span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">group_sections_by_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sections</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.sympy.org/latest/modules/core.html#sympy.core.expr.Expr" title="(in SymPy v1.14.0)"><span class="pre">Expr</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span></dt>
+        <dd><p>Group sections by their minimum length.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>sections</strong> – List of sections to group.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Mapping of length expression to list of sections.</p>
+        </dd>
+        <dt class="field-odd">Return type<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)">dict</a></p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py">
+        <span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">is_section_golden</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">section_points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/library/collections.abc.html#collections.abc.Sequence" title="(in Python v3.13)"><span class="pre">Sequence</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.sympy.org/latest/modules/geometry/points.html#sympy.geometry.point.Point2D" title="(in SymPy v1.14.0)"><span class="pre">Point2D</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span></span></dt>
+        <dd><p>Check whether three ordered collinear points form an exact golden section.</p>
+        <p>First screens segment quadrances numerically, then proves exact equality
+        <code class="docutils literal notranslate"><span class="pre">Q_long</span> <span class="pre">-</span> <span class="pre">(phi</span> <span class="pre">+</span> <span class="pre">1)</span> <span class="pre">*</span> <span class="pre">Q_short</span> <span class="pre">==</span> <span class="pre">0</span></code> symbolically via
+        <code class="xref py py-func docutils literal notranslate"><span class="pre">quadrance()</span></code> and <code class="xref py py-func docutils literal notranslate"><span class="pre">zero_test()</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>section_points</strong> – Sequence of three ordered collinear points <code class="docutils literal notranslate"><span class="pre">(P,</span> <span class="pre">Q,</span> <span class="pre">R)</span></code>.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">True</span></code> if <code class="docutils literal notranslate"><span class="pre">max(|PQ|,</span> <span class="pre">|QR|)</span> <span class="pre">/</span> <span class="pre">min(|PQ|,</span> <span class="pre">|QR|)</span> <span class="pre">==</span> <span class="pre">phi</span></code> exactly.</p>
+        </dd>
+        <dt class="field-odd">Return type<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)">bool</a></p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py">
+        <span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">points_on_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">spg.LinearEntity2D</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_guides</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">point_floats</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><span class="pre">spg.Point2D</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#tuple" title="(in Python v3.13)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#float" title="(in Python v3.13)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">spg.Point2D</span><span class="p"><span class="pre">]</span></span></span></span></dt>
+        <dd><p>Return all model points incident with <code class="docutils literal notranslate"><span class="pre">line</span></code> verified symbolically.</p>
+        <p>Uses floating-point line residual screening followed by exact
+        <code class="xref py py-func docutils literal notranslate"><span class="pre">zero_test()</span></code> verification on the implicit line
+        equation <code class="docutils literal notranslate"><span class="pre">a*x</span> <span class="pre">+</span> <span class="pre">b*y</span> <span class="pre">+</span> <span class="pre">c</span> <span class="pre">=</span> <span class="pre">0</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py">
+        <span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">unpack_chains</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tree</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Section</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Chain</span><span class="p"><span class="pre">]</span></span></span></span></dt>
+        <dd><p>Unpack a chain tree into a list of individual <code class="xref py py-class docutils literal notranslate"><span class="pre">Chain</span></code> objects.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>tree</strong> – Tree structure returned by <a class="reference internal" href="../../modules/api/geometor/divine/golden/index.html#geometor.divine.golden.find_chains_in_sections" title="geometor.divine.golden.find_chains_in_sections"><code class="xref py py-func docutils literal notranslate"><span class="pre">find_chains_in_sections()</span></code></a>.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Connected golden-section chains.</p>
+        </dd>
+        <dt class="field-odd">Return type<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)">list</a>[Chain]</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
         </section>
 
       </div>
@@ -215,6 +442,7 @@
         <li><a href="../../types/construction.html">construction</a></li>
         <li><a href="../../types/family.html">family</a></li>
         <li><a href="../../types/log.html">log</a></li>
+        <li><a href="../../types/person.html">person</a></li>
       </ul>
     </aside>
   </div>
@@ -242,6 +470,7 @@
   <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/collection_directory.js?v=f242906c"></script>
   <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
   <script src="../../_static/js/search_highlight.js"></script>
 
