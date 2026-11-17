@@ -20,6 +20,25 @@ Catalogs in This Archive
 
 - `Catalog of Golden Ratio Constructions <https://geometor.github.io/divine/constructions/>`_ — 45 machine-certified golden ratio constructions across seven geometric families in exact symbolic algebra.
 
+Python Package & Modules
+------------------------
+
+The ``geometor-divine`` Python package (``import geometor.divine``) provides the executable symbolic geometry, construction, and compilation modules powering this archive:
+
+- ``catalog/registry.py`` — Master registry of the 7 geometric families and 45 cataloged constructions.
+- ``divine.py`` — Main entry point for the divine analysis module.
+- ``events.py`` — Event listeners for divine analysis.
+- ``golden/chains.py`` — Golden Chain Analyzer: Harmonic Range Identification in Golden Sections.
+- ``golden/groups.py`` — Module for grouping and organizing Golden Sections.
+- ``golden/ranges.py`` — Analysis of harmonic ranges in geometric lines.
+- ``catalog/apparatus.py`` — Scholarly apparatus registries for the Catalog of Golden Ratio Constructions.
+- ``catalog/circles_sangaku.py`` — Family 06: Circles, Tangent Packings, Yin-Yang & Sangaku Configurations.
+- ``catalog/equilateral_hexagon.py`` — Family 02: Equilateral Triangles & Regular Hexagons — The Odom Lineage.
+- ``catalog/generate_codex.py`` — Deterministic generator for the Golden Ratio Catalog Book Codex & JSON resources.
+- *Plus 8 additional modules under* ``src/geometor/divine/``.
+
+See the `API Reference <https://geometor.github.io/divine/modules/>`_ for full module documentation.
+
 Repository Contents
 -------------------
 
