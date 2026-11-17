@@ -3,6 +3,11 @@ GEOMETOR • divine
 
 **Visit the Online Archive:** https://geometor.github.io/divine/
 
+.. image:: docsrc/_static/root3-harmonics.png
+   :alt: GEOMETOR • divine featured geometric construction
+   :target: https://geometor.github.io/divine/
+   :align: center
+
 **Divine Proportion • Golden Ratio Discovery Engine & Constructions • semantic digital archive**
 
 Mission
