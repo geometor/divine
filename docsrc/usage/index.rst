@@ -61,7 +61,7 @@ Navigate the 45 constructions using rich taxonomy facets:
 
 Rich contextual apparatus is integrated directly into the reading experience:
 
-* **People Tooltips**: Hovering over :person:`Alexander Bogomolny <alexander-bogomolny>`, :person:`Euclid <euclid>`, or contemporary geometers reveals biographical sketches and links to their full profile in :doc:`/constructions/persons`.
+* **People Tooltips**: Hovering over :person:`Alexander Bogomolny <alexander-bogomolny>`, :person:`Euclid <euclid>`, or contemporary geometers reveals biographical sketches and links to their full profile in :doc:`/constructions/people/index`.
 * **Citations**: Citations (e.g. :cite:`euclid-elements`) show primary treatise loci and Cut-the-Knot source URLs on hover, linking to :doc:`/constructions/bibliography`.
 * **Glossary Terms**: Technical terms like :term:`quadrance <quadrance>`, :term:`golden chain <golden-chain>`, and :term:`Géométrographie <geometrographie>` display definition cards via :doc:`/constructions/glossary`.
 * **Master Comparative Table**: Inspect all 45 constructions side-by-side in the :doc:`/constructions/comparative_table`.

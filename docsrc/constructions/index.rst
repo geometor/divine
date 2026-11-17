@@ -49,7 +49,7 @@ Scholarly Apparatus
 
 - :doc:`comparative_table` — Complete metrics across all 45 constructions (number fields, elementary loci, Lemoine simplicity, and detected golden chains).
 - :doc:`bibliography` — Primary treatises, journal articles, and *Cut-the-Knot* archival citations.
-- :doc:`persons` — Biographical index of classical and contemporary geometers.
+- :doc:`people/index` — Biographical index of classical and contemporary geometers.
 - :doc:`glossary` — Technical glossary of constructive and Rational Trigonometry invariants.
 
 .. toctree::
@@ -57,5 +57,5 @@ Scholarly Apparatus
 
    comparative_table
    bibliography
-   persons
+   people/index
    glossary
