@@ -18,7 +18,7 @@ Mission
 Catalogs in This Archive
 ------------------------
 
-- **`Catalog of Golden Ratio Constructions <https://geometor.github.io/divine/constructions/>`_** — 45 machine-certified golden ratio constructions across seven geometric families in exact symbolic algebra.
+- `Catalog of Golden Ratio Constructions <https://geometor.github.io/divine/constructions/>`_ — 45 machine-certified golden ratio constructions across seven geometric families in exact symbolic algebra.
 
 Repository Contents
 -------------------
