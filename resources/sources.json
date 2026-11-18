@@ -1,0 +1,22 @@
+{
+  "repository": "geometor/divine",
+  "rights_category": "non-derivative-catalog",
+  "sources": [
+    {
+      "id": "geometor-divine-catalog",
+      "title": "Symbolic Golden Ratio Construction Catalog (45 Constructions)",
+      "author": "GEOMETOR",
+      "year": "2026",
+      "era": "17 U.S.C. § 102(b) Catalog",
+      "languages": [
+        "English"
+      ],
+      "site_url": "https://geometor.github.io/divine/",
+      "local_path": "resources/catalog_manifest.json",
+      "pages": null,
+      "publisher": "GEOMETOR",
+      "rights": "Original Symbolic Models & Catalog (17 U.S.C. § 102(b) mathematical facts)",
+      "excerpt": "45 machine-verified SymPy constructions across 7 families cross-referenced to Euclid, Huntley, Bogomolny, and Forum Geometricorum."
+    }
+  ]
+}
