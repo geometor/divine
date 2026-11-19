@@ -1,6 +1,12 @@
 changelog
 =========
 
+0.4.5
+-----
+*2026-11-18*
+
+- Optimized ``find_golden_sections_in_points`` by deferring ``combinations(sorted_pts, 3)`` allocation to ``use_pool=True`` only and replacing the $O(n^3)$ inner scan with a 1D ``bisect_left`` projection search ($O(n^2 \log n)$) for densely populated lines.
+
 0.4.4
 -----
 *2026-11-15*

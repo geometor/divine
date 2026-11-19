@@ -9,6 +9,7 @@ across lines and collinear point configurations in :class:`geometor.model.Model`
 from __future__ import annotations
 
 import math
+from bisect import bisect_left
 from collections.abc import Sequence
 from itertools import combinations
 from multiprocessing import Pool, cpu_count
@@ -163,9 +164,9 @@ def find_golden_sections_in_points(
         return []
 
     sorted_pts = sort_points(unique_pts)
-    candidates = [list(combo) for combo in combinations(sorted_pts, 3)]
 
     if use_pool:
+        candidates = [list(combo) for combo in combinations(sorted_pts, 3)]
         with Pool(cpu_count()) as pool:
             flags = pool.map(is_section_golden, candidates)
         return [Section(c) for c, ok in zip(candidates, flags) if ok]
@@ -174,36 +175,77 @@ def find_golden_sections_in_points(
     n = len(sorted_pts)
     goldens: list[Section] = []
 
+    def _check_triple(i: int, j: int, k: int, q1_f: float, q1_sym: sp.Expr | None) -> sp.Expr | None:
+        xj, yj = coords[j]
+        xk, yk = coords[k]
+        q2_f = (xk - xj) ** 2 + (yk - yj) ** 2
+        if q2_f <= 1e-20:
+            return q1_sym
+        q_max_f, q_min_f = (q1_f, q2_f) if q1_f >= q2_f else (q2_f, q1_f)
+        if abs((q_max_f / q_min_f) - _PHI_SQ_FLOAT) > _FLOAT_TOL:
+            return q1_sym
+
+        pi, pj, pk = sorted_pts[i], sorted_pts[j], sorted_pts[k]
+        if q1_sym is None:
+            q1_sym = quadrance(pi, pj)
+        q2_sym = quadrance(pj, pk)
+        q_long, q_short = (q1_sym, q2_sym) if q1_f >= q2_f else (q2_sym, q1_sym)
+        if zero_test(q_long - (phi + 1) * q_short):
+            goldens.append(Section([pi, pj, pk]))
+        else:
+            sec = Section([pi, pj, pk])
+            if sec.is_golden:
+                goldens.append(sec)
+        return q1_sym
+
+    # Project sorted collinear points onto unit direction vector for O(n^2 log n) bisect
+    x0, y0 = coords[0]
+    dx_tot = coords[-1][0] - x0
+    dy_tot = coords[-1][1] - y0
+    norm = math.hypot(dx_tot, dy_tot)
+    proj: list[float] | None = None
+    if norm > 1e-15:
+        ux, uy = dx_tot / norm, dy_tot / norm
+        cand_proj = [(cx - x0) * ux + (cy - y0) * uy for cx, cy in coords]
+        if all(cand_proj[m] <= cand_proj[m + 1] for m in range(n - 1)):
+            proj = cand_proj
+
+    if proj is not None:
+        for i in range(n - 2):
+            xi, yi = coords[i]
+            si = proj[i]
+            for j in range(i + 1, n - 1):
+                xj, yj = coords[j]
+                q1_f = (xj - xi) ** 2 + (yj - yi) ** 2
+                if q1_f <= 1e-20:
+                    continue
+                d1 = proj[j] - si
+                if d1 <= 1e-10:
+                    continue
+                sj = proj[j]
+                q1_sym: sp.Expr | None = None
+                seen_k: set[int] = set()
+                for target_d2 in (d1 / _PHI_FLOAT, d1 * _PHI_FLOAT):
+                    tol = 2.0 * _FLOAT_TOL * target_d2 + 1e-9
+                    target_s = sj + target_d2
+                    k = bisect_left(proj, target_s - tol, j + 1)
+                    while k < n and proj[k] <= target_s + tol:
+                        if k not in seen_k:
+                            seen_k.add(k)
+                            q1_sym = _check_triple(i, j, k, q1_f, q1_sym)
+                        k += 1
+        return goldens
+
     for i in range(n - 2):
         xi, yi = coords[i]
-        pi = sorted_pts[i]
         for j in range(i + 1, n - 1):
             xj, yj = coords[j]
             q1_f = (xj - xi) ** 2 + (yj - yi) ** 2
             if q1_f <= 1e-20:
                 continue
-            pj = sorted_pts[j]
-            q1_sym: sp.Expr | None = None
+            q1_sym = None
             for k in range(j + 1, n):
-                xk, yk = coords[k]
-                q2_f = (xk - xj) ** 2 + (yk - yj) ** 2
-                if q2_f <= 1e-20:
-                    continue
-                q_max_f, q_min_f = (q1_f, q2_f) if q1_f >= q2_f else (q2_f, q1_f)
-                if abs((q_max_f / q_min_f) - _PHI_SQ_FLOAT) > _FLOAT_TOL:
-                    continue
-
-                pk = sorted_pts[k]
-                if q1_sym is None:
-                    q1_sym = quadrance(pi, pj)
-                q2_sym = quadrance(pj, pk)
-                q_long, q_short = (q1_sym, q2_sym) if q1_f >= q2_f else (q2_sym, q1_sym)
-                if zero_test(q_long - (phi + 1) * q_short):
-                    goldens.append(Section([pi, pj, pk]))
-                else:
-                    sec = Section([pi, pj, pk])
-                    if sec.is_golden:
-                        goldens.append(sec)
+                q1_sym = _check_triple(i, j, k, q1_f, q1_sym)
 
     return goldens
 
