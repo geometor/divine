@@ -121,6 +121,7 @@
         <li class="toctree-l1"><a class="reference internal" href="chains/index.html">geometor.divine.golden.chains</a></li>
         <li class="toctree-l1"><a class="reference internal" href="groups/index.html">geometor.divine.golden.groups</a></li>
         <li class="toctree-l1"><a class="reference internal" href="ranges/index.html">geometor.divine.golden.ranges</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="tracker/index.html">geometor.divine.golden.tracker</a></li>
         </ul>
         </div>
         </section>
@@ -133,6 +134,19 @@
         </tr>
         <tr class="row-even"><td><p><a class="reference internal" href="#geometor.divine.golden.phi" title="geometor.divine.golden.phi"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phi</span></code></a></p></td>
         <td><p></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.divine.golden.GoldenFieldTracker" title="geometor.divine.golden.GoldenFieldTracker"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GoldenFieldTracker</span></code></a></p></td>
+        <td><p>Incrementally track golden sections created as points and lines enter a Model.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.divine.golden.PointImpact" title="geometor.divine.golden.PointImpact"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PointImpact</span></code></a></p></td>
+        <td><p>A golden section brought into the field when a point is added.</p></td>
         </tr>
         </tbody>
         </table>
@@ -323,6 +337,71 @@
         <dd class="field-odd"><p>sp.Expr</p>
         </dd>
         </dl>
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.divine.golden.GoldenFieldTracker">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">GoldenFieldTracker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_guides</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.13/builtins/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#geometor.divine.golden.GoldenFieldTracker" title="Link to this definition">¶</a></dt>
+        <dd><p>Incrementally track golden sections created as points and lines enter a Model.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.golden.GoldenFieldTracker.include_guides">
+        <span class="sig-name descname"><span class="pre">include_guides</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></span><a class="headerlink" href="#geometor.divine.golden.GoldenFieldTracker.include_guides" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.golden.GoldenFieldTracker.tag_model">
+        <span class="sig-name descname"><span class="pre">tag_model</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></span><a class="headerlink" href="#geometor.divine.golden.GoldenFieldTracker.tag_model" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.golden.GoldenFieldTracker.sections">
+        <span class="sig-name descname"><span class="pre">sections</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><span class="pre">geometor.model.sections.Section</span><span class="p"><span class="pre">]</span></span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></span><a class="headerlink" href="#geometor.divine.golden.GoldenFieldTracker.sections" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.golden.GoldenFieldTracker.impact_by_point">
+        <span class="sig-name descname"><span class="pre">impact_by_point</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#dict" title="(in Python v3.13)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><span class="pre">sympy.geometry.Point2D</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#list" title="(in Python v3.13)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.divine.golden.PointImpact" title="geometor.divine.golden.PointImpact"><span class="pre">PointImpact</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.divine.golden.GoldenFieldTracker.impact_by_point" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.divine.golden.GoldenFieldTracker.attach">
+        <span class="sig-name descname"><span class="pre">attach</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#geometor.divine.golden.GoldenFieldTracker" title="geometor.divine.golden.GoldenFieldTracker"><span class="pre">GoldenFieldTracker</span></a></span></span><a class="headerlink" href="#geometor.divine.golden.GoldenFieldTracker.attach" title="Link to this definition">¶</a></dt>
+        <dd><p>Register this tracker as <code class="docutils literal notranslate"><span class="pre">model</span></code>’s analysis hook.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.divine.golden.GoldenFieldTracker.on_point_added">
+        <span class="sig-name descname"><span class="pre">on_point_added</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.geometry.Point2D</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#geometor.divine.golden.GoldenFieldTracker.on_point_added" title="Link to this definition">¶</a></dt>
+        <dd><p>Index any new lines and check all new golden sections created by <code class="docutils literal notranslate"><span class="pre">pt</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="geometor.divine.golden.GoldenFieldTracker.sync">
+        <span class="sig-name descname"><span class="pre">sync</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.13/builtins/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#geometor.divine.golden.GoldenFieldTracker.sync" title="Link to this definition">¶</a></dt>
+        <dd><p>Index any lines added after the last point event.</p>
+        </dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.divine.golden.PointImpact">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.divine.golden.</span></span><span class="sig-name descname"><span class="pre">PointImpact</span></span><a class="headerlink" href="#geometor.divine.golden.PointImpact" title="Link to this definition">¶</a></dt>
+        <dd><p>A golden section brought into the field when a point is added.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.golden.PointImpact.section">
+        <span class="sig-name descname"><span class="pre">section</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.sections.Section</span></span><a class="headerlink" href="#geometor.divine.golden.PointImpact.section" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.golden.PointImpact.role">
+        <span class="sig-name descname"><span class="pre">role</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.13/builtins/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span><a class="headerlink" href="#geometor.divine.golden.PointImpact.role" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.divine.golden.PointImpact.line">
+        <span class="sig-name descname"><span class="pre">line</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.geometry.Line</span></span><a class="headerlink" href="#geometor.divine.golden.PointImpact.line" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
         </dd></dl>
 
         <dl class="py data">
@@ -548,7 +627,7 @@
 
   <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
   <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../../../../../_static/documentation_options.js?v=340bb9e5"></script>
+  <script src="../../../../../_static/documentation_options.js?v=03f3338f"></script>
   <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>

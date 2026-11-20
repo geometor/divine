@@ -1,0 +1,83 @@
+geometor.divine.golden.tracker
+==============================
+
+.. py:module:: geometor.divine.golden.tracker
+
+.. autoapi-nested-parse::
+
+   Incremental point-birth golden section tracker.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.divine.golden.tracker.PointImpact
+   geometor.divine.golden.tracker.GoldenFieldTracker
+
+
+Module Contents
+---------------
+
+.. py:class:: PointImpact
+
+   A golden section brought into the field when a point is added.
+
+
+   .. py:attribute:: section
+      :type:  geometor.model.sections.Section
+
+
+   .. py:attribute:: role
+      :type:  str
+
+
+   .. py:attribute:: line
+      :type:  sympy.geometry.Line
+
+
+.. py:class:: GoldenFieldTracker(*, include_guides: bool = False, tag_model: bool = True)
+
+   Incrementally track golden sections created as points and lines enter a Model.
+
+
+   .. py:attribute:: include_guides
+      :value: False
+
+
+
+   .. py:attribute:: tag_model
+      :value: True
+
+
+
+   .. py:attribute:: sections
+      :type:  list[geometor.model.sections.Section]
+      :value: []
+
+
+
+   .. py:attribute:: impact_by_point
+      :type:  dict[sympy.geometry.Point2D, list[PointImpact]]
+
+
+   .. py:method:: attach(model: geometor.model.Model) -> GoldenFieldTracker
+
+      Register this tracker as ``model``'s analysis hook.
+
+
+
+   .. py:method:: on_point_added(model: geometor.model.Model, pt: sympy.geometry.Point2D) -> None
+
+      Index any new lines and check all new golden sections created by ``pt``.
+
+
+
+   .. py:method:: sync(model: geometor.model.Model) -> None
+
+      Index any lines added after the last point event.
+
+
+
