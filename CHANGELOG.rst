@@ -1,6 +1,12 @@
 changelog
 =========
 
+0.4.6
+-----
+*2026-11-19*
+
+- Added ``GoldenFieldTracker`` and ``PointImpact`` (``geometor.divine.golden.tracker``) for $O(m \log m)$ incremental point-birth golden section tracking across incident lines.
+
 0.4.5
 -----
 *2026-11-18*

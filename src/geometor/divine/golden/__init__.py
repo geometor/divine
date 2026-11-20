@@ -28,9 +28,12 @@ from .groups import (
     group_sections_by_size,
 )
 from .ranges import analyze_harmonics, analyze_harmonics_by_segment, check_range
+from .tracker import GoldenFieldTracker, PointImpact
 
 __all__ = [
     "Φ",
+    "GoldenFieldTracker",
+    "PointImpact",
     "analyze_harmonics",
     "analyze_harmonics_by_segment",
     "check_range",
