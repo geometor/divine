@@ -3,6 +3,12 @@ GEOMETOR • divine
 
 **Visit the Online Archive:** https://geometor.github.io/divine/
 
+.. image:: docsrc/_static/logo.png
+   :alt: GEOMETOR • divine Medallion
+   :target: https://geometor.github.io/divine/
+   :width: 180px
+   :align: center
+
 .. image:: docsrc/_static/root3-harmonics.png
    :alt: GEOMETOR • divine featured geometric construction
    :target: https://geometor.github.io/divine/
