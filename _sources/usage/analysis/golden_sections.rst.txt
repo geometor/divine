@@ -3,7 +3,7 @@
 golden sections
 ===============
 
-Divine identifies points that divide segments into the golden ratio ($\phi$).
+Divine identifies points that divide segments into the golden ratio (:math:`\phi`).
 
 .. automodule:: geometor.divine.golden
    :members:

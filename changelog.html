@@ -11,11 +11,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="canonical" href="https://geometor.github.io/divine/changelog.html" />
-  <meta name="description" content="Added GoldenFieldTracker and PointImpact (geometor.divine.golden.tracker) for $O(m log m)$ incremental point-birth golden section tracking across incident lines." />
+  <meta name="description" content="Added GoldenFieldTracker and PointImpact (geometor.divine.golden.tracker) for O(m \log m) incremental point-birth golden section tracking across incident lines." />
   <meta property="og:site_name" content="GEOMETOR" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="changelog — Divine Proportion Discovery • GEOMETOR" />
-  <meta property="og:description" content="Added GoldenFieldTracker and PointImpact (geometor.divine.golden.tracker) for $O(m log m)$ incremental point-birth golden section tracking across incident lines." />
+  <meta property="og:description" content="Added GoldenFieldTracker and PointImpact (geometor.divine.golden.tracker) for O(m \log m) incremental point-birth golden section tracking across incident lines." />
   <meta property="og:url" content="https://geometor.github.io/divine/changelog.html" />
   <meta property="og:image" content="https://geometor.github.io/divine/_static/social/banner.png" />
   <meta property="og:image:type" content="image/png" />
@@ -24,7 +24,7 @@
   <meta property="og:image:alt" content="Divine Proportion Discovery — GEOMETOR" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="changelog — Divine Proportion Discovery • GEOMETOR" />
-  <meta name="twitter:description" content="Added GoldenFieldTracker and PointImpact (geometor.divine.golden.tracker) for $O(m log m)$ incremental point-birth golden section tracking across incident lines." />
+  <meta name="twitter:description" content="Added GoldenFieldTracker and PointImpact (geometor.divine.golden.tracker) for O(m \log m) incremental point-birth golden section tracking across incident lines." />
   <meta name="twitter:image" content="https://geometor.github.io/divine/_static/social/banner.png" />
   <meta name="twitter:image:alt" content="Divine Proportion Discovery — GEOMETOR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -108,14 +108,14 @@
         <h2>0.4.6<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
         <p><em>2026-11-19</em></p>
         <ul class="simple">
-        <li><p>Added <code class="docutils literal notranslate"><span class="pre">GoldenFieldTracker</span></code> and <code class="docutils literal notranslate"><span class="pre">PointImpact</span></code> (<code class="docutils literal notranslate"><span class="pre">geometor.divine.golden.tracker</span></code>) for $O(m log m)$ incremental point-birth golden section tracking across incident lines.</p></li>
+        <li><p>Added <code class="docutils literal notranslate"><span class="pre">GoldenFieldTracker</span></code> and <code class="docutils literal notranslate"><span class="pre">PointImpact</span></code> (<code class="docutils literal notranslate"><span class="pre">geometor.divine.golden.tracker</span></code>) for <span class="math notranslate nohighlight">\(O(m \log m)\)</span> incremental point-birth golden section tracking across incident lines.</p></li>
         </ul>
         </section>
         <section class="level-2" id="id2">
         <h2>0.4.5<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
         <p><em>2026-11-18</em></p>
         <ul class="simple">
-        <li><p>Optimized <code class="docutils literal notranslate"><span class="pre">find_golden_sections_in_points</span></code> by deferring <code class="docutils literal notranslate"><span class="pre">combinations(sorted_pts,</span> <span class="pre">3)</span></code> allocation to <code class="docutils literal notranslate"><span class="pre">use_pool=True</span></code> only and replacing the $O(n^3)$ inner scan with a 1D <code class="docutils literal notranslate"><span class="pre">bisect_left</span></code> projection search ($O(n^2 log n)$) for densely populated lines.</p></li>
+        <li><p>Optimized <code class="docutils literal notranslate"><span class="pre">find_golden_sections_in_points</span></code> by deferring <code class="docutils literal notranslate"><span class="pre">combinations(sorted_pts,</span> <span class="pre">3)</span></code> allocation to <code class="docutils literal notranslate"><span class="pre">use_pool=True</span></code> only and replacing the <span class="math notranslate nohighlight">\(O(n^3)\)</span> inner scan with a 1D <code class="docutils literal notranslate"><span class="pre">bisect_left</span></code> projection search (<span class="math notranslate nohighlight">\(O(n^2 \log n)\)</span>) for densely populated lines.</p></li>
         </ul>
         </section>
         <section class="level-2" id="id3">
@@ -404,6 +404,8 @@
   <script src="_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="_static/js/collection_directory.js?v=0928c9d3"></script>
   <script src="_static/js/geometor_interactive.js?v=219c1955"></script>
+  <script>window.MathJax = {"options": {"ignoreHtmlClass": ".*|etc-lazy-math", "processHtmlClass": "math|arithmatex", "enableComplexity": true, "makeCollapsible": true, "menuOptions": {"settings": {"zoom": "Click", "zscale": "200%", "collapsible": true, "enrich": true, "speech": false, "braille": false, "assistiveMml": false}}}, "output": {"displayOverflow": "linebreak", "linebreaks": {"inline": true}}}</script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="_static/js/search_highlight.js"></script>
 
 </body>
