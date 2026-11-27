@@ -12,7 +12,7 @@ Divine Proportion Discovery
    :alt: Divine Proportion Discovery Medallion
    :class: repo-medallion-hero
 
-**geometor.divine** is an automated symbolic discovery engine that scans exact geometric constructions to uncover hidden golden sections ($\phi = \frac{1+\sqrt{5}}{2}$), harmonic ranges, and multi-point proportional chains. Alongside its Python analysis toolkit, this archive curates a machine-certified catalog of forty-five ruler-and-compass constructions spanning Euclid, Ptolemy, Kepler, and modern *Cut-the-Knot* geometers—all built in 100% exact SymPy algebra over $\mathbb{Q}(\sqrt{5})$ and its radical extensions.
+**geometor.divine** is an automated symbolic discovery engine that scans exact geometric constructions to uncover hidden golden sections (:math:`\phi = \frac{1+\sqrt{5}}{2}`), harmonic ranges, and multi-point proportional chains. Alongside its Python analysis toolkit, this archive curates a machine-certified catalog of forty-five ruler-and-compass constructions spanning Euclid, Ptolemy, Kepler, and modern *Cut-the-Knot* geometers—all built in 100% exact SymPy algebra over :math:`\mathbb{Q}(\sqrt{5})` and its radical extensions.
 
 Catalog & Discovery Engine
 --------------------------
@@ -49,7 +49,7 @@ Catalog & Discovery Engine
 
       .. rubric:: Symbolic Analysis Engine · Python API & Synthesis Guides
 
-      **Automated Golden Section & Chain Scanner** — Build any geometric model with ``geometor.model`` and scan every collinear point sequence for extreme and mean ratio divisions, Rational Trigonometry quadrance ratios ($Q_{\text{long}} / Q_{\text{short}} = \phi^2$), and maximal harmonic golden chains.
+      **Automated Golden Section & Chain Scanner** — Build any geometric model with ``geometor.model`` and scan every collinear point sequence for extreme and mean ratio divisions, Rational Trigonometry quadrance ratios (:math:`Q_{\text{long}} / Q_{\text{short}} = \phi^2`), and maximal harmonic golden chains.
 
       .. container:: home-actions
 
@@ -66,7 +66,7 @@ Key Features
 
       **100% Exact Symbolic Algebra**
 
-      Every segment ratio is certified over $\mathbb{Q}(\phi)$, $\mathbb{Q}(\sqrt{2}, \phi)$, $\mathbb{Q}(\sqrt{3}, \phi)$, and $\mathbb{Q}(\sqrt{\phi})$ with zero floating-point approximation.
+      Every segment ratio is certified over :math:`\mathbb{Q}(\phi)`, :math:`\mathbb{Q}(\sqrt{2}, \phi)`, :math:`\mathbb{Q}(\sqrt{3}, \phi)`, and :math:`\mathbb{Q}(\sqrt{\phi})` with zero floating-point approximation.
 
    .. container:: home-feature-card
 

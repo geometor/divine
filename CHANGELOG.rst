@@ -5,13 +5,13 @@ changelog
 -----
 *2026-11-19*
 
-- Added ``GoldenFieldTracker`` and ``PointImpact`` (``geometor.divine.golden.tracker``) for $O(m \log m)$ incremental point-birth golden section tracking across incident lines.
+- Added ``GoldenFieldTracker`` and ``PointImpact`` (``geometor.divine.golden.tracker``) for :math:`O(m \log m)` incremental point-birth golden section tracking across incident lines.
 
 0.4.5
 -----
 *2026-11-18*
 
-- Optimized ``find_golden_sections_in_points`` by deferring ``combinations(sorted_pts, 3)`` allocation to ``use_pool=True`` only and replacing the $O(n^3)$ inner scan with a 1D ``bisect_left`` projection search ($O(n^2 \log n)$) for densely populated lines.
+- Optimized ``find_golden_sections_in_points`` by deferring ``combinations(sorted_pts, 3)`` allocation to ``use_pool=True`` only and replacing the :math:`O(n^3)` inner scan with a 1D ``bisect_left`` projection search (:math:`O(n^2 \log n)`) for densely populated lines.
 
 0.4.4
 -----
