@@ -1,4 +1,5 @@
 :type: person
+:card_ref: ptolemy:index
 :layout: book
 :death_year: 170
 :death_label: 170

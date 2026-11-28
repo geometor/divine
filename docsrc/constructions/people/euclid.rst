@@ -1,4 +1,5 @@
 :type: person
+:card_ref: euclid:index
 :layout: book
 :death_year: -300
 :death_label: 300 BC

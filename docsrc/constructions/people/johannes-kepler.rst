@@ -1,4 +1,5 @@
 :type: person
+:card_ref: kepler:index
 :layout: book
 :death_year: 1630
 :death_label: 1630

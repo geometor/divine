@@ -1,4 +1,5 @@
 :type: person
+:card_ref: pacioli:index
 :layout: book
 :death_year: 1517
 :death_label: 1517
