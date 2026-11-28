@@ -1,0 +1,3015 @@
+{
+  "schema": "photon.card.v1",
+  "site": {
+    "org": "geometor",
+    "org_name": "GEOMETOR",
+    "repo": "divine",
+    "repo_name": "divine",
+    "title": "Divine Proportion Discovery",
+    "base_url": "https://geometor.github.io/divine",
+    "github_url": "https://github.com/geometor/divine",
+    "emblem": "https://geometor.github.io/divine/_static/medallion.svg"
+  },
+  "cards": {
+    "about/index": {
+      "id": "about/index",
+      "docname": "about/index",
+      "type": "article",
+      "title": "About",
+      "url": "https://geometor.github.io/divine/about/",
+      "description": "geometor.divine is the Golden Ratio analysis engine and computable Catalog of Golden Ratio Constructions within the GEOMETOR ecosystem. The edition formalizes, verifies, and analyzes the appearance of the golden ratio (\\phi = \\frac{1 +…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "About",
+      "labels": [
+        "about",
+        "about-index",
+        "about-divine"
+      ]
+    },
+    "changelog": {
+      "id": "changelog",
+      "docname": "changelog",
+      "type": "article",
+      "title": "changelog",
+      "url": "https://geometor.github.io/divine/changelog.html",
+      "description": "Added GoldenFieldTracker and PointImpact (geometor.divine.golden.tracker) for O(m \\log m) incremental point-birth golden section tracking across incident lines.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "changelog"
+    },
+    "constructions/01-minimal-compass/01-euclid-ii-11/code": {
+      "id": "constructions/01-minimal-compass/01-euclid-ii-11/code",
+      "docname": "constructions/01-minimal-compass/01-euclid-ii-11/code",
+      "type": "article",
+      "title": "GC-01.01 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/01-minimal-compass/01-euclid-ii-11/code.html",
+      "description": "Companion symbolic Python construction for index (GC-01.01).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/01-minimal-compass/01-euclid-ii-11/01-euclid-ii-11.svg",
+      "image_alt": "GC-01.01 — Euclid's Classical Golden Section (Elements II.11 & VI.30)"
+    },
+    "constructions/01-minimal-compass/01-euclid-ii-11/index": {
+      "id": "constructions/01-minimal-compass/01-euclid-ii-11/index",
+      "docname": "constructions/01-minimal-compass/01-euclid-ii-11/index",
+      "type": "construction",
+      "title": "GC-01.01 · Euclid’s Classical Golden Section (Elements II.11 & VI.30)",
+      "url": "https://geometor.github.io/divine/constructions/01-minimal-compass/01-euclid-ii-11/",
+      "description": "Discoverer(s): Euclid of Alexandria | Date: c. 300 BCE | Field: \\mathbb{Q}(\\phi) | Loci: 3 (Lemoine S = 9)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/01-minimal-compass/01-euclid-ii-11/01-euclid-ii-11.svg",
+      "image_alt": "GC-01.01 — Euclid's Classical Golden Section (Elements II.11 & VI.30)",
+      "facets": {
+        "tags": [
+          "field-q-phi",
+          "euclid"
+        ],
+        "categories": [
+          "01-minimal-compass"
+        ]
+      }
+    },
+    "constructions/01-minimal-compass/02-pythagorean-transfer/code": {
+      "id": "constructions/01-minimal-compass/02-pythagorean-transfer/code",
+      "docname": "constructions/01-minimal-compass/02-pythagorean-transfer/code",
+      "type": "article",
+      "title": "GC-01.02 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/01-minimal-compass/02-pythagorean-transfer/code.html",
+      "description": "Companion symbolic Python construction for index (GC-01.02).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/01-minimal-compass/02-pythagorean-transfer/02-pythagorean-transfer.svg",
+      "image_alt": "GC-01.02 — Right-Triangle Hypotenuse Transfer (1 : 2 : √5)"
+    },
+    "constructions/01-minimal-compass/02-pythagorean-transfer/index": {
+      "id": "constructions/01-minimal-compass/02-pythagorean-transfer/index",
+      "docname": "constructions/01-minimal-compass/02-pythagorean-transfer/index",
+      "type": "construction",
+      "title": "GC-01.02 · Right-Triangle Hypotenuse Transfer (1 : 2 : √5)",
+      "url": "https://geometor.github.io/divine/constructions/01-minimal-compass/02-pythagorean-transfer/",
+      "description": "Discoverer(s): Euclid of Alexandria | Date: Classical | Field: \\mathbb{Q}(\\phi) | Loci: 4 (Lemoine S = 12)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/01-minimal-compass/02-pythagorean-transfer/02-pythagorean-transfer.svg",
+      "image_alt": "GC-01.02 — Right-Triangle Hypotenuse Transfer (1 : 2 : √5)",
+      "facets": {
+        "tags": [
+          "field-q-phi",
+          "euclid"
+        ],
+        "categories": [
+          "01-minimal-compass"
+        ]
+      }
+    },
+    "constructions/01-minimal-compass/03-lemoine-hofstetter-5step/code": {
+      "id": "constructions/01-minimal-compass/03-lemoine-hofstetter-5step/code",
+      "docname": "constructions/01-minimal-compass/03-lemoine-hofstetter-5step/code",
+      "type": "article",
+      "title": "GC-01.03 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/01-minimal-compass/03-lemoine-hofstetter-5step/code.html",
+      "description": "Companion symbolic Python construction for index (GC-01.03).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/01-minimal-compass/03-lemoine-hofstetter-5step/03-lemoine-hofstetter-5step.svg",
+      "image_alt": "GC-01.03 — Lemoine–Reusch–Hofstetter 5-Step Division"
+    },
+    "constructions/01-minimal-compass/03-lemoine-hofstetter-5step/index": {
+      "id": "constructions/01-minimal-compass/03-lemoine-hofstetter-5step/index",
+      "docname": "constructions/01-minimal-compass/03-lemoine-hofstetter-5step/index",
+      "type": "construction",
+      "title": "GC-01.03 · Lemoine–Reusch–Hofstetter 5-Step Division",
+      "url": "https://geometor.github.io/divine/constructions/01-minimal-compass/03-lemoine-hofstetter-5step/",
+      "description": "Discoverer(s): Émile Michel Hyacinthe Lemoine, Kurt Hofstetter | Date: 1902 / 2003 | Field: \\mathbb{Q}(\\sqrt{3}, \\phi) | Loci: 6 (Lemoine S = 18)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/01-minimal-compass/03-lemoine-hofstetter-5step/03-lemoine-hofstetter-5step.svg",
+      "image_alt": "GC-01.03 — Lemoine–Reusch–Hofstetter 5-Step Division",
+      "facets": {
+        "tags": [
+          "field-q-sqrt3-phi",
+          "emile-lemoine",
+          "kurt-hofstetter"
+        ],
+        "categories": [
+          "01-minimal-compass"
+        ]
+      }
+    },
+    "constructions/01-minimal-compass/04-hofstetter-5step-2004/code": {
+      "id": "constructions/01-minimal-compass/04-hofstetter-5step-2004/code",
+      "docname": "constructions/01-minimal-compass/04-hofstetter-5step-2004/code",
+      "type": "article",
+      "title": "GC-01.04 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/01-minimal-compass/04-hofstetter-5step-2004/code.html",
+      "description": "Companion symbolic Python construction for index (GC-01.04).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/01-minimal-compass/04-hofstetter-5step-2004/04-hofstetter-5step-2004.svg",
+      "image_alt": "GC-01.04 — Hofstetter's 2004 Five-Step Secant Division"
+    },
+    "constructions/01-minimal-compass/04-hofstetter-5step-2004/index": {
+      "id": "constructions/01-minimal-compass/04-hofstetter-5step-2004/index",
+      "docname": "constructions/01-minimal-compass/04-hofstetter-5step-2004/index",
+      "type": "construction",
+      "title": "GC-01.04 · Hofstetter’s 2004 Five-Step Secant Division",
+      "url": "https://geometor.github.io/divine/constructions/01-minimal-compass/04-hofstetter-5step-2004/",
+      "description": "Discoverer(s): Kurt Hofstetter | Date: 2004 | Field: \\mathbb{Q}(\\sqrt{3}, \\phi) | Loci: 5 (Lemoine S = 15)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/01-minimal-compass/04-hofstetter-5step-2004/04-hofstetter-5step-2004.svg",
+      "image_alt": "GC-01.04 — Hofstetter's 2004 Five-Step Secant Division",
+      "facets": {
+        "tags": [
+          "field-q-sqrt3-phi",
+          "golden-chain",
+          "kurt-hofstetter"
+        ],
+        "categories": [
+          "01-minimal-compass"
+        ]
+      }
+    },
+    "constructions/01-minimal-compass/05-hofstetter-compass-only/code": {
+      "id": "constructions/01-minimal-compass/05-hofstetter-compass-only/code",
+      "docname": "constructions/01-minimal-compass/05-hofstetter-compass-only/code",
+      "type": "article",
+      "title": "GC-01.05 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/01-minimal-compass/05-hofstetter-compass-only/code.html",
+      "description": "Companion symbolic Python construction for index (GC-01.05).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/01-minimal-compass/05-hofstetter-compass-only/05-hofstetter-compass-only.svg",
+      "image_alt": "GC-01.05 — Mascheroni Five-Circle Compass-Only Construction"
+    },
+    "constructions/01-minimal-compass/05-hofstetter-compass-only/index": {
+      "id": "constructions/01-minimal-compass/05-hofstetter-compass-only/index",
+      "docname": "constructions/01-minimal-compass/05-hofstetter-compass-only/index",
+      "type": "construction",
+      "title": "GC-01.05 · Mascheroni Five-Circle Compass-Only Construction",
+      "url": "https://geometor.github.io/divine/constructions/01-minimal-compass/05-hofstetter-compass-only/",
+      "description": "Discoverer(s): Kurt Hofstetter | Date: 2002 | Field: \\mathbb{Q}(\\sqrt{3}, \\phi) | Loci: 5 (Lemoine S = 15)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/01-minimal-compass/05-hofstetter-compass-only/05-hofstetter-compass-only.svg",
+      "image_alt": "GC-01.05 — Mascheroni Five-Circle Compass-Only Construction",
+      "facets": {
+        "tags": [
+          "field-q-sqrt3-phi",
+          "golden-chain",
+          "compass-only",
+          "kurt-hofstetter"
+        ],
+        "categories": [
+          "01-minimal-compass"
+        ]
+      }
+    },
+    "constructions/01-minimal-compass/06-hofstetter-rusty-compass/code": {
+      "id": "constructions/01-minimal-compass/06-hofstetter-rusty-compass/code",
+      "docname": "constructions/01-minimal-compass/06-hofstetter-rusty-compass/code",
+      "type": "article",
+      "title": "GC-01.06 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/01-minimal-compass/06-hofstetter-rusty-compass/code.html",
+      "description": "Companion symbolic Python construction for index (GC-01.06).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/01-minimal-compass/06-hofstetter-rusty-compass/06-hofstetter-rusty-compass.svg",
+      "image_alt": "GC-01.06 — Hofstetter's Fixed-Aperture Rusty-Compass Division"
+    },
+    "constructions/01-minimal-compass/06-hofstetter-rusty-compass/index": {
+      "id": "constructions/01-minimal-compass/06-hofstetter-rusty-compass/index",
+      "docname": "constructions/01-minimal-compass/06-hofstetter-rusty-compass/index",
+      "type": "construction",
+      "title": "GC-01.06 · Hofstetter’s Fixed-Aperture Rusty-Compass Division",
+      "url": "https://geometor.github.io/divine/constructions/01-minimal-compass/06-hofstetter-rusty-compass/",
+      "description": "Discoverer(s): Kurt Hofstetter | Date: 2005 | Field: \\mathbb{Q}(\\sqrt{3}, \\phi) | Loci: 6 (Lemoine S = 18)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/01-minimal-compass/06-hofstetter-rusty-compass/06-hofstetter-rusty-compass.svg",
+      "image_alt": "GC-01.06 — Hofstetter's Fixed-Aperture Rusty-Compass Division",
+      "facets": {
+        "tags": [
+          "field-q-sqrt3-phi",
+          "kurt-hofstetter"
+        ],
+        "categories": [
+          "01-minimal-compass"
+        ]
+      }
+    },
+    "constructions/01-minimal-compass/07-bui-5step/code": {
+      "id": "constructions/01-minimal-compass/07-bui-5step/code",
+      "docname": "constructions/01-minimal-compass/07-bui-5step/code",
+      "type": "article",
+      "title": "GC-01.07 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/01-minimal-compass/07-bui-5step/code.html",
+      "description": "Companion symbolic Python construction for index (GC-01.07).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/01-minimal-compass/07-bui-5step/07-bui-5step.svg",
+      "image_alt": "GC-01.07 — Bùi Quang Tuân's Five-Step Three-Circle Secant"
+    },
+    "constructions/01-minimal-compass/07-bui-5step/index": {
+      "id": "constructions/01-minimal-compass/07-bui-5step/index",
+      "docname": "constructions/01-minimal-compass/07-bui-5step/index",
+      "type": "construction",
+      "title": "GC-01.07 · Bùi Quang Tuân’s Five-Step Three-Circle Secant",
+      "url": "https://geometor.github.io/divine/constructions/01-minimal-compass/07-bui-5step/",
+      "description": "Discoverer(s): Bùi Quang Tuân | Date: 2014 | Field: \\mathbb{Q}(\\sqrt{5}, \\sqrt{7}) | Loci: 5 (Lemoine S = 15)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/01-minimal-compass/07-bui-5step/07-bui-5step.svg",
+      "image_alt": "GC-01.07 — Bùi Quang Tuân's Five-Step Three-Circle Secant",
+      "facets": {
+        "tags": [
+          "field-algebraic",
+          "bui-quang-tuan"
+        ],
+        "categories": [
+          "01-minimal-compass"
+        ]
+      }
+    },
+    "constructions/01-minimal-compass/index": {
+      "id": "constructions/01-minimal-compass/index",
+      "docname": "constructions/01-minimal-compass/index",
+      "type": "family",
+      "title": "GC-01 · Classical & Minimal-Step Compass Constructions",
+      "url": "https://geometor.github.io/divine/constructions/01-minimal-compass/",
+      "description": "Foundational Euclidean and minimal-locus divisions of a segment in extreme and mean ratio, measured with Émile Lemoine’s Géométrographie.",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/01-minimal-compass/01-euclid-ii-11/01-euclid-ii-11.svg",
+      "image_alt": "Classical & Minimal-Step Compass Constructions"
+    },
+    "constructions/02-equilateral-hexagon/01-odom-equilateral/code": {
+      "id": "constructions/02-equilateral-hexagon/01-odom-equilateral/code",
+      "docname": "constructions/02-equilateral-hexagon/01-odom-equilateral/code",
+      "type": "article",
+      "title": "GC-02.01 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/01-odom-equilateral/code.html",
+      "description": "Companion symbolic Python construction for index (GC-02.01).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/01-odom-equilateral/01-odom-equilateral.svg",
+      "image_alt": "GC-02.01 — George Odom's Equilateral Midline & Circumcircle Chord (1983)"
+    },
+    "constructions/02-equilateral-hexagon/01-odom-equilateral/index": {
+      "id": "constructions/02-equilateral-hexagon/01-odom-equilateral/index",
+      "docname": "constructions/02-equilateral-hexagon/01-odom-equilateral/index",
+      "type": "construction",
+      "title": "GC-02.01 · George Odom’s Equilateral Midline & Circumcircle Chord (1983)",
+      "url": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/01-odom-equilateral/",
+      "description": "Discoverer(s): George Odom, H. S. M. Coxeter | Date: 1983 | Field: \\mathbb{Q}(\\sqrt{3}, \\phi) | Loci: 2 (Lemoine S = 6)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/01-odom-equilateral/01-odom-equilateral.svg",
+      "image_alt": "GC-02.01 — George Odom's Equilateral Midline & Circumcircle Chord (1983)",
+      "facets": {
+        "tags": [
+          "field-q-sqrt3-phi",
+          "golden-chain",
+          "george-odom",
+          "h-s-m-coxeter"
+        ],
+        "categories": [
+          "02-equilateral-hexagon"
+        ]
+      }
+    },
+    "constructions/02-equilateral-hexagon/02-bataille-triangle-square/code": {
+      "id": "constructions/02-equilateral-hexagon/02-bataille-triangle-square/code",
+      "docname": "constructions/02-equilateral-hexagon/02-bataille-triangle-square/code",
+      "type": "article",
+      "title": "GC-02.02 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/02-bataille-triangle-square/code.html",
+      "description": "Companion symbolic Python construction for index (GC-02.02).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/02-bataille-triangle-square/02-bataille-triangle-square.svg",
+      "image_alt": "GC-02.02 — Michel Bataille's Equilateral Triangle & External Square"
+    },
+    "constructions/02-equilateral-hexagon/02-bataille-triangle-square/index": {
+      "id": "constructions/02-equilateral-hexagon/02-bataille-triangle-square/index",
+      "docname": "constructions/02-equilateral-hexagon/02-bataille-triangle-square/index",
+      "type": "construction",
+      "title": "GC-02.02 · Michel Bataille’s Equilateral Triangle & External Square",
+      "url": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/02-bataille-triangle-square/",
+      "description": "Discoverer(s): Michel Bataille | Date: 2011 | Field: \\mathbb{Q}(\\sqrt{3}, \\phi) | Loci: 2 (Lemoine S = 6)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/02-bataille-triangle-square/02-bataille-triangle-square.svg",
+      "image_alt": "GC-02.02 — Michel Bataille's Equilateral Triangle & External Square",
+      "facets": {
+        "tags": [
+          "field-q-sqrt3-phi",
+          "michel-bataille"
+        ],
+        "categories": [
+          "02-equilateral-hexagon"
+        ]
+      }
+    },
+    "constructions/02-equilateral-hexagon/03-bui-two-equilaterals/code": {
+      "id": "constructions/02-equilateral-hexagon/03-bui-two-equilaterals/code",
+      "docname": "constructions/02-equilateral-hexagon/03-bui-two-equilaterals/code",
+      "type": "article",
+      "title": "GC-02.03 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/03-bui-two-equilaterals/code.html",
+      "description": "Companion symbolic Python construction for index (GC-02.03).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/03-bui-two-equilaterals/03-bui-two-equilaterals.svg",
+      "image_alt": "GC-02.03 — Bùi Quang Tuân's Side-and-Altitude Equilateral Triangles"
+    },
+    "constructions/02-equilateral-hexagon/03-bui-two-equilaterals/index": {
+      "id": "constructions/02-equilateral-hexagon/03-bui-two-equilaterals/index",
+      "docname": "constructions/02-equilateral-hexagon/03-bui-two-equilaterals/index",
+      "type": "construction",
+      "title": "GC-02.03 · Bùi Quang Tuân’s Side-and-Altitude Equilateral Triangles",
+      "url": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/03-bui-two-equilaterals/",
+      "description": "Discoverer(s): Bùi Quang Tuân | Date: 2011 | Field: \\mathbb{Q}(\\sqrt{3}, \\phi) | Loci: 2 (Lemoine S = 6)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/03-bui-two-equilaterals/03-bui-two-equilaterals.svg",
+      "image_alt": "GC-02.03 — Bùi Quang Tuân's Side-and-Altitude Equilateral Triangles",
+      "facets": {
+        "tags": [
+          "field-q-sqrt3-phi",
+          "bui-quang-tuan"
+        ],
+        "categories": [
+          "02-equilateral-hexagon"
+        ]
+      }
+    },
+    "constructions/02-equilateral-hexagon/04-tran-reflected-equilaterals/code": {
+      "id": "constructions/02-equilateral-hexagon/04-tran-reflected-equilaterals/code",
+      "docname": "constructions/02-equilateral-hexagon/04-tran-reflected-equilaterals/code",
+      "type": "article",
+      "title": "GC-02.04 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/04-tran-reflected-equilaterals/code.html",
+      "description": "Companion symbolic Python construction for index (GC-02.04).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/04-tran-reflected-equilaterals/04-tran-reflected-equilaterals.svg",
+      "image_alt": "GC-02.04 — Tran Quang Hung's Reflected Equilateral Triangles"
+    },
+    "constructions/02-equilateral-hexagon/04-tran-reflected-equilaterals/index": {
+      "id": "constructions/02-equilateral-hexagon/04-tran-reflected-equilaterals/index",
+      "docname": "constructions/02-equilateral-hexagon/04-tran-reflected-equilaterals/index",
+      "type": "construction",
+      "title": "GC-02.04 · Tran Quang Hung’s Reflected Equilateral Triangles",
+      "url": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/04-tran-reflected-equilaterals/",
+      "description": "Discoverer(s): Tran Quang Hung | Date: 2014 | Field: \\mathbb{Q}(\\sqrt{3}, \\phi) | Loci: 4 (Lemoine S = 12)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/04-tran-reflected-equilaterals/04-tran-reflected-equilaterals.svg",
+      "image_alt": "GC-02.04 — Tran Quang Hung's Reflected Equilateral Triangles",
+      "facets": {
+        "tags": [
+          "field-q-sqrt3-phi",
+          "tran-quang-hung"
+        ],
+        "categories": [
+          "02-equilateral-hexagon"
+        ]
+      }
+    },
+    "constructions/02-equilateral-hexagon/05-tran-incircle-equilateral/code": {
+      "id": "constructions/02-equilateral-hexagon/05-tran-incircle-equilateral/code",
+      "docname": "constructions/02-equilateral-hexagon/05-tran-incircle-equilateral/code",
+      "type": "article",
+      "title": "GC-02.05 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/05-tran-incircle-equilateral/code.html",
+      "description": "Companion symbolic Python construction for index (GC-02.05).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/05-tran-incircle-equilateral/05-tran-incircle-equilateral.svg",
+      "image_alt": "GC-02.05 — Nested Equilateral Triangles on the Incircle"
+    },
+    "constructions/02-equilateral-hexagon/05-tran-incircle-equilateral/index": {
+      "id": "constructions/02-equilateral-hexagon/05-tran-incircle-equilateral/index",
+      "docname": "constructions/02-equilateral-hexagon/05-tran-incircle-equilateral/index",
+      "type": "construction",
+      "title": "GC-02.05 · Nested Equilateral Triangles on the Incircle",
+      "url": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/05-tran-incircle-equilateral/",
+      "description": "Discoverer(s): Tran Quang Hung | Date: 2014 | Field: \\mathbb{Q}(\\sqrt{3}, \\phi) | Loci: 4 (Lemoine S = 12)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/05-tran-incircle-equilateral/05-tran-incircle-equilateral.svg",
+      "image_alt": "GC-02.05 — Nested Equilateral Triangles on the Incircle",
+      "facets": {
+        "tags": [
+          "field-q-sqrt3-phi",
+          "tran-quang-hung"
+        ],
+        "categories": [
+          "02-equilateral-hexagon"
+        ]
+      }
+    },
+    "constructions/02-equilateral-hexagon/06-tran-hexagon-square/code": {
+      "id": "constructions/02-equilateral-hexagon/06-tran-hexagon-square/code",
+      "docname": "constructions/02-equilateral-hexagon/06-tran-hexagon-square/code",
+      "type": "article",
+      "title": "GC-02.06 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/06-tran-hexagon-square/code.html",
+      "description": "Companion symbolic Python construction for index (GC-02.06).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/06-tran-hexagon-square/06-tran-hexagon-square.svg",
+      "image_alt": "GC-02.06 — Regular Hexagon & External Square Compass Sweep"
+    },
+    "constructions/02-equilateral-hexagon/06-tran-hexagon-square/index": {
+      "id": "constructions/02-equilateral-hexagon/06-tran-hexagon-square/index",
+      "docname": "constructions/02-equilateral-hexagon/06-tran-hexagon-square/index",
+      "type": "construction",
+      "title": "GC-02.06 · Regular Hexagon & External Square Compass Sweep",
+      "url": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/06-tran-hexagon-square/",
+      "description": "Discoverer(s): Tran Quang Hung | Date: 2014 | Field: \\mathbb{Q}(\\sqrt{3}, \\phi) | Loci: 3 (Lemoine S = 9)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/06-tran-hexagon-square/06-tran-hexagon-square.svg",
+      "image_alt": "GC-02.06 — Regular Hexagon & External Square Compass Sweep",
+      "facets": {
+        "tags": [
+          "field-q-sqrt3-phi",
+          "tran-quang-hung"
+        ],
+        "categories": [
+          "02-equilateral-hexagon"
+        ]
+      }
+    },
+    "constructions/02-equilateral-hexagon/07-nguyen-butterfly-equilateral/code": {
+      "id": "constructions/02-equilateral-hexagon/07-nguyen-butterfly-equilateral/code",
+      "docname": "constructions/02-equilateral-hexagon/07-nguyen-butterfly-equilateral/code",
+      "type": "article",
+      "title": "GC-02.07 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/07-nguyen-butterfly-equilateral/code.html",
+      "description": "Companion symbolic Python construction for index (GC-02.07).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/07-nguyen-butterfly-equilateral/07-nguyen-butterfly-equilateral.svg",
+      "image_alt": "GC-02.07 — Butterfly Chords Astride an Equilateral Triangle"
+    },
+    "constructions/02-equilateral-hexagon/07-nguyen-butterfly-equilateral/index": {
+      "id": "constructions/02-equilateral-hexagon/07-nguyen-butterfly-equilateral/index",
+      "docname": "constructions/02-equilateral-hexagon/07-nguyen-butterfly-equilateral/index",
+      "type": "construction",
+      "title": "GC-02.07 · Butterfly Chords Astride an Equilateral Triangle",
+      "url": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/07-nguyen-butterfly-equilateral/",
+      "description": "Discoverer(s): Nguyen Thanh Dung | Date: 2016 | Field: \\mathbb{Q}(\\sqrt{3}, \\phi) | Loci: 6 (Lemoine S = 18)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/07-nguyen-butterfly-equilateral/07-nguyen-butterfly-equilateral.svg",
+      "image_alt": "GC-02.07 — Butterfly Chords Astride an Equilateral Triangle",
+      "facets": {
+        "tags": [
+          "field-q-sqrt3-phi",
+          "golden-chain",
+          "nguyen-thanh-dung"
+        ],
+        "categories": [
+          "02-equilateral-hexagon"
+        ]
+      }
+    },
+    "constructions/02-equilateral-hexagon/index": {
+      "id": "constructions/02-equilateral-hexagon/index",
+      "docname": "constructions/02-equilateral-hexagon/index",
+      "type": "family",
+      "title": "GC-02 · Equilateral Triangles & Regular Hexagons",
+      "url": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/",
+      "description": "Exact emergence of φ inside threefold and sixfold regular polygons via intersecting chords, radical axes, and compass transfers.",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/02-equilateral-hexagon/01-odom-equilateral/01-odom-equilateral.svg",
+      "image_alt": "Equilateral Triangles & Regular Hexagons"
+    },
+    "constructions/03-squares-rectangles/01-tran-square-inscribed-semicircle/code": {
+      "id": "constructions/03-squares-rectangles/01-tran-square-inscribed-semicircle/code",
+      "docname": "constructions/03-squares-rectangles/01-tran-square-inscribed-semicircle/code",
+      "type": "article",
+      "title": "GC-03.01 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/03-squares-rectangles/01-tran-square-inscribed-semicircle/code.html",
+      "description": "Companion symbolic Python construction for index (GC-03.01).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/03-squares-rectangles/01-tran-square-inscribed-semicircle/01-tran-square-inscribed-semicircle.svg",
+      "image_alt": "GC-03.01 — Tran Quang Hung's Square Inscribed in a Right Isosceles Semicircle"
+    },
+    "constructions/03-squares-rectangles/01-tran-square-inscribed-semicircle/index": {
+      "id": "constructions/03-squares-rectangles/01-tran-square-inscribed-semicircle/index",
+      "docname": "constructions/03-squares-rectangles/01-tran-square-inscribed-semicircle/index",
+      "type": "construction",
+      "title": "GC-03.01 · Tran Quang Hung’s Square Inscribed in a Right Isosceles Semicircle",
+      "url": "https://geometor.github.io/divine/constructions/03-squares-rectangles/01-tran-square-inscribed-semicircle/",
+      "description": "Discoverer(s): Tran Quang Hung | Date: 2014 | Field: \\mathbb{Q}(\\phi) | Loci: 3 (Lemoine S = 9)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/03-squares-rectangles/01-tran-square-inscribed-semicircle/01-tran-square-inscribed-semicircle.svg",
+      "image_alt": "GC-03.01 — Tran Quang Hung's Square Inscribed in a Right Isosceles Semicircle",
+      "facets": {
+        "tags": [
+          "field-q-phi",
+          "golden-chain",
+          "tran-quang-hung"
+        ],
+        "categories": [
+          "03-squares-rectangles"
+        ]
+      }
+    },
+    "constructions/03-squares-rectangles/02-tran-square-midpoints/code": {
+      "id": "constructions/03-squares-rectangles/02-tran-square-midpoints/code",
+      "docname": "constructions/03-squares-rectangles/02-tran-square-midpoints/code",
+      "type": "article",
+      "title": "GC-03.02 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/03-squares-rectangles/02-tran-square-midpoints/code.html",
+      "description": "Companion symbolic Python construction for index (GC-03.02).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/03-squares-rectangles/02-tran-square-midpoints/02-tran-square-midpoints.svg",
+      "image_alt": "GC-03.02 — Tran Quang Hung's Square Midpoint Circle Division"
+    },
+    "constructions/03-squares-rectangles/02-tran-square-midpoints/index": {
+      "id": "constructions/03-squares-rectangles/02-tran-square-midpoints/index",
+      "docname": "constructions/03-squares-rectangles/02-tran-square-midpoints/index",
+      "type": "construction",
+      "title": "GC-03.02 · Tran Quang Hung’s Square Midpoint Circle Division",
+      "url": "https://geometor.github.io/divine/constructions/03-squares-rectangles/02-tran-square-midpoints/",
+      "description": "Discoverer(s): Tran Quang Hung | Date: 2015 | Field: \\mathbb{Q}(\\phi) | Loci: 4 (Lemoine S = 12)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/03-squares-rectangles/02-tran-square-midpoints/02-tran-square-midpoints.svg",
+      "image_alt": "GC-03.02 — Tran Quang Hung's Square Midpoint Circle Division",
+      "facets": {
+        "tags": [
+          "field-q-phi",
+          "golden-chain",
+          "tran-quang-hung"
+        ],
+        "categories": [
+          "03-squares-rectangles"
+        ]
+      }
+    },
+    "constructions/03-squares-rectangles/03-nguyen-2x2-square/code": {
+      "id": "constructions/03-squares-rectangles/03-nguyen-2x2-square/code",
+      "docname": "constructions/03-squares-rectangles/03-nguyen-2x2-square/code",
+      "type": "article",
+      "title": "GC-03.03 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/03-squares-rectangles/03-nguyen-2x2-square/code.html",
+      "description": "Companion symbolic Python construction for index (GC-03.03).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/03-squares-rectangles/03-nguyen-2x2-square/03-nguyen-2x2-square.svg",
+      "image_alt": "GC-03.03 — Nguyen Thanh Dung's 2×2 Grid Compass Arc"
+    },
+    "constructions/03-squares-rectangles/03-nguyen-2x2-square/index": {
+      "id": "constructions/03-squares-rectangles/03-nguyen-2x2-square/index",
+      "docname": "constructions/03-squares-rectangles/03-nguyen-2x2-square/index",
+      "type": "construction",
+      "title": "GC-03.03 · Nguyen Thanh Dung’s 2×2 Grid Compass Arc",
+      "url": "https://geometor.github.io/divine/constructions/03-squares-rectangles/03-nguyen-2x2-square/",
+      "description": "Discoverer(s): Nguyen Thanh Dung | Date: 2016 | Field: \\mathbb{Q}(\\phi) | Loci: 2 (Lemoine S = 6)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/03-squares-rectangles/03-nguyen-2x2-square/03-nguyen-2x2-square.svg",
+      "image_alt": "GC-03.03 — Nguyen Thanh Dung's 2×2 Grid Compass Arc",
+      "facets": {
+        "tags": [
+          "field-q-phi",
+          "nguyen-thanh-dung"
+        ],
+        "categories": [
+          "03-squares-rectangles"
+        ]
+      }
+    },
+    "constructions/03-squares-rectangles/04-tran-mcgucken-3x3-circle/code": {
+      "id": "constructions/03-squares-rectangles/04-tran-mcgucken-3x3-circle/code",
+      "docname": "constructions/03-squares-rectangles/04-tran-mcgucken-3x3-circle/code",
+      "type": "article",
+      "title": "GC-03.04 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/03-squares-rectangles/04-tran-mcgucken-3x3-circle/code.html",
+      "description": "Companion symbolic Python construction for index (GC-03.04).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/03-squares-rectangles/04-tran-mcgucken-3x3-circle/04-tran-mcgucken-3x3-circle.svg",
+      "image_alt": "GC-03.04 — Tran Quang Hung & Elliot McGucken's 3×3 Grid Circle"
+    },
+    "constructions/03-squares-rectangles/04-tran-mcgucken-3x3-circle/index": {
+      "id": "constructions/03-squares-rectangles/04-tran-mcgucken-3x3-circle/index",
+      "docname": "constructions/03-squares-rectangles/04-tran-mcgucken-3x3-circle/index",
+      "type": "construction",
+      "title": "GC-03.04 · Tran Quang Hung & Elliot McGucken’s 3×3 Grid Circle",
+      "url": "https://geometor.github.io/divine/constructions/03-squares-rectangles/04-tran-mcgucken-3x3-circle/",
+      "description": "Discoverer(s): Tran Quang Hung, Elliot McGucken | Date: 2016 | Field: \\mathbb{Q}(\\sqrt{2}, \\phi) | Loci: 2 (Lemoine S = 6)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/03-squares-rectangles/04-tran-mcgucken-3x3-circle/04-tran-mcgucken-3x3-circle.svg",
+      "image_alt": "GC-03.04 — Tran Quang Hung & Elliot McGucken's 3×3 Grid Circle",
+      "facets": {
+        "tags": [
+          "field-q-sqrt2-phi",
+          "golden-chain",
+          "tran-quang-hung",
+          "elliot-mcgucken"
+        ],
+        "categories": [
+          "03-squares-rectangles"
+        ]
+      }
+    },
+    "constructions/03-squares-rectangles/05-tran-3x3-incenter/code": {
+      "id": "constructions/03-squares-rectangles/05-tran-3x3-incenter/code",
+      "docname": "constructions/03-squares-rectangles/05-tran-3x3-incenter/code",
+      "type": "article",
+      "title": "GC-03.05 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/03-squares-rectangles/05-tran-3x3-incenter/code.html",
+      "description": "Companion symbolic Python construction for index (GC-03.05).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/03-squares-rectangles/05-tran-3x3-incenter/05-tran-3x3-incenter.svg",
+      "image_alt": "GC-03.05 — Tran Quang Hung's 3×3 Grid Incenter Division"
+    },
+    "constructions/03-squares-rectangles/05-tran-3x3-incenter/index": {
+      "id": "constructions/03-squares-rectangles/05-tran-3x3-incenter/index",
+      "docname": "constructions/03-squares-rectangles/05-tran-3x3-incenter/index",
+      "type": "construction",
+      "title": "GC-03.05 · Tran Quang Hung’s 3×3 Grid Incenter Division",
+      "url": "https://geometor.github.io/divine/constructions/03-squares-rectangles/05-tran-3x3-incenter/",
+      "description": "Discoverer(s): Tran Quang Hung | Date: 2016 | Field: \\mathbb{Q}(\\sqrt{2}, \\phi) | Loci: 2 (Lemoine S = 6)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/03-squares-rectangles/05-tran-3x3-incenter/05-tran-3x3-incenter.svg",
+      "image_alt": "GC-03.05 — Tran Quang Hung's 3×3 Grid Incenter Division",
+      "facets": {
+        "tags": [
+          "field-q-sqrt2-phi",
+          "golden-chain",
+          "tran-quang-hung"
+        ],
+        "categories": [
+          "03-squares-rectangles"
+        ]
+      }
+    },
+    "constructions/03-squares-rectangles/06-suppa-square-inradii/code": {
+      "id": "constructions/03-squares-rectangles/06-suppa-square-inradii/code",
+      "docname": "constructions/03-squares-rectangles/06-suppa-square-inradii/code",
+      "type": "article",
+      "title": "GC-03.06 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/03-squares-rectangles/06-suppa-square-inradii/code.html",
+      "description": "Companion symbolic Python construction for index (GC-03.06).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/03-squares-rectangles/06-suppa-square-inradii/06-suppa-square-inradii.svg",
+      "image_alt": "GC-03.06 — Ercole Suppa's Square Midpoint Inradii Ratio (2015)"
+    },
+    "constructions/03-squares-rectangles/06-suppa-square-inradii/index": {
+      "id": "constructions/03-squares-rectangles/06-suppa-square-inradii/index",
+      "docname": "constructions/03-squares-rectangles/06-suppa-square-inradii/index",
+      "type": "construction",
+      "title": "GC-03.06 · Ercole Suppa’s Square Midpoint Inradii Ratio (2015)",
+      "url": "https://geometor.github.io/divine/constructions/03-squares-rectangles/06-suppa-square-inradii/",
+      "description": "Discoverer(s): Ercole Suppa | Date: 2015 | Field: \\mathbb{Q}(\\phi) | Loci: 4 (Lemoine S = 12)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/03-squares-rectangles/06-suppa-square-inradii/06-suppa-square-inradii.svg",
+      "image_alt": "GC-03.06 — Ercole Suppa's Square Midpoint Inradii Ratio (2015)",
+      "facets": {
+        "tags": [
+          "field-q-phi",
+          "ercole-suppa"
+        ],
+        "categories": [
+          "03-squares-rectangles"
+        ]
+      }
+    },
+    "constructions/03-squares-rectangles/07-bui-cross-and-square/code": {
+      "id": "constructions/03-squares-rectangles/07-bui-cross-and-square/code",
+      "docname": "constructions/03-squares-rectangles/07-bui-cross-and-square/code",
+      "type": "article",
+      "title": "GC-03.07 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/03-squares-rectangles/07-bui-cross-and-square/code.html",
+      "description": "Companion symbolic Python construction for index (GC-03.07).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/03-squares-rectangles/07-bui-cross-and-square/07-bui-cross-and-square.svg",
+      "image_alt": "GC-03.07 — Bùi Quang Tuân & Alexandre Borovik's Greek Cross & Square"
+    },
+    "constructions/03-squares-rectangles/07-bui-cross-and-square/index": {
+      "id": "constructions/03-squares-rectangles/07-bui-cross-and-square/index",
+      "docname": "constructions/03-squares-rectangles/07-bui-cross-and-square/index",
+      "type": "construction",
+      "title": "GC-03.07 · Bùi Quang Tuân & Alexandre Borovik’s Greek Cross & Square",
+      "url": "https://geometor.github.io/divine/constructions/03-squares-rectangles/07-bui-cross-and-square/",
+      "description": "Discoverer(s): Bùi Quang Tuân, Alexandre Borovik | Date: 2015 | Field: \\mathbb{Q}(\\phi) | Loci: 4 (Lemoine S = 12)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/03-squares-rectangles/07-bui-cross-and-square/07-bui-cross-and-square.svg",
+      "image_alt": "GC-03.07 — Bùi Quang Tuân & Alexandre Borovik's Greek Cross & Square",
+      "facets": {
+        "tags": [
+          "field-q-phi",
+          "golden-chain",
+          "bui-quang-tuan",
+          "alexandre-borovik"
+        ],
+        "categories": [
+          "03-squares-rectangles"
+        ]
+      }
+    },
+    "constructions/03-squares-rectangles/08-arioni-rotating-square/code": {
+      "id": "constructions/03-squares-rectangles/08-arioni-rotating-square/code",
+      "docname": "constructions/03-squares-rectangles/08-arioni-rotating-square/code",
+      "type": "article",
+      "title": "GC-03.08 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/03-squares-rectangles/08-arioni-rotating-square/code.html",
+      "description": "Companion symbolic Python construction for index (GC-03.08).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/03-squares-rectangles/08-arioni-rotating-square/08-arioni-rotating-square.svg",
+      "image_alt": "GC-03.08 — John Arioni's 30°-Rotated Unit Square & Diagonal Circle"
+    },
+    "constructions/03-squares-rectangles/08-arioni-rotating-square/index": {
+      "id": "constructions/03-squares-rectangles/08-arioni-rotating-square/index",
+      "docname": "constructions/03-squares-rectangles/08-arioni-rotating-square/index",
+      "type": "construction",
+      "title": "GC-03.08 · John Arioni’s 30°-Rotated Unit Square & Diagonal Circle",
+      "url": "https://geometor.github.io/divine/constructions/03-squares-rectangles/08-arioni-rotating-square/",
+      "description": "Discoverer(s): John Arioni | Date: 2016 | Field: \\mathbb{Q}(\\sqrt{3}, \\phi) | Loci: 2 (Lemoine S = 6)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/03-squares-rectangles/08-arioni-rotating-square/08-arioni-rotating-square.svg",
+      "image_alt": "GC-03.08 — John Arioni's 30°-Rotated Unit Square & Diagonal Circle",
+      "facets": {
+        "tags": [
+          "field-q-sqrt3-phi",
+          "golden-chain",
+          "john-arioni"
+        ],
+        "categories": [
+          "03-squares-rectangles"
+        ]
+      }
+    },
+    "constructions/03-squares-rectangles/index": {
+      "id": "constructions/03-squares-rectangles/index",
+      "docname": "constructions/03-squares-rectangles/index",
+      "type": "family",
+      "title": "GC-03 · Squares, Lattice Grids & Golden Crosses",
+      "url": "https://geometor.github.io/divine/constructions/03-squares-rectangles/",
+      "description": "Golden sections and golden rectangles generated by fourfold symmetry, integer grids, and triangle incenters inside squares.",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/03-squares-rectangles/01-tran-square-inscribed-semicircle/01-tran-square-inscribed-semicircle.svg",
+      "image_alt": "Squares, Lattice Grids & Golden Crosses"
+    },
+    "constructions/04-right-and-345/01-huntley-egyptian-345/code": {
+      "id": "constructions/04-right-and-345/01-huntley-egyptian-345/code",
+      "docname": "constructions/04-right-and-345/01-huntley-egyptian-345/code",
+      "type": "article",
+      "title": "GC-04.01 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/04-right-and-345/01-huntley-egyptian-345/code.html",
+      "description": "Companion symbolic Python construction for index (GC-04.01).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/04-right-and-345/01-huntley-egyptian-345/01-huntley-egyptian-345.svg",
+      "image_alt": "GC-04.01 — H. E. Huntley's Golden Ratio in the 3-4-5 Right Triangle (1970)"
+    },
+    "constructions/04-right-and-345/01-huntley-egyptian-345/index": {
+      "id": "constructions/04-right-and-345/01-huntley-egyptian-345/index",
+      "docname": "constructions/04-right-and-345/01-huntley-egyptian-345/index",
+      "type": "construction",
+      "title": "GC-04.01 · H. E. Huntley’s Golden Ratio in the 3-4-5 Right Triangle (1970)",
+      "url": "https://geometor.github.io/divine/constructions/04-right-and-345/01-huntley-egyptian-345/",
+      "description": "Discoverer(s): H. E. Huntley, Tran Quang Hung | Date: 1970 | Field: \\mathbb{Q}(\\phi) | Loci: 2 (Lemoine S = 6)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/04-right-and-345/01-huntley-egyptian-345/01-huntley-egyptian-345.svg",
+      "image_alt": "GC-04.01 — H. E. Huntley's Golden Ratio in the 3-4-5 Right Triangle (1970)",
+      "facets": {
+        "tags": [
+          "field-q-phi",
+          "h-e-huntley",
+          "tran-quang-hung"
+        ],
+        "categories": [
+          "04-right-and-345"
+        ]
+      }
+    },
+    "constructions/04-right-and-345/02-kepler-geometric-triangle/code": {
+      "id": "constructions/04-right-and-345/02-kepler-geometric-triangle/code",
+      "docname": "constructions/04-right-and-345/02-kepler-geometric-triangle/code",
+      "type": "article",
+      "title": "GC-04.02 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/04-right-and-345/02-kepler-geometric-triangle/code.html",
+      "description": "Companion symbolic Python construction for index (GC-04.02).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/04-right-and-345/02-kepler-geometric-triangle/02-kepler-geometric-triangle.svg",
+      "image_alt": "GC-04.02 — Johannes Kepler's Geometric-Progression Right Triangle (1597)"
+    },
+    "constructions/04-right-and-345/02-kepler-geometric-triangle/index": {
+      "id": "constructions/04-right-and-345/02-kepler-geometric-triangle/index",
+      "docname": "constructions/04-right-and-345/02-kepler-geometric-triangle/index",
+      "type": "construction",
+      "title": "GC-04.02 · Johannes Kepler’s Geometric-Progression Right Triangle (1597)",
+      "url": "https://geometor.github.io/divine/constructions/04-right-and-345/02-kepler-geometric-triangle/",
+      "description": "Discoverer(s): Johannes Kepler | Date: 1597 | Field: \\mathbb{Q}(\\sqrt{\\phi}) | Loci: 2 (Lemoine S = 6)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/04-right-and-345/02-kepler-geometric-triangle/02-kepler-geometric-triangle.svg",
+      "image_alt": "GC-04.02 — Johannes Kepler's Geometric-Progression Right Triangle (1597)",
+      "facets": {
+        "tags": [
+          "field-q-sqrt-phi",
+          "johannes-kepler"
+        ],
+        "categories": [
+          "04-right-and-345"
+        ]
+      }
+    },
+    "constructions/04-right-and-345/03-niemeyer-three-segments/code": {
+      "id": "constructions/04-right-and-345/03-niemeyer-three-segments/code",
+      "docname": "constructions/04-right-and-345/03-niemeyer-three-segments/code",
+      "type": "article",
+      "title": "GC-04.03 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/04-right-and-345/03-niemeyer-three-segments/code.html",
+      "description": "Companion symbolic Python construction for index (GC-04.03).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/04-right-and-345/03-niemeyer-three-segments/03-niemeyer-three-segments.svg",
+      "image_alt": "GC-04.03 — Jo Niemeyer's Three Equal Leaning Segments"
+    },
+    "constructions/04-right-and-345/03-niemeyer-three-segments/index": {
+      "id": "constructions/04-right-and-345/03-niemeyer-three-segments/index",
+      "docname": "constructions/04-right-and-345/03-niemeyer-three-segments/index",
+      "type": "construction",
+      "title": "GC-04.03 · Jo Niemeyer’s Three Equal Leaning Segments",
+      "url": "https://geometor.github.io/divine/constructions/04-right-and-345/03-niemeyer-three-segments/",
+      "description": "Discoverer(s): Jo Niemeyer | Date: 2011 | Field: \\mathbb{Q}(\\sqrt{3}, \\phi) | Loci: 3 (Lemoine S = 9)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/04-right-and-345/03-niemeyer-three-segments/03-niemeyer-three-segments.svg",
+      "image_alt": "GC-04.03 — Jo Niemeyer's Three Equal Leaning Segments",
+      "facets": {
+        "tags": [
+          "field-q-sqrt3-phi",
+          "jo-niemeyer"
+        ],
+        "categories": [
+          "04-right-and-345"
+        ]
+      }
+    },
+    "constructions/04-right-and-345/04-bui-van-obel-isosceles/code": {
+      "id": "constructions/04-right-and-345/04-bui-van-obel-isosceles/code",
+      "docname": "constructions/04-right-and-345/04-bui-van-obel-isosceles/code",
+      "type": "article",
+      "title": "GC-04.04 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/04-right-and-345/04-bui-van-obel-isosceles/code.html",
+      "description": "Companion symbolic Python construction for index (GC-04.04).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/04-right-and-345/04-bui-van-obel-isosceles/04-bui-van-obel-isosceles.svg",
+      "image_alt": "GC-04.04 — Bùi Quang Tuân's Van Obel Division in a Right Isosceles Triangle"
+    },
+    "constructions/04-right-and-345/04-bui-van-obel-isosceles/index": {
+      "id": "constructions/04-right-and-345/04-bui-van-obel-isosceles/index",
+      "docname": "constructions/04-right-and-345/04-bui-van-obel-isosceles/index",
+      "type": "construction",
+      "title": "GC-04.04 · Bùi Quang Tuân’s Van Obel Division in a Right Isosceles Triangle",
+      "url": "https://geometor.github.io/divine/constructions/04-right-and-345/04-bui-van-obel-isosceles/",
+      "description": "Discoverer(s): Bùi Quang Tuân | Date: 2014 | Field: \\mathbb{Q}(\\phi) | Loci: 6 (Lemoine S = 18)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/04-right-and-345/04-bui-van-obel-isosceles/04-bui-van-obel-isosceles.svg",
+      "image_alt": "GC-04.04 — Bùi Quang Tuân's Van Obel Division in a Right Isosceles Triangle",
+      "facets": {
+        "tags": [
+          "field-q-phi",
+          "golden-chain",
+          "bui-quang-tuan"
+        ],
+        "categories": [
+          "04-right-and-345"
+        ]
+      }
+    },
+    "constructions/04-right-and-345/index": {
+      "id": "constructions/04-right-and-345/index",
+      "docname": "constructions/04-right-and-345/index",
+      "type": "family",
+      "title": "GC-04 · Right Triangles, Egyptian 3–4–5 & Kepler Proportions",
+      "url": "https://geometor.github.io/divine/constructions/04-right-and-345/",
+      "description": "Pythagorean triples, geometric-progression side quadrances over Q(√φ), three-bar linkages, and Van Obel cevians.",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/04-right-and-345/01-huntley-egyptian-345/01-huntley-egyptian-345.svg",
+      "image_alt": "Right Triangles, Egyptian 3–4–5 & Kepler Proportions"
+    },
+    "constructions/05-pentagons-polygons/01-ptolemy-pentagon-pentagram/code": {
+      "id": "constructions/05-pentagons-polygons/01-ptolemy-pentagon-pentagram/code",
+      "docname": "constructions/05-pentagons-polygons/01-ptolemy-pentagon-pentagram/code",
+      "type": "article",
+      "title": "GC-05.01 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/01-ptolemy-pentagon-pentagram/code.html",
+      "description": "Companion symbolic Python construction for index (GC-05.01).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/01-ptolemy-pentagon-pentagram/01-ptolemy-pentagon-pentagram.svg",
+      "image_alt": "GC-05.01 — Claudius Ptolemy's Regular Pentagon & Pentagram (Almagest I.10)"
+    },
+    "constructions/05-pentagons-polygons/01-ptolemy-pentagon-pentagram/index": {
+      "id": "constructions/05-pentagons-polygons/01-ptolemy-pentagon-pentagram/index",
+      "docname": "constructions/05-pentagons-polygons/01-ptolemy-pentagon-pentagram/index",
+      "type": "construction",
+      "title": "GC-05.01 · Claudius Ptolemy’s Regular Pentagon & Pentagram (Almagest I.10)",
+      "url": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/01-ptolemy-pentagon-pentagram/",
+      "description": "Discoverer(s): Claudius Ptolemy, Euclid of Alexandria | Date: c. 150 CE | Field: \\mathbb{Q}(\\phi, \\sqrt{10 - 2\\sqrt{5}}) | Loci: 6 (Lemoine S = 18)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/01-ptolemy-pentagon-pentagram/01-ptolemy-pentagon-pentagram.svg",
+      "image_alt": "GC-05.01 — Claudius Ptolemy's Regular Pentagon & Pentagram (Almagest I.10)",
+      "facets": {
+        "tags": [
+          "field-pentagonal",
+          "golden-chain",
+          "claudius-ptolemy",
+          "euclid"
+        ],
+        "categories": [
+          "05-pentagons-polygons"
+        ]
+      }
+    },
+    "constructions/05-pentagons-polygons/02-dao-tran-pentagon-bisector-incircle/code": {
+      "id": "constructions/05-pentagons-polygons/02-dao-tran-pentagon-bisector-incircle/code",
+      "docname": "constructions/05-pentagons-polygons/02-dao-tran-pentagon-bisector-incircle/code",
+      "type": "article",
+      "title": "GC-05.02 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/02-dao-tran-pentagon-bisector-incircle/code.html",
+      "description": "Companion symbolic Python construction for index (GC-05.02).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/02-dao-tran-pentagon-bisector-incircle/02-dao-tran-pentagon-bisector-incircle.svg",
+      "image_alt": "GC-05.02 — Dao Thanh Oai's Regular Pentagon Edge Perpendicular"
+    },
+    "constructions/05-pentagons-polygons/02-dao-tran-pentagon-bisector-incircle/index": {
+      "id": "constructions/05-pentagons-polygons/02-dao-tran-pentagon-bisector-incircle/index",
+      "docname": "constructions/05-pentagons-polygons/02-dao-tran-pentagon-bisector-incircle/index",
+      "type": "construction",
+      "title": "GC-05.02 · Dao Thanh Oai’s Regular Pentagon Edge Perpendicular",
+      "url": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/02-dao-tran-pentagon-bisector-incircle/",
+      "description": "Discoverer(s): Dao Thanh Oai, Tran Quang Hung | Date: 2015 | Field: \\mathbb{Q}(\\phi, \\sqrt{10 - 2\\sqrt{5}}) | Loci: 3 (Lemoine S = 9)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/02-dao-tran-pentagon-bisector-incircle/02-dao-tran-pentagon-bisector-incircle.svg",
+      "image_alt": "GC-05.02 — Dao Thanh Oai's Regular Pentagon Edge Perpendicular",
+      "facets": {
+        "tags": [
+          "field-pentagonal",
+          "dao-thanh-oai",
+          "tran-quang-hung"
+        ],
+        "categories": [
+          "05-pentagons-polygons"
+        ]
+      }
+    },
+    "constructions/05-pentagons-polygons/03-prasolov-bui-irregular-pentagon/code": {
+      "id": "constructions/05-pentagons-polygons/03-prasolov-bui-irregular-pentagon/code",
+      "docname": "constructions/05-pentagons-polygons/03-prasolov-bui-irregular-pentagon/code",
+      "type": "article",
+      "title": "GC-05.03 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/03-prasolov-bui-irregular-pentagon/code.html",
+      "description": "Companion symbolic Python construction for index (GC-05.03).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/03-prasolov-bui-irregular-pentagon/03-prasolov-bui-irregular-pentagon.svg",
+      "image_alt": "GC-05.03 — Prasolov & Bùi Quang Tuân's Equi-Area Irregular Pentagon"
+    },
+    "constructions/05-pentagons-polygons/03-prasolov-bui-irregular-pentagon/index": {
+      "id": "constructions/05-pentagons-polygons/03-prasolov-bui-irregular-pentagon/index",
+      "docname": "constructions/05-pentagons-polygons/03-prasolov-bui-irregular-pentagon/index",
+      "type": "construction",
+      "title": "GC-05.03 · Prasolov & Bùi Quang Tuân’s Equi-Area Irregular Pentagon",
+      "url": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/03-prasolov-bui-irregular-pentagon/",
+      "description": "Discoverer(s): Viktor Vasil’evich Prasolov, Bùi Quang Tuân | Date: 2006 | Field: \\mathbb{Q}(\\phi) | Loci: 3 (Lemoine S = 9)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/03-prasolov-bui-irregular-pentagon/03-prasolov-bui-irregular-pentagon.svg",
+      "image_alt": "GC-05.03 — Prasolov & Bùi Quang Tuân's Equi-Area Irregular Pentagon",
+      "facets": {
+        "tags": [
+          "field-q-phi",
+          "golden-chain",
+          "v-v-prasolov",
+          "bui-quang-tuan"
+        ],
+        "categories": [
+          "05-pentagons-polygons"
+        ]
+      }
+    },
+    "constructions/05-pentagons-polygons/04-tran-pentagon-hexagon/code": {
+      "id": "constructions/05-pentagons-polygons/04-tran-pentagon-hexagon/code",
+      "docname": "constructions/05-pentagons-polygons/04-tran-pentagon-hexagon/code",
+      "type": "article",
+      "title": "GC-05.04 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/04-tran-pentagon-hexagon/code.html",
+      "description": "Companion symbolic Python construction for index (GC-05.04).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/04-tran-pentagon-hexagon/04-tran-pentagon-hexagon.svg",
+      "image_alt": "GC-05.04 — Tran Quang Hung's Shared-Base Regular Pentagon & Hexagon"
+    },
+    "constructions/05-pentagons-polygons/04-tran-pentagon-hexagon/index": {
+      "id": "constructions/05-pentagons-polygons/04-tran-pentagon-hexagon/index",
+      "docname": "constructions/05-pentagons-polygons/04-tran-pentagon-hexagon/index",
+      "type": "construction",
+      "title": "GC-05.04 · Tran Quang Hung’s Shared-Base Regular Pentagon & Hexagon",
+      "url": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/04-tran-pentagon-hexagon/",
+      "description": "Discoverer(s): Tran Quang Hung | Date: 2015 | Field: \\mathbb{Q}(\\sqrt{3}, \\phi, \\sqrt{10 - 2\\sqrt{5}}) | Loci: 4 (Lemoine S = 12)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/04-tran-pentagon-hexagon/04-tran-pentagon-hexagon.svg",
+      "image_alt": "GC-05.04 — Tran Quang Hung's Shared-Base Regular Pentagon & Hexagon",
+      "facets": {
+        "tags": [
+          "field-pentagonal-hexagonal",
+          "tran-quang-hung"
+        ],
+        "categories": [
+          "05-pentagons-polygons"
+        ]
+      }
+    },
+    "constructions/05-pentagons-polygons/05-tran-star-six-pentagons/code": {
+      "id": "constructions/05-pentagons-polygons/05-tran-star-six-pentagons/code",
+      "docname": "constructions/05-pentagons-polygons/05-tran-star-six-pentagons/code",
+      "type": "article",
+      "title": "GC-05.05 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/05-tran-star-six-pentagons/code.html",
+      "description": "Companion symbolic Python construction for index (GC-05.05).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/05-tran-star-six-pentagons/05-tran-star-six-pentagons.svg",
+      "image_alt": "GC-05.05 — Tran Quang Hung's Six-Pentagon Reflection Star"
+    },
+    "constructions/05-pentagons-polygons/05-tran-star-six-pentagons/index": {
+      "id": "constructions/05-pentagons-polygons/05-tran-star-six-pentagons/index",
+      "docname": "constructions/05-pentagons-polygons/05-tran-star-six-pentagons/index",
+      "type": "construction",
+      "title": "GC-05.05 · Tran Quang Hung’s Six-Pentagon Reflection Star",
+      "url": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/05-tran-star-six-pentagons/",
+      "description": "Discoverer(s): Tran Quang Hung | Date: 2016 | Field: \\mathbb{Q}(\\phi, \\sqrt{10 - 2\\sqrt{5}}) | Loci: 3 (Lemoine S = 9)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/05-tran-star-six-pentagons/05-tran-star-six-pentagons.svg",
+      "image_alt": "GC-05.05 — Tran Quang Hung's Six-Pentagon Reflection Star",
+      "facets": {
+        "tags": [
+          "field-pentagonal",
+          "golden-chain",
+          "tran-quang-hung"
+        ],
+        "categories": [
+          "05-pentagons-polygons"
+        ]
+      }
+    },
+    "constructions/05-pentagons-polygons/06-tran-wu-xing-equilaterals/code": {
+      "id": "constructions/05-pentagons-polygons/06-tran-wu-xing-equilaterals/code",
+      "docname": "constructions/05-pentagons-polygons/06-tran-wu-xing-equilaterals/code",
+      "type": "article",
+      "title": "GC-05.06 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/06-tran-wu-xing-equilaterals/code.html",
+      "description": "Companion symbolic Python construction for index (GC-05.06).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/06-tran-wu-xing-equilaterals/06-tran-wu-xing-equilaterals.svg",
+      "image_alt": "GC-05.06 — Tran Quang Hung's Fivefold Wu Xing Equilateral Star"
+    },
+    "constructions/05-pentagons-polygons/06-tran-wu-xing-equilaterals/index": {
+      "id": "constructions/05-pentagons-polygons/06-tran-wu-xing-equilaterals/index",
+      "docname": "constructions/05-pentagons-polygons/06-tran-wu-xing-equilaterals/index",
+      "type": "construction",
+      "title": "GC-05.06 · Tran Quang Hung’s Fivefold Wu Xing Equilateral Star",
+      "url": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/06-tran-wu-xing-equilaterals/",
+      "description": "Discoverer(s): Tran Quang Hung | Date: 2015 | Field: \\mathbb{Q}(\\sqrt{3}, \\phi, \\sqrt{10 - 2\\sqrt{5}}) | Loci: 2 (Lemoine S = 6)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/06-tran-wu-xing-equilaterals/06-tran-wu-xing-equilaterals.svg",
+      "image_alt": "GC-05.06 — Tran Quang Hung's Fivefold Wu Xing Equilateral Star",
+      "facets": {
+        "tags": [
+          "field-pentagonal-hexagonal",
+          "tran-quang-hung"
+        ],
+        "categories": [
+          "05-pentagons-polygons"
+        ]
+      }
+    },
+    "constructions/05-pentagons-polygons/index": {
+      "id": "constructions/05-pentagons-polygons/index",
+      "docname": "constructions/05-pentagons-polygons/index",
+      "type": "family",
+      "title": "GC-05 · Pentagons, Pentagrams, Affine Invariance & Stars",
+      "url": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/",
+      "description": "Fivefold regular polygons, affine equi-area irregular pentagons over Q(φ), and pentagon–hexagon–equilateral star hybrids.",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/05-pentagons-polygons/01-ptolemy-pentagon-pentagram/01-ptolemy-pentagon-pentagram.svg",
+      "image_alt": "Pentagons, Pentagrams, Affine Invariance & Stars"
+    },
+    "constructions/06-circles-sangaku/01-bui-circle-droves/code": {
+      "id": "constructions/06-circles-sangaku/01-bui-circle-droves/code",
+      "docname": "constructions/06-circles-sangaku/01-bui-circle-droves/code",
+      "type": "article",
+      "title": "GC-06.01 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/06-circles-sangaku/01-bui-circle-droves/code.html",
+      "description": "Companion symbolic Python construction for index (GC-06.01).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/06-circles-sangaku/01-bui-circle-droves/01-bui-circle-droves.svg",
+      "image_alt": "GC-06.01 — Bùi Quang Tuân's Infinite Family of Golden Circle Secants"
+    },
+    "constructions/06-circles-sangaku/01-bui-circle-droves/index": {
+      "id": "constructions/06-circles-sangaku/01-bui-circle-droves/index",
+      "docname": "constructions/06-circles-sangaku/01-bui-circle-droves/index",
+      "type": "construction",
+      "title": "GC-06.01 · Bùi Quang Tuân’s Infinite Family of Golden Circle Secants",
+      "url": "https://geometor.github.io/divine/constructions/06-circles-sangaku/01-bui-circle-droves/",
+      "description": "Discoverer(s): Bùi Quang Tuân | Date: 2014 | Field: \\mathbb{Q}(\\sqrt{3}, \\phi) | Loci: 4 (Lemoine S = 12)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/06-circles-sangaku/01-bui-circle-droves/01-bui-circle-droves.svg",
+      "image_alt": "GC-06.01 — Bùi Quang Tuân's Infinite Family of Golden Circle Secants",
+      "facets": {
+        "tags": [
+          "field-q-sqrt3-phi",
+          "bui-quang-tuan"
+        ],
+        "categories": [
+          "06-circles-sangaku"
+        ]
+      }
+    },
+    "constructions/06-circles-sangaku/02-mcgucken-kalogerakis-equal-circles/code": {
+      "id": "constructions/06-circles-sangaku/02-mcgucken-kalogerakis-equal-circles/code",
+      "docname": "constructions/06-circles-sangaku/02-mcgucken-kalogerakis-equal-circles/code",
+      "type": "article",
+      "title": "GC-06.02 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/06-circles-sangaku/02-mcgucken-kalogerakis-equal-circles/code.html",
+      "description": "Companion symbolic Python construction for index (GC-06.02).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/06-circles-sangaku/02-mcgucken-kalogerakis-equal-circles/02-mcgucken-kalogerakis-equal-circles.svg",
+      "image_alt": "GC-06.02 — Elliot McGucken & Thanos Kalogerakis's Equal Tangent Circles"
+    },
+    "constructions/06-circles-sangaku/02-mcgucken-kalogerakis-equal-circles/index": {
+      "id": "constructions/06-circles-sangaku/02-mcgucken-kalogerakis-equal-circles/index",
+      "docname": "constructions/06-circles-sangaku/02-mcgucken-kalogerakis-equal-circles/index",
+      "type": "construction",
+      "title": "GC-06.02 · Elliot McGucken & Thanos Kalogerakis’s Equal Tangent Circles",
+      "url": "https://geometor.github.io/divine/constructions/06-circles-sangaku/02-mcgucken-kalogerakis-equal-circles/",
+      "description": "Discoverer(s): Elliot McGucken, Thanos Kalogerakis | Date: 2016 | Field: \\mathbb{Q}(\\phi) | Loci: 4 (Lemoine S = 12)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/06-circles-sangaku/02-mcgucken-kalogerakis-equal-circles/02-mcgucken-kalogerakis-equal-circles.svg",
+      "image_alt": "GC-06.02 — Elliot McGucken & Thanos Kalogerakis's Equal Tangent Circles",
+      "facets": {
+        "tags": [
+          "field-q-phi",
+          "elliot-mcgucken",
+          "thanos-kalogerakis"
+        ],
+        "categories": [
+          "06-circles-sangaku"
+        ]
+      }
+    },
+    "constructions/06-circles-sangaku/03-bui-four-golden-circles/code": {
+      "id": "constructions/06-circles-sangaku/03-bui-four-golden-circles/code",
+      "docname": "constructions/06-circles-sangaku/03-bui-four-golden-circles/code",
+      "type": "article",
+      "title": "GC-06.03 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/06-circles-sangaku/03-bui-four-golden-circles/code.html",
+      "description": "Companion symbolic Python construction for index (GC-06.03).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/06-circles-sangaku/03-bui-four-golden-circles/03-bui-four-golden-circles.svg",
+      "image_alt": "GC-06.03 — Bùi Quang Tuân's Four Congruent Golden Circles"
+    },
+    "constructions/06-circles-sangaku/03-bui-four-golden-circles/index": {
+      "id": "constructions/06-circles-sangaku/03-bui-four-golden-circles/index",
+      "docname": "constructions/06-circles-sangaku/03-bui-four-golden-circles/index",
+      "type": "construction",
+      "title": "GC-06.03 · Bùi Quang Tuân’s Four Congruent Golden Circles",
+      "url": "https://geometor.github.io/divine/constructions/06-circles-sangaku/03-bui-four-golden-circles/",
+      "description": "Discoverer(s): Bùi Quang Tuân | Date: 2015 | Field: \\mathbb{Q}(\\sqrt{3}, \\phi) | Loci: 5 (Lemoine S = 15)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/06-circles-sangaku/03-bui-four-golden-circles/03-bui-four-golden-circles.svg",
+      "image_alt": "GC-06.03 — Bùi Quang Tuân's Four Congruent Golden Circles",
+      "facets": {
+        "tags": [
+          "field-q-sqrt3-phi",
+          "golden-chain",
+          "bui-quang-tuan"
+        ],
+        "categories": [
+          "06-circles-sangaku"
+        ]
+      }
+    },
+    "constructions/06-circles-sangaku/04-tran-mcgucken-three-tangent-circles/code": {
+      "id": "constructions/06-circles-sangaku/04-tran-mcgucken-three-tangent-circles/code",
+      "docname": "constructions/06-circles-sangaku/04-tran-mcgucken-three-tangent-circles/code",
+      "type": "article",
+      "title": "GC-06.04 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/06-circles-sangaku/04-tran-mcgucken-three-tangent-circles/code.html",
+      "description": "Companion symbolic Python construction for index (GC-06.04).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/06-circles-sangaku/04-tran-mcgucken-three-tangent-circles/04-tran-mcgucken-three-tangent-circles.svg",
+      "image_alt": "GC-06.04 — Tran Quang Hung & Elliot McGucken's Three Tangent Circles"
+    },
+    "constructions/06-circles-sangaku/04-tran-mcgucken-three-tangent-circles/index": {
+      "id": "constructions/06-circles-sangaku/04-tran-mcgucken-three-tangent-circles/index",
+      "docname": "constructions/06-circles-sangaku/04-tran-mcgucken-three-tangent-circles/index",
+      "type": "construction",
+      "title": "GC-06.04 · Tran Quang Hung & Elliot McGucken’s Three Tangent Circles",
+      "url": "https://geometor.github.io/divine/constructions/06-circles-sangaku/04-tran-mcgucken-three-tangent-circles/",
+      "description": "Discoverer(s): Tran Quang Hung, Elliot McGucken | Date: 2016 | Field: \\mathbb{Q}(\\sqrt{3}, \\phi) | Loci: 5 (Lemoine S = 15)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/06-circles-sangaku/04-tran-mcgucken-three-tangent-circles/04-tran-mcgucken-three-tangent-circles.svg",
+      "image_alt": "GC-06.04 — Tran Quang Hung & Elliot McGucken's Three Tangent Circles",
+      "facets": {
+        "tags": [
+          "field-q-sqrt3-phi",
+          "golden-chain",
+          "tran-quang-hung",
+          "elliot-mcgucken"
+        ],
+        "categories": [
+          "06-circles-sangaku"
+        ]
+      }
+    },
+    "constructions/06-circles-sangaku/05-kocik-golden-window/code": {
+      "id": "constructions/06-circles-sangaku/05-kocik-golden-window/code",
+      "docname": "constructions/06-circles-sangaku/05-kocik-golden-window/code",
+      "type": "article",
+      "title": "GC-06.05 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/06-circles-sangaku/05-kocik-golden-window/code.html",
+      "description": "Companion symbolic Python construction for index (GC-06.05).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/06-circles-sangaku/05-kocik-golden-window/05-kocik-golden-window.svg",
+      "image_alt": "GC-06.05 — Jerzy Kocik's Six-Circle Apollonian Golden Window (2010)"
+    },
+    "constructions/06-circles-sangaku/05-kocik-golden-window/index": {
+      "id": "constructions/06-circles-sangaku/05-kocik-golden-window/index",
+      "docname": "constructions/06-circles-sangaku/05-kocik-golden-window/index",
+      "type": "construction",
+      "title": "GC-06.05 · Jerzy Kocik’s Six-Circle Apollonian Golden Window (2010)",
+      "url": "https://geometor.github.io/divine/constructions/06-circles-sangaku/05-kocik-golden-window/",
+      "description": "Discoverer(s): Jerzy Kocik | Date: 2010 | Field: \\mathbb{Q}(\\phi) | Loci: 8 (Lemoine S = 24)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/06-circles-sangaku/05-kocik-golden-window/05-kocik-golden-window.svg",
+      "image_alt": "GC-06.05 — Jerzy Kocik's Six-Circle Apollonian Golden Window (2010)",
+      "facets": {
+        "tags": [
+          "field-q-phi",
+          "golden-chain",
+          "jerzy-kocik"
+        ],
+        "categories": [
+          "06-circles-sangaku"
+        ]
+      }
+    },
+    "constructions/06-circles-sangaku/06-arioni-yin-yang/code": {
+      "id": "constructions/06-circles-sangaku/06-arioni-yin-yang/code",
+      "docname": "constructions/06-circles-sangaku/06-arioni-yin-yang/code",
+      "type": "article",
+      "title": "GC-06.06 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/06-circles-sangaku/06-arioni-yin-yang/code.html",
+      "description": "Companion symbolic Python construction for index (GC-06.06).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/06-circles-sangaku/06-arioni-yin-yang/06-arioni-yin-yang.svg",
+      "image_alt": "GC-06.06 — John Arioni's Golden Secant in the Yin-Yang Circle"
+    },
+    "constructions/06-circles-sangaku/06-arioni-yin-yang/index": {
+      "id": "constructions/06-circles-sangaku/06-arioni-yin-yang/index",
+      "docname": "constructions/06-circles-sangaku/06-arioni-yin-yang/index",
+      "type": "construction",
+      "title": "GC-06.06 · John Arioni’s Golden Secant in the Yin-Yang Circle",
+      "url": "https://geometor.github.io/divine/constructions/06-circles-sangaku/06-arioni-yin-yang/",
+      "description": "Discoverer(s): John Arioni | Date: 2016 | Field: \\mathbb{Q}(\\phi) | Loci: 4 (Lemoine S = 12)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/06-circles-sangaku/06-arioni-yin-yang/06-arioni-yin-yang.svg",
+      "image_alt": "GC-06.06 — John Arioni's Golden Secant in the Yin-Yang Circle",
+      "facets": {
+        "tags": [
+          "field-q-phi",
+          "john-arioni"
+        ],
+        "categories": [
+          "06-circles-sangaku"
+        ]
+      }
+    },
+    "constructions/06-circles-sangaku/07-three-circles-in-semicircle/code": {
+      "id": "constructions/06-circles-sangaku/07-three-circles-in-semicircle/code",
+      "docname": "constructions/06-circles-sangaku/07-three-circles-in-semicircle/code",
+      "type": "article",
+      "title": "GC-06.07 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/06-circles-sangaku/07-three-circles-in-semicircle/code.html",
+      "description": "Companion symbolic Python construction for index (GC-06.07).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/06-circles-sangaku/07-three-circles-in-semicircle/07-three-circles-in-semicircle.svg",
+      "image_alt": "GC-06.07 — Three Tangent Equal Circles Inscribed in a Semicircle"
+    },
+    "constructions/06-circles-sangaku/07-three-circles-in-semicircle/index": {
+      "id": "constructions/06-circles-sangaku/07-three-circles-in-semicircle/index",
+      "docname": "constructions/06-circles-sangaku/07-three-circles-in-semicircle/index",
+      "type": "construction",
+      "title": "GC-06.07 · Three Tangent Equal Circles Inscribed in a Semicircle",
+      "url": "https://geometor.github.io/divine/constructions/06-circles-sangaku/07-three-circles-in-semicircle/",
+      "description": "Discoverer(s): Alexander Bogomolny | Date: 2010 | Field: \\mathbb{Q}(\\phi) | Loci: 6 (Lemoine S = 18)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/06-circles-sangaku/07-three-circles-in-semicircle/07-three-circles-in-semicircle.svg",
+      "image_alt": "GC-06.07 — Three Tangent Equal Circles Inscribed in a Semicircle",
+      "facets": {
+        "tags": [
+          "field-q-phi",
+          "golden-chain",
+          "alexander-bogomolny"
+        ],
+        "categories": [
+          "06-circles-sangaku"
+        ]
+      }
+    },
+    "constructions/06-circles-sangaku/index": {
+      "id": "constructions/06-circles-sangaku/index",
+      "docname": "constructions/06-circles-sangaku/index",
+      "type": "family",
+      "title": "GC-06 · Circles, Apollonian Windows, Yin–Yang & Sangaku",
+      "url": "https://geometor.github.io/divine/constructions/06-circles-sangaku/",
+      "description": "Purely circular locus families, mutually tangent circle gaskets, and Japanese Sangaku enclosing ratios.",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/06-circles-sangaku/01-bui-circle-droves/01-bui-circle-droves.svg",
+      "image_alt": "Circles, Apollonian Windows, Yin–Yang & Sangaku"
+    },
+    "constructions/07-rhombi-trapezoids-algebra/01-tran-rhombus-incircle/code": {
+      "id": "constructions/07-rhombi-trapezoids-algebra/01-tran-rhombus-incircle/code",
+      "docname": "constructions/07-rhombi-trapezoids-algebra/01-tran-rhombus-incircle/code",
+      "type": "article",
+      "title": "GC-07.01 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/01-tran-rhombus-incircle/code.html",
+      "description": "Companion symbolic Python construction for index (GC-07.01).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/01-tran-rhombus-incircle/01-tran-rhombus-incircle.svg",
+      "image_alt": "GC-07.01 — Tran Quang Hung's 2:1 Rhombus & Incircle Diagonal Division"
+    },
+    "constructions/07-rhombi-trapezoids-algebra/01-tran-rhombus-incircle/index": {
+      "id": "constructions/07-rhombi-trapezoids-algebra/01-tran-rhombus-incircle/index",
+      "docname": "constructions/07-rhombi-trapezoids-algebra/01-tran-rhombus-incircle/index",
+      "type": "construction",
+      "title": "GC-07.01 · Tran Quang Hung’s 2:1 Rhombus & Incircle Diagonal Division",
+      "url": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/01-tran-rhombus-incircle/",
+      "description": "Discoverer(s): Tran Quang Hung | Date: 2015 | Field: \\mathbb{Q}(\\phi) | Loci: 2 (Lemoine S = 6)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/01-tran-rhombus-incircle/01-tran-rhombus-incircle.svg",
+      "image_alt": "GC-07.01 — Tran Quang Hung's 2:1 Rhombus & Incircle Diagonal Division",
+      "facets": {
+        "tags": [
+          "field-q-phi",
+          "golden-chain",
+          "tran-quang-hung"
+        ],
+        "categories": [
+          "07-rhombi-trapezoids-algebra"
+        ]
+      }
+    },
+    "constructions/07-rhombi-trapezoids-algebra/02-molokach-golden-rhombus/code": {
+      "id": "constructions/07-rhombi-trapezoids-algebra/02-molokach-golden-rhombus/code",
+      "docname": "constructions/07-rhombi-trapezoids-algebra/02-molokach-golden-rhombus/code",
+      "type": "article",
+      "title": "GC-07.02 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/02-molokach-golden-rhombus/code.html",
+      "description": "Companion symbolic Python construction for index (GC-07.02).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/02-molokach-golden-rhombus/02-molokach-golden-rhombus.svg",
+      "image_alt": "GC-07.02 — John Molokach's Golden Rhombus from Shifted 1×3 Rectangles"
+    },
+    "constructions/07-rhombi-trapezoids-algebra/02-molokach-golden-rhombus/index": {
+      "id": "constructions/07-rhombi-trapezoids-algebra/02-molokach-golden-rhombus/index",
+      "docname": "constructions/07-rhombi-trapezoids-algebra/02-molokach-golden-rhombus/index",
+      "type": "construction",
+      "title": "GC-07.02 · John Molokach’s Golden Rhombus from Shifted 1×3 Rectangles",
+      "url": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/02-molokach-golden-rhombus/",
+      "description": "Discoverer(s): John Molokach | Date: 2014 | Field: \\mathbb{Q}(\\phi) | Loci: 2 (Lemoine S = 6)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/02-molokach-golden-rhombus/02-molokach-golden-rhombus.svg",
+      "image_alt": "GC-07.02 — John Molokach's Golden Rhombus from Shifted 1×3 Rectangles",
+      "facets": {
+        "tags": [
+          "field-q-phi",
+          "golden-chain",
+          "john-molokach"
+        ],
+        "categories": [
+          "07-rhombi-trapezoids-algebra"
+        ]
+      }
+    },
+    "constructions/07-rhombi-trapezoids-algebra/03-tong-trapezoid-rms/code": {
+      "id": "constructions/07-rhombi-trapezoids-algebra/03-tong-trapezoid-rms/code",
+      "docname": "constructions/07-rhombi-trapezoids-algebra/03-tong-trapezoid-rms/code",
+      "type": "article",
+      "title": "GC-07.03 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/03-tong-trapezoid-rms/code.html",
+      "description": "Companion symbolic Python construction for index (GC-07.03).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/03-tong-trapezoid-rms/03-tong-trapezoid-rms.svg",
+      "image_alt": "GC-07.03 — Jingcheng Tong's Area-Bisecting Chord in a 1:3 Trapezoid"
+    },
+    "constructions/07-rhombi-trapezoids-algebra/03-tong-trapezoid-rms/index": {
+      "id": "constructions/07-rhombi-trapezoids-algebra/03-tong-trapezoid-rms/index",
+      "docname": "constructions/07-rhombi-trapezoids-algebra/03-tong-trapezoid-rms/index",
+      "type": "construction",
+      "title": "GC-07.03 · Jingcheng Tong’s Area-Bisecting Chord in a 1:3 Trapezoid",
+      "url": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/03-tong-trapezoid-rms/",
+      "description": "Discoverer(s): Jingcheng Tong | Date: 2005 | Field: \\mathbb{Q}(\\phi) | Loci: 3 (Lemoine S = 9)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/03-tong-trapezoid-rms/03-tong-trapezoid-rms.svg",
+      "image_alt": "GC-07.03 — Jingcheng Tong's Area-Bisecting Chord in a 1:3 Trapezoid",
+      "facets": {
+        "tags": [
+          "field-q-phi",
+          "jingcheng-tong"
+        ],
+        "categories": [
+          "07-rhombi-trapezoids-algebra"
+        ]
+      }
+    },
+    "constructions/07-rhombi-trapezoids-algebra/04-tran-isosceles-trapezoid-60/code": {
+      "id": "constructions/07-rhombi-trapezoids-algebra/04-tran-isosceles-trapezoid-60/code",
+      "docname": "constructions/07-rhombi-trapezoids-algebra/04-tran-isosceles-trapezoid-60/code",
+      "type": "article",
+      "title": "GC-07.04 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/04-tran-isosceles-trapezoid-60/code.html",
+      "description": "Companion symbolic Python construction for index (GC-07.04).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/04-tran-isosceles-trapezoid-60/04-tran-isosceles-trapezoid-60.svg",
+      "image_alt": "GC-07.04 — Tran Quang Hung's 60° Isosceles Trapezoid Diagonal Division"
+    },
+    "constructions/07-rhombi-trapezoids-algebra/04-tran-isosceles-trapezoid-60/index": {
+      "id": "constructions/07-rhombi-trapezoids-algebra/04-tran-isosceles-trapezoid-60/index",
+      "docname": "constructions/07-rhombi-trapezoids-algebra/04-tran-isosceles-trapezoid-60/index",
+      "type": "construction",
+      "title": "GC-07.04 · Tran Quang Hung’s 60° Isosceles Trapezoid Diagonal Division",
+      "url": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/04-tran-isosceles-trapezoid-60/",
+      "description": "Discoverer(s): Tran Quang Hung | Date: 2015 | Field: \\mathbb{Q}(\\sqrt{3}, \\phi) | Loci: 3 (Lemoine S = 9)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/04-tran-isosceles-trapezoid-60/04-tran-isosceles-trapezoid-60.svg",
+      "image_alt": "GC-07.04 — Tran Quang Hung's 60° Isosceles Trapezoid Diagonal Division",
+      "facets": {
+        "tags": [
+          "field-q-sqrt3-phi",
+          "tran-quang-hung"
+        ],
+        "categories": [
+          "07-rhombi-trapezoids-algebra"
+        ]
+      }
+    },
+    "constructions/07-rhombi-trapezoids-algebra/05-tran-mixtilinear-equilateral/code": {
+      "id": "constructions/07-rhombi-trapezoids-algebra/05-tran-mixtilinear-equilateral/code",
+      "docname": "constructions/07-rhombi-trapezoids-algebra/05-tran-mixtilinear-equilateral/code",
+      "type": "article",
+      "title": "GC-07.05 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/05-tran-mixtilinear-equilateral/code.html",
+      "description": "Companion symbolic Python construction for index (GC-07.05).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/05-tran-mixtilinear-equilateral/05-tran-mixtilinear-equilateral.svg",
+      "image_alt": "GC-07.05 — Tran Quang Hung's Mixtilinear Circle in an Equilateral Triangle"
+    },
+    "constructions/07-rhombi-trapezoids-algebra/05-tran-mixtilinear-equilateral/index": {
+      "id": "constructions/07-rhombi-trapezoids-algebra/05-tran-mixtilinear-equilateral/index",
+      "docname": "constructions/07-rhombi-trapezoids-algebra/05-tran-mixtilinear-equilateral/index",
+      "type": "construction",
+      "title": "GC-07.05 · Tran Quang Hung’s Mixtilinear Circle in an Equilateral Triangle",
+      "url": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/05-tran-mixtilinear-equilateral/",
+      "description": "Discoverer(s): Tran Quang Hung, Alexander Bogomolny, Leonard Giugiuc | Date: 2016 | Field: \\mathbb{Q}(\\sqrt{3}, \\phi) | Loci: 3 (Lemoine S = 9)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/05-tran-mixtilinear-equilateral/05-tran-mixtilinear-equilateral.svg",
+      "image_alt": "GC-07.05 — Tran Quang Hung's Mixtilinear Circle in an Equilateral Triangle",
+      "facets": {
+        "tags": [
+          "field-q-sqrt3-phi",
+          "golden-chain",
+          "tran-quang-hung",
+          "alexander-bogomolny"
+        ],
+        "categories": [
+          "07-rhombi-trapezoids-algebra"
+        ]
+      }
+    },
+    "constructions/07-rhombi-trapezoids-algebra/06-curry-hooper-dissection/code": {
+      "id": "constructions/07-rhombi-trapezoids-algebra/06-curry-hooper-dissection/code",
+      "docname": "constructions/07-rhombi-trapezoids-algebra/06-curry-hooper-dissection/code",
+      "type": "article",
+      "title": "GC-07.06 · Symbolic Model & Source",
+      "url": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/06-curry-hooper-dissection/code.html",
+      "description": "Companion symbolic Python construction for index (GC-07.06).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/06-curry-hooper-dissection/06-curry-hooper-dissection.svg",
+      "image_alt": "GC-07.06 — Exact φ-Limit Resolution of the Hooper–Curry Fibonacci Dissection"
+    },
+    "constructions/07-rhombi-trapezoids-algebra/06-curry-hooper-dissection/index": {
+      "id": "constructions/07-rhombi-trapezoids-algebra/06-curry-hooper-dissection/index",
+      "docname": "constructions/07-rhombi-trapezoids-algebra/06-curry-hooper-dissection/index",
+      "type": "construction",
+      "title": "GC-07.06 · Exact φ-Limit Resolution of the Hooper–Curry Fibonacci Dissection",
+      "url": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/06-curry-hooper-dissection/",
+      "description": "Discoverer(s): William Hooper, Paul Curry, Alexander Bogomolny | Date: 1794 | Field: \\mathbb{Q}(\\phi) | Loci: 1 (Lemoine S = 3)",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/06-curry-hooper-dissection/06-curry-hooper-dissection.svg",
+      "image_alt": "GC-07.06 — Exact φ-Limit Resolution of the Hooper–Curry Fibonacci Dissection",
+      "facets": {
+        "tags": [
+          "field-q-phi",
+          "golden-chain",
+          "william-hooper",
+          "paul-curry"
+        ],
+        "categories": [
+          "07-rhombi-trapezoids-algebra"
+        ]
+      }
+    },
+    "constructions/07-rhombi-trapezoids-algebra/index": {
+      "id": "constructions/07-rhombi-trapezoids-algebra/index",
+      "docname": "constructions/07-rhombi-trapezoids-algebra/index",
+      "type": "family",
+      "title": "GC-07 · Rhombi, Trapezoids, Mixtilinear Circles & Dissections",
+      "url": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/",
+      "description": "Quadrilateral incircles, RMS area bisectors, mixtilinear tangency, and the exact φ-limit where the Fibonacci missing-square paradox vanishes.",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/07-rhombi-trapezoids-algebra/01-tran-rhombus-incircle/01-tran-rhombus-incircle.svg",
+      "image_alt": "Rhombi, Trapezoids, Mixtilinear Circles & Dissections"
+    },
+    "constructions/bibliography": {
+      "id": "constructions/bibliography",
+      "docname": "constructions/bibliography",
+      "type": "article",
+      "title": "Bibliography",
+      "url": "https://geometor.github.io/divine/constructions/bibliography.html",
+      "description": "Primary mathematical treatises, peer-reviewed journal articles, and curated archival pages from Alexander Bogomolny’s Interactive Mathematics Miscellany and Puzzles (Cut-the-Knot, © 1996–2018).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Bibliography",
+      "labels": [
+        "cite-euclid-elements",
+        "cite-ptolemy-almagest",
+        "cite-kepler-1597",
+        "cite-hooper-1794",
+        "cite-lemoine-1902",
+        "cite-huntley-1970",
+        "cite-odom-coxeter-1983",
+        "cite-hofstetter-2002",
+        "cite-hofstetter-2003",
+        "cite-hofstetter-2004",
+        "cite-hofstetter-2005",
+        "cite-prasolov-2006",
+        "cite-kocik-2010",
+        "cite-bataille-2011",
+        "cite-knott-golden-section",
+        "cite-bogomolny-golden-ratio",
+        "cite-ctk-compass-only",
+        "cite-ctk-rusty-compass",
+        "cite-ctk-hofstetter3",
+        "cite-ctk-bui-5step",
+        "cite-ctk-bataille",
+        "cite-ctk-bui-qtb",
+        "cite-ctk-bui-qtb2",
+        "cite-ctk-buratino2",
+        "cite-ctk-buratino3",
+        "cite-ctk-buratino5",
+        "cite-ctk-butterfly-equilateral",
+        "cite-bogomolny-rectangles",
+        "cite-bogomolny-buratino1",
+        "cite-bogomolny-2x2",
+        "cite-bogomolny-3x3-1",
+        "cite-bogomolny-3x3-2",
+        "cite-bogomolny-suppa-square",
+        "cite-bogomolny-golden-cross",
+        "cite-bogomolny-arioni-square",
+        "cite-bogomolny-345",
+        "cite-bogomolny-345-tqh",
+        "cite-bogomolny-niemeyer",
+        "cite-bogomolny-bui-3",
+        "cite-bogomolny-pentagon",
+        "cite-bogomolny-pentagon-dao",
+        "cite-bogomolny-pentagon-tqh",
+        "cite-bogomolny-irregular-pentagon",
+        "cite-bogomolny-5-6",
+        "cite-bogomolny-six-pentagons",
+        "cite-bogomolny-wu-xing",
+        "cite-bogomolny-bui-general",
+        "cite-bogomolny-bui-1",
+        "cite-bogomolny-mcgucken-1",
+        "cite-bogomolny-kalogerakis",
+        "cite-bogomolny-four-circles",
+        "cite-bogomolny-3-tangent",
+        "cite-bogomolny-golden-window",
+        "cite-bogomolny-yin-yang",
+        "cite-bogomolny-buratino8",
+        "cite-bogomolny-molokach",
+        "cite-bogomolny-tqh-trapezoid",
+        "cite-bogomolny-mixtilinear"
+      ]
+    },
+    "constructions/comparative_table": {
+      "id": "constructions/comparative_table",
+      "docname": "constructions/comparative_table",
+      "type": "article",
+      "title": "Comparative Table of All 45 Constructions",
+      "url": "https://geometor.github.io/divine/constructions/comparative_table.html",
+      "description": "Side-by-side comparison of algebraic number fields, Euclidean locus counts, Lemoine Géométrographie simplicity (S), and exact collinear golden sections and chains discovered automatically by geometor.divine.golden.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Comparative Table of All 45 Constructions"
+    },
+    "constructions/glossary": {
+      "id": "constructions/glossary",
+      "docname": "constructions/glossary",
+      "type": "article",
+      "title": "Glossary",
+      "url": "https://geometor.github.io/divine/constructions/glossary.html",
+      "description": "Definitions of classical Euclidean, projective, and Rational Trigonometry concepts used throughout the catalog.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Glossary",
+      "labels": [
+        "term-golden-ratio",
+        "term-golden-section",
+        "term-extreme-and-mean-ratio",
+        "term-golden-chain",
+        "term-quadrance",
+        "term-geometrographie",
+        "term-vesica-piscis",
+        "term-mascheroni-construction",
+        "term-rusty-compass",
+        "term-power-of-a-point",
+        "term-intersecting-chords-theorem",
+        "term-butterfly-theorem",
+        "term-kepler-triangle",
+        "term-mixtilinear-incircle",
+        "term-golden-rhombus",
+        "term-golden-rectangle"
+      ]
+    },
+    "constructions/index": {
+      "id": "constructions/index",
+      "docname": "constructions/index",
+      "type": "book",
+      "title": "Catalog of Golden Ratio Constructions",
+      "url": "https://geometor.github.io/divine/constructions/",
+      "subtitle": "Seven Geometric Families in Exact Symbolic Algebra",
+      "description": "A machine-verified symbolic catalog of 45 geometric constructions across seven families certifying 129 exact golden sections.",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/constructions/01-minimal-compass/01-euclid-ii-11/01-euclid-ii-11.svg",
+      "image_alt": "Classical & Minimal-Step Compass Constructions",
+      "facets": {
+        "author": "Alexander Bogomolny, Euclid & Contemporary Geometers",
+        "year": "2024",
+        "year_sort": 2024,
+        "year_display": "2024"
+      }
+    },
+    "constructions/people/alexander-bogomolny": {
+      "id": "constructions/people/alexander-bogomolny",
+      "docname": "constructions/people/alexander-bogomolny",
+      "type": "person",
+      "title": "Alexander Bogomolny",
+      "url": "https://geometor.github.io/divine/constructions/people/alexander-bogomolny.html",
+      "description": "Alexander Bogomolny (1948 – 2018) — Mathematician, Educator & Creator of Cut-the-Knot",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Alexander Bogomolny",
+      "facets": {
+        "death_year": "2018",
+        "death_year_sort": 2018,
+        "death_label": "2018",
+        "lifespan": "1948 – 2018"
+      },
+      "labels": [
+        "person-alexander-bogomolny"
+      ]
+    },
+    "constructions/people/alexandre-borovik": {
+      "id": "constructions/people/alexandre-borovik",
+      "docname": "constructions/people/alexandre-borovik",
+      "type": "person",
+      "title": "Alexandre Borovik",
+      "url": "https://geometor.github.io/divine/constructions/people/alexandre-borovik.html",
+      "description": "Alexandre Borovik (b. 1956) — Mathematician; University of Manchester",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Alexandre Borovik",
+      "facets": {
+        "death_year": "1956",
+        "death_year_sort": 1956,
+        "death_label": "1956",
+        "lifespan": "b. 1956"
+      },
+      "labels": [
+        "person-alexandre-borovik"
+      ]
+    },
+    "constructions/people/bui-quang-tuan": {
+      "id": "constructions/people/bui-quang-tuan",
+      "docname": "constructions/people/bui-quang-tuan",
+      "type": "person",
+      "title": "Bui Quang Tuan",
+      "url": "https://geometor.github.io/divine/constructions/people/bui-quang-tuan.html",
+      "description": "Bùi Quang Tuân (fl. 2010 – present) — Vietnamese Geometer",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Bui Quang Tuan",
+      "facets": {
+        "death_year": "2010",
+        "death_year_sort": 2010,
+        "death_label": "2010",
+        "lifespan": "fl. 2010 – present"
+      },
+      "labels": [
+        "person-bui-quang-tuan"
+      ]
+    },
+    "constructions/people/claudius-ptolemy": {
+      "id": "constructions/people/claudius-ptolemy",
+      "docname": "constructions/people/claudius-ptolemy",
+      "type": "person",
+      "title": "Claudius Ptolemy",
+      "url": "https://geometor.github.io/divine/constructions/people/claudius-ptolemy.html",
+      "description": "Claudius Ptolemy (c. 100 – c. 170 CE) — Alexandrian Astronomer & Geometer",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Claudius Ptolemy",
+      "facets": {
+        "death_year": "170",
+        "death_year_sort": 170,
+        "death_label": "170",
+        "lifespan": "c. 100 – c. 170 CE"
+      },
+      "labels": [
+        "person-claudius-ptolemy"
+      ]
+    },
+    "constructions/people/dao-thanh-oai": {
+      "id": "constructions/people/dao-thanh-oai",
+      "docname": "constructions/people/dao-thanh-oai",
+      "type": "person",
+      "title": "Dao Thanh Oai",
+      "url": "https://geometor.github.io/divine/constructions/people/dao-thanh-oai.html",
+      "description": "Dao Thanh Oai (fl. 2013 – present) — Vietnamese Geometer",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Dao Thanh Oai",
+      "facets": {
+        "death_year": "2013",
+        "death_year_sort": 2013,
+        "death_label": "2013",
+        "lifespan": "fl. 2013 – present"
+      },
+      "labels": [
+        "person-dao-thanh-oai"
+      ]
+    },
+    "constructions/people/elliot-mcgucken": {
+      "id": "constructions/people/elliot-mcgucken",
+      "docname": "constructions/people/elliot-mcgucken",
+      "type": "person",
+      "title": "Elliot Mcgucken",
+      "url": "https://geometor.github.io/divine/constructions/people/elliot-mcgucken.html",
+      "description": "Elliot McGucken (fl. 2015 – present) — Physicist & Recreational Geometer",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Elliot Mcgucken",
+      "facets": {
+        "death_year": "2015",
+        "death_year_sort": 2015,
+        "death_label": "2015",
+        "lifespan": "fl. 2015 – present"
+      },
+      "labels": [
+        "person-elliot-mcgucken"
+      ]
+    },
+    "constructions/people/emile-lemoine": {
+      "id": "constructions/people/emile-lemoine",
+      "docname": "constructions/people/emile-lemoine",
+      "type": "person",
+      "title": "Emile Lemoine",
+      "url": "https://geometor.github.io/divine/constructions/people/emile-lemoine.html",
+      "description": "Émile Michel Hyacinthe Lemoine (1840 – 1912) — French Geometer; Founder of Géométrographie",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Emile Lemoine",
+      "facets": {
+        "death_year": "1912",
+        "death_year_sort": 1912,
+        "death_label": "1912",
+        "lifespan": "1840 – 1912"
+      },
+      "labels": [
+        "person-emile-lemoine"
+      ]
+    },
+    "constructions/people/ercole-suppa": {
+      "id": "constructions/people/ercole-suppa",
+      "docname": "constructions/people/ercole-suppa",
+      "type": "person",
+      "title": "Ercole Suppa",
+      "url": "https://geometor.github.io/divine/constructions/people/ercole-suppa.html",
+      "description": "Ercole Suppa (fl. 2005 – present) — Italian Geometer; Teramo",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Ercole Suppa",
+      "facets": {
+        "death_year": "2005",
+        "death_year_sort": 2005,
+        "death_label": "2005",
+        "lifespan": "fl. 2005 – present"
+      },
+      "labels": [
+        "person-ercole-suppa"
+      ]
+    },
+    "constructions/people/euclid": {
+      "id": "constructions/people/euclid",
+      "docname": "constructions/people/euclid",
+      "type": "person",
+      "title": "Euclid",
+      "url": "https://geometor.github.io/divine/constructions/people/euclid.html",
+      "description": "Euclid of Alexandria (fl. c. 300 BCE) — Alexandrian Geometer; Author of the Elements",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Euclid",
+      "facets": {
+        "death_year": "-300",
+        "death_year_sort": -300,
+        "death_label": "300 BC",
+        "lifespan": "fl. c. 300 BCE",
+        "site_url": "https://geometor.github.io/euclid/",
+        "github_url": "https://github.com/geometor/euclid"
+      },
+      "labels": [
+        "person-euclid"
+      ]
+    },
+    "constructions/people/george-odom": {
+      "id": "constructions/people/george-odom",
+      "docname": "constructions/people/george-odom",
+      "type": "person",
+      "title": "George Odom",
+      "url": "https://geometor.github.io/divine/constructions/people/george-odom.html",
+      "description": "George Odom (1941 – 2010) — Artist & Amateur Geometer",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "George Odom",
+      "facets": {
+        "death_year": "2010",
+        "death_year_sort": 2010,
+        "death_label": "2010",
+        "lifespan": "1941 – 2010"
+      },
+      "labels": [
+        "person-george-odom"
+      ]
+    },
+    "constructions/people/gregoire-nicollier": {
+      "id": "constructions/people/gregoire-nicollier",
+      "docname": "constructions/people/gregoire-nicollier",
+      "type": "person",
+      "title": "Gregoire Nicollier",
+      "url": "https://geometor.github.io/divine/constructions/people/gregoire-nicollier.html",
+      "description": "Grégoire Nicollier (fl. 2010 – present) — Swiss Mathematician; University of Applied Sciences of Western Switzerland",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Gregoire Nicollier",
+      "facets": {
+        "death_year": "2010",
+        "death_year_sort": 2010,
+        "death_label": "2010",
+        "lifespan": "fl. 2010 – present"
+      },
+      "labels": [
+        "person-gregoire-nicollier"
+      ]
+    },
+    "constructions/people/h-e-huntley": {
+      "id": "constructions/people/h-e-huntley",
+      "docname": "constructions/people/h-e-huntley",
+      "type": "person",
+      "title": "H E Huntley",
+      "url": "https://geometor.github.io/divine/constructions/people/h-e-huntley.html",
+      "description": "H. E. Huntley (1892 – 1978) — Physicist & Mathematical Expositor",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "H E Huntley",
+      "facets": {
+        "death_year": "1978",
+        "death_year_sort": 1978,
+        "death_label": "1978",
+        "lifespan": "1892 – 1978"
+      },
+      "labels": [
+        "person-h-e-huntley"
+      ]
+    },
+    "constructions/people/h-s-m-coxeter": {
+      "id": "constructions/people/h-s-m-coxeter",
+      "docname": "constructions/people/h-s-m-coxeter",
+      "type": "person",
+      "title": "H S M Coxeter",
+      "url": "https://geometor.github.io/divine/constructions/people/h-s-m-coxeter.html",
+      "description": "H. S. M. Coxeter (1907 – 2003) — Geometer; University of Toronto",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "H S M Coxeter",
+      "facets": {
+        "death_year": "2003",
+        "death_year_sort": 2003,
+        "death_label": "2003",
+        "lifespan": "1907 – 2003"
+      },
+      "labels": [
+        "person-h-s-m-coxeter"
+      ]
+    },
+    "constructions/people/index": {
+      "id": "constructions/people/index",
+      "docname": "constructions/people/index",
+      "type": "article",
+      "title": "People",
+      "url": "https://geometor.github.io/divine/constructions/people/",
+      "description_source": "empty",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "People",
+      "labels": [
+        "persons"
+      ]
+    },
+    "constructions/people/jerzy-kocik": {
+      "id": "constructions/people/jerzy-kocik",
+      "docname": "constructions/people/jerzy-kocik",
+      "type": "person",
+      "title": "Jerzy Kocik",
+      "url": "https://geometor.github.io/divine/constructions/people/jerzy-kocik.html",
+      "description": "Jerzy Kocik (fl. 1990 – present) — Mathematician & Physicist; Southern Illinois University",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Jerzy Kocik",
+      "facets": {
+        "death_year": "1990",
+        "death_year_sort": 1990,
+        "death_label": "1990",
+        "lifespan": "fl. 1990 – present"
+      },
+      "labels": [
+        "person-jerzy-kocik"
+      ]
+    },
+    "constructions/people/jingcheng-tong": {
+      "id": "constructions/people/jingcheng-tong",
+      "docname": "constructions/people/jingcheng-tong",
+      "type": "person",
+      "title": "Jingcheng Tong",
+      "url": "https://geometor.github.io/divine/constructions/people/jingcheng-tong.html",
+      "description": "Jingcheng Tong (fl. 1985 – 2015) — Mathematician; University of North Florida",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Jingcheng Tong",
+      "facets": {
+        "death_year": "2015",
+        "death_year_sort": 2015,
+        "death_label": "2015",
+        "lifespan": "fl. 1985 – 2015"
+      },
+      "labels": [
+        "person-jingcheng-tong"
+      ]
+    },
+    "constructions/people/jo-niemeyer": {
+      "id": "constructions/people/jo-niemeyer",
+      "docname": "constructions/people/jo-niemeyer",
+      "type": "person",
+      "title": "Jo Niemeyer",
+      "url": "https://geometor.github.io/divine/constructions/people/jo-niemeyer.html",
+      "description": "Jo Niemeyer (b. 1946) — German Concrete Artist & Designer",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Jo Niemeyer",
+      "facets": {
+        "death_year": "1946",
+        "death_year_sort": 1946,
+        "death_label": "1946",
+        "lifespan": "b. 1946"
+      },
+      "labels": [
+        "person-jo-niemeyer"
+      ]
+    },
+    "constructions/people/johannes-kepler": {
+      "id": "constructions/people/johannes-kepler",
+      "docname": "constructions/people/johannes-kepler",
+      "type": "person",
+      "title": "Johannes Kepler",
+      "url": "https://geometor.github.io/divine/constructions/people/johannes-kepler.html",
+      "description": "Johannes Kepler (1571 – 1630) — Astronomer & Geometer",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Johannes Kepler",
+      "facets": {
+        "death_year": "1630",
+        "death_year_sort": 1630,
+        "death_label": "1630",
+        "lifespan": "1571 – 1630"
+      },
+      "labels": [
+        "person-johannes-kepler"
+      ]
+    },
+    "constructions/people/john-arioni": {
+      "id": "constructions/people/john-arioni",
+      "docname": "constructions/people/john-arioni",
+      "type": "person",
+      "title": "John Arioni",
+      "url": "https://geometor.github.io/divine/constructions/people/john-arioni.html",
+      "description": "John Arioni (fl. 2016) — Geometer",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "John Arioni",
+      "facets": {
+        "death_year": "2016",
+        "death_year_sort": 2016,
+        "death_label": "2016",
+        "lifespan": "fl. 2016"
+      },
+      "labels": [
+        "person-john-arioni"
+      ]
+    },
+    "constructions/people/john-molokach": {
+      "id": "constructions/people/john-molokach",
+      "docname": "constructions/people/john-molokach",
+      "type": "person",
+      "title": "John Molokach",
+      "url": "https://geometor.github.io/divine/constructions/people/john-molokach.html",
+      "description": "John Molokach (fl. 2013 – present) — Recreational Geometer",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "John Molokach",
+      "facets": {
+        "death_year": "2013",
+        "death_year_sort": 2013,
+        "death_label": "2013",
+        "lifespan": "fl. 2013 – present"
+      },
+      "labels": [
+        "person-john-molokach"
+      ]
+    },
+    "constructions/people/kurt-hofstetter": {
+      "id": "constructions/people/kurt-hofstetter",
+      "docname": "constructions/people/kurt-hofstetter",
+      "type": "person",
+      "title": "Kurt Hofstetter",
+      "url": "https://geometor.github.io/divine/constructions/people/kurt-hofstetter.html",
+      "description": "Kurt Hofstetter (b. 1959) — Austrian Artist & Geometer",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Kurt Hofstetter",
+      "facets": {
+        "death_year": "1959",
+        "death_year_sort": 1959,
+        "death_label": "1959",
+        "lifespan": "b. 1959"
+      },
+      "labels": [
+        "person-kurt-hofstetter"
+      ]
+    },
+    "constructions/people/leo-giugiuc": {
+      "id": "constructions/people/leo-giugiuc",
+      "docname": "constructions/people/leo-giugiuc",
+      "type": "person",
+      "title": "Leo Giugiuc",
+      "url": "https://geometor.github.io/divine/constructions/people/leo-giugiuc.html",
+      "description": "Leonard Giugiuc (fl. 2010 – present) — Romanian Mathematician & Problemist",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Leo Giugiuc",
+      "facets": {
+        "death_year": "2010",
+        "death_year_sort": 2010,
+        "death_label": "2010",
+        "lifespan": "fl. 2010 – present"
+      },
+      "labels": [
+        "person-leo-giugiuc"
+      ]
+    },
+    "constructions/people/luca-pacioli": {
+      "id": "constructions/people/luca-pacioli",
+      "docname": "constructions/people/luca-pacioli",
+      "type": "person",
+      "title": "Luca Pacioli",
+      "url": "https://geometor.github.io/divine/constructions/people/luca-pacioli.html",
+      "description": "Luca Pacioli (c. 1447 – 1517) — Franciscan Mathematician; Author of De Divina Proportione (1509)",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Luca Pacioli",
+      "facets": {
+        "death_year": "1517",
+        "death_year_sort": 1517,
+        "death_label": "1517",
+        "lifespan": "c. 1447 – 1517"
+      },
+      "labels": [
+        "person-luca-pacioli"
+      ]
+    },
+    "constructions/people/michel-bataille": {
+      "id": "constructions/people/michel-bataille",
+      "docname": "constructions/people/michel-bataille",
+      "type": "person",
+      "title": "Michel Bataille",
+      "url": "https://geometor.github.io/divine/constructions/people/michel-bataille.html",
+      "description": "Michel Bataille (fl. 2000 – present) — French Geometer & Problemist; Rouen",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Michel Bataille",
+      "facets": {
+        "death_year": "2000",
+        "death_year_sort": 2000,
+        "death_label": "2000",
+        "lifespan": "fl. 2000 – present"
+      },
+      "labels": [
+        "person-michel-bataille"
+      ]
+    },
+    "constructions/people/nguyen-thanh-dung": {
+      "id": "constructions/people/nguyen-thanh-dung",
+      "docname": "constructions/people/nguyen-thanh-dung",
+      "type": "person",
+      "title": "Nguyen Thanh Dung",
+      "url": "https://geometor.github.io/divine/constructions/people/nguyen-thanh-dung.html",
+      "description": "Nguyen Thanh Dung (fl. 2015 – present) — Vietnamese Geometer",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Nguyen Thanh Dung",
+      "facets": {
+        "death_year": "2015",
+        "death_year_sort": 2015,
+        "death_label": "2015",
+        "lifespan": "fl. 2015 – present"
+      },
+      "labels": [
+        "person-nguyen-thanh-dung"
+      ]
+    },
+    "constructions/people/paul-curry": {
+      "id": "constructions/people/paul-curry",
+      "docname": "constructions/people/paul-curry",
+      "type": "person",
+      "title": "Paul Curry",
+      "url": "https://geometor.github.io/divine/constructions/people/paul-curry.html",
+      "description": "Paul Curry (1917 – 1986) — Magician & Recreational Geometer",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Paul Curry",
+      "facets": {
+        "death_year": "1986",
+        "death_year_sort": 1986,
+        "death_label": "1986",
+        "lifespan": "1917 – 1986"
+      },
+      "labels": [
+        "person-paul-curry"
+      ]
+    },
+    "constructions/people/quang-duong": {
+      "id": "constructions/people/quang-duong",
+      "docname": "constructions/people/quang-duong",
+      "type": "person",
+      "title": "Quang Duong",
+      "url": "https://geometor.github.io/divine/constructions/people/quang-duong.html",
+      "description": "Quang Duong (fl. 2015) — Geometer & Problem Solver",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Quang Duong",
+      "facets": {
+        "death_year": "2015",
+        "death_year_sort": 2015,
+        "death_label": "2015",
+        "lifespan": "fl. 2015"
+      },
+      "labels": [
+        "person-quang-duong"
+      ]
+    },
+    "constructions/people/ron-knott": {
+      "id": "constructions/people/ron-knott",
+      "docname": "constructions/people/ron-knott",
+      "type": "person",
+      "title": "Ron Knott",
+      "url": "https://geometor.github.io/divine/constructions/people/ron-knott.html",
+      "description": "Ron Knott (b. c. 1950) — Mathematician & Educator; University of Surrey",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Ron Knott",
+      "facets": {
+        "death_year": "1950",
+        "death_year_sort": 1950,
+        "death_label": "1950",
+        "lifespan": "b. c. 1950"
+      },
+      "labels": [
+        "person-ron-knott"
+      ]
+    },
+    "constructions/people/thanos-kalogerakis": {
+      "id": "constructions/people/thanos-kalogerakis",
+      "docname": "constructions/people/thanos-kalogerakis",
+      "type": "person",
+      "title": "Thanos Kalogerakis",
+      "url": "https://geometor.github.io/divine/constructions/people/thanos-kalogerakis.html",
+      "description": "Thanos Kalogerakis (fl. 2016) — Greek Geometer",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Thanos Kalogerakis",
+      "facets": {
+        "death_year": "2016",
+        "death_year_sort": 2016,
+        "death_label": "2016",
+        "lifespan": "fl. 2016"
+      },
+      "labels": [
+        "person-thanos-kalogerakis"
+      ]
+    },
+    "constructions/people/tran-quang-hung": {
+      "id": "constructions/people/tran-quang-hung",
+      "docname": "constructions/people/tran-quang-hung",
+      "type": "person",
+      "title": "Tran Quang Hung",
+      "url": "https://geometor.github.io/divine/constructions/people/tran-quang-hung.html",
+      "description": "Tran Quang Hung (fl. 2012 – present) — Vietnamese Geometer; Hanoi University of Science High School",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Tran Quang Hung",
+      "facets": {
+        "death_year": "2012",
+        "death_year_sort": 2012,
+        "death_label": "2012",
+        "lifespan": "fl. 2012 – present"
+      },
+      "labels": [
+        "person-tran-quang-hung"
+      ]
+    },
+    "constructions/people/v-v-prasolov": {
+      "id": "constructions/people/v-v-prasolov",
+      "docname": "constructions/people/v-v-prasolov",
+      "type": "person",
+      "title": "V V Prasolov",
+      "url": "https://geometor.github.io/divine/constructions/people/v-v-prasolov.html",
+      "description": "Viktor Vasil’evich Prasolov (b. 1956) — Russian Geometer & Author; Independent University of Moscow",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "V V Prasolov",
+      "facets": {
+        "death_year": "1956",
+        "death_year_sort": 1956,
+        "death_label": "1956",
+        "lifespan": "b. 1956"
+      },
+      "labels": [
+        "person-v-v-prasolov"
+      ]
+    },
+    "constructions/people/william-hooper": {
+      "id": "constructions/people/william-hooper",
+      "docname": "constructions/people/william-hooper",
+      "type": "person",
+      "title": "William Hooper",
+      "url": "https://geometor.github.io/divine/constructions/people/william-hooper.html",
+      "description": "William Hooper (fl. 1770 – 1794) — Author of Rational Recreations",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "William Hooper",
+      "facets": {
+        "death_year": "1794",
+        "death_year_sort": 1794,
+        "death_label": "1794",
+        "lifespan": "fl. 1770 – 1794"
+      },
+      "labels": [
+        "person-william-hooper"
+      ]
+    },
+    "contribute": {
+      "id": "contribute",
+      "docname": "contribute",
+      "type": "article",
+      "title": "contribute",
+      "url": "https://geometor.github.io/divine/contribute.html",
+      "description_source": "empty",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "contribute"
+    },
+    "demos/index": {
+      "id": "demos/index",
+      "docname": "demos/index",
+      "type": "article",
+      "title": "Demos",
+      "url": "https://geometor.github.io/divine/demos/",
+      "description_source": "empty",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Demos"
+    },
+    "demos/vesica": {
+      "id": "demos/vesica",
+      "docname": "demos/vesica",
+      "type": "article",
+      "title": "vesica",
+      "url": "https://geometor.github.io/divine/demos/vesica.html",
+      "description_source": "empty",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "vesica"
+    },
+    "discuss": {
+      "id": "discuss",
+      "docname": "discuss",
+      "type": "article",
+      "title": "discuss",
+      "url": "https://geometor.github.io/divine/discuss.html",
+      "description_source": "empty",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "discuss"
+    },
+    "glossary": {
+      "id": "glossary",
+      "docname": "glossary",
+      "type": "article",
+      "title": "glossary",
+      "url": "https://geometor.github.io/divine/glossary.html",
+      "description_source": "empty",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "glossary",
+      "labels": [
+        "glossary-root"
+      ]
+    },
+    "index": {
+      "id": "index",
+      "docname": "index",
+      "type": "project",
+      "title": "Divine Proportion Discovery",
+      "url": "https://geometor.github.io/divine/",
+      "description": "geometor.divine is an automated symbolic discovery engine that scans exact geometric constructions to uncover hidden golden sections (\\phi = \\frac{1+\\sqrt{5}}{2}), harmonic ranges, and multi-point proportional chains. Alongside its Python…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Divine Proportion Discovery Medallion"
+    },
+    "log/23.012-101550/index": {
+      "id": "log/23.012-101550/index",
+      "docname": "log/23.012-101550/index",
+      "type": "log",
+      "title": "Defining the Divine Proportion",
+      "url": "https://geometor.github.io/divine/log/23.012-101550/",
+      "description": "It is known by many names.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Defining the Divine Proportion",
+      "facets": {
+        "author": "phi",
+        "date": "23.012-101550"
+      }
+    },
+    "log/index": {
+      "id": "log/index",
+      "docname": "log/index",
+      "type": "article",
+      "title": "Log",
+      "url": "https://geometor.github.io/divine/log/",
+      "description_source": "empty",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Log"
+    },
+    "modules/api/geometor/divine/__main__/index": {
+      "id": "modules/api/geometor/divine/__main__/index",
+      "docname": "modules/api/geometor/divine/__main__/index",
+      "type": "article",
+      "title": "geometor.divine.__main__",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/__main__/",
+      "description": "The package entry point into the application.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.__main__"
+    },
+    "modules/api/geometor/divine/catalog/apparatus/index": {
+      "id": "modules/api/geometor/divine/catalog/apparatus/index",
+      "docname": "modules/api/geometor/divine/catalog/apparatus/index",
+      "type": "article",
+      "title": "geometor.divine.catalog.apparatus",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/catalog/apparatus/",
+      "description": "Scholarly apparatus registries for the Catalog of Golden Ratio Constructions.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.catalog.apparatus"
+    },
+    "modules/api/geometor/divine/catalog/circles_sangaku/index": {
+      "id": "modules/api/geometor/divine/catalog/circles_sangaku/index",
+      "docname": "modules/api/geometor/divine/catalog/circles_sangaku/index",
+      "type": "article",
+      "title": "geometor.divine.catalog.circles_sangaku",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/catalog/circles_sangaku/",
+      "description": "Family 06: Circles, Tangent Packings, Yin-Yang & Sangaku Configurations.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.catalog.circles_sangaku"
+    },
+    "modules/api/geometor/divine/catalog/equilateral_hexagon/index": {
+      "id": "modules/api/geometor/divine/catalog/equilateral_hexagon/index",
+      "docname": "modules/api/geometor/divine/catalog/equilateral_hexagon/index",
+      "type": "article",
+      "title": "geometor.divine.catalog.equilateral_hexagon",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/catalog/equilateral_hexagon/",
+      "description": "Family 02: Equilateral Triangles & Regular Hexagons — The Odom Lineage.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.catalog.equilateral_hexagon"
+    },
+    "modules/api/geometor/divine/catalog/generate_codex/index": {
+      "id": "modules/api/geometor/divine/catalog/generate_codex/index",
+      "docname": "modules/api/geometor/divine/catalog/generate_codex/index",
+      "type": "article",
+      "title": "geometor.divine.catalog.generate_codex",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/catalog/generate_codex/",
+      "description": "Deterministic generator for the Golden Ratio Catalog Book Codex & JSON resources.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.catalog.generate_codex"
+    },
+    "modules/api/geometor/divine/catalog/helpers/index": {
+      "id": "modules/api/geometor/divine/catalog/helpers/index",
+      "docname": "modules/api/geometor/divine/catalog/helpers/index",
+      "type": "article",
+      "title": "geometor.divine.catalog.helpers",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/catalog/helpers/",
+      "description": "Shared exact symbolic construction helpers for geometor.divine.catalog.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.catalog.helpers"
+    },
+    "modules/api/geometor/divine/catalog/index": {
+      "id": "modules/api/geometor/divine/catalog/index",
+      "docname": "modules/api/geometor/divine/catalog/index",
+      "type": "article",
+      "title": "geometor.divine.catalog",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/catalog/",
+      "description": "Exact Symbolic Catalog of Golden Ratio Constructions & Theorems.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.catalog"
+    },
+    "modules/api/geometor/divine/catalog/minimal_compass/index": {
+      "id": "modules/api/geometor/divine/catalog/minimal_compass/index",
+      "docname": "modules/api/geometor/divine/catalog/minimal_compass/index",
+      "type": "article",
+      "title": "geometor.divine.catalog.minimal_compass",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/catalog/minimal_compass/",
+      "description": "Family 01: Classical & Minimal-Step Compass-and-Straightedge Constructions.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.catalog.minimal_compass"
+    },
+    "modules/api/geometor/divine/catalog/pentagons_polygons/index": {
+      "id": "modules/api/geometor/divine/catalog/pentagons_polygons/index",
+      "docname": "modules/api/geometor/divine/catalog/pentagons_polygons/index",
+      "type": "article",
+      "title": "geometor.divine.catalog.pentagons_polygons",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/catalog/pentagons_polygons/",
+      "description": "Family 05: Regular Pentagons, Pentagrams, Irregular Pentagons & Polygonal Stars.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.catalog.pentagons_polygons"
+    },
+    "modules/api/geometor/divine/catalog/registry/index": {
+      "id": "modules/api/geometor/divine/catalog/registry/index",
+      "docname": "modules/api/geometor/divine/catalog/registry/index",
+      "type": "article",
+      "title": "geometor.divine.catalog.registry",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/catalog/registry/",
+      "description": "Master registry of the 7 geometric families and 45 cataloged constructions.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.catalog.registry"
+    },
+    "modules/api/geometor/divine/catalog/render/index": {
+      "id": "modules/api/geometor/divine/catalog/render/index",
+      "docname": "modules/api/geometor/divine/catalog/render/index",
+      "type": "article",
+      "title": "geometor.divine.catalog.render",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/catalog/render/",
+      "description": "Publication-grade interactive .euclid-graphic SVG renderer for the Golden Ratio Catalog.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.catalog.render"
+    },
+    "modules/api/geometor/divine/catalog/rhombi_trapezoids_algebra/index": {
+      "id": "modules/api/geometor/divine/catalog/rhombi_trapezoids_algebra/index",
+      "docname": "modules/api/geometor/divine/catalog/rhombi_trapezoids_algebra/index",
+      "type": "article",
+      "title": "geometor.divine.catalog.rhombi_trapezoids_algebra",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/catalog/rhombi_trapezoids_algebra/",
+      "description": "Family 07: Rhombi, Trapezoids, Mixtilinear Circles & Dissection Paradoxes.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.catalog.rhombi_trapezoids_algebra"
+    },
+    "modules/api/geometor/divine/catalog/right_and_345/index": {
+      "id": "modules/api/geometor/divine/catalog/right_and_345/index",
+      "docname": "modules/api/geometor/divine/catalog/right_and_345/index",
+      "type": "article",
+      "title": "geometor.divine.catalog.right_and_345",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/catalog/right_and_345/",
+      "description": "Family 04: Right Triangles, Egyptian 3-4-5 & Kepler Proportions.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.catalog.right_and_345"
+    },
+    "modules/api/geometor/divine/catalog/schema/index": {
+      "id": "modules/api/geometor/divine/catalog/schema/index",
+      "docname": "modules/api/geometor/divine/catalog/schema/index",
+      "type": "article",
+      "title": "geometor.divine.catalog.schema",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/catalog/schema/",
+      "description": "Data schemas and exact symbolic certification for the Golden Ratio Catalog.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.catalog.schema"
+    },
+    "modules/api/geometor/divine/catalog/squares_rectangles/index": {
+      "id": "modules/api/geometor/divine/catalog/squares_rectangles/index",
+      "docname": "modules/api/geometor/divine/catalog/squares_rectangles/index",
+      "type": "article",
+      "title": "geometor.divine.catalog.squares_rectangles",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/catalog/squares_rectangles/",
+      "description": "Family 03: Squares, Grids & Golden Rectangles.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.catalog.squares_rectangles"
+    },
+    "modules/api/geometor/divine/divine/index": {
+      "id": "modules/api/geometor/divine/divine/index",
+      "docname": "modules/api/geometor/divine/divine/index",
+      "type": "article",
+      "title": "geometor.divine.divine",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/divine/",
+      "description": "Main entry point for the divine analysis module.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.divine"
+    },
+    "modules/api/geometor/divine/events/index": {
+      "id": "modules/api/geometor/divine/events/index",
+      "docname": "modules/api/geometor/divine/events/index",
+      "type": "article",
+      "title": "geometor.divine.events",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/events/",
+      "description": "Event listeners for divine analysis.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.events"
+    },
+    "modules/api/geometor/divine/golden/chains/index": {
+      "id": "modules/api/geometor/divine/golden/chains/index",
+      "docname": "modules/api/geometor/divine/golden/chains/index",
+      "type": "article",
+      "title": "geometor.divine.golden.chains",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/golden/chains/",
+      "description": "Golden Chain Analyzer: Harmonic Range Identification in Golden Sections.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.golden.chains"
+    },
+    "modules/api/geometor/divine/golden/groups/index": {
+      "id": "modules/api/geometor/divine/golden/groups/index",
+      "docname": "modules/api/geometor/divine/golden/groups/index",
+      "type": "article",
+      "title": "geometor.divine.golden.groups",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/golden/groups/",
+      "description": "Module for grouping and organizing Golden Sections.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.golden.groups"
+    },
+    "modules/api/geometor/divine/golden/index": {
+      "id": "modules/api/geometor/divine/golden/index",
+      "docname": "modules/api/geometor/divine/golden/index",
+      "type": "article",
+      "title": "geometor.divine.golden",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/golden/",
+      "description": "Find and analyze exact symbolic golden sections in GEOMETOR models.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.golden"
+    },
+    "modules/api/geometor/divine/golden/ranges/index": {
+      "id": "modules/api/geometor/divine/golden/ranges/index",
+      "docname": "modules/api/geometor/divine/golden/ranges/index",
+      "type": "article",
+      "title": "geometor.divine.golden.ranges",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/golden/ranges/",
+      "description": "Analysis of harmonic ranges in geometric lines.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.golden.ranges"
+    },
+    "modules/api/geometor/divine/golden/tracker/index": {
+      "id": "modules/api/geometor/divine/golden/tracker/index",
+      "docname": "modules/api/geometor/divine/golden/tracker/index",
+      "type": "article",
+      "title": "geometor.divine.golden.tracker",
+      "url": "https://geometor.github.io/divine/modules/api/geometor/divine/golden/tracker/",
+      "description": "Incremental point-birth golden section tracker.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "geometor.divine.golden.tracker"
+    },
+    "modules/index": {
+      "id": "modules/index",
+      "docname": "modules/index",
+      "type": "article",
+      "title": "Modules",
+      "url": "https://geometor.github.io/divine/modules/",
+      "description": "Tools and symbolic catalog for analyzing divine proportions in geometric models.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Modules"
+    },
+    "overview/index": {
+      "id": "overview/index",
+      "docname": "overview/index",
+      "type": "article",
+      "title": "overview",
+      "url": "https://geometor.github.io/divine/overview/",
+      "description": "geometor.divine is the Golden Ratio analysis engine and symbolic Catalog of Golden Ratio Constructions within the GEOMETOR ecosystem.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "overview"
+    },
+    "sources/geometor-divine-catalog": {
+      "id": "sources/geometor-divine-catalog",
+      "docname": "sources/geometor-divine-catalog",
+      "type": "source_record",
+      "title": "Symbolic Golden Ratio Construction Catalog (45 Constructions)",
+      "url": "https://geometor.github.io/divine/sources/geometor-divine-catalog.html",
+      "description": "45 machine-verified SymPy constructions across 7 families cross-referenced to Euclid, Huntley, Bogomolny, and Forum Geometricorum.",
+      "description_source": "meta",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Symbolic Golden Ratio Construction Catalog (45 Constructions)",
+      "facets": {
+        "author": "GEOMETOR",
+        "year": "2026",
+        "year_sort": 2026,
+        "year_display": "2026",
+        "era": "17 U.S.C. § 102(b) Catalog",
+        "site_url": "https://geometor.github.io/divine/",
+        "languages": [
+          "English"
+        ]
+      },
+      "labels": [
+        "source-geometor-divine-catalog"
+      ]
+    },
+    "sources/index": {
+      "id": "sources/index",
+      "docname": "sources/index",
+      "type": "article",
+      "title": "Sources",
+      "url": "https://geometor.github.io/divine/sources/",
+      "description_source": "empty",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Sources",
+      "labels": [
+        "sources"
+      ]
+    },
+    "todos/index": {
+      "id": "todos/index",
+      "docname": "todos/index",
+      "type": "article",
+      "title": "todos",
+      "url": "https://geometor.github.io/divine/todos/",
+      "description_source": "empty",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "todos"
+    },
+    "todos/python_3_14_multiprocessing": {
+      "id": "todos/python_3_14_multiprocessing",
+      "docname": "todos/python_3_14_multiprocessing",
+      "type": "article",
+      "title": "Python 3.14 Multiprocessing",
+      "url": "https://geometor.github.io/divine/todos/python_3_14_multiprocessing.html",
+      "description": "python 3.14 multiprocessings",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Python 3.14 Multiprocessing"
+    },
+    "usage/analysis/golden_sections": {
+      "id": "usage/analysis/golden_sections",
+      "docname": "usage/analysis/golden_sections",
+      "type": "article",
+      "title": "golden sections",
+      "url": "https://geometor.github.io/divine/usage/analysis/golden_sections.html",
+      "description": "Divine identifies points that divide segments into the golden ratio (\\phi).",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "golden sections"
+    },
+    "usage/analysis/harmonic_ranges": {
+      "id": "usage/analysis/harmonic_ranges",
+      "docname": "usage/analysis/harmonic_ranges",
+      "type": "article",
+      "title": "harmonic ranges",
+      "url": "https://geometor.github.io/divine/usage/analysis/harmonic_ranges.html",
+      "description": "Divine identifies harmonic ranges, which are sets of four collinear points in a specific cross-ratio relationship.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "harmonic ranges"
+    },
+    "usage/analysis/index": {
+      "id": "usage/analysis/index",
+      "docname": "usage/analysis/index",
+      "type": "article",
+      "title": "analysis",
+      "url": "https://geometor.github.io/divine/usage/analysis/",
+      "description": "The core functionality of divine is to find patterns.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "analysis"
+    },
+    "usage/analysis/pattern_recognition": {
+      "id": "usage/analysis/pattern_recognition",
+      "docname": "usage/analysis/pattern_recognition",
+      "type": "article",
+      "title": "pattern recognition",
+      "url": "https://geometor.github.io/divine/usage/analysis/pattern_recognition.html",
+      "description": "Divine groups related elements into chains and families to reveal hidden structures.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "pattern recognition"
+    },
+    "usage/getting_started": {
+      "id": "usage/getting_started",
+      "docname": "usage/getting_started",
+      "type": "article",
+      "title": "getting started",
+      "url": "https://geometor.github.io/divine/usage/getting_started.html",
+      "description": "geometor.divine is typically used in conjunction with geometor.model.",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "getting started"
+    },
+    "usage/index": {
+      "id": "usage/index",
+      "docname": "usage/index",
+      "type": "article",
+      "title": "Using This Edition",
+      "url": "https://geometor.github.io/divine/usage/",
+      "description": "Welcome to the GEOMETOR edition of the Catalog of Golden Ratio Constructions and the geometor.divine symbolic discovery engine. This edition unites 45 certified ruler-and-compass constructions across 7 geometric families with automated…",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "Using This Edition"
+    },
+    "usage/installation": {
+      "id": "usage/installation",
+      "docname": "usage/installation",
+      "type": "article",
+      "title": "installation",
+      "url": "https://geometor.github.io/divine/usage/installation.html",
+      "description": "You can install geometor.divine using pip:",
+      "description_source": "fallback",
+      "emblem": "https://geometor.github.io/divine/_static/medallion.svg",
+      "image_alt": "installation"
+    }
+  },
+  "labels": {
+    "about": "about/index",
+    "about-index": "about/index",
+    "about-divine": "about/index",
+    "cite-euclid-elements": "constructions/bibliography",
+    "cite-ptolemy-almagest": "constructions/bibliography",
+    "cite-kepler-1597": "constructions/bibliography",
+    "cite-hooper-1794": "constructions/bibliography",
+    "cite-lemoine-1902": "constructions/bibliography",
+    "cite-huntley-1970": "constructions/bibliography",
+    "cite-odom-coxeter-1983": "constructions/bibliography",
+    "cite-hofstetter-2002": "constructions/bibliography",
+    "cite-hofstetter-2003": "constructions/bibliography",
+    "cite-hofstetter-2004": "constructions/bibliography",
+    "cite-hofstetter-2005": "constructions/bibliography",
+    "cite-prasolov-2006": "constructions/bibliography",
+    "cite-kocik-2010": "constructions/bibliography",
+    "cite-bataille-2011": "constructions/bibliography",
+    "cite-knott-golden-section": "constructions/bibliography",
+    "cite-bogomolny-golden-ratio": "constructions/bibliography",
+    "cite-ctk-compass-only": "constructions/bibliography",
+    "cite-ctk-rusty-compass": "constructions/bibliography",
+    "cite-ctk-hofstetter3": "constructions/bibliography",
+    "cite-ctk-bui-5step": "constructions/bibliography",
+    "cite-ctk-bataille": "constructions/bibliography",
+    "cite-ctk-bui-qtb": "constructions/bibliography",
+    "cite-ctk-bui-qtb2": "constructions/bibliography",
+    "cite-ctk-buratino2": "constructions/bibliography",
+    "cite-ctk-buratino3": "constructions/bibliography",
+    "cite-ctk-buratino5": "constructions/bibliography",
+    "cite-ctk-butterfly-equilateral": "constructions/bibliography",
+    "cite-bogomolny-rectangles": "constructions/bibliography",
+    "cite-bogomolny-buratino1": "constructions/bibliography",
+    "cite-bogomolny-2x2": "constructions/bibliography",
+    "cite-bogomolny-3x3-1": "constructions/bibliography",
+    "cite-bogomolny-3x3-2": "constructions/bibliography",
+    "cite-bogomolny-suppa-square": "constructions/bibliography",
+    "cite-bogomolny-golden-cross": "constructions/bibliography",
+    "cite-bogomolny-arioni-square": "constructions/bibliography",
+    "cite-bogomolny-345": "constructions/bibliography",
+    "cite-bogomolny-345-tqh": "constructions/bibliography",
+    "cite-bogomolny-niemeyer": "constructions/bibliography",
+    "cite-bogomolny-bui-3": "constructions/bibliography",
+    "cite-bogomolny-pentagon": "constructions/bibliography",
+    "cite-bogomolny-pentagon-dao": "constructions/bibliography",
+    "cite-bogomolny-pentagon-tqh": "constructions/bibliography",
+    "cite-bogomolny-irregular-pentagon": "constructions/bibliography",
+    "cite-bogomolny-5-6": "constructions/bibliography",
+    "cite-bogomolny-six-pentagons": "constructions/bibliography",
+    "cite-bogomolny-wu-xing": "constructions/bibliography",
+    "cite-bogomolny-bui-general": "constructions/bibliography",
+    "cite-bogomolny-bui-1": "constructions/bibliography",
+    "cite-bogomolny-mcgucken-1": "constructions/bibliography",
+    "cite-bogomolny-kalogerakis": "constructions/bibliography",
+    "cite-bogomolny-four-circles": "constructions/bibliography",
+    "cite-bogomolny-3-tangent": "constructions/bibliography",
+    "cite-bogomolny-golden-window": "constructions/bibliography",
+    "cite-bogomolny-yin-yang": "constructions/bibliography",
+    "cite-bogomolny-buratino8": "constructions/bibliography",
+    "cite-bogomolny-molokach": "constructions/bibliography",
+    "cite-bogomolny-tqh-trapezoid": "constructions/bibliography",
+    "cite-bogomolny-mixtilinear": "constructions/bibliography",
+    "term-golden-ratio": "constructions/glossary",
+    "term-golden-section": "constructions/glossary",
+    "term-extreme-and-mean-ratio": "constructions/glossary",
+    "term-golden-chain": "constructions/glossary",
+    "term-quadrance": "constructions/glossary",
+    "term-geometrographie": "constructions/glossary",
+    "term-vesica-piscis": "constructions/glossary",
+    "term-mascheroni-construction": "constructions/glossary",
+    "term-rusty-compass": "constructions/glossary",
+    "term-power-of-a-point": "constructions/glossary",
+    "term-intersecting-chords-theorem": "constructions/glossary",
+    "term-butterfly-theorem": "constructions/glossary",
+    "term-kepler-triangle": "constructions/glossary",
+    "term-mixtilinear-incircle": "constructions/glossary",
+    "term-golden-rhombus": "constructions/glossary",
+    "term-golden-rectangle": "constructions/glossary",
+    "person-alexander-bogomolny": "constructions/people/alexander-bogomolny",
+    "person-alexandre-borovik": "constructions/people/alexandre-borovik",
+    "person-bui-quang-tuan": "constructions/people/bui-quang-tuan",
+    "person-claudius-ptolemy": "constructions/people/claudius-ptolemy",
+    "person-dao-thanh-oai": "constructions/people/dao-thanh-oai",
+    "person-elliot-mcgucken": "constructions/people/elliot-mcgucken",
+    "person-emile-lemoine": "constructions/people/emile-lemoine",
+    "person-ercole-suppa": "constructions/people/ercole-suppa",
+    "person-euclid": "constructions/people/euclid",
+    "person-george-odom": "constructions/people/george-odom",
+    "person-gregoire-nicollier": "constructions/people/gregoire-nicollier",
+    "person-h-e-huntley": "constructions/people/h-e-huntley",
+    "person-h-s-m-coxeter": "constructions/people/h-s-m-coxeter",
+    "persons": "constructions/people/index",
+    "person-jerzy-kocik": "constructions/people/jerzy-kocik",
+    "person-jingcheng-tong": "constructions/people/jingcheng-tong",
+    "person-jo-niemeyer": "constructions/people/jo-niemeyer",
+    "person-johannes-kepler": "constructions/people/johannes-kepler",
+    "person-john-arioni": "constructions/people/john-arioni",
+    "person-john-molokach": "constructions/people/john-molokach",
+    "person-kurt-hofstetter": "constructions/people/kurt-hofstetter",
+    "person-leo-giugiuc": "constructions/people/leo-giugiuc",
+    "person-luca-pacioli": "constructions/people/luca-pacioli",
+    "person-michel-bataille": "constructions/people/michel-bataille",
+    "person-nguyen-thanh-dung": "constructions/people/nguyen-thanh-dung",
+    "person-paul-curry": "constructions/people/paul-curry",
+    "person-quang-duong": "constructions/people/quang-duong",
+    "person-ron-knott": "constructions/people/ron-knott",
+    "person-thanos-kalogerakis": "constructions/people/thanos-kalogerakis",
+    "person-tran-quang-hung": "constructions/people/tran-quang-hung",
+    "person-v-v-prasolov": "constructions/people/v-v-prasolov",
+    "person-william-hooper": "constructions/people/william-hooper",
+    "glossary-root": "glossary",
+    "source-geometor-divine-catalog": "sources/geometor-divine-catalog",
+    "sources": "sources/index"
+  }
+}

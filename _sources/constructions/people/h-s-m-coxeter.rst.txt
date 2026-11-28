@@ -1,4 +1,5 @@
 :type: person
+:card_ref: coxeter:index
 :layout: book
 :death_year: 2003
 :death_label: 2003

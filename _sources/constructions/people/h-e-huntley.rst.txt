@@ -1,4 +1,5 @@
 :type: person
+:card_ref: huntley:index
 :layout: book
 :death_year: 1978
 :death_label: 1978
